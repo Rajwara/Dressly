@@ -4,8 +4,8 @@ import localFont from "next/font/local";
 import "./fieldworn.css";
 
 // The two fonts embedded in the original file, now served as files.
-const bigShoulders = localFont({ src: "../fonts/big-shoulders.woff2", weight: "100 900", display: "swap", variable: "--font-big-shoulders" });
-const spaceGrotesk = localFont({ src: "../fonts/space-grotesk.woff2", weight: "300 700", display: "swap", variable: "--font-space-grotesk" });
+const bigShoulders = localFont({ src: "../../components/fieldworn/fonts/big-shoulders.woff2", weight: "100 900", display: "swap", variable: "--font-big-shoulders" });
+const spaceGrotesk = localFont({ src: "../../components/fieldworn/fonts/space-grotesk.woff2", weight: "300 700", display: "swap", variable: "--font-space-grotesk" });
 
 // Fonts of the home page reels section shown in "Follow Us".
 const jakarta = Plus_Jakarta_Sans({ subsets: ["latin"], variable: "--font-serif" });

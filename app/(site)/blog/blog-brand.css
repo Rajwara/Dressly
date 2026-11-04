@@ -1,0 +1,39 @@
+/* Blog in the homepage branding: black, white and light grey,
+   Big Shoulders uppercase headings, Space Grotesk text, 12px radius. */
+.fwb .bl {
+  --ink: #000; --body: #666; --muted: #777; --page: #fff; --panel: #f6f6f6;
+  --hero-top: #f6f6f6; --hero-bottom: #f6f6f6; --line: #e4e4e4;
+  --accent: #000; --accent-soft: #f6f6f6; --accent-line: #e4e4e4;
+  --on-ink: #fff; --on-ink-muted: #b9b9b9; --on-ink-line: #333;
+  --heading: var(--fw-display); --text: var(--fw-body);
+  --radius-lg: 12px; --radius-md: 12px;
+  background: var(--page); font-family: var(--fw-body);
+}
+.fwb .bl h1, .fwb .bl h2 { font-family: var(--fw-display); font-weight: 500; text-transform: uppercase; letter-spacing: -.04em; line-height: 1.14; }
+.fwb .bl h3 { font-family: var(--fw-body); font-weight: 500; letter-spacing: -.03em; }
+.fwb .bl .eyebrow { font: 500 16px/24px var(--fw-display); letter-spacing: .01em; color: var(--ink); }
+.fwb .bl .eyebrow-dot::before, .fwb .bl .featured-badge::before { background: var(--ink); }
+
+/* Page header: grey rounded panel inside the 12px page gutter, like the homepage banner */
+.fwb .bl .page-hero { margin: 12px 12px 0; border-radius: 12px; background: var(--fw-grey); }
+.fwb .bl .page-hero h1 { font-size: clamp(56px, 8vw, 120px); line-height: .98; }
+.fwb .bl .page-hero p { color: var(--fw-muted); }
+
+/* Cards */
+.fwb .bl .featured, .fwb .bl .post-card { border-color: var(--line); background: var(--page); }
+.fwb .bl .featured-body h2 { font-size: clamp(34px, 3.2vw, 48px); line-height: 1.05; }
+.fwb .bl .post-body h3 { font-size: 22px; line-height: 1.25; }
+.fwb .bl .post-tag, .fwb .bl .featured-badge { background: #fff; border-radius: 99px; font-family: var(--fw-body); letter-spacing: .04em; }
+.fwb .bl .post-card:hover { box-shadow: 0 16px 36px rgba(0,0,0,.08); }
+.fwb .bl .filter[aria-pressed="true"] { background: #000; border-color: #000; color: #fff; }
+.fwb .bl .filter:hover { border-color: #000; color: #000; }
+
+/* Article */
+.fwb .bl .article { color: #3c3c3c; font-family: var(--fw-body); }
+.fwb .bl .article > h2 { font-size: clamp(30px, 3vw, 44px); }
+.fwb .bl .article blockquote { border-left-color: #000; font-family: var(--fw-body); font-weight: 500; letter-spacing: -.02em; }
+.fwb .bl .article li::before { background: #000; }
+.fwb .bl .author-card { background: var(--fw-grey); border-color: var(--line); }
+.fwb .bl .author-card-info h2 { font-size: 32px; }
+.fwb .bl .related { background: var(--fw-grey); margin: 0 12px; border-radius: 12px; }
+.fwb .bl .related-head h2 { font-size: clamp(38px, 4vw, 56px); }

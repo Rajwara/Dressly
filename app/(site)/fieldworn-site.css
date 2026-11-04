@@ -1,0 +1,37 @@
+/* =====================================================================
+   /test-mock-2 branding for store pages that use its header and footer
+   (Branches, Blog): base colours and fonts, plus fixes for store rules that
+   share class names with the borrowed header and footer. Scoped to .fwb.
+   ===================================================================== */
+.fwb {
+  --fw-black: #000; --fw-white: #fff; --fw-grey: #f6f6f6; --fw-line: #e4e4e4; --fw-muted: #666; --fw-radius: 12px;
+  --fw-display: var(--font-big-shoulders), "Big Shoulders", sans-serif;
+  --fw-body: var(--font-space-grotesk), "Space Grotesk", sans-serif;
+  background: var(--fw-white); color: var(--fw-black); font: 400 16px/24px var(--fw-body);
+}
+.fwb h1, .fwb h2 { font-family: var(--fw-display); font-weight: 500; text-transform: uppercase; letter-spacing: -.04em; line-height: 1.14; }
+.fwb h3 { font-family: var(--fw-body); font-weight: 500; letter-spacing: -.04em; }
+.fwb .eyebrow { font: 500 16px/24px var(--fw-display); text-transform: uppercase; letter-spacing: .01em; color: inherit; }
+/* Buttons: black pill, as on the homepage */
+.fwb .btn { border-radius: 99px; background: var(--fw-black); border-color: var(--fw-black); color: var(--fw-white); text-transform: none; letter-spacing: -.02em; font-size: 15px; font-weight: 500; padding: 12px 22px; transition: background .3s, color .3s; }
+.fwb .btn::before { display: none; }
+.fwb .btn:hover { background: #2b2b2b; color: var(--fw-white); border-color: #2b2b2b; }
+/* /test-mock-2 header and footer on this page (the store header and footer are hidden here) */
+.fwb .fw-head { position: relative; z-index: 30; }
+.fwb .fw-foot { margin-top: 12px; }
+.fwb .fw .cart { color: #fff; }
+/* The store stylesheet also loads on this page; undo its .nav/.logo/.drop/footer/.socials
+   rules inside the borrowed header and footer so they match /test-mock-2 exactly. */
+.fwb .fw .nav { display: block; gap: normal; margin-right: 0; font-size: inherit; background: none; padding: 0; max-height: none; overflow: visible; flex-direction: row; border: 0; box-shadow: none; }
+.fwb .fw .nav-row > a.logo { padding: 0; display: inline-block; color: inherit; margin-right: 0; flex: initial; text-transform: uppercase; }
+.fwb .fw .nav .drop { display: block; grid-template-columns: none; gap: 0; box-shadow: none; border: 0; }
+.fwb .fw .nav .drop a { display: inline; padding: 0 0 2px; color: inherit; }
+.fwb .fw footer { padding-bottom: 0; font-size: inherit; }
+.fwb .fw footer h4 { font-family: inherit; color: #fff; margin-top: 0; }
+.fwb .fw footer a { display: inline; padding: 0; }
+.fwb .fw footer .socials a { display: block; width: 22px; height: 22px; border: 0; border-radius: 0; opacity: 1; background: none; }
+.fwb .fw footer .socials a:hover { background: none; color: inherit; }
+@media (max-width: 991px) { .fwb .fw .nav .drop { position: static; } }
+.fwb .fw .banner-in.bar { display: block; height: auto; min-height: 88px; }
+@media (max-width: 767px) { .fwb .fw .banner-in.bar { min-height: 72px; } }
+.fwb .fw .banner-in.bar { padding: 0; border-bottom: 0; margin-bottom: 0; color: #fff; gap: normal; }

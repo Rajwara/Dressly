@@ -1,0 +1,84 @@
+/* Policy pages in the homepage design: grey rounded hero, Big Shoulders
+   uppercase headings, Space Grotesk text, numbered cards, black CTA panel. */
+.pol { --pol-grey: #f6f6f6; --pol-line: #e4e4e4; --pol-muted: #666; --pol-ease: cubic-bezier(.215,.61,.355,1); color: #000; }
+.pol-container { width: 100%; max-width: 1200px; margin-inline: auto; padding-inline: 24px; }
+.pol-label { display: block; margin-bottom: 12px; font: 500 16px/24px var(--fw-display); text-transform: uppercase; letter-spacing: .01em; }
+.pol h1, .pol h2 { font-family: var(--fw-display); font-weight: 500; text-transform: uppercase; letter-spacing: -.04em; line-height: 1.05; margin: 0; }
+.pol h3 { font: 500 20px/28px var(--fw-body); letter-spacing: -.04em; margin: 0; }
+.pol p { margin: 0; }
+
+/* Hero */
+.pol-hero { margin: 12px 12px 0; padding: 72px 24px 64px; border-radius: 12px; background: var(--pol-grey); text-align: center; }
+.pol-hero h1 { font-size: clamp(56px, 9vw, 140px); line-height: .95; }
+.pol-intro { max-width: 620px; margin: 22px auto 0 !important; color: var(--pol-muted); font-size: 18px; line-height: 26px; }
+.pol-updated { display: inline-block; margin-top: 20px; padding: 4px 12px; border-radius: 99px; background: #fff; font-size: 14px; line-height: 22px; color: #111; }
+.pol-tabs { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin-bottom: 40px; }
+.pol-tabs a { padding: 5px 14px; border: 1px solid #cfcfcf; border-radius: 99px; color: #333; font-size: 15px; transition: .3s var(--pol-ease); }
+.pol-tabs a:hover { border-color: #000; color: #000; }
+.pol-tabs a.on { background: #000; border-color: #000; color: #fff; }
+
+/* Key points: like the Why Us cards */
+.pol-points { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; padding-top: 16px; padding-bottom: 16px; }
+.pol-point { display: flex; flex-direction: column; min-height: 230px; padding: 20px; border-radius: 12px; background: var(--pol-grey); }
+.pol-point-top { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: auto; }
+.pol-point-top svg { width: 36px; height: 36px; }
+.pol-point-top b { font-size: 24px; line-height: 32px; font-weight: 500; letter-spacing: -.04em; color: #ccc; }
+.pol-point h3 { margin: 24px 0 8px; }
+.pol-point p { color: var(--pol-muted); }
+
+/* Contents and sections */
+.pol-body { display: grid; grid-template-columns: 280px minmax(0, 1fr); gap: 64px; padding-top: 80px; padding-bottom: 100px; }
+.pol-toc { position: sticky; top: 24px; align-self: start; }
+.pol-toc-list { list-style: none; margin: 0 0 24px; padding: 0; border-top: 1px solid var(--pol-line); }
+.pol-toc-list a { display: flex; gap: 12px; padding: 10px 0; border-bottom: 1px solid var(--pol-line); color: #888; font-size: 15px; transition: color .25s; }
+.pol-toc-list a span { min-width: 22px; font-family: var(--fw-display); font-size: 15px; }
+.pol-toc-list a:hover, .pol-toc-list a.on { color: #000; }
+.pol-help { padding: 20px; border-radius: 12px; background: #000; color: #fff; }
+.pol-help b { display: block; font: 500 22px/1.1 var(--fw-display); text-transform: uppercase; }
+.pol-help p { margin: 6px 0 12px !important; color: #b9b9b9; font-size: 14px; }
+.pol-help a { border-bottom: 1px solid currentColor; font-weight: 500; }
+.pol-section { display: grid; grid-template-columns: 64px minmax(0, 1fr); gap: 8px; padding: 32px 0; border-top: 1px solid var(--pol-line); scroll-margin-top: 24px; }
+.pol-section:first-child { padding-top: 0; border-top: 0; }
+.pol-num { font: 500 24px/1 var(--fw-display); color: #ccc; padding-top: 6px; }
+.pol-section h2 { font-size: clamp(32px, 3.2vw, 44px); margin-bottom: 16px; }
+.pol-section p { color: #3c3c3c; font-size: 17px; line-height: 27px; }
+.pol-section p + p, .pol-section ul + p, .pol-section p + ul { margin-top: 14px; }
+.pol-section ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+.pol-section li { position: relative; padding: 12px 16px 12px 40px; border-radius: 12px; background: var(--pol-grey); color: #222; font-size: 16px; line-height: 24px; }
+.pol-section li::before { content: ""; position: absolute; left: 18px; top: 21px; width: 7px; height: 7px; border-radius: 50%; background: #000; }
+.pol-empty { padding-top: 64px; padding-bottom: 64px; text-align: center; color: var(--pol-muted); font-size: 18px; }
+
+/* CTA */
+.pol-cta { margin: 0 12px; padding: 72px 0; border-radius: 12px; background: #000; color: #fff; }
+.pol-cta-row { display: flex; justify-content: space-between; align-items: flex-end; gap: 32px; }
+.pol-cta h2 { font-size: clamp(40px, 4.6vw, 64px); }
+.pol-cta p { max-width: 460px; margin-top: 12px !important; color: #b9b9b9; }
+.pol-cta-btns { display: flex; flex-wrap: wrap; gap: 10px; justify-content: flex-end; }
+
+/* /test-mock-2 pill button */
+.pol-btn { display: inline-flex; align-items: center; gap: 12px; padding: 8px 8px 8px 22px; border-radius: 99px; background: #000; color: #fff; font-weight: 500; letter-spacing: -.02em; line-height: 24px; white-space: nowrap; transition: background .3s, color .3s; }
+.pol-btn.light { background: #fff; color: #000; padding-left: 18px; }
+.pol-btn .ico { width: 28px; height: 28px; border-radius: 50%; background: #fff; color: #000; display: grid; place-items: center; transition: transform .45s var(--pol-ease); }
+.pol-btn.light .ico { background: #000; color: #fff; }
+.pol-btn .ico svg { width: 15px; height: 15px; }
+.pol-btn:hover .ico { transform: rotate(-45deg); }
+.pol-btn .roll { display: inline-block; overflow: hidden; height: 1.25em; line-height: 1.25; vertical-align: middle; }
+.pol-btn .roll > span { display: block; position: relative; transition: transform .45s var(--pol-ease); }
+.pol-btn .roll > span::after { content: attr(data-t); position: absolute; left: 0; top: 100%; white-space: nowrap; }
+.pol-btn:hover .roll > span { transform: translateY(-100%); }
+
+@media (max-width: 991px) {
+  .pol-body { grid-template-columns: 1fr; gap: 32px; padding-top: 56px; padding-bottom: 72px; }
+  .pol-toc { position: static; }
+  .pol-toc-list { display: none; }
+  .pol-cta-row { flex-direction: column; align-items: flex-start; }
+  .pol-cta-btns { justify-content: flex-start; }
+}
+@media (max-width: 767px) {
+  .pol-hero { margin: 8px 8px 0; padding: 48px 16px 44px; }
+  .pol-tabs { margin-bottom: 28px; }
+  .pol-points { grid-template-columns: 1fr; }
+  .pol-point { min-height: 190px; }
+  .pol-section { grid-template-columns: 1fr; gap: 4px; }
+  .pol-cta { margin: 0 8px; padding: 56px 0; }
+}

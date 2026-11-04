@@ -1,4 +1,4 @@
-/* Logotype styles, scoped to .page so the /test-mock-2 header and footer on this page are unaffected. */
+/* Logotype styles, scoped to .page so the homepage header and footer on this page are unaffected. */
 :root{--ink:#03030a; --body:#3e3e3d; --grey:#908f8e; --line:#d4d4d3; --white:#fff;
   --font:var(--font-space-grotesk),"Space Grotesk",Arial,sans-serif;--display:var(--font-big-shoulders),"Big Shoulders",sans-serif;}
 *, *::before, *::after{box-sizing:border-box}

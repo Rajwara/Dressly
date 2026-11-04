@@ -1,7 +1,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { imageSrc } from "@/lib/images";
-import { FieldwornChromeBehavior, FieldwornFooter, FieldwornHeader } from "./FieldwornChrome";
+import { FieldwornChromeBehavior, FieldwornFooter, FieldwornHeader } from "@/components/fieldworn/FieldwornChrome";
 import Logotype, { type LogotypeImages } from "./Logotype";
 
 /**

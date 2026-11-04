@@ -9,7 +9,7 @@ import "./fieldworn-chrome.css";
 gsap.registerPlugin(ScrollTrigger);
 
 /*
- * Header bar, footer and cart drawer from the home page (Fieldworn), with the
+ * Header bar, footer and cart drawer from the homepage (Fieldworn), with the
  * same markup, classes and behaviour, filled with Dressly links and
  * details. Styles are the Fieldworn stylesheet scoped to `.fw`.
  */
@@ -77,7 +77,7 @@ export function FieldwornFooter({ image }: { image: string }) {
   );
 }
 
-/** The parts of the home page script that belong to the header and footer. */
+/** The parts of the homepage script that belong to the header and footer. */
 export function FieldwornChromeBehavior() {
   useEffect(() => {
     const $ = (s: string) => document.querySelector<HTMLElement>(s)!;
@@ -121,7 +121,7 @@ export function FieldwornChromeBehavior() {
       if (e.key === "Escape") cart(false);
     }) as EventListener);
 
-    /* Header entrance and footer animations, as on the home page */
+    /* Header entrance and footer animations, as on the homepage */
     const mm = gsap.matchMedia();
     mm.add("(prefers-reduced-motion:no-preference)", () => {
       gsap.from(".fw .nav-row>*", { y: -20, opacity: 0, duration: 0.8, stagger: 0.08, delay: 0.3, ease: "power3.out" });
