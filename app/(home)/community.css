@@ -1,0 +1,60 @@
+/* The home page "Behind the craft" reels section, scoped to .cv for /test-mock-2.
+   Copied from the store stylesheet with the store's tokens and fonts. */
+.cv{--ink:#132131;--muted:#6f685d;--paper:#fbf9f5;--tint:#f2ece2;--line:#e5ddd0;--primary:#132131;--accent:#b08d57;--accent-text:#8a6a3a;
+  --serif:var(--font-serif),"Plus Jakarta Sans",Arial,sans-serif;--sans:var(--font-sans),"Inter",Arial,sans-serif;
+  font:15px/1.6 var(--sans);color:var(--ink)}
+.cv .wrap{width:min(1280px,100%);margin:auto;padding:0 28px}
+.cv p{margin:0 0 1em}
+.cv .eyebrow{display:inline-block}
+@media(max-width:720px){.cv .wrap{padding:0 16px}}
+.cv .community{background:#f1f4f7;padding:64px 0 56px}
+.cv .community .eyebrow{font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink)}
+.cv .community-text{max-width:420px;margin:12px 0 26px;color:var(--muted);font-size:13.5px}
+.cv .community-text a{color:var(--primary);border-bottom:1px solid currentColor}
+.cv .clips{--edge:max(28px,calc((100vw - 1280px)/2 + 28px));display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-padding-left:var(--edge);padding:0 var(--edge);scrollbar-width:none}
+.cv .clips::-webkit-scrollbar{display:none}
+.cv .clip{position:relative;flex:none;width:clamp(230px,22vw,300px);aspect-ratio:9/16;scroll-snap-align:start;overflow:hidden;background:var(--tint);border-radius:2px}
+.cv .clip video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;cursor:pointer;background:var(--tint)}
+.cv .clip-top{position:absolute;left:0;right:0;top:0;display:flex;justify-content:space-between;align-items:center;padding:12px;background:linear-gradient(#0000004d,#0000);color:#fff;pointer-events:none}
+.cv .clip-handle{display:flex;align-items:center;gap:5px;font-size:12.5px;font-weight:500;text-shadow:0 1px 3px #0006}
+.cv .clip-verified{color:#3b9cf0;display:inline-flex;filter:drop-shadow(0 1px 1px #0003)}
+.cv .clip-controls{display:flex;gap:6px;pointer-events:auto}
+.cv .clip-controls button{display:grid;place-items:center;width:30px;height:30px;border-radius:50%;border:0;background:#0000006b;color:#fff;cursor:pointer;backdrop-filter:blur(4px)}
+.cv .clip-controls button:hover{background:#000000a0}
+.cv .clip-shop{position:absolute;left:12px;right:12px;bottom:12px;padding:11px;background:#fff;color:var(--ink);border:0;font-size:13px;cursor:pointer;opacity:0;transform:translateY(8px);transition:opacity .2s,transform .2s}
+.cv .clip:hover .clip-shop, .cv .clip-shop:focus-visible{opacity:1;transform:none}
+@media(hover:none){.cv .clip-shop{opacity:1;transform:none}
+}
+.cv .clip-panel{position:absolute;left:0;right:0;bottom:0;max-height:78%;overflow:auto;background:#fff;padding:14px 14px 10px;animation:panel-up .25s ease-out;box-shadow:0 -10px 30px #0003}
+@keyframes panel-up{from{transform:translateY(100%)}to{transform:none}}
+.cv .clip-panel-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px}
+.cv .clip-panel-head b{font:600 16px var(--serif)}
+.cv .clip-panel-head button{background:none;border:0;cursor:pointer;color:var(--muted)}
+.cv .clip-panel ul{list-style:none;margin:0;padding:0}
+.cv .clip-panel li a{display:flex;gap:10px;align-items:center;padding:8px 0;border-top:1px solid var(--line);font-size:12.5px;line-height:1.35}
+.cv .clip-panel img{width:44px;aspect-ratio:4/5;object-fit:cover;background:var(--tint);flex:none}
+.cv .clip-panel small{display:block;color:var(--muted);margin-top:2px}
+.cv .clip-panel li a:hover span{color:var(--primary)}
+.cv .clips-nav{display:flex;align-items:center;gap:14px;margin-top:30px}
+.cv .clips-progress{position:relative;width:126px;height:1px;background:#c9d3dc;margin-right:12px}
+.cv .clips-progress span{position:absolute;top:-0.5px;height:2px;background:var(--ink);transition:left .2s}
+.cv .clips-nav button{display:grid;place-items:center;width:34px;height:34px;border:0;background:none;cursor:pointer;color:var(--ink)}
+.cv .clips-nav button:disabled{color:#aab6c1;cursor:default}
+@media(max-width:720px){.cv .community{padding:44px 0}
+.cv .clip{width:68vw}
+.cv .clips{--edge:16px}
+}
+.cv .community{background:var(--tint)}
+.cv .community-text a{color:var(--ink)}
+
+/* ---- Fit the page: heading uses the Fieldworn style; reels align with its 1200px container ---- */
+.reels-head p{font-size:16px;line-height:24px}
+.reels-head p a{color:var(--black);border-bottom:1px solid currentColor}
+.cv .community{background:transparent;padding:0}
+.cv .clips{--edge:max(24px,calc((100vw - 1152px)/2))}
+.cv .clip{border-radius:12px}
+.cv .clips-nav{width:100%;max-width:1200px;padding-inline:24px;margin-top:28px}
+.cv .clips-nav button{width:40px;height:40px;border-radius:50%;background:var(--grey-bg,#f6f6f6);color:#000;transition:background .3s,color .3s}
+.cv .clips-nav button:not(:disabled):hover{background:#000;color:#fff}
+.cv .clips-progress span{background:#000}
+@media(max-width:767px){.cv .clips{--edge:24px}.cv .clip{width:72vw}}

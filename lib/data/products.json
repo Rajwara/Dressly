@@ -1,0 +1,2203 @@
+[
+  {
+    "slug": "classic-round-collar-kandura-ivory",
+    "name": "Classic Round-Collar Kandura, Ivory",
+    "colour": "Ivory",
+    "category": "All Kandura and Thobes",
+    "price": 480,
+    "categorySlug": "kandura-thobes",
+    "options": [
+      {
+        "label": "Size",
+        "values": [
+          "S",
+          "M",
+          "L",
+          "XL",
+          "XXL"
+        ]
+      },
+      {
+        "label": "Length (in)",
+        "values": [
+          "54",
+          "55",
+          "56",
+          "57",
+          "58",
+          "59",
+          "60",
+          "61",
+          "62",
+          "63",
+          "64"
+        ]
+      }
+    ],
+    "sizeGuide": true,
+    "description": "Sample description for classic round-collar kandura, ivory. Replace with the real fabric, fit and care details.",
+    "metaDescription": "Classic Round-Collar Kandura, Ivory at Dressly.",
+    "related": [
+      "tailored-tasselled-kandura-sand",
+      "soft-weave-kandura-slate",
+      "stand-collar-thobe-white"
+    ]
+  },
+  {
+    "slug": "tailored-tasselled-kandura-sand",
+    "name": "Tailored Tasselled Kandura, Sand",
+    "colour": "Sand",
+    "category": "All Kandura and Thobes",
+    "price": 510,
+    "categorySlug": "kandura-thobes",
+    "options": [
+      {
+        "label": "Size",
+        "values": [
+          "S",
+          "M",
+          "L",
+          "XL",
+          "XXL"
+        ]
+      },
+      {
+        "label": "Length (in)",
+        "values": [
+          "54",
+          "55",
+          "56",
+          "57",
+          "58",
+          "59",
+          "60",
+          "61",
+          "62",
+          "63",
+          "64"
+        ]
+      }
+    ],
+    "sizeGuide": true,
+    "description": "Sample description for tailored tasselled kandura, sand. Replace with the real fabric, fit and care details.",
+    "metaDescription": "Tailored Tasselled Kandura, Sand at Dressly.",
+    "related": [
+      "classic-round-collar-kandura-ivory",
+      "soft-weave-kandura-slate",
+      "stand-collar-thobe-white"
+    ]
+  },
+  {
+    "slug": "soft-weave-kandura-slate",
+    "name": "Soft-Weave Kandura, Slate",
+    "colour": "Slate",
+    "category": "All Kandura and Thobes",
+    "price": 540,
+    "categorySlug": "kandura-thobes",
+    "options": [
+      {
+        "label": "Size",
+        "values": [
+          "S",
+          "M",
+          "L",
+          "XL",
+          "XXL"
+        ]
+      },
+      {
+        "label": "Length (in)",
+        "values": [
+          "54",
+          "55",
+          "56",
+          "57",
+          "58",
+          "59",
+          "60",
+          "61",
+          "62",
+          "63",
+          "64"
+        ]
+      }
+    ],
+    "sizeGuide": true,
+    "description": "Sample description for soft-weave kandura, slate. Replace with the real fabric, fit and care details.",
+    "metaDescription": "Soft-Weave Kandura, Slate at Dressly.",
+    "related": [
+      "classic-round-collar-kandura-ivory",
+      "tailored-tasselled-kandura-sand",
+      "stand-collar-thobe-white"
+    ]
+  },
+  {
+    "slug": "stand-collar-thobe-white",
+    "name": "Stand-Collar Thobe, White",
+    "colour": "White",
+    "category": "Adult Thobes",
+    "price": 420,
+    "categorySlug": "adult-thobes",
+    "options": [
+      {
+        "label": "Size",
+        "values": [
+          "S",
+          "M",
+          "L",
+          "XL",
+          "XXL"
+        ]
+      },
+      {
+        "label": "Length (in)",
+        "values": [
+          "54",
+          "55",
+          "56",
+          "57",
+          "58",
+          "59",
+          "60",
+          "61",
+          "62",
+          "63",
+          "64"
+        ]
+      }
+    ],
+    "sizeGuide": true,
+    "description": "Sample description for stand-collar thobe, white. Replace with the real fabric, fit and care details.",
+    "metaDescription": "Stand-Collar Thobe, White at Dressly.",
+    "related": [
+      "button-placket-thobe-stone",
+      "formal-cuffed-thobe-olive",
+      "classic-round-collar-kandura-ivory"
+    ]
+  },
+  {
+    "slug": "button-placket-thobe-stone",
+    "name": "Button-Placket Thobe, Stone",
+    "colour": "Stone",
+    "category": "Adult Thobes",
+    "price": 450,
+    "categorySlug": "adult-thobes",
+    "options": [
+      {
+        "label": "Size",
+        "values": [
+          "S",
+          "M",
+          "L",
+          "XL",
+          "XXL"
+        ]
+      },
+      {
+        "label": "Length (in)",
+        "values": [
+          "54",
+          "55",
+          "56",
+          "57",
+          "58",
+          "59",
+          "60",
+          "61",
+          "62",
+          "63",
+          "64"
+        ]
+      }
+    ],
+    "sizeGuide": true,
+    "description": "Sample description for button-placket thobe, stone. Replace with the real fabric, fit and care details.",
+    "metaDescription": "Button-Placket Thobe, Stone at Dressly.",
+    "related": [
+      "stand-collar-thobe-white",
+      "formal-cuffed-thobe-olive",
+      "classic-round-collar-kandura-ivory"
+    ]
+  },
+  {
+    "slug": "formal-cuffed-thobe-olive",
+    "name": "Formal Cuffed Thobe, Olive",
+    "colour": "Olive",
+    "category": "Adult Thobes",
+    "price": 480,
+    "categorySlug": "adult-thobes",
+    "options": [
+      {
+        "label": "Size",
+        "values": [
+          "S",
+          "M",
+          "L",
+          "XL",
+          "XXL"
+        ]
+      },
+      {
+        "label": "Length (in)",
+        "values": [
+          "54",
+          "55",
+          "56",
+          "57",
+          "58",
+          "59",
+          "60",
+          "61",
+          "62",
+          "63",
+          "64"
+        ]
+      }
+    ],
+    "sizeGuide": true,
+    "description": "Sample description for formal cuffed thobe, olive. Replace with the real fabric, fit and care details.",
+    "metaDescription": "Formal Cuffed Thobe, Olive at Dressly.",
+    "related": [
+      "stand-collar-thobe-white",
+      "button-placket-thobe-stone",
+      "classic-round-collar-kandura-ivory"
+    ]
+  },
+  {
+    "slug": "heritage-tassel-kandura-white",
+    "name": "Heritage Tassel Kandura, White",
+    "colour": "White",
+    "category": "Traditional Kandura",
+    "price": 450,
+    "categorySlug": "traditional-kandura",
+    "options": [
+      {
+        "label": "Size",
+        "values": [
+          "S",
+          "M",
+          "L",
+          "XL",
+          "XXL"
+        ]
+      },
+      {
+        "label": "Length (in)",
+        "values": [
+          "54",
+          "55",
+          "56",
+          "57",
+          "58",
+          "59",
+          "60",
+          "61",
+          "62",
+          "63",
+          "64"
+        ]
+      }
+    ],
+    "sizeGuide": true,
+    "description": "Sample description for heritage tassel kandura, white. Replace with the real fabric, fit and care details.",
+    "metaDescription": "Heritage Tassel Kandura, White at Dressly.",
+    "related": [
+      "hand-finished-neck-kandura-cream",
+      "heritage-cuff-kandura-taupe",
+      "classic-round-collar-kandura-ivory"
+    ]
+  },
+  {
+    "slug": "hand-finished-neck-kandura-cream",
+    "name": "Hand-Finished Neck Kandura, Cream",
+    "colour": "Cream",
+    "category": "Traditional Kandura",
+    "price": 480,
+    "categorySlug": "traditional-kandura",
+    "options": [
+      {
+        "label": "Size",
+        "values": [
+          "S",
+          "M",
+          "L",
+          "XL",
+          "XXL"
+        ]
+      },
+      {
+        "label": "Length (in)",
+        "values": [
+          "54",
+          "55",
+          "56",
+          "57",
+          "58",
+          "59",
+          "60",
+          "61",
+          "62",
+          "63",
+          "64"
+        ]
+      }
+    ],
+    "sizeGuide": true,
+    "description": "Sample description for hand-finished neck kandura, cream. Replace with the real fabric, fit and care details.",
+    "metaDescription": "Hand-Finished Neck Kandura, Cream at Dressly.",
+    "related": [
+      "heritage-tassel-kandura-white",
+      "heritage-cuff-kandura-taupe",
+      "classic-round-collar-kandura-ivory"
+    ]
+  },
+  {
+    "slug": "heritage-cuff-kandura-taupe",
+    "name": "Heritage Cuff Kandura, Taupe",
+    "colour": "Taupe",
+    "category": "Traditional Kandura",
+    "price": 510,
+    "categorySlug": "traditional-kandura",
+    "options": [
+      {
+        "label": "Size",
+        "values": [
+          "S",
+          "M",
+          "L",
+          "XL",
+          "XXL"
+        ]
+      },
+      {
+        "label": "Length (in)",
+        "values": [
+          "54",
+          "55",
+          "56",
+          "57",
+          "58",
+          "59",
+          "60",
+          "61",
+          "62",
+          "63",
+          "64"
+        ]
+      }
+    ],
+    "sizeGuide": true,
+    "description": "Sample description for heritage cuff kandura, taupe. Replace with the real fabric, fit and care details.",
+    "metaDescription": "Heritage Cuff Kandura, Taupe at Dressly.",
+    "related": [
+      "heritage-tassel-kandura-white",
+      "hand-finished-neck-kandura-cream",
+      "classic-round-collar-kandura-ivory"
+    ]
+  },
+  {
+    "slug": "breathable-cotton-thobe-white",
+    "name": "Breathable Cotton Thobe, White",
+    "colour": "White",
+    "category": "Summer Thobes",
+    "price": 360,
+    "categorySlug": "summer-thobes",
+    "options": [
+      {
+        "label": "Size",
+        "values": [
+          "S",
+          "M",
+          "L",
+          "XL",
+          "XXL"
+        ]
+      },
+      {
+        "label": "Length (in)",
+        "values": [
+          "54",
+          "55",
+          "56",
+          "57",
+          "58",
+          "59",
+          "60",
+          "61",
+          "62",
+          "63",
+          "64"
+        ]
+      }
+    ],
+    "sizeGuide": true,
+    "description": "Sample description for breathable cotton thobe, white. Replace with the real fabric, fit and care details.",
+    "metaDescription": "Breathable Cotton Thobe, White at Dressly.",
+    "related": [
+      "lightweight-linen-blend-thobe-pale-blue",
+      "airy-short-collar-thobe-sand",
+      "classic-round-collar-kandura-ivory"
+    ]
+  },
+  {
+    "slug": "lightweight-linen-blend-thobe-pale-blue",
+    "name": "Lightweight Linen-Blend Thobe, Pale Blue",
+    "colour": "Pale Blue",
+    "category": "Summer Thobes",
+    "price": 390,
+    "categorySlug": "summer-thobes",
+    "options": [
+      {
+        "label": "Size",
+        "values": [
+          "S",
+          "M",
+          "L",
+          "XL",
+          "XXL"
+        ]
+      },
+      {
+        "label": "Length (in)",
+        "values": [
+          "54",
+          "55",
+          "56",
+          "57",
+          "58",
+          "59",
+          "60",
+          "61",
+          "62",
+          "63",
+          "64"
+        ]
+      }
+    ],
+    "sizeGuide": true,
+    "description": "Sample description for lightweight linen-blend thobe, pale blue. Replace with the real fabric, fit and care details.",
+    "metaDescription": "Lightweight Linen-Blend Thobe, Pale Blue at Dressly.",
+    "related": [
+      "breathable-cotton-thobe-white",
+      "airy-short-collar-thobe-sand",
+      "classic-round-collar-kandura-ivory"
+    ]
+  },
+  {
+    "slug": "airy-short-collar-thobe-sand",
+    "name": "Airy Short-Collar Thobe, Sand",
+    "colour": "Sand",
+    "category": "Summer Thobes",
+    "price": 420,
+    "categorySlug": "summer-thobes",
+    "options": [
+      {
+        "label": "Size",
+        "values": [
+          "S",
+          "M",
+          "L",
+          "XL",
+          "XXL"
+        ]
+      },
+      {
+        "label": "Length (in)",
+        "values": [
+          "54",
+          "55",
+          "56",
+          "57",
+          "58",
+          "59",
+          "60",
+          "61",
+          "62",
+          "63",
+          "64"
+        ]
+      }
+    ],
+    "sizeGuide": true,
+    "description": "Sample description for airy short-collar thobe, sand. Replace with the real fabric, fit and care details.",
+    "metaDescription": "Airy Short-Collar Thobe, Sand at Dressly.",
+    "related": [
+      "breathable-cotton-thobe-white",
+      "lightweight-linen-blend-thobe-pale-blue",
+      "classic-round-collar-kandura-ivory"
+    ]
+  },
+  {
+    "slug": "boys-round-collar-kandura-white",
+    "name": "Boys Round-Collar Kandura, White",
+    "colour": "White",
+    "category": "Kids Clothing",
+    "price": 190,
+    "categorySlug": "kids-clothing",
+    "options": [
+      {
+        "label": "Size",
+        "values": [
+          "4Y",
+          "6Y",
+          "8Y",
+          "10Y",
+          "12Y",
+          "14Y"
+        ]
+      }
+    ],
+    "sizeGuide": true,
+    "description": "Sample description for boys round-collar kandura, white. Replace with the real fabric, fit and care details.",
+    "metaDescription": "Boys Round-Collar Kandura, White at Dressly.",
+    "related": [
+      "boys-stand-collar-thobe-cream",
+      "boys-occasion-kandura-sand",
+      "kids-check-shimagh-red-and-white"
+    ]
+  },
+  {
+    "slug": "boys-stand-collar-thobe-cream",
+    "name": "Boys Stand-Collar Thobe, Cream",
+    "colour": "Cream",
+    "category": "Kids Clothing",
+    "price": 220,
+    "categorySlug": "kids-clothing",
+    "options": [
+      {
+        "label": "Size",
+        "values": [
+          "4Y",
+          "6Y",
+          "8Y",
+          "10Y",
+          "12Y",
+          "14Y"
+        ]
+      }
+    ],
+    "sizeGuide": true,
+    "description": "Sample description for boys stand-collar thobe, cream. Replace with the real fabric, fit and care details.",
+    "metaDescription": "Boys Stand-Collar Thobe, Cream at Dressly.",
+    "related": [
+      "boys-round-collar-kandura-white",
+      "boys-occasion-kandura-sand",
+      "kids-check-shimagh-red-and-white"
+    ]
+  },
+  {
+    "slug": "boys-occasion-kandura-sand",
+    "name": "Boys Occasion Kandura, Sand",
+    "colour": "Sand",
+    "category": "Kids Clothing",
+    "price": 250,
+    "categorySlug": "kids-clothing",
+    "options": [
+      {
+        "label": "Size",
+        "values": [
+          "4Y",
+          "6Y",
+          "8Y",
+          "10Y",
+          "12Y",
+          "14Y"
+        ]
+      }
+    ],
+    "sizeGuide": true,
+    "description": "Sample description for boys occasion kandura, sand. Replace with the real fabric, fit and care details.",
+    "metaDescription": "Boys Occasion Kandura, Sand at Dressly.",
+    "related": [
+      "boys-round-collar-kandura-white",
+      "boys-stand-collar-thobe-cream",
+      "kids-check-shimagh-red-and-white"
+    ]
+  },
+  {
+    "slug": "kids-check-shimagh-red-and-white",
+    "name": "Kids Check Shimagh, Red and White",
+    "colour": "Red and White",
+    "category": "Kids Shimagh and Ghutra",
+    "price": 60,
+    "categorySlug": "kids-headwear",
+    "options": [
+      {
+        "label": "Colour",
+        "values": [
+          "Red and White",
+          "White"
+        ]
+      }
+    ],
+    "sizeGuide": false,
+    "description": "Sample description for kids check shimagh, red and white. Replace with the real fabric, fit and care details.",
+    "metaDescription": "Kids Check Shimagh, Red and White at Dressly.",
+    "related": [
+      "kids-plain-ghutra-white",
+      "kids-soft-cotton-ghutra-ivory",
+      "boys-round-collar-kandura-white"
+    ]
+  },
+  {
+    "slug": "kids-plain-ghutra-white",
+    "name": "Kids Plain Ghutra, White",
+    "colour": "White",
+    "category": "Kids Shimagh and Ghutra",
+    "price": 90,
+    "categorySlug": "kids-headwear",
+    "options": [
+      {
+        "label": "Colour",
+        "values": [
+          "Red and White",
+          "White"
+        ]
+      }
+    ],
+    "sizeGuide": false,
+    "description": "Sample description for kids plain ghutra, white. Replace with the real fabric, fit and care details.",
+    "metaDescription": "Kids Plain Ghutra, White at Dressly.",
+    "related": [
+      "kids-check-shimagh-red-and-white",
+      "kids-soft-cotton-ghutra-ivory",
+      "boys-round-collar-kandura-white"
+    ]
+  },
+  {
+    "slug": "kids-soft-cotton-ghutra-ivory",
+    "name": "Kids Soft Cotton Ghutra, Ivory",
+    "colour": "Ivory",
+    "category": "Kids Shimagh and Ghutra",
+    "price": 120,
+    "categorySlug": "kids-headwear",
+    "options": [
+      {
+        "label": "Colour",
+        "values": [
+          "Red and White",
+          "White"
+        ]
+      }
+    ],
+    "sizeGuide": false,
+    "description": "Sample description for kids soft cotton ghutra, ivory. Replace with the real fabric, fit and care details.",
+    "metaDescription": "Kids Soft Cotton Ghutra, Ivory at Dressly.",
+    "related": [
+      "kids-check-shimagh-red-and-white",
+      "kids-plain-ghutra-white",
+      "boys-round-collar-kandura-white"
+    ]
+  },
+  {
+    "slug": "kids-leather-sandal-tan",
+    "name": "Kids Leather Sandal, Tan",
+    "colour": "Tan",
+    "category": "Kids Footwear",
+    "price": 110,
+    "categorySlug": "kids-footwear",
+    "options": [
+      {
+        "label": "EU size",
+        "values": [
+          "28",
+          "29",
+          "30",
+          "31",
+          "32",
+          "33",
+          "34",
+          "35"
+        ]
+      }
+    ],
+    "sizeGuide": false,
+    "description": "Sample description for kids leather sandal, tan. Replace with the real fabric, fit and care details.",
+    "metaDescription": "Kids Leather Sandal, Tan at Dressly.",
+    "related": [
+      "kids-strap-sandal-brown",
+      "kids-occasion-sandal-black",
+      "boys-round-collar-kandura-white"
+    ]
+  },
+  {
+    "slug": "kids-strap-sandal-brown",
+    "name": "Kids Strap Sandal, Brown",
+    "colour": "Brown",
+    "category": "Kids Footwear",
+    "price": 140,
+    "categorySlug": "kids-footwear",
+    "options": [
+      {
+        "label": "EU size",
+        "values": [
+          "28",
+          "29",
+          "30",
+          "31",
+          "32",
+          "33",
+          "34",
+          "35"
+        ]
+      }
+    ],
+    "sizeGuide": false,
+    "description": "Sample description for kids strap sandal, brown. Replace with the real fabric, fit and care details.",
+    "metaDescription": "Kids Strap Sandal, Brown at Dressly.",
+    "related": [
+      "kids-leather-sandal-tan",
+      "kids-occasion-sandal-black",
+      "boys-round-collar-kandura-white"
+    ]
+  },
+  {
+    "slug": "kids-occasion-sandal-black",
+    "name": "Kids Occasion Sandal, Black",
+    "colour": "Black",
+    "category": "Kids Footwear",
+    "price": 170,
+    "categorySlug": "kids-footwear",
+    "options": [
+      {
+        "label": "EU size",
+        "values": [
+          "28",
+          "29",
+          "30",
+          "31",
+          "32",
+          "33",
+          "34",
+          "35"
+        ]
+      }
+    ],
+    "sizeGuide": false,
+    "description": "Sample description for kids occasion sandal, black. Replace with the real fabric, fit and care details.",
+    "metaDescription": "Kids Occasion Sandal, Black at Dressly.",
+    "related": [
+      "kids-leather-sandal-tan",
+      "kids-strap-sandal-brown",
+      "boys-round-collar-kandura-white"
+    ]
+  },
+  {
+    "slug": "tailored-layering-jacket-charcoal",
+    "name": "Tailored Layering Jacket, Charcoal",
+    "colour": "Charcoal",
+    "category": "Kandura Jackets",
+    "price": 390,
+    "categorySlug": "kandura-jackets",
+    "options": [
+      {
+        "label": "Size",
+        "values": [
+          "S",
+          "M",
+          "L",
+          "XL",
+          "XXL"
+        ]
+      }
+    ],
+    "sizeGuide": true,
+    "description": "Sample description for tailored layering jacket, charcoal. Replace with the real fabric, fit and care details.",
+    "metaDescription": "Tailored Layering Jacket, Charcoal at Dressly.",
+    "related": [
+      "soft-wool-blend-jacket-navy",
+      "open-front-jacket-olive",
+      "stitched-saderi-olive"
+    ]
+  },
+  {
+    "slug": "soft-wool-blend-jacket-navy",
+    "name": "Soft Wool-Blend Jacket, Navy",
+    "colour": "Navy",
+    "category": "Kandura Jackets",
+    "price": 420,
+    "categorySlug": "kandura-jackets",
+    "options": [
+      {
+        "label": "Size",
+        "values": [
+          "S",
+          "M",
+          "L",
+          "XL",
+          "XXL"
+        ]
+      }
+    ],
+    "sizeGuide": true,
+    "description": "Sample description for soft wool-blend jacket, navy. Replace with the real fabric, fit and care details.",
+    "metaDescription": "Soft Wool-Blend Jacket, Navy at Dressly.",
+    "related": [
+      "tailored-layering-jacket-charcoal",
+      "open-front-jacket-olive",
+      "stitched-saderi-olive"
+    ]
+  },
+  {
+    "slug": "open-front-jacket-olive",
+    "name": "Open-Front Jacket, Olive",
+    "colour": "Olive",
+    "category": "Kandura Jackets",
+    "price": 450,
+    "categorySlug": "kandura-jackets",
+    "options": [
+      {
+        "label": "Size",
+        "values": [
+          "S",
+          "M",
+          "L",
+          "XL",
+          "XXL"
+        ]
+      }
+    ],
+    "sizeGuide": true,
+    "description": "Sample description for open-front jacket, olive. Replace with the real fabric, fit and care details.",
+    "metaDescription": "Open-Front Jacket, Olive at Dressly.",
+    "related": [
+      "tailored-layering-jacket-charcoal",
+      "soft-wool-blend-jacket-navy",
+      "stitched-saderi-olive"
+    ]
+  },
+  {
+    "slug": "stitched-saderi-olive",
+    "name": "Stitched Saderi, Olive",
+    "colour": "Olive",
+    "category": "Saderi (Sleeveless Jackets)",
+    "price": 280,
+    "categorySlug": "saderi",
+    "options": [
+      {
+        "label": "Size",
+        "values": [
+          "S",
+          "M",
+          "L",
+          "XL",
+          "XXL"
+        ]
+      }
+    ],
+    "sizeGuide": true,
+    "description": "Sample description for stitched saderi, olive. Replace with the real fabric, fit and care details.",
+    "metaDescription": "Stitched Saderi, Olive at Dressly.",
+    "related": [
+      "fine-weave-saderi-black",
+      "plain-saderi-grey",
+      "tailored-layering-jacket-charcoal"
+    ]
+  },
+  {
+    "slug": "fine-weave-saderi-black",
+    "name": "Fine-Weave Saderi, Black",
+    "colour": "Black",
+    "category": "Saderi (Sleeveless Jackets)",
+    "price": 310,
+    "categorySlug": "saderi",
+    "options": [
+      {
+        "label": "Size",
+        "values": [
+          "S",
+          "M",
+          "L",
+          "XL",
+          "XXL"
+        ]
+      }
+    ],
+    "sizeGuide": true,
+    "description": "Sample description for fine-weave saderi, black. Replace with the real fabric, fit and care details.",
+    "metaDescription": "Fine-Weave Saderi, Black at Dressly.",
+    "related": [
+      "stitched-saderi-olive",
+      "plain-saderi-grey",
+      "tailored-layering-jacket-charcoal"
+    ]
+  },
+  {
+    "slug": "plain-saderi-grey",
+    "name": "Plain Saderi, Grey",
+    "colour": "Grey",
+    "category": "Saderi (Sleeveless Jackets)",
+    "price": 340,
+    "categorySlug": "saderi",
+    "options": [
+      {
+        "label": "Size",
+        "values": [
+          "S",
+          "M",
+          "L",
+          "XL",
+          "XXL"
+        ]
+      }
+    ],
+    "sizeGuide": true,
+    "description": "Sample description for plain saderi, grey. Replace with the real fabric, fit and care details.",
+    "metaDescription": "Plain Saderi, Grey at Dressly.",
+    "related": [
+      "stitched-saderi-olive",
+      "fine-weave-saderi-black",
+      "tailored-layering-jacket-charcoal"
+    ]
+  },
+  {
+    "slug": "occasion-bisht-black",
+    "name": "Occasion Bisht, Black",
+    "colour": "Black",
+    "category": "Bisht",
+    "price": 950,
+    "categorySlug": "bisht",
+    "options": [
+      {
+        "label": "Size",
+        "values": [
+          "Free Size"
+        ]
+      }
+    ],
+    "sizeGuide": false,
+    "description": "Sample description for occasion bisht, black. Replace with the real fabric, fit and care details.",
+    "metaDescription": "Occasion Bisht, Black at Dressly.",
+    "related": [
+      "lightweight-bisht-camel",
+      "formal-trim-bisht-dark-brown",
+      "tailored-layering-jacket-charcoal"
+    ]
+  },
+  {
+    "slug": "lightweight-bisht-camel",
+    "name": "Lightweight Bisht, Camel",
+    "colour": "Camel",
+    "category": "Bisht",
+    "price": 980,
+    "categorySlug": "bisht",
+    "options": [
+      {
+        "label": "Size",
+        "values": [
+          "Free Size"
+        ]
+      }
+    ],
+    "sizeGuide": false,
+    "description": "Sample description for lightweight bisht, camel. Replace with the real fabric, fit and care details.",
+    "metaDescription": "Lightweight Bisht, Camel at Dressly.",
+    "related": [
+      "occasion-bisht-black",
+      "formal-trim-bisht-dark-brown",
+      "tailored-layering-jacket-charcoal"
+    ]
+  },
+  {
+    "slug": "formal-trim-bisht-dark-brown",
+    "name": "Formal Trim Bisht, Dark Brown",
+    "colour": "Dark Brown",
+    "category": "Bisht",
+    "price": 1010,
+    "categorySlug": "bisht",
+    "options": [
+      {
+        "label": "Size",
+        "values": [
+          "Free Size"
+        ]
+      }
+    ],
+    "sizeGuide": false,
+    "description": "Sample description for formal trim bisht, dark brown. Replace with the real fabric, fit and care details.",
+    "metaDescription": "Formal Trim Bisht, Dark Brown at Dressly.",
+    "related": [
+      "occasion-bisht-black",
+      "lightweight-bisht-camel",
+      "tailored-layering-jacket-charcoal"
+    ]
+  },
+  {
+    "slug": "wool-blend-shawl-camel",
+    "name": "Wool-Blend Shawl, Camel",
+    "colour": "Camel",
+    "category": "Shawls",
+    "price": 220,
+    "categorySlug": "shawls",
+    "options": [
+      {
+        "label": "Size",
+        "values": [
+          "Free Size"
+        ]
+      }
+    ],
+    "sizeGuide": false,
+    "description": "Sample description for wool-blend shawl, camel. Replace with the real fabric, fit and care details.",
+    "metaDescription": "Wool-Blend Shawl, Camel at Dressly.",
+    "related": [
+      "soft-check-shawl-olive",
+      "plain-winter-shawl-charcoal",
+      "tailored-layering-jacket-charcoal"
+    ]
+  },
+  {
+    "slug": "soft-check-shawl-olive",
+    "name": "Soft Check Shawl, Olive",
+    "colour": "Olive",
+    "category": "Shawls",
+    "price": 250,
+    "categorySlug": "shawls",
+    "options": [
+      {
+        "label": "Size",
+        "values": [
+          "Free Size"
+        ]
+      }
+    ],
+    "sizeGuide": false,
+    "description": "Sample description for soft check shawl, olive. Replace with the real fabric, fit and care details.",
+    "metaDescription": "Soft Check Shawl, Olive at Dressly.",
+    "related": [
+      "wool-blend-shawl-camel",
+      "plain-winter-shawl-charcoal",
+      "tailored-layering-jacket-charcoal"
+    ]
+  },
+  {
+    "slug": "plain-winter-shawl-charcoal",
+    "name": "Plain Winter Shawl, Charcoal",
+    "colour": "Charcoal",
+    "category": "Shawls",
+    "price": 280,
+    "categorySlug": "shawls",
+    "options": [
+      {
+        "label": "Size",
+        "values": [
+          "Free Size"
+        ]
+      }
+    ],
+    "sizeGuide": false,
+    "description": "Sample description for plain winter shawl, charcoal. Replace with the real fabric, fit and care details.",
+    "metaDescription": "Plain Winter Shawl, Charcoal at Dressly.",
+    "related": [
+      "wool-blend-shawl-camel",
+      "soft-check-shawl-olive",
+      "tailored-layering-jacket-charcoal"
+    ]
+  },
+  {
+    "slug": "everyday-cotton-jalabiya-pale-blue",
+    "name": "Everyday Cotton Jalabiya, Pale Blue",
+    "colour": "Pale Blue",
+    "category": "Jalabiya",
+    "price": 210,
+    "categorySlug": "jalabiya",
+    "options": [
+      {
+        "label": "Size",
+        "values": [
+          "S",
+          "M",
+          "L",
+          "XL",
+          "XXL"
+        ]
+      }
+    ],
+    "sizeGuide": true,
+    "description": "Sample description for everyday cotton jalabiya, pale blue. Replace with the real fabric, fit and care details.",
+    "metaDescription": "Everyday Cotton Jalabiya, Pale Blue at Dressly.",
+    "related": [
+      "relaxed-hooded-jalabiya-sand",
+      "light-home-jalabiya-white",
+      "relaxed-short-sleeve-tunic-stone"
+    ]
+  },
+  {
+    "slug": "relaxed-hooded-jalabiya-sand",
+    "name": "Relaxed Hooded Jalabiya, Sand",
+    "colour": "Sand",
+    "category": "Jalabiya",
+    "price": 240,
+    "categorySlug": "jalabiya",
+    "options": [
+      {
+        "label": "Size",
+        "values": [
+          "S",
+          "M",
+          "L",
+          "XL",
+          "XXL"
+        ]
+      }
+    ],
+    "sizeGuide": true,
+    "description": "Sample description for relaxed hooded jalabiya, sand. Replace with the real fabric, fit and care details.",
+    "metaDescription": "Relaxed Hooded Jalabiya, Sand at Dressly.",
+    "related": [
+      "everyday-cotton-jalabiya-pale-blue",
+      "light-home-jalabiya-white",
+      "relaxed-short-sleeve-tunic-stone"
+    ]
+  },
+  {
+    "slug": "light-home-jalabiya-white",
+    "name": "Light Home Jalabiya, White",
+    "colour": "White",
+    "category": "Jalabiya",
+    "price": 270,
+    "categorySlug": "jalabiya",
+    "options": [
+      {
+        "label": "Size",
+        "values": [
+          "S",
+          "M",
+          "L",
+          "XL",
+          "XXL"
+        ]
+      }
+    ],
+    "sizeGuide": true,
+    "description": "Sample description for light home jalabiya, white. Replace with the real fabric, fit and care details.",
+    "metaDescription": "Light Home Jalabiya, White at Dressly.",
+    "related": [
+      "everyday-cotton-jalabiya-pale-blue",
+      "relaxed-hooded-jalabiya-sand",
+      "relaxed-short-sleeve-tunic-stone"
+    ]
+  },
+  {
+    "slug": "relaxed-short-sleeve-tunic-stone",
+    "name": "Relaxed Short-Sleeve Tunic, Stone",
+    "colour": "Stone",
+    "category": "Arabian Casuals",
+    "price": 190,
+    "categorySlug": "arabian-casuals",
+    "options": [
+      {
+        "label": "Size",
+        "values": [
+          "S",
+          "M",
+          "L",
+          "XL",
+          "XXL"
+        ]
+      }
+    ],
+    "sizeGuide": true,
+    "description": "Sample description for relaxed short-sleeve tunic, stone. Replace with the real fabric, fit and care details.",
+    "metaDescription": "Relaxed Short-Sleeve Tunic, Stone at Dressly.",
+    "related": [
+      "weekend-band-collar-tunic-olive",
+      "cotton-lounge-tunic-white",
+      "everyday-cotton-jalabiya-pale-blue"
+    ]
+  },
+  {
+    "slug": "weekend-band-collar-tunic-olive",
+    "name": "Weekend Band-Collar Tunic, Olive",
+    "colour": "Olive",
+    "category": "Arabian Casuals",
+    "price": 220,
+    "categorySlug": "arabian-casuals",
+    "options": [
+      {
+        "label": "Size",
+        "values": [
+          "S",
+          "M",
+          "L",
+          "XL",
+          "XXL"
+        ]
+      }
+    ],
+    "sizeGuide": true,
+    "description": "Sample description for weekend band-collar tunic, olive. Replace with the real fabric, fit and care details.",
+    "metaDescription": "Weekend Band-Collar Tunic, Olive at Dressly.",
+    "related": [
+      "relaxed-short-sleeve-tunic-stone",
+      "cotton-lounge-tunic-white",
+      "everyday-cotton-jalabiya-pale-blue"
+    ]
+  },
+  {
+    "slug": "cotton-lounge-tunic-white",
+    "name": "Cotton Lounge Tunic, White",
+    "colour": "White",
+    "category": "Arabian Casuals",
+    "price": 250,
+    "categorySlug": "arabian-casuals",
+    "options": [
+      {
+        "label": "Size",
+        "values": [
+          "S",
+          "M",
+          "L",
+          "XL",
+          "XXL"
+        ]
+      }
+    ],
+    "sizeGuide": true,
+    "description": "Sample description for cotton lounge tunic, white. Replace with the real fabric, fit and care details.",
+    "metaDescription": "Cotton Lounge Tunic, White at Dressly.",
+    "related": [
+      "relaxed-short-sleeve-tunic-stone",
+      "weekend-band-collar-tunic-olive",
+      "everyday-cotton-jalabiya-pale-blue"
+    ]
+  },
+  {
+    "slug": "cotton-faneela-white",
+    "name": "Cotton Faneela, White",
+    "colour": "White",
+    "category": "Faneela (Undershirts)",
+    "price": 55,
+    "categorySlug": "faneela",
+    "options": [
+      {
+        "label": "Size",
+        "values": [
+          "S",
+          "M",
+          "L",
+          "XL",
+          "XXL"
+        ]
+      }
+    ],
+    "sizeGuide": true,
+    "description": "Sample description for cotton faneela, white. Replace with the real fabric, fit and care details.",
+    "metaDescription": "Cotton Faneela, White at Dressly.",
+    "related": [
+      "fitted-faneela-off-white",
+      "sleeveless-faneela-white",
+      "everyday-cotton-jalabiya-pale-blue"
+    ]
+  },
+  {
+    "slug": "fitted-faneela-off-white",
+    "name": "Fitted Faneela, Off-White",
+    "colour": "Off-White",
+    "category": "Faneela (Undershirts)",
+    "price": 85,
+    "categorySlug": "faneela",
+    "options": [
+      {
+        "label": "Size",
+        "values": [
+          "S",
+          "M",
+          "L",
+          "XL",
+          "XXL"
+        ]
+      }
+    ],
+    "sizeGuide": true,
+    "description": "Sample description for fitted faneela, off-white. Replace with the real fabric, fit and care details.",
+    "metaDescription": "Fitted Faneela, Off-White at Dressly.",
+    "related": [
+      "cotton-faneela-white",
+      "sleeveless-faneela-white",
+      "everyday-cotton-jalabiya-pale-blue"
+    ]
+  },
+  {
+    "slug": "sleeveless-faneela-white",
+    "name": "Sleeveless Faneela, White",
+    "colour": "White",
+    "category": "Faneela (Undershirts)",
+    "price": 115,
+    "categorySlug": "faneela",
+    "options": [
+      {
+        "label": "Size",
+        "values": [
+          "S",
+          "M",
+          "L",
+          "XL",
+          "XXL"
+        ]
+      }
+    ],
+    "sizeGuide": true,
+    "description": "Sample description for sleeveless faneela, white. Replace with the real fabric, fit and care details.",
+    "metaDescription": "Sleeveless Faneela, White at Dressly.",
+    "related": [
+      "cotton-faneela-white",
+      "fitted-faneela-off-white",
+      "everyday-cotton-jalabiya-pale-blue"
+    ]
+  },
+  {
+    "slug": "woven-wuzar-white",
+    "name": "Woven Wuzar, White",
+    "colour": "White",
+    "category": "Wuzar",
+    "price": 75,
+    "categorySlug": "wuzar",
+    "options": [
+      {
+        "label": "Size",
+        "values": [
+          "Free Size"
+        ]
+      }
+    ],
+    "sizeGuide": false,
+    "description": "Sample description for woven wuzar, white. Replace with the real fabric, fit and care details.",
+    "metaDescription": "Woven Wuzar, White at Dressly.",
+    "related": [
+      "fine-border-wuzar-ivory",
+      "soft-cotton-wuzar-white",
+      "everyday-cotton-jalabiya-pale-blue"
+    ]
+  },
+  {
+    "slug": "fine-border-wuzar-ivory",
+    "name": "Fine Border Wuzar, Ivory",
+    "colour": "Ivory",
+    "category": "Wuzar",
+    "price": 105,
+    "categorySlug": "wuzar",
+    "options": [
+      {
+        "label": "Size",
+        "values": [
+          "Free Size"
+        ]
+      }
+    ],
+    "sizeGuide": false,
+    "description": "Sample description for fine border wuzar, ivory. Replace with the real fabric, fit and care details.",
+    "metaDescription": "Fine Border Wuzar, Ivory at Dressly.",
+    "related": [
+      "woven-wuzar-white",
+      "soft-cotton-wuzar-white",
+      "everyday-cotton-jalabiya-pale-blue"
+    ]
+  },
+  {
+    "slug": "soft-cotton-wuzar-white",
+    "name": "Soft Cotton Wuzar, White",
+    "colour": "White",
+    "category": "Wuzar",
+    "price": 135,
+    "categorySlug": "wuzar",
+    "options": [
+      {
+        "label": "Size",
+        "values": [
+          "Free Size"
+        ]
+      }
+    ],
+    "sizeGuide": false,
+    "description": "Sample description for soft cotton wuzar, white. Replace with the real fabric, fit and care details.",
+    "metaDescription": "Soft Cotton Wuzar, White at Dressly.",
+    "related": [
+      "woven-wuzar-white",
+      "fine-border-wuzar-ivory",
+      "everyday-cotton-jalabiya-pale-blue"
+    ]
+  },
+  {
+    "slug": "cotton-lounge-salwar-white",
+    "name": "Cotton Lounge Salwar, White",
+    "colour": "White",
+    "category": "Trunks and Salwar",
+    "price": 65,
+    "categorySlug": "trunks-salwar",
+    "options": [
+      {
+        "label": "Size",
+        "values": [
+          "S",
+          "M",
+          "L",
+          "XL",
+          "XXL"
+        ]
+      }
+    ],
+    "sizeGuide": true,
+    "description": "Sample description for cotton lounge salwar, white. Replace with the real fabric, fit and care details.",
+    "metaDescription": "Cotton Lounge Salwar, White at Dressly.",
+    "related": [
+      "drawstring-salwar-off-white",
+      "comfort-trunk-white",
+      "everyday-cotton-jalabiya-pale-blue"
+    ]
+  },
+  {
+    "slug": "drawstring-salwar-off-white",
+    "name": "Drawstring Salwar, Off-White",
+    "colour": "Off-White",
+    "category": "Trunks and Salwar",
+    "price": 95,
+    "categorySlug": "trunks-salwar",
+    "options": [
+      {
+        "label": "Size",
+        "values": [
+          "S",
+          "M",
+          "L",
+          "XL",
+          "XXL"
+        ]
+      }
+    ],
+    "sizeGuide": true,
+    "description": "Sample description for drawstring salwar, off-white. Replace with the real fabric, fit and care details.",
+    "metaDescription": "Drawstring Salwar, Off-White at Dressly.",
+    "related": [
+      "cotton-lounge-salwar-white",
+      "comfort-trunk-white",
+      "everyday-cotton-jalabiya-pale-blue"
+    ]
+  },
+  {
+    "slug": "comfort-trunk-white",
+    "name": "Comfort Trunk, White",
+    "colour": "White",
+    "category": "Trunks and Salwar",
+    "price": 125,
+    "categorySlug": "trunks-salwar",
+    "options": [
+      {
+        "label": "Size",
+        "values": [
+          "S",
+          "M",
+          "L",
+          "XL",
+          "XXL"
+        ]
+      }
+    ],
+    "sizeGuide": true,
+    "description": "Sample description for comfort trunk, white. Replace with the real fabric, fit and care details.",
+    "metaDescription": "Comfort Trunk, White at Dressly.",
+    "related": [
+      "cotton-lounge-salwar-white",
+      "drawstring-salwar-off-white",
+      "everyday-cotton-jalabiya-pale-blue"
+    ]
+  },
+  {
+    "slug": "classic-check-shimagh-red-and-white",
+    "name": "Classic Check Shimagh, Red and White",
+    "colour": "Red and White",
+    "category": "Shimagh and Ghutra",
+    "price": 130,
+    "categorySlug": "shimagh-ghutra",
+    "options": [
+      {
+        "label": "Colour",
+        "values": [
+          "Red and White",
+          "White"
+        ]
+      }
+    ],
+    "sizeGuide": false,
+    "description": "Sample description for classic check shimagh, red and white. Replace with the real fabric, fit and care details.",
+    "metaDescription": "Classic Check Shimagh, Red and White at Dressly.",
+    "related": [
+      "fine-weave-shimagh-red-and-white",
+      "plain-everyday-ghutra-white",
+      "crisp-cotton-ghutra-white"
+    ]
+  },
+  {
+    "slug": "fine-weave-shimagh-red-and-white",
+    "name": "Fine Weave Shimagh, Red and White",
+    "colour": "Red and White",
+    "category": "Shimagh and Ghutra",
+    "price": 160,
+    "categorySlug": "shimagh-ghutra",
+    "options": [
+      {
+        "label": "Colour",
+        "values": [
+          "Red and White",
+          "White"
+        ]
+      }
+    ],
+    "sizeGuide": false,
+    "description": "Sample description for fine weave shimagh, red and white. Replace with the real fabric, fit and care details.",
+    "metaDescription": "Fine Weave Shimagh, Red and White at Dressly.",
+    "related": [
+      "classic-check-shimagh-red-and-white",
+      "plain-everyday-ghutra-white",
+      "crisp-cotton-ghutra-white"
+    ]
+  },
+  {
+    "slug": "plain-everyday-ghutra-white",
+    "name": "Plain Everyday Ghutra, White",
+    "colour": "White",
+    "category": "Shimagh and Ghutra",
+    "price": 190,
+    "categorySlug": "shimagh-ghutra",
+    "options": [
+      {
+        "label": "Colour",
+        "values": [
+          "Red and White",
+          "White"
+        ]
+      }
+    ],
+    "sizeGuide": false,
+    "description": "Sample description for plain everyday ghutra, white. Replace with the real fabric, fit and care details.",
+    "metaDescription": "Plain Everyday Ghutra, White at Dressly.",
+    "related": [
+      "classic-check-shimagh-red-and-white",
+      "fine-weave-shimagh-red-and-white",
+      "crisp-cotton-ghutra-white"
+    ]
+  },
+  {
+    "slug": "crisp-cotton-ghutra-white",
+    "name": "Crisp Cotton Ghutra, White",
+    "colour": "White",
+    "category": "Ghutra",
+    "price": 110,
+    "categorySlug": "ghutra",
+    "options": [
+      {
+        "label": "Colour",
+        "values": [
+          "White",
+          "Ivory"
+        ]
+      }
+    ],
+    "sizeGuide": false,
+    "description": "Sample description for crisp cotton ghutra, white. Replace with the real fabric, fit and care details.",
+    "metaDescription": "Crisp Cotton Ghutra, White at Dressly.",
+    "related": [
+      "soft-finish-ghutra-ivory",
+      "fine-embroidered-edge-ghutra-white",
+      "classic-check-shimagh-red-and-white"
+    ]
+  },
+  {
+    "slug": "soft-finish-ghutra-ivory",
+    "name": "Soft Finish Ghutra, Ivory",
+    "colour": "Ivory",
+    "category": "Ghutra",
+    "price": 140,
+    "categorySlug": "ghutra",
+    "options": [
+      {
+        "label": "Colour",
+        "values": [
+          "White",
+          "Ivory"
+        ]
+      }
+    ],
+    "sizeGuide": false,
+    "description": "Sample description for soft finish ghutra, ivory. Replace with the real fabric, fit and care details.",
+    "metaDescription": "Soft Finish Ghutra, Ivory at Dressly.",
+    "related": [
+      "crisp-cotton-ghutra-white",
+      "fine-embroidered-edge-ghutra-white",
+      "classic-check-shimagh-red-and-white"
+    ]
+  },
+  {
+    "slug": "fine-embroidered-edge-ghutra-white",
+    "name": "Fine Embroidered-Edge Ghutra, White",
+    "colour": "White",
+    "category": "Ghutra",
+    "price": 170,
+    "categorySlug": "ghutra",
+    "options": [
+      {
+        "label": "Colour",
+        "values": [
+          "White",
+          "Ivory"
+        ]
+      }
+    ],
+    "sizeGuide": false,
+    "description": "Sample description for fine embroidered-edge ghutra, white. Replace with the real fabric, fit and care details.",
+    "metaDescription": "Fine Embroidered-Edge Ghutra, White at Dressly.",
+    "related": [
+      "crisp-cotton-ghutra-white",
+      "soft-finish-ghutra-ivory",
+      "classic-check-shimagh-red-and-white"
+    ]
+  },
+  {
+    "slug": "patterned-yashmagh-black-and-white",
+    "name": "Patterned Yashmagh, Black and White",
+    "colour": "Black and White",
+    "category": "Yashmagh",
+    "price": 120,
+    "categorySlug": "yashmagh",
+    "options": [
+      {
+        "label": "Colour",
+        "values": [
+          "Black and White",
+          "Red and White"
+        ]
+      }
+    ],
+    "sizeGuide": false,
+    "description": "Sample description for patterned yashmagh, black and white. Replace with the real fabric, fit and care details.",
+    "metaDescription": "Patterned Yashmagh, Black and White at Dressly.",
+    "related": [
+      "fine-check-yashmagh-red-and-white",
+      "soft-woven-yashmagh-black-and-white",
+      "classic-check-shimagh-red-and-white"
+    ]
+  },
+  {
+    "slug": "fine-check-yashmagh-red-and-white",
+    "name": "Fine Check Yashmagh, Red and White",
+    "colour": "Red and White",
+    "category": "Yashmagh",
+    "price": 150,
+    "categorySlug": "yashmagh",
+    "options": [
+      {
+        "label": "Colour",
+        "values": [
+          "Black and White",
+          "Red and White"
+        ]
+      }
+    ],
+    "sizeGuide": false,
+    "description": "Sample description for fine check yashmagh, red and white. Replace with the real fabric, fit and care details.",
+    "metaDescription": "Fine Check Yashmagh, Red and White at Dressly.",
+    "related": [
+      "patterned-yashmagh-black-and-white",
+      "soft-woven-yashmagh-black-and-white",
+      "classic-check-shimagh-red-and-white"
+    ]
+  },
+  {
+    "slug": "soft-woven-yashmagh-black-and-white",
+    "name": "Soft Woven Yashmagh, Black and White",
+    "colour": "Black and White",
+    "category": "Yashmagh",
+    "price": 180,
+    "categorySlug": "yashmagh",
+    "options": [
+      {
+        "label": "Colour",
+        "values": [
+          "Black and White",
+          "Red and White"
+        ]
+      }
+    ],
+    "sizeGuide": false,
+    "description": "Sample description for soft woven yashmagh, black and white. Replace with the real fabric, fit and care details.",
+    "metaDescription": "Soft Woven Yashmagh, Black and White at Dressly.",
+    "related": [
+      "patterned-yashmagh-black-and-white",
+      "fine-check-yashmagh-red-and-white",
+      "classic-check-shimagh-red-and-white"
+    ]
+  },
+  {
+    "slug": "classic-braided-egal-black",
+    "name": "Classic Braided Egal, Black",
+    "colour": "Black",
+    "category": "Egal",
+    "price": 70,
+    "categorySlug": "egal",
+    "options": [
+      {
+        "label": "Size",
+        "values": [
+          "Free Size"
+        ]
+      }
+    ],
+    "sizeGuide": false,
+    "description": "Sample description for classic braided egal, black. Replace with the real fabric, fit and care details.",
+    "metaDescription": "Classic Braided Egal, Black at Dressly.",
+    "related": [
+      "slim-braided-egal-black",
+      "tasselled-egal-dark-brown",
+      "classic-check-shimagh-red-and-white"
+    ]
+  },
+  {
+    "slug": "slim-braided-egal-black",
+    "name": "Slim Braided Egal, Black",
+    "colour": "Black",
+    "category": "Egal",
+    "price": 100,
+    "categorySlug": "egal",
+    "options": [
+      {
+        "label": "Size",
+        "values": [
+          "Free Size"
+        ]
+      }
+    ],
+    "sizeGuide": false,
+    "description": "Sample description for slim braided egal, black. Replace with the real fabric, fit and care details.",
+    "metaDescription": "Slim Braided Egal, Black at Dressly.",
+    "related": [
+      "classic-braided-egal-black",
+      "tasselled-egal-dark-brown",
+      "classic-check-shimagh-red-and-white"
+    ]
+  },
+  {
+    "slug": "tasselled-egal-dark-brown",
+    "name": "Tasselled Egal, Dark Brown",
+    "colour": "Dark Brown",
+    "category": "Egal",
+    "price": 130,
+    "categorySlug": "egal",
+    "options": [
+      {
+        "label": "Size",
+        "values": [
+          "Free Size"
+        ]
+      }
+    ],
+    "sizeGuide": false,
+    "description": "Sample description for tasselled egal, dark brown. Replace with the real fabric, fit and care details.",
+    "metaDescription": "Tasselled Egal, Dark Brown at Dressly.",
+    "related": [
+      "classic-braided-egal-black",
+      "slim-braided-egal-black",
+      "classic-check-shimagh-red-and-white"
+    ]
+  },
+  {
+    "slug": "scented-cord-tarboosh-white",
+    "name": "Scented Cord Tarboosh, White",
+    "colour": "White",
+    "category": "Tarboosh",
+    "price": 85,
+    "categorySlug": "tarboosh",
+    "options": [
+      {
+        "label": "Size",
+        "values": [
+          "Free Size"
+        ]
+      }
+    ],
+    "sizeGuide": false,
+    "description": "Sample description for scented cord tarboosh, white. Replace with the real fabric, fit and care details.",
+    "metaDescription": "Scented Cord Tarboosh, White at Dressly.",
+    "related": [
+      "long-tassel-tarboosh-cream",
+      "fine-twist-tarboosh-white",
+      "classic-check-shimagh-red-and-white"
+    ]
+  },
+  {
+    "slug": "long-tassel-tarboosh-cream",
+    "name": "Long Tassel Tarboosh, Cream",
+    "colour": "Cream",
+    "category": "Tarboosh",
+    "price": 115,
+    "categorySlug": "tarboosh",
+    "options": [
+      {
+        "label": "Size",
+        "values": [
+          "Free Size"
+        ]
+      }
+    ],
+    "sizeGuide": false,
+    "description": "Sample description for long tassel tarboosh, cream. Replace with the real fabric, fit and care details.",
+    "metaDescription": "Long Tassel Tarboosh, Cream at Dressly.",
+    "related": [
+      "scented-cord-tarboosh-white",
+      "fine-twist-tarboosh-white",
+      "classic-check-shimagh-red-and-white"
+    ]
+  },
+  {
+    "slug": "fine-twist-tarboosh-white",
+    "name": "Fine Twist Tarboosh, White",
+    "colour": "White",
+    "category": "Tarboosh",
+    "price": 145,
+    "categorySlug": "tarboosh",
+    "options": [
+      {
+        "label": "Size",
+        "values": [
+          "Free Size"
+        ]
+      }
+    ],
+    "sizeGuide": false,
+    "description": "Sample description for fine twist tarboosh, white. Replace with the real fabric, fit and care details.",
+    "metaDescription": "Fine Twist Tarboosh, White at Dressly.",
+    "related": [
+      "scented-cord-tarboosh-white",
+      "long-tassel-tarboosh-cream",
+      "classic-check-shimagh-red-and-white"
+    ]
+  },
+  {
+    "slug": "knit-kufi-white",
+    "name": "Knit Kufi, White",
+    "colour": "White",
+    "category": "Kufi and Prayer Caps",
+    "price": 45,
+    "categorySlug": "kufi-caps",
+    "options": [
+      {
+        "label": "Size",
+        "values": [
+          "Free Size"
+        ]
+      }
+    ],
+    "sizeGuide": false,
+    "description": "Sample description for knit kufi, white. Replace with the real fabric, fit and care details.",
+    "metaDescription": "Knit Kufi, White at Dressly.",
+    "related": [
+      "fine-mesh-prayer-cap-white",
+      "soft-stitched-cap-ivory",
+      "classic-check-shimagh-red-and-white"
+    ]
+  },
+  {
+    "slug": "fine-mesh-prayer-cap-white",
+    "name": "Fine Mesh Prayer Cap, White",
+    "colour": "White",
+    "category": "Kufi and Prayer Caps",
+    "price": 75,
+    "categorySlug": "kufi-caps",
+    "options": [
+      {
+        "label": "Size",
+        "values": [
+          "Free Size"
+        ]
+      }
+    ],
+    "sizeGuide": false,
+    "description": "Sample description for fine mesh prayer cap, white. Replace with the real fabric, fit and care details.",
+    "metaDescription": "Fine Mesh Prayer Cap, White at Dressly.",
+    "related": [
+      "knit-kufi-white",
+      "soft-stitched-cap-ivory",
+      "classic-check-shimagh-red-and-white"
+    ]
+  },
+  {
+    "slug": "soft-stitched-cap-ivory",
+    "name": "Soft Stitched Cap, Ivory",
+    "colour": "Ivory",
+    "category": "Kufi and Prayer Caps",
+    "price": 105,
+    "categorySlug": "kufi-caps",
+    "options": [
+      {
+        "label": "Size",
+        "values": [
+          "Free Size"
+        ]
+      }
+    ],
+    "sizeGuide": false,
+    "description": "Sample description for soft stitched cap, ivory. Replace with the real fabric, fit and care details.",
+    "metaDescription": "Soft Stitched Cap, Ivory at Dressly.",
+    "related": [
+      "knit-kufi-white",
+      "fine-mesh-prayer-cap-white",
+      "classic-check-shimagh-red-and-white"
+    ]
+  },
+  {
+    "slug": "classic-leather-sandal-brown",
+    "name": "Classic Leather Sandal, Brown",
+    "colour": "Brown",
+    "category": "Arabic Sandals",
+    "price": 240,
+    "categorySlug": "arabic-sandals",
+    "options": [
+      {
+        "label": "EU size",
+        "values": [
+          "41",
+          "42",
+          "43",
+          "44",
+          "45",
+          "46"
+        ]
+      }
+    ],
+    "sizeGuide": true,
+    "description": "Sample description for classic leather sandal, brown. Replace with the real fabric, fit and care details.",
+    "metaDescription": "Classic Leather Sandal, Brown at Dressly.",
+    "related": [
+      "double-strap-sandal-black",
+      "hand-stitched-sandal-tan"
+    ]
+  },
+  {
+    "slug": "double-strap-sandal-black",
+    "name": "Double Strap Sandal, Black",
+    "colour": "Black",
+    "category": "Arabic Sandals",
+    "price": 270,
+    "categorySlug": "arabic-sandals",
+    "options": [
+      {
+        "label": "EU size",
+        "values": [
+          "41",
+          "42",
+          "43",
+          "44",
+          "45",
+          "46"
+        ]
+      }
+    ],
+    "sizeGuide": true,
+    "description": "Sample description for double strap sandal, black. Replace with the real fabric, fit and care details.",
+    "metaDescription": "Double Strap Sandal, Black at Dressly.",
+    "related": [
+      "classic-leather-sandal-brown",
+      "hand-stitched-sandal-tan"
+    ]
+  },
+  {
+    "slug": "hand-stitched-sandal-tan",
+    "name": "Hand-Stitched Sandal, Tan",
+    "colour": "Tan",
+    "category": "Arabic Sandals",
+    "price": 300,
+    "categorySlug": "arabic-sandals",
+    "options": [
+      {
+        "label": "EU size",
+        "values": [
+          "41",
+          "42",
+          "43",
+          "44",
+          "45",
+          "46"
+        ]
+      }
+    ],
+    "sizeGuide": true,
+    "description": "Sample description for hand-stitched sandal, tan. Replace with the real fabric, fit and care details.",
+    "metaDescription": "Hand-Stitched Sandal, Tan at Dressly.",
+    "related": [
+      "classic-leather-sandal-brown",
+      "double-strap-sandal-black"
+    ]
+  },
+  {
+    "slug": "oud-reserve-eau-de-parfum-amber",
+    "name": "Oud Reserve Eau de Parfum, Amber",
+    "colour": "Amber",
+    "category": "Perfumes",
+    "price": 260,
+    "categorySlug": "perfumes",
+    "options": [
+      {
+        "label": "Volume",
+        "values": [
+          "50 ml",
+          "100 ml"
+        ]
+      }
+    ],
+    "sizeGuide": false,
+    "description": "Sample description for oud reserve eau de parfum, amber. Replace with the real fabric, fit and care details.",
+    "metaDescription": "Oud Reserve Eau de Parfum, Amber at Dressly.",
+    "related": [
+      "citrus-musk-eau-de-parfum-gold",
+      "rose-amber-eau-de-parfum-rose",
+      "leather-bifold-wallet-brown"
+    ]
+  },
+  {
+    "slug": "citrus-musk-eau-de-parfum-gold",
+    "name": "Citrus Musk Eau de Parfum, Gold",
+    "colour": "Gold",
+    "category": "Perfumes",
+    "price": 290,
+    "categorySlug": "perfumes",
+    "options": [
+      {
+        "label": "Volume",
+        "values": [
+          "50 ml",
+          "100 ml"
+        ]
+      }
+    ],
+    "sizeGuide": false,
+    "description": "Sample description for citrus musk eau de parfum, gold. Replace with the real fabric, fit and care details.",
+    "metaDescription": "Citrus Musk Eau de Parfum, Gold at Dressly.",
+    "related": [
+      "oud-reserve-eau-de-parfum-amber",
+      "rose-amber-eau-de-parfum-rose",
+      "leather-bifold-wallet-brown"
+    ]
+  },
+  {
+    "slug": "rose-amber-eau-de-parfum-rose",
+    "name": "Rose Amber Eau de Parfum, Rose",
+    "colour": "Rose",
+    "category": "Perfumes",
+    "price": 320,
+    "categorySlug": "perfumes",
+    "options": [
+      {
+        "label": "Volume",
+        "values": [
+          "50 ml",
+          "100 ml"
+        ]
+      }
+    ],
+    "sizeGuide": false,
+    "description": "Sample description for rose amber eau de parfum, rose. Replace with the real fabric, fit and care details.",
+    "metaDescription": "Rose Amber Eau de Parfum, Rose at Dressly.",
+    "related": [
+      "oud-reserve-eau-de-parfum-amber",
+      "citrus-musk-eau-de-parfum-gold",
+      "leather-bifold-wallet-brown"
+    ]
+  },
+  {
+    "slug": "leather-bifold-wallet-brown",
+    "name": "Leather Bifold Wallet, Brown",
+    "colour": "Brown",
+    "category": "Wallets",
+    "price": 180,
+    "categorySlug": "wallets",
+    "options": [
+      {
+        "label": "Colour",
+        "values": [
+          "Brown",
+          "Black"
+        ]
+      }
+    ],
+    "sizeGuide": false,
+    "description": "Sample description for leather bifold wallet, brown. Replace with the real fabric, fit and care details.",
+    "metaDescription": "Leather Bifold Wallet, Brown at Dressly.",
+    "related": [
+      "slim-card-wallet-black",
+      "travel-zip-wallet-dark-brown",
+      "oud-reserve-eau-de-parfum-amber"
+    ]
+  },
+  {
+    "slug": "slim-card-wallet-black",
+    "name": "Slim Card Wallet, Black",
+    "colour": "Black",
+    "category": "Wallets",
+    "price": 210,
+    "categorySlug": "wallets",
+    "options": [
+      {
+        "label": "Colour",
+        "values": [
+          "Brown",
+          "Black"
+        ]
+      }
+    ],
+    "sizeGuide": false,
+    "description": "Sample description for slim card wallet, black. Replace with the real fabric, fit and care details.",
+    "metaDescription": "Slim Card Wallet, Black at Dressly.",
+    "related": [
+      "leather-bifold-wallet-brown",
+      "travel-zip-wallet-dark-brown",
+      "oud-reserve-eau-de-parfum-amber"
+    ]
+  },
+  {
+    "slug": "travel-zip-wallet-dark-brown",
+    "name": "Travel Zip Wallet, Dark Brown",
+    "colour": "Dark Brown",
+    "category": "Wallets",
+    "price": 240,
+    "categorySlug": "wallets",
+    "options": [
+      {
+        "label": "Colour",
+        "values": [
+          "Brown",
+          "Black"
+        ]
+      }
+    ],
+    "sizeGuide": false,
+    "description": "Sample description for travel zip wallet, dark brown. Replace with the real fabric, fit and care details.",
+    "metaDescription": "Travel Zip Wallet, Dark Brown at Dressly.",
+    "related": [
+      "leather-bifold-wallet-brown",
+      "slim-card-wallet-black",
+      "oud-reserve-eau-de-parfum-amber"
+    ]
+  },
+  {
+    "slug": "digital-gift-card-ivory",
+    "name": "Digital Gift Card",
+    "colour": "Ivory",
+    "category": "Gift Card",
+    "price": 500,
+    "categorySlug": "gift-card",
+    "options": [
+      {
+        "label": "Amount",
+        "values": [
+          "AED 250",
+          "AED 500",
+          "AED 1,000",
+          "AED 2,000"
+        ]
+      }
+    ],
+    "sizeGuide": false,
+    "description": "Sample description for digital gift card. Replace with the real fabric, fit and care details.",
+    "metaDescription": "Digital Gift Card at Dressly.",
+    "related": []
+  }
+]

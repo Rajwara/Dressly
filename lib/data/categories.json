@@ -1,0 +1,420 @@
+[
+  {
+    "slug": "adult-thobes",
+    "title": "Adult Thobes",
+    "group": "Kandura and Thobe",
+    "siblings": [
+      "kandura-thobes",
+      "adult-thobes",
+      "traditional-kandura",
+      "summer-thobes"
+    ],
+    "products": [
+      "stand-collar-thobe-white",
+      "button-placket-thobe-stone",
+      "formal-cuffed-thobe-olive"
+    ]
+  },
+  {
+    "slug": "arabian-casuals",
+    "title": "Arabian Casuals",
+    "group": "Casual and underwear",
+    "siblings": [
+      "jalabiya",
+      "arabian-casuals",
+      "faneela",
+      "wuzar",
+      "trunks-salwar"
+    ],
+    "products": [
+      "relaxed-short-sleeve-tunic-stone",
+      "weekend-band-collar-tunic-olive",
+      "cotton-lounge-tunic-white"
+    ]
+  },
+  {
+    "slug": "arabic-sandals",
+    "title": "Arabic Sandals",
+    "group": "Footwear",
+    "siblings": [
+      "arabic-sandals"
+    ],
+    "products": [
+      "classic-leather-sandal-brown",
+      "double-strap-sandal-black",
+      "hand-stitched-sandal-tan"
+    ]
+  },
+  {
+    "slug": "bisht",
+    "title": "Bisht",
+    "group": "Outerwear",
+    "siblings": [
+      "kandura-jackets",
+      "saderi",
+      "bisht",
+      "shawls"
+    ],
+    "products": [
+      "occasion-bisht-black",
+      "lightweight-bisht-camel",
+      "formal-trim-bisht-dark-brown"
+    ]
+  },
+  {
+    "slug": "egal",
+    "title": "Egal",
+    "group": "Headwear",
+    "siblings": [
+      "shimagh-ghutra",
+      "ghutra",
+      "yashmagh",
+      "egal",
+      "tarboosh",
+      "kufi-caps"
+    ],
+    "products": [
+      "classic-braided-egal-black",
+      "slim-braided-egal-black",
+      "tasselled-egal-dark-brown"
+    ]
+  },
+  {
+    "slug": "faneela",
+    "title": "Faneela (Undershirts)",
+    "group": "Casual and underwear",
+    "siblings": [
+      "jalabiya",
+      "arabian-casuals",
+      "faneela",
+      "wuzar",
+      "trunks-salwar"
+    ],
+    "products": [
+      "cotton-faneela-white",
+      "fitted-faneela-off-white",
+      "sleeveless-faneela-white"
+    ]
+  },
+  {
+    "slug": "ghutra",
+    "title": "Ghutra",
+    "group": "Headwear",
+    "siblings": [
+      "shimagh-ghutra",
+      "ghutra",
+      "yashmagh",
+      "egal",
+      "tarboosh",
+      "kufi-caps"
+    ],
+    "products": [
+      "crisp-cotton-ghutra-white",
+      "soft-finish-ghutra-ivory",
+      "fine-embroidered-edge-ghutra-white"
+    ]
+  },
+  {
+    "slug": "gift-card",
+    "title": "Gift Card",
+    "group": "Gifts",
+    "siblings": [
+      "gift-card"
+    ],
+    "products": [
+      "digital-gift-card-ivory"
+    ]
+  },
+  {
+    "slug": "jalabiya",
+    "title": "Jalabiya",
+    "group": "Casual and underwear",
+    "siblings": [
+      "jalabiya",
+      "arabian-casuals",
+      "faneela",
+      "wuzar",
+      "trunks-salwar"
+    ],
+    "products": [
+      "everyday-cotton-jalabiya-pale-blue",
+      "relaxed-hooded-jalabiya-sand",
+      "light-home-jalabiya-white"
+    ]
+  },
+  {
+    "slug": "kandura-jackets",
+    "title": "Kandura Jackets",
+    "group": "Outerwear",
+    "siblings": [
+      "kandura-jackets",
+      "saderi",
+      "bisht",
+      "shawls"
+    ],
+    "products": [
+      "tailored-layering-jacket-charcoal",
+      "soft-wool-blend-jacket-navy",
+      "open-front-jacket-olive"
+    ]
+  },
+  {
+    "slug": "kandura-thobes",
+    "title": "All Kandura and Thobes",
+    "group": "Kandura and Thobe",
+    "siblings": [
+      "kandura-thobes",
+      "adult-thobes",
+      "traditional-kandura",
+      "summer-thobes"
+    ],
+    "products": [
+      "classic-round-collar-kandura-ivory",
+      "tailored-tasselled-kandura-sand",
+      "soft-weave-kandura-slate"
+    ]
+  },
+  {
+    "slug": "kids-clothing",
+    "title": "Kids Clothing",
+    "group": "Kids",
+    "siblings": [
+      "kids-clothing",
+      "kids-headwear",
+      "kids-footwear"
+    ],
+    "products": [
+      "boys-round-collar-kandura-white",
+      "boys-stand-collar-thobe-cream",
+      "boys-occasion-kandura-sand"
+    ]
+  },
+  {
+    "slug": "kids-footwear",
+    "title": "Kids Footwear",
+    "group": "Kids",
+    "siblings": [
+      "kids-clothing",
+      "kids-headwear",
+      "kids-footwear"
+    ],
+    "products": [
+      "kids-leather-sandal-tan",
+      "kids-strap-sandal-brown",
+      "kids-occasion-sandal-black"
+    ]
+  },
+  {
+    "slug": "kids-headwear",
+    "title": "Kids Shimagh and Ghutra",
+    "group": "Kids",
+    "siblings": [
+      "kids-clothing",
+      "kids-headwear",
+      "kids-footwear"
+    ],
+    "products": [
+      "kids-check-shimagh-red-and-white",
+      "kids-plain-ghutra-white",
+      "kids-soft-cotton-ghutra-ivory"
+    ]
+  },
+  {
+    "slug": "kufi-caps",
+    "title": "Kufi and Prayer Caps",
+    "group": "Headwear",
+    "siblings": [
+      "shimagh-ghutra",
+      "ghutra",
+      "yashmagh",
+      "egal",
+      "tarboosh",
+      "kufi-caps"
+    ],
+    "products": [
+      "knit-kufi-white",
+      "fine-mesh-prayer-cap-white",
+      "soft-stitched-cap-ivory"
+    ]
+  },
+  {
+    "slug": "perfumes",
+    "title": "Perfumes",
+    "group": "Accessories",
+    "siblings": [
+      "perfumes",
+      "wallets"
+    ],
+    "products": [
+      "oud-reserve-eau-de-parfum-amber",
+      "citrus-musk-eau-de-parfum-gold",
+      "rose-amber-eau-de-parfum-rose"
+    ]
+  },
+  {
+    "slug": "saderi",
+    "title": "Saderi (Sleeveless Jackets)",
+    "group": "Outerwear",
+    "siblings": [
+      "kandura-jackets",
+      "saderi",
+      "bisht",
+      "shawls"
+    ],
+    "products": [
+      "stitched-saderi-olive",
+      "fine-weave-saderi-black",
+      "plain-saderi-grey"
+    ]
+  },
+  {
+    "slug": "shawls",
+    "title": "Shawls",
+    "group": "Outerwear",
+    "siblings": [
+      "kandura-jackets",
+      "saderi",
+      "bisht",
+      "shawls"
+    ],
+    "products": [
+      "wool-blend-shawl-camel",
+      "soft-check-shawl-olive",
+      "plain-winter-shawl-charcoal"
+    ]
+  },
+  {
+    "slug": "shimagh-ghutra",
+    "title": "Shimagh and Ghutra",
+    "group": "Headwear",
+    "siblings": [
+      "shimagh-ghutra",
+      "ghutra",
+      "yashmagh",
+      "egal",
+      "tarboosh",
+      "kufi-caps"
+    ],
+    "products": [
+      "classic-check-shimagh-red-and-white",
+      "fine-weave-shimagh-red-and-white",
+      "plain-everyday-ghutra-white"
+    ]
+  },
+  {
+    "slug": "summer-thobes",
+    "title": "Summer Thobes",
+    "group": "Kandura and Thobe",
+    "siblings": [
+      "kandura-thobes",
+      "adult-thobes",
+      "traditional-kandura",
+      "summer-thobes"
+    ],
+    "products": [
+      "breathable-cotton-thobe-white",
+      "lightweight-linen-blend-thobe-pale-blue",
+      "airy-short-collar-thobe-sand"
+    ]
+  },
+  {
+    "slug": "tarboosh",
+    "title": "Tarboosh",
+    "group": "Headwear",
+    "siblings": [
+      "shimagh-ghutra",
+      "ghutra",
+      "yashmagh",
+      "egal",
+      "tarboosh",
+      "kufi-caps"
+    ],
+    "products": [
+      "scented-cord-tarboosh-white",
+      "long-tassel-tarboosh-cream",
+      "fine-twist-tarboosh-white"
+    ]
+  },
+  {
+    "slug": "traditional-kandura",
+    "title": "Traditional Kandura",
+    "group": "Kandura and Thobe",
+    "siblings": [
+      "kandura-thobes",
+      "adult-thobes",
+      "traditional-kandura",
+      "summer-thobes"
+    ],
+    "products": [
+      "heritage-tassel-kandura-white",
+      "hand-finished-neck-kandura-cream",
+      "heritage-cuff-kandura-taupe"
+    ]
+  },
+  {
+    "slug": "trunks-salwar",
+    "title": "Trunks and Salwar",
+    "group": "Casual and underwear",
+    "siblings": [
+      "jalabiya",
+      "arabian-casuals",
+      "faneela",
+      "wuzar",
+      "trunks-salwar"
+    ],
+    "products": [
+      "cotton-lounge-salwar-white",
+      "drawstring-salwar-off-white",
+      "comfort-trunk-white"
+    ]
+  },
+  {
+    "slug": "wallets",
+    "title": "Wallets",
+    "group": "Accessories",
+    "siblings": [
+      "perfumes",
+      "wallets"
+    ],
+    "products": [
+      "leather-bifold-wallet-brown",
+      "slim-card-wallet-black",
+      "travel-zip-wallet-dark-brown"
+    ]
+  },
+  {
+    "slug": "wuzar",
+    "title": "Wuzar",
+    "group": "Casual and underwear",
+    "siblings": [
+      "jalabiya",
+      "arabian-casuals",
+      "faneela",
+      "wuzar",
+      "trunks-salwar"
+    ],
+    "products": [
+      "woven-wuzar-white",
+      "fine-border-wuzar-ivory",
+      "soft-cotton-wuzar-white"
+    ]
+  },
+  {
+    "slug": "yashmagh",
+    "title": "Yashmagh",
+    "group": "Headwear",
+    "siblings": [
+      "shimagh-ghutra",
+      "ghutra",
+      "yashmagh",
+      "egal",
+      "tarboosh",
+      "kufi-caps"
+    ],
+    "products": [
+      "patterned-yashmagh-black-and-white",
+      "fine-check-yashmagh-red-and-white",
+      "soft-woven-yashmagh-black-and-white"
+    ]
+  }
+]
