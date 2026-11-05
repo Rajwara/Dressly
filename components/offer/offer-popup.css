@@ -1,0 +1,55 @@
+/* First-order offer popup. Self-contained: no page variables, so it works on every layout. */
+dialog.offer-pop{
+  --o-ink:#0b0b0b;--o-muted:#666;--o-line:#e2dcd3;--o-tint:#f4eee6;--o-gold:#b8925a;
+  --o-display:var(--font-big-shoulders),"Big Shoulders",Impact,sans-serif;
+  --o-body:var(--font-space-grotesk),"Space Grotesk",system-ui,sans-serif;
+  padding:0;border:0;max-width:780px;width:calc(100% - 32px);display:none;grid-template-columns:1fr 1fr;overflow:visible;
+  background:#fff;color:var(--o-ink);font:400 15px/1.5 var(--o-body);border-radius:16px;box-shadow:0 30px 80px #0005;
+}
+dialog.offer-pop[open]{display:grid;animation:offer-in .35s ease-out}
+dialog.offer-pop::backdrop{background:#0b0b0bb3}
+@keyframes offer-in{from{opacity:0;transform:translateY(14px) scale(.98)}to{opacity:1;transform:none}}
+@keyframes offer-up{from{transform:translateY(100%)}to{transform:none}}
+.offer-pop *{box-sizing:border-box}
+.offer-close{position:absolute;top:-14px;right:-14px;width:38px;height:38px;border-radius:50%;border:2px solid var(--o-ink);background:#fff;color:var(--o-ink);display:grid;place-items:center;cursor:pointer;z-index:2}
+.offer-close:hover{background:var(--o-ink);color:#fff}
+.offer-main{padding:44px 34px 30px;text-align:center;display:flex;flex-direction:column;justify-content:center}
+.offer-eyebrow{font:500 12px/1 var(--o-body);letter-spacing:.16em;text-transform:uppercase;color:var(--o-gold)}
+.offer-main h2{font:600 44px/1 var(--o-display);text-transform:uppercase;letter-spacing:-.02em;margin:10px 0 8px}
+.offer-valid{color:var(--o-muted);font-size:13.5px;margin:0 0 18px}
+.offer-tabs{display:grid;grid-template-columns:1fr 1fr;background:var(--o-tint);border-radius:999px;padding:4px;margin-bottom:12px}
+.offer-tabs button{border:0;background:none;padding:9px;border-radius:999px;font:500 14px var(--o-body);color:var(--o-muted);cursor:pointer}
+.offer-tabs button[aria-selected="true"]{background:#fff;color:var(--o-ink);box-shadow:0 1px 4px #0001}
+.offer-pop form{display:grid;gap:10px;margin:0}
+.offer-pop input{width:100%;padding:13px 14px;border:1px solid var(--o-line);border-radius:10px;font:400 15px var(--o-body);color:var(--o-ink);background:#fff}
+.offer-pop input:focus{outline:2px solid var(--o-ink);outline-offset:-1px}
+.offer-phone{display:flex;border:1px solid var(--o-line);border-radius:10px;overflow:hidden}
+.offer-phone span{display:grid;place-items:center;padding:0 12px;background:var(--o-tint);font-weight:500}
+.offer-phone input{border:0;border-radius:0}
+.offer-btn{border:0;background:var(--o-ink);color:#fff;padding:15px;border-radius:999px;font:500 15px var(--o-body);cursor:pointer}
+.offer-btn:disabled{opacity:.7}
+.offer-error{color:#b3261e;font-size:13px;margin:0}
+.offer-skip{margin-top:14px;background:none;border:0;color:var(--o-muted);font-size:12.5px;text-decoration:underline;cursor:pointer}
+.offer-switch{display:none;margin-top:10px;background:none;border:0;color:var(--o-ink);font-size:13px;text-decoration:underline;cursor:pointer}
+.offer-done{display:grid;gap:12px;justify-items:center}
+.offer-done p{color:var(--o-muted);margin:0}
+.offer-code{display:flex;align-items:center;gap:8px;border:1.5px dashed var(--o-gold);border-radius:12px;padding:8px 8px 8px 16px;width:100%;max-width:320px}
+.offer-code code{flex:1;font:600 26px/1 var(--o-display);letter-spacing:.06em;text-align:left;background:none}
+.offer-copy{padding:10px 16px;font-size:13.5px}
+.offer-side{background:linear-gradient(160deg,var(--o-tint),#e9dcc6);padding:36px 30px;display:flex;flex-direction:column;justify-content:center;border-radius:0 16px 16px 0}
+.offer-side img{height:46px;width:auto;align-self:flex-start;margin-bottom:16px}
+.offer-side h3{font:600 22px/1.15 var(--o-display);text-transform:uppercase;margin:0 0 20px}
+.offer-side h3 em{font-style:normal;color:var(--o-gold)}
+.offer-side ul{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+.offer-side li{display:flex;align-items:center;gap:11px;background:#fff;border-radius:30px;padding:9px 16px 9px 9px;font-size:13px;box-shadow:0 2px 6px #0000000d}
+.offer-side li span{flex:none;display:grid;place-items:center;width:26px;height:26px;border-radius:50%;background:var(--o-ink);color:#fff}
+/* Phones: bottom sheet, one field and one button */
+@media(max-width:640px){
+  dialog.offer-pop{margin:auto 0 0;width:100%;max-width:none;border-radius:20px 20px 0 0;max-height:90dvh;overflow:auto}
+  dialog.offer-pop[open]{grid-template-columns:1fr;animation:offer-up .3s ease-out}
+  .offer-close{top:10px;right:10px;width:34px;height:34px;border-width:1px}
+  .offer-main{padding:30px 20px calc(18px + env(safe-area-inset-bottom))}
+  .offer-main h2{font-size:34px}
+  .offer-side,.offer-tabs{display:none}
+  .offer-switch{display:inline}
+}

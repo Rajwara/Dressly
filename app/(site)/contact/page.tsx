@@ -6,7 +6,7 @@ import Link from "next/link";
 import BranchesMap from "@/components/blog/BranchesMap";
 import ContactForm from "@/components/blog/ContactForm";
 import DIcon, { type IconName } from "@/components/blog/Icons";
-import { BRANCHES, HOME_VISIT_URL, PHONE_DISPLAY, PHONE_TEL, SOCIALS, WHATSAPP_URL } from "@/lib/brand";
+import { BRANCHES, COMPANY, EMAIL, HEAD_OFFICE, HOME_VISIT_URL, HOURS, PHONE_DISPLAY, PHONE_TEL, REPLY_TIME, SOCIALS, WHATSAPP_URL } from "@/lib/brand";
 
 export const metadata: Metadata = {
   title: "Contact",
@@ -17,11 +17,12 @@ const SOCIAL_ICON: Record<string, IconName> = { instagram: "instagram", tiktok: 
 
 export default function ContactPage() {
   const pins = BRANCHES.flatMap((e) => e.branches.map((b) => ({ name: b.name, area: b.area, lat: b.lat, lng: b.lng })));
-  const rows: { icon: IconName; label: string; value: string; href?: string; external?: boolean }[] = [
-    { icon: "whatsapp", label: "WhatsApp us", value: PHONE_DISPLAY, href: WHATSAPP_URL, external: true },
-    { icon: "phone", label: "Call us", value: PHONE_DISPLAY, href: `tel:${PHONE_TEL}` },
-    { icon: "pin", label: "Visit us", value: "13 branches across 5 Emirates", href: "/branches" },
-    { icon: "home", label: "Home tailoring", value: "Book a visit to your home or majlis", href: HOME_VISIT_URL, external: true },
+  const hours = HOURS.map((h) => `${h.days} ${h.time}`).join(" · ");
+  const rows: { icon: IconName; label: string; value: string; note: string; href?: string; external?: boolean }[] = [
+    { icon: "whatsapp", label: "WhatsApp · fastest", value: PHONE_DISPLAY, note: REPLY_TIME || "The quickest way to reach us.", href: WHATSAPP_URL, external: true },
+    { icon: "phone", label: "Call us", value: PHONE_DISPLAY, note: hours, href: `tel:${PHONE_TEL}` },
+    { icon: "mail", label: "Email", value: EMAIL, note: "For orders, invoices and corporate enquiries.", href: `mailto:${EMAIL}` },
+    { icon: "pin", label: "Visit us", value: "13 branches across 5 Emirates", note: "Measurements, fabrics and ready-made pickup.", href: "/branches" },
   ];
 
   return (
@@ -30,7 +31,7 @@ export default function ContactPage() {
       <section className="page-hero">
         <span className="eyebrow eyebrow-dot">Contact us</span>
         <h1>Let&apos;s talk</h1>
-        <p>Questions about an order, fabric or fit? Message us and our team will get back to you as soon as we can.</p>
+        <p>Questions about an order, fabric or fit? WhatsApp is fastest{REPLY_TIME ? `: ${REPLY_TIME.charAt(0).toLowerCase()}${REPLY_TIME.slice(1)}` : "."}</p>
       </section>
 
       <section className="section">
@@ -56,6 +57,7 @@ export default function ContactPage() {
                         {r.value}
                       </a>
                     )}
+                    <div className="contact-note">{r.note}</div>
                   </div>
                 </li>
               ))}
@@ -81,6 +83,41 @@ export default function ContactPage() {
       </section>
 
       <section className="section section-tight-top">
+        <div className="container contact-extras">
+          <div className="visit-block">
+            <span className="eyebrow eyebrow-dot">Home tailoring</span>
+            <h2>Book a home visit</h2>
+            <p>A tailor comes to your home or majlis with fabric swatches and a measuring tape, anywhere across the Emirates we serve.</p>
+            <div className="visit-actions">
+              <a className="btn" href={HOME_VISIT_URL} target="_blank" rel="noopener noreferrer">
+                Book on WhatsApp <DIcon name="upRight" small />
+              </a>
+              <Link className="btn ghost" href="/home-tailoring">
+                How it works
+              </Link>
+            </div>
+          </div>
+          <div className="faq-block">
+            <span className="eyebrow">Quick answers</span>
+            <ul>
+              <li>
+                <Link href="/faq#delivery">How long does delivery take?</Link>
+              </li>
+              <li>
+                <Link href="/faq#returns">What is your returns policy?</Link>
+              </li>
+              <li>
+                <Link href="/faq#measurements">How do I give my measurements?</Link>
+              </li>
+            </ul>
+            <Link className="link-more" href="/faq">
+              All questions <DIcon name="upRight" small />
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      <section className="section section-tight-top">
         <div className="container">
           <div className="map-wrap">
             <div className="map-slot">
@@ -92,12 +129,37 @@ export default function ContactPage() {
               <p>Abu Dhabi, Dubai, Sharjah, Ajman and Ras Al Khaimah. Find the one nearest you.</p>
               <div className="map-hours">
                 <DIcon name="clock" />
-                Home tailoring visits by appointment
+                {HOURS.map((h) => `${h.days} ${h.time}`).join(" · ")}
               </div>
               <Link className="btn" href="/branches">
                 Find a branch <DIcon name="upRight" small />
               </Link>
             </div>
+          </div>
+        </div>
+      </section>
+      <section className="section section-tight-top">
+        <div className="container business">
+          <div>
+            <span className="eyebrow">Business details</span>
+            <p>
+              <b>{COMPANY}</b>
+              {HEAD_OFFICE && (
+                <>
+                  <br />
+                  {HEAD_OFFICE}
+                </>
+              )}
+              <br />
+              <a href={`mailto:${EMAIL}`}>{EMAIL}</a> · <a href={`tel:${PHONE_TEL}`}>{PHONE_DISPLAY}</a>
+            </p>
+          </div>
+          <div className="socials">
+            {SOCIALS.map((s) => (
+              <a key={s.name} className="social" href={s.href} target="_blank" rel="noopener noreferrer" aria-label={`Dressly on ${s.name}`}>
+                <DIcon name={SOCIAL_ICON[s.icon]} />
+              </a>
+            ))}
           </div>
         </div>
       </section>

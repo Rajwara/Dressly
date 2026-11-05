@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import { StoreProvider } from "@/components/StoreProvider";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import OfferPopup from "@/components/OfferPopup";
 import "./logotype.css";
 
 // Home page fonts, used for the whole page (headings, text, header and footer).
@@ -28,6 +29,7 @@ export default function LogotypeLayout({ children }: { children: React.ReactNode
         <StoreProvider>
           {children}
           <WhatsAppButton />
+          <OfferPopup />
         </StoreProvider>
       </body>
     </html>

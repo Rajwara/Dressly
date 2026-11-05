@@ -16,3 +16,27 @@
 .fwb .bl .map-wrap { background: #e9e9e9; }
 .fwb .bl .pin svg path { fill: #000; }
 .fwb .bl .pin-icon:hover .pin svg path { fill: #3c3c3c; }
+
+/* ---- Channels, home visit, FAQ links, business details ---- */
+.fwb .bl .contact-note { font-size: 13px; color: var(--fw-muted); margin-top: 2px; line-height: 1.4; }
+.fwb .bl .field-optional { color: var(--fw-muted); font-weight: 400; }
+.fwb .bl .contact-extras { display: grid; grid-template-columns: 1.4fr 1fr; gap: 20px; }
+.fwb .bl .visit-block, .fwb .bl .faq-block { border-radius: var(--fw-radius); padding: 36px; }
+.fwb .bl .visit-block { background: #000; color: #fff; }
+.fwb .bl .visit-block h2 { color: #fff; font-size: clamp(36px, 4vw, 56px); margin: 12px 0 10px; }
+.fwb .bl .visit-block p { color: #cfcfcf; max-width: 46ch; }
+.fwb .bl .visit-block .eyebrow { color: #cfcfcf; }
+.fwb .bl .visit-block .eyebrow-dot::before { background: #fff; }
+.fwb .bl .visit-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 22px; }
+.fwb .bl .visit-block .btn { background: #fff; color: #000; }
+.fwb .bl .visit-block .btn.ghost { background: transparent; color: #fff; border: 1px solid #fff6; }
+.fwb .bl .faq-block { background: var(--fw-grey); }
+.fwb .bl .faq-block ul { list-style: none; margin: 14px 0 18px; padding: 0; }
+.fwb .bl .faq-block li { border-bottom: 1px solid var(--line); }
+.fwb .bl .faq-block li a { display: block; padding: 13px 0; font-weight: 500; }
+.fwb .bl .faq-block li a:hover { text-decoration: underline; }
+.fwb .bl .link-more { display: inline-flex; align-items: center; gap: 6px; font-weight: 500; border-bottom: 1px solid currentColor; }
+.fwb .bl .business { display: flex; justify-content: space-between; align-items: flex-end; gap: 24px; flex-wrap: wrap; border-top: 1px solid var(--line); padding-top: 28px; }
+.fwb .bl .business p { margin-top: 10px; line-height: 1.6; }
+.fwb .bl .business a { border-bottom: 1px solid currentColor; }
+@media (max-width: 900px) { .fwb .bl .contact-extras { grid-template-columns: 1fr; } .fwb .bl .visit-block, .fwb .bl .faq-block { padding: 26px 20px; } }

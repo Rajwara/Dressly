@@ -100,6 +100,34 @@ export const HOME_VISIT = {
   ],
 };
 
+/* ---------------------------------------------------------------- contact */
+
+/** Legal / trading name shown on the Contact page. PLACEHOLDER: confirm. */
+export const COMPANY = "Dressly";
+/** Customer service email. PLACEHOLDER: set a real inbox before launch. */
+export const EMAIL = "hello@dressly.ae";
+/** Head office address. PLACEHOLDER: leave empty to hide it. */
+export const HEAD_OFFICE = "";
+/**
+ * Reply-time promise on the Contact page. PLACEHOLDER: only promise what the
+ * team can keep every day; set to "" to hide it.
+ */
+export const REPLY_TIME = "We reply on WhatsApp within 1 hour during opening hours.";
+/** Customer-service opening hours (phone and WhatsApp). PLACEHOLDER. */
+export const HOURS = [
+  { days: "Saturday – Thursday", time: "10:00 – 22:00" },
+  { days: "Friday", time: "16:00 – 22:00" },
+];
+
+/* ---------------------------------------------------------------- branches */
+
+export type Weekday = "mon" | "tue" | "wed" | "thu" | "fri" | "sat" | "sun";
+/** "10:00-22:00" (24h, local UAE time) or "closed". Overnight ranges like 16:00-01:00 are allowed. */
+export type BranchHours = Partial<Record<Weekday, string>>;
+
+/** Services every branch offers unless a branch lists its own. */
+export const BRANCH_SERVICES = ["Measurements", "Fabric selection", "Ready-made pickup", "Alterations"];
+
 export type Branch = {
   id: string;
   name: string;
@@ -107,7 +135,16 @@ export type Branch = {
   /** Map position. APPROXIMATE (placed by area); replace with each store's exact pin. */
   lat: number;
   lng: number;
+  /** Direct branch number, e.g. "+971 4 123 4567". Empty: the main line is shown. */
   phone?: string;
+  /** Full street address. */
+  address?: string;
+  /** Opening hours per weekday. Empty: "Hours coming soon" is shown and "Open now" is disabled. */
+  hours?: BranchHours;
+  /** Services at this branch; defaults to BRANCH_SERVICES. */
+  services?: string[];
+  /** e.g. "Free mall parking, level P1". */
+  parking?: string;
 };
 
 /**
@@ -155,10 +192,8 @@ export const directions = (b: Pick<Branch, "lat" | "lng">, from?: { lat: number;
 
 /** Sign-up popup with a countdown. Shown once per visitor until closed or joined. */
 export const OFFER = {
-  title: "Limited Time Offer",
-  text: "Sign up to get an exclusive discount on your order.",
-  minutes: 30, // countdown length; it keeps running across page refreshes
-  delaySeconds: 8, // wait before showing (leaving the page on desktop opens it sooner)
+  title: "Welcome to Dressly",
+  delaySeconds: 15, // opens after this long, or when the visitor has scrolled half the page
   hideForDays: 3, // after "close", stay hidden this long
   points: [
     "Kandura tailoring since 1998",

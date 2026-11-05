@@ -1,17 +1,22 @@
 "use client";
 
+import { usePathname } from "next/navigation";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { OFFER } from "@/lib/brand";
+import { PROMO } from "@/lib/commerce";
+import { NO_POPUP_PATHS } from "@/lib/site-nav";
+import "./offer/offer-popup.css";
 
 const KEY = "offer-popup";
 
-type Saved = { deadline: number; closedAt?: number; joined?: boolean };
+type Saved = { closedAt?: number; joined?: boolean };
+type Channel = "email" | "whatsapp";
 
-function readSaved(): Saved | null {
+function readSaved(): Saved {
   try {
-    return JSON.parse(localStorage.getItem(KEY) ?? "null");
+    return JSON.parse(localStorage.getItem(KEY) ?? "null") ?? {};
   } catch {
-    return null;
+    return {};
   }
 }
 
@@ -19,88 +24,99 @@ function writeSaved(s: Saved) {
   try {
     localStorage.setItem(KEY, JSON.stringify(s));
   } catch {
-    // Storage blocked: the popup simply may show again next visit.
+    // Storage blocked: the popup may simply show again next visit.
   }
 }
 
-const pad = (n: number) => String(n).padStart(2, "0");
+const blocked = (path: string) => NO_POPUP_PATHS.some((p) => path === p || path.startsWith(`${p}/`));
 
+/**
+ * First-order offer. Opens after OFFER.delaySeconds or once the visitor has
+ * scrolled half the page, never on cart, checkout or account pages.
+ * On phones it is a bottom sheet with one field and one button.
+ */
 export default function OfferPopup() {
+  const pathname = usePathname() ?? "/";
   const dialog = useRef<HTMLDialogElement>(null);
-  const saved = useRef<Saved | null>(null);
-  const [left, setLeft] = useState(OFFER.minutes * 60);
   const [status, setStatus] = useState<"idle" | "sending" | "done" | "error">("idle");
+  const [error, setError] = useState("");
+  const [channel, setChannel] = useState<Channel>("whatsapp");
   const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
+  const [copied, setCopied] = useState(false);
 
   const open = useCallback(() => {
     const d = dialog.current;
-    if (d && !d.open) d.showModal();
+    if (d && !d.open && !blocked(window.location.pathname)) d.showModal();
   }, []);
 
-  // Decide whether to show it, and when.
   useEffect(() => {
-    const now = Date.now();
-    let s = readSaved();
-    const snoozed = s?.closedAt && now - s.closedAt < OFFER.hideForDays * 86_400_000;
-    if (s?.joined || snoozed) return;
-    if (!s || s.deadline < now) s = { deadline: now + OFFER.minutes * 60_000 };
-    saved.current = s;
-    writeSaved(s);
+    if (blocked(pathname)) {
+      if (dialog.current?.open) dialog.current.close();
+      return;
+    }
+    const s = readSaved();
+    const snoozed = s.closedAt && Date.now() - s.closedAt < OFFER.hideForDays * 86_400_000;
+    if (s.joined || snoozed) return;
 
     const timer = setTimeout(open, OFFER.delaySeconds * 1000);
-    const onLeave = (e: MouseEvent) => {
-      if (e.clientY <= 0) open();
+    const onScroll = () => {
+      const max = document.documentElement.scrollHeight - window.innerHeight;
+      if (max > 0 && window.scrollY / max >= 0.5) open();
     };
-    document.addEventListener("mouseleave", onLeave);
+    window.addEventListener("scroll", onScroll, { passive: true });
     return () => {
       clearTimeout(timer);
-      document.removeEventListener("mouseleave", onLeave);
+      window.removeEventListener("scroll", onScroll);
     };
-  }, [open]);
+  }, [open, pathname]);
 
-  // Countdown.
-  useEffect(() => {
-    const tick = () => {
-      if (saved.current) setLeft(Math.max(0, Math.round((saved.current.deadline - Date.now()) / 1000)));
-    };
-    tick();
-    const t = setInterval(tick, 1000);
-    return () => clearInterval(t);
-  }, []);
-
-  const close = () => {
-    dialog.current?.close();
-  };
+  const close = () => dialog.current?.close();
 
   const onClosed = () => {
-    if (saved.current && !saved.current.joined) {
-      saved.current = { ...saved.current, closedAt: Date.now() };
-      writeSaved(saved.current);
-    }
+    const s = readSaved();
+    if (!s.joined) writeSaved({ ...s, closedAt: Date.now() });
   };
 
   const submit = async (e: React.FormEvent) => {
     e.preventDefault();
     setStatus("sending");
+    setError("");
     try {
+      const body = channel === "email" ? { email } : { phone: `+971${phone.replace(/\D/g, "").replace(/^(971|0)/, "")}` };
       const res = await fetch("/api/subscribe", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ email, source: "offer-popup" }),
+        body: JSON.stringify({ ...body, source: "offer-popup" }),
       });
-      if (!res.ok) throw new Error(String(res.status));
+      if (!res.ok) {
+        const data = await res.json().catch(() => ({}));
+        setError(typeof data.error === "string" ? data.error : "Something went wrong. Please try again.");
+        setStatus("error");
+        return;
+      }
       setStatus("done");
-      saved.current = { ...(saved.current ?? { deadline: Date.now() }), joined: true };
-      writeSaved(saved.current);
+      writeSaved({ joined: true });
     } catch {
+      setError("Something went wrong. Please try again.");
       setStatus("error");
+    }
+  };
+
+  const copy = async () => {
+    try {
+      await navigator.clipboard.writeText(PROMO.code);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
+    } catch {
+      // Clipboard blocked: the code is still visible to copy by hand.
     }
   };
 
   return (
     <dialog
       ref={dialog}
-      className="offer"
+      className="offer-pop"
       aria-labelledby="offer-title"
       onClose={onClosed}
       onClick={(e) => {
@@ -115,46 +131,70 @@ export default function OfferPopup() {
       <div className="offer-main">
         {status === "done" ? (
           <div className="offer-done">
-            <h2 id="offer-title">Thank you!</h2>
+            <span className="offer-eyebrow">You&apos;re in</span>
+            <h2 id="offer-title">Your code</h2>
+            <div className="offer-code">
+              <code>{PROMO.code}</code>
+              <button type="button" className="offer-btn offer-copy" onClick={copy}>
+                {copied ? "Copied" : "Copy code"}
+              </button>
+            </div>
             <p>
-              You&apos;re on the list. We&apos;ll send your exclusive discount to <b>{email}</b>.
+              {PROMO.label}. We&apos;ve also sent it to{" "}
+              <b>{channel === "email" ? email : `+971 ${phone}`}</b>
+              {channel === "whatsapp" ? " on WhatsApp" : ""}. Valid for {PROMO.validDays} days; enter it at checkout.
             </p>
-            <button className="btn" type="button" onClick={close}>
+            <button className="offer-skip" type="button" onClick={close}>
               Continue shopping
             </button>
           </div>
         ) : (
           <>
-            {left > 0 && (
-              <div className="countdown" role="timer" aria-label={`${Math.floor(left / 60)} minutes ${left % 60} seconds left`}>
-                <div>
-                  <b>{pad(Math.floor(left / 60))}</b>
-                  <small>minutes</small>
-                </div>
-                <b className="colon">:</b>
-                <div>
-                  <b>{pad(left % 60)}</b>
-                  <small>seconds</small>
-                </div>
-              </div>
-            )}
-            <h2 id="offer-title">{OFFER.title}</h2>
-            <p>{OFFER.text}</p>
-            <form onSubmit={submit}>
-              <input
-                type="email"
-                required
-                placeholder="Email"
-                aria-label="Email"
-                autoComplete="email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-              />
-              <button className="btn" type="submit" disabled={status === "sending"}>
-                {status === "sending" ? "Sending…" : "Claim Your Offer"}
+            <span className="offer-eyebrow">{OFFER.title}</span>
+            <h2 id="offer-title">{PROMO.label}</h2>
+            <p className="offer-valid">Valid for {PROMO.validDays} days after sign-up. One use per customer.</p>
+            <div className="offer-tabs" role="tablist" aria-label="Send my code by">
+              <button type="button" role="tab" aria-selected={channel === "whatsapp"} onClick={() => setChannel("whatsapp")}>
+                WhatsApp
               </button>
-              {status === "error" && <p className="offer-error">Something went wrong. Please try again.</p>}
+              <button type="button" role="tab" aria-selected={channel === "email"} onClick={() => setChannel("email")}>
+                Email
+              </button>
+            </div>
+            <form onSubmit={submit}>
+              {channel === "email" ? (
+                <input
+                  type="email"
+                  required
+                  placeholder="Your email"
+                  aria-label="Email"
+                  autoComplete="email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                />
+              ) : (
+                <div className="offer-phone">
+                  <span>+971</span>
+                  <input
+                    type="tel"
+                    required
+                    inputMode="numeric"
+                    placeholder="50 123 4567"
+                    aria-label="WhatsApp number"
+                    autoComplete="tel-national"
+                    value={phone}
+                    onChange={(e) => setPhone(e.target.value)}
+                  />
+                </div>
+              )}
+              <button className="offer-btn" type="submit" disabled={status === "sending"}>
+                {status === "sending" ? "Sending…" : "Get my 10% code"}
+              </button>
+              {status === "error" && <p className="offer-error">{error}</p>}
             </form>
+            <button className="offer-switch" type="button" onClick={() => setChannel(channel === "email" ? "whatsapp" : "email")}>
+              {channel === "email" ? "Use WhatsApp instead" : "Use email instead"}
+            </button>
             <button className="offer-skip" type="button" onClick={close}>
               No thanks
             </button>

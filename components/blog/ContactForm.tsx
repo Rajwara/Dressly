@@ -4,14 +4,15 @@ import { useState } from "react";
 import { PHONE_DISPLAY, whatsapp } from "@/lib/brand";
 import DIcon from "./Icons";
 
-const TOPICS = ["Order or product question", "Home tailoring visit", "Bespoke kandura", "Army & police uniforms", "Something else"];
+const TOPICS = ["Order", "Fabric & fit", "Home visit", "Uniforms/corporate", "Other"];
 
-type Field = "first" | "last" | "email" | "topic" | "message";
+type Field = "first" | "last" | "email" | "topic" | "order" | "message";
 const MESSAGES: Record<Field, string> = {
   first: "Please fill in this field.",
   last: "Please fill in this field.",
   email: "Please enter a valid email address.",
   topic: "Please select a topic.",
+  order: "",
   message: "Please fill in this field.",
 };
 
@@ -41,7 +42,7 @@ export default function ContactForm() {
       return;
     }
     const v = Object.fromEntries(fields.map((f) => [f.id, f.value.trim()])) as Record<Field, string>;
-    const text = `Hello Dressly,\n\n${v.message}\n\nName: ${v.first} ${v.last}\nEmail: ${v.email}\nTopic: ${v.topic}`;
+    const text = `Hello Dressly,\n\n${v.message}\n\nName: ${v.first} ${v.last}\nEmail: ${v.email}\nTopic: ${v.topic}${v.order ? `\nOrder number: ${v.order}` : ""}`;
     window.open(whatsapp(text), "_blank", "noopener");
     setStatus(`Opening WhatsApp with your message. If it didn't open, message us on ${PHONE_DISPLAY}.`);
   };
@@ -79,6 +80,12 @@ export default function ContactForm() {
           ))}
         </select>
         {error("topic")}
+      </div>
+      <div className="field field-full">
+        <label htmlFor="order">
+          Order number <span className="field-optional">(optional)</span>
+        </label>
+        <input {...field("order")} name="order_number" type="text" placeholder="e.g. DR-10482" autoComplete="off" />
       </div>
       <div className="field field-full">
         <label htmlFor="message">Message</label>

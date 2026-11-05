@@ -8,7 +8,8 @@
 .sn-top a:hover{text-decoration:underline;text-underline-offset:3px}
 
 /* ---- Menu ---- */
-.nav.sn .links{gap:22px;align-items:center;white-space:nowrap}
+.nav.sn .nav-row{gap:28px}
+.nav.sn .links{gap:22px;align-items:center;white-space:nowrap;font-size:15px;line-height:1.2}
 .nav.sn .links>li>a{display:inline-flex;align-items:center;gap:4px}
 .nav.sn .sn-caret{font-size:12px;line-height:1;transform:translateY(-3px)}
 .nav.sn .drop{min-width:220px;padding:14px 18px;box-shadow:0 18px 40px rgba(0,0,0,.14)}
@@ -17,7 +18,7 @@
 .nav.sn .drop a{border:0;font-weight:500;color:#111}
 .nav.sn .drop a:hover{text-decoration:underline;text-underline-offset:3px}
 .nav.sn .sn-col-head{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:#777;margin:0 0 6px;font-weight:600}
-.nav.sn .drop.sn-mega{display:grid;grid-template-columns:repeat(5,minmax(150px,auto));gap:8px 28px;left:50%;transform:translate(-50%,8px);padding:20px 24px}
+.nav.sn .drop.sn-mega{display:grid;grid-template-columns:repeat(5,max-content);gap:8px 32px;left:50%;transform:translate(-50%,8px);padding:20px 24px}
 .nav.sn .links>li:hover .drop.sn-mega,.nav.sn .links>li:focus-within .drop.sn-mega{transform:translate(-50%,0)}
 .nav.sn .sn-shop{display:inline-flex;align-items:center;height:40px;padding:0 18px;border-radius:999px;background:#000;color:#fff;border:1px solid rgba(255,255,255,.28)!important;font-weight:500;transition:background .2s,color .2s}
 .nav.sn .sn-shop:hover{background:#fff;color:#000}

@@ -3,6 +3,7 @@ import { Inter, Plus_Jakarta_Sans } from "next/font/google";
 import localFont from "next/font/local";
 import { StoreProvider } from "@/components/StoreProvider";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import OfferPopup from "@/components/OfferPopup";
 import "./fieldworn.css";
 
 // The two fonts embedded in the original file, now served as files.
@@ -29,6 +30,7 @@ export default function FieldwornLayout({ children }: { children: React.ReactNod
         <StoreProvider>
           {children}
           <WhatsAppButton />
+          <OfferPopup />
         </StoreProvider>
       </body>
     </html>

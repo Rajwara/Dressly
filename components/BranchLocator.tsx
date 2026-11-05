@@ -2,8 +2,10 @@
 
 import "leaflet/dist/leaflet.css";
 import type { Map as LeafletMap, Marker } from "leaflet";
+import Link from "next/link";
 import { useEffect, useMemo, useRef, useState } from "react";
-import { directions } from "@/lib/brand";
+import { BRANCH_SERVICES, PHONE_DISPLAY, PHONE_TEL, directions, whatsapp, type BranchHours } from "@/lib/brand";
+import { hasHours, isOpenNow, pretty, todayKey } from "./branches/hours";
 import { PLACES, normalise } from "@/lib/places";
 import Icon from "./Icon";
 
@@ -16,6 +18,10 @@ export type LocatorBranch = {
   lng: number;
   phone?: string;
   image: string;
+  address?: string;
+  hours?: BranchHours;
+  services?: string[];
+  parking?: string;
 };
 
 type Origin = { lat: number; lng: number; label: string };
@@ -63,14 +69,23 @@ export default function BranchLocator({ branches }: { branches: LocatorBranch[] 
   const [status, setStatus] = useState<string>("");
   const [active, setActive] = useState<string | null>(null);
   const [hover, setHover] = useState<{ id: string; x: number; y: number; flip: boolean } | null>(null);
+  const [emirate, setEmirate] = useState<string>("All");
+  const [openNow, setOpenNow] = useState(false);
+  const [today, setToday] = useState<string | null>(null);
+  useEffect(() => setToday(todayKey()), []);
+
+  const emirates = useMemo(() => ["All", ...Array.from(new Set(branches.map((b) => b.emirate)))], [branches]);
+  const anyHours = useMemo(() => branches.some((b) => hasHours(b.hours)), [branches]);
 
   const numbered = useMemo(() => branches.map((b, i) => ({ ...b, n: i + 1 })), [branches]);
   const list = useMemo(() => {
     let l = numbered.map((b) => ({ ...b, dist: origin ? km(origin, b) : undefined }));
     if (filter) l = l.filter((b) => filter.includes(b.id));
+    if (emirate !== "All") l = l.filter((b) => b.emirate === emirate);
+    if (openNow) l = l.filter((b) => isOpenNow(b.hours) === true);
     if (origin) l.sort((a, b) => a.dist! - b.dist!);
     return l;
-  }, [numbered, origin, filter]);
+  }, [numbered, origin, filter, emirate, openNow]);
 
   // Map set-up (Leaflet touches window, so it loads on the client only).
   useEffect(() => {
@@ -216,6 +231,8 @@ export default function BranchLocator({ branches }: { branches: LocatorBranch[] 
     setFilter(null);
     setQuery("");
     setStatus("");
+    setEmirate("All");
+    setOpenNow(false);
     const m = map.current;
     if (m && L.current) m.flyToBounds(L.current.latLngBounds(numbered.map((b) => [b.lat, b.lng])), { padding: [40, 40], duration: 0.9 });
   };
@@ -246,17 +263,29 @@ export default function BranchLocator({ branches }: { branches: LocatorBranch[] 
         </form>
         <div className="locator-tools">
           <button type="button" className="link-btn" onClick={locate}>
-            <Icon name="pin" size={16} /> Use my location
+            <Icon name="pin" size={16} /> Near me
           </button>
-          {(origin || filter) && (
+          <label className={anyHours ? "open-toggle" : "open-toggle disabled"} title={anyHours ? undefined : "Opening hours coming soon"}>
+            <input type="checkbox" checked={openNow} disabled={!anyHours} onChange={(e) => setOpenNow(e.target.checked)} />
+            Open now
+          </label>
+          {(origin || filter || emirate !== "All" || openNow) && (
             <button type="button" className="link-btn" onClick={reset}>
               Show all {branches.length} branches
             </button>
           )}
         </div>
+        <div className="emirate-chips" role="group" aria-label="Filter by emirate">
+          {emirates.map((e) => (
+            <button key={e} type="button" aria-pressed={emirate === e} onClick={() => setEmirate(e)}>
+              {e}
+            </button>
+          ))}
+        </div>
         <p className="locator-status" aria-live="polite">
           {status || `${branches.length} branches across ${new Set(branches.map((b) => b.emirate)).size} Emirates`}
         </p>
+        {!list.length && <p className="locator-empty">No branches match these filters.</p>}
         <ol className="locator-list">
           {list.map((b, i) => (
             <li
@@ -280,15 +309,20 @@ export default function BranchLocator({ branches }: { branches: LocatorBranch[] 
                   </span>
                 )}
               </button>
+              <BranchDetails b={b} today={today} />
               <div className="locator-actions">
-                <a className="btn" href={directions(b, origin ?? undefined)} target="_blank" rel="noopener noreferrer">
-                  Get directions
+                <a className="btn" href={whatsapp(`Hello Dressly, I have a question for the ${b.name} branch.`)} target="_blank" rel="noopener noreferrer">
+                  WhatsApp
                 </a>
-                {b.phone && (
-                  <a className="btn ghost" href={`tel:${b.phone.replace(/\s/g, "")}`}>
-                    Call
-                  </a>
-                )}
+                <a className="btn ghost" href={directions(b, origin ?? undefined)} target="_blank" rel="noopener noreferrer">
+                  Directions
+                </a>
+                <a className="btn ghost" href={`tel:${b.phone ? b.phone.replace(/\s/g, "") : PHONE_TEL}`}>
+                  Call
+                </a>
+                <Link className="link-btn" href={`/branches/${b.id}`}>
+                  Branch details
+                </Link>
               </div>
             </li>
           ))}
@@ -310,5 +344,63 @@ export default function BranchLocator({ branches }: { branches: LocatorBranch[] 
         )}
       </div>
     </section>
+  );
+}
+
+/** Address, hours, phone, services and parking for one branch in the list. */
+function BranchDetails({ b, today }: { b: LocatorBranch; today: string | null }) {
+  const open = today ? isOpenNow(b.hours) : undefined; // client only: avoids a server/client time mismatch
+  const services = b.services?.length ? b.services : BRANCH_SERVICES;
+  return (
+    <div className="branch-details">
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img className="branch-thumb" src={b.image} alt="" loading="lazy" />
+      <dl>
+        <div>
+          <dt>Address</dt>
+          <dd>{b.address || `${b.area}, ${b.emirate}`}</dd>
+        </div>
+        <div>
+          <dt>Hours</dt>
+          <dd>
+            {hasHours(b.hours) ? (
+              <>
+                {open !== undefined && <span className={open ? "open-badge" : "open-badge closed"}>{open ? "Open now" : "Closed now"}</span>}
+                {today && b.hours![today as keyof BranchHours] !== undefined && <>Today {pretty(b.hours![today as keyof BranchHours])} · </>}
+                Friday {pretty(b.hours!.fri)}
+              </>
+            ) : (
+              "Hours coming soon"
+            )}
+          </dd>
+        </div>
+        <div>
+          <dt>Phone</dt>
+          <dd>
+            {b.phone ? (
+              <a href={`tel:${b.phone.replace(/\s/g, "")}`}>{b.phone}</a>
+            ) : (
+              <>
+                Call our main line <a href={`tel:${PHONE_TEL}`}>{PHONE_DISPLAY}</a>
+              </>
+            )}
+          </dd>
+        </div>
+        <div>
+          <dt>Services</dt>
+          <dd className="service-chips">
+            {services.map((s) => (
+              <span key={s}>{s}</span>
+            ))}
+          </dd>
+        </div>
+        {b.parking && (
+          <div>
+            <dt>Parking</dt>
+            <dd>{b.parking}</dd>
+          </div>
+        )}
+      </dl>
+    </div>
   );
 }

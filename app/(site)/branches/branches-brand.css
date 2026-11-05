@@ -95,3 +95,46 @@
   .fw-overlay .page-banner h1 { font-size: clamp(64px, 20vw, 96px); }
   .fw-overlay .page-banner-copy { padding-bottom: 32px; }
 }
+
+/* ---- Locator: emirate filter, Open now, branch details ---- */
+.fwb .locator-tools { flex-wrap: wrap; align-items: center; }
+.fwb .open-toggle { display: inline-flex; align-items: center; gap: 6px; font-size: 13px; font-weight: 500; cursor: pointer; }
+.fwb .open-toggle input { accent-color: #000; width: 16px; height: 16px; }
+.fwb .open-toggle.disabled { color: var(--fw-muted); cursor: not-allowed; }
+.fwb .emirate-chips { display: flex; flex-wrap: wrap; gap: 6px; margin: 14px 0 4px; }
+.fwb .emirate-chips button { border: 1px solid var(--fw-line); background: #fff; border-radius: 99px; padding: 6px 13px; font: 500 13px var(--fw-body); cursor: pointer; }
+.fwb .emirate-chips button[aria-pressed="true"] { background: #000; color: #fff; border-color: #000; }
+.fwb .locator-empty { color: var(--fw-muted); padding: 16px 0; }
+.fwb .branch-details { display: grid; grid-template-columns: 84px 1fr; gap: 14px; margin: 12px 0 0 42px; }
+.fwb .branch-thumb { width: 84px; height: 84px; object-fit: cover; border-radius: 10px; }
+.fwb .branch-details dl { margin: 0; display: grid; gap: 5px; font-size: 13px; line-height: 1.45; }
+.fwb .branch-details dl > div { display: grid; grid-template-columns: 70px 1fr; gap: 8px; }
+.fwb .branch-details dt { color: var(--fw-muted); }
+.fwb .branch-details dd { margin: 0; }
+.fwb .branch-details a { border-bottom: 1px solid currentColor; }
+.fwb .service-chips { display: flex; flex-wrap: wrap; gap: 4px; }
+.fwb .service-chips span { background: var(--fw-grey); border-radius: 99px; padding: 2px 9px; font-size: 12px; }
+.fwb .open-badge { display: inline-block; margin-right: 6px; padding: 1px 8px; border-radius: 99px; font-size: 11.5px; font-weight: 500; background: #e3f4e6; color: #17652b; }
+.fwb .open-badge.closed { background: #f6e3e1; color: #9a2a1f; }
+.fwb .locator-actions { flex-wrap: wrap; align-items: center; }
+@media (max-width: 520px) { .fwb .branch-details { margin-left: 0; grid-template-columns: 64px 1fr; } .fwb .branch-thumb { width: 64px; height: 64px; } }
+
+/* ---- Single branch page ---- */
+.fwb .branch-page { max-width: 1200px; margin: 0 auto; padding: 48px 24px 96px; display: grid; grid-template-columns: 1fr 1fr; gap: 48px; }
+.fwb .branch-page .crumbs { grid-column: 1 / -1; font-size: 14px; color: var(--fw-muted); }
+.fwb .branch-page .crumbs a { color: #000; }
+.fwb .branch-page h1 { font-size: clamp(44px, 6vw, 80px); margin: 6px 0 8px; }
+.fwb .branch-page .lead { color: var(--fw-muted); margin-bottom: 24px; }
+.fwb .branch-page .actions { display: flex; flex-wrap: wrap; gap: 10px; margin: 20px 0 30px; }
+.fwb .branch-page section { border-top: 1px solid var(--fw-line); padding: 18px 0; }
+.fwb .branch-page h2 { font-size: 22px; margin: 0 0 10px; }
+.fwb .branch-page table { width: 100%; border-collapse: collapse; font-size: 15px; }
+.fwb .branch-page td { padding: 5px 0; border-bottom: 1px solid var(--fw-line); }
+.fwb .branch-page tr.today td { font-weight: 600; }
+.fwb .branch-page td:last-child { text-align: right; }
+.fwb .branch-photo { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: var(--fw-radius); }
+.fwb .branch-map { width: 100%; aspect-ratio: 4 / 3; border: 0; border-radius: var(--fw-radius); margin-top: 16px; background: #e9e9e9; }
+.fwb .branch-page .muted { color: var(--fw-muted); }
+.fwb .branch-others { display: flex; flex-wrap: wrap; gap: 8px; }
+.fwb .branch-others a { border: 1px solid var(--fw-line); border-radius: 99px; padding: 6px 14px; font-size: 14px; }
+@media (max-width: 900px) { .fwb .branch-page { grid-template-columns: 1fr; gap: 24px; padding-top: 28px; } }

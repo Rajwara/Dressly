@@ -55,18 +55,6 @@ section.dark{background:var(--navy);color:#dfeaf3}section.dark.deep{background:#
 .hero h1{font-size:clamp(34px,4.1vw,54px)}.top .wrap{height:92px}.logo img{height:74px}section[id]{scroll-margin-top:96px}
 @media(max-width:1020px){.top .wrap{height:72px}.logo img{height:54px}section[id]{scroll-margin-top:76px}}
 @media(max-width:720px){.logo img{height:48px}}
-/* ---- Offer popup ---- */
-dialog.offer{padding:0;border:0;max-width:780px;width:calc(100% - 32px);display:none;grid-template-columns:1fr 1fr;overflow:visible;background:var(--white);box-shadow:0 30px 80px #0005}dialog.offer[open]{display:grid;animation:offer-in .35s ease-out}dialog.offer::backdrop{background:#0b1a28a6}
-@keyframes offer-in{from{opacity:0;transform:translateY(14px) scale(.98)}to{opacity:1;transform:none}}
-.offer-close{position:absolute;top:-14px;right:-14px;width:38px;height:38px;border-radius:50%;border:2px solid var(--primary);background:#fff;color:var(--primary);display:grid;place-items:center;cursor:pointer;z-index:2}.offer-close:hover{background:var(--primary);color:#fff}
-.offer-main{padding:44px 34px 30px;text-align:center;display:flex;flex-direction:column;justify-content:center}.offer-main h2{font-size:34px;margin:6px 0 10px}.offer-main>p{color:var(--muted);font-size:16px;margin-bottom:22px}
-.countdown{display:flex;justify-content:center;align-items:flex-start;gap:6px;margin-bottom:14px}.countdown div{display:flex;flex-direction:column;align-items:center}.countdown b{font:700 56px/1 var(--sans);color:var(--ink);font-variant-numeric:tabular-nums;letter-spacing:-.02em}.countdown .colon{line-height:.95}.countdown small{font-size:11.5px;color:var(--muted);margin-top:4px}
-.offer form{display:grid;gap:10px}.offer input{width:100%;padding:13px 14px;border:1px solid var(--line);font-size:15px}.offer input:focus{outline:2px solid var(--accent);outline-offset:-1px}.offer form .btn{padding:15px;font-size:15px;border-radius:4px}.offer form .btn:disabled{opacity:.7}
-.offer-error{color:#b3261e;font-size:13px;margin:0}.offer-skip{margin-top:14px;background:none;border:0;color:var(--muted);font-size:12.5px;text-decoration:underline;cursor:pointer}
-.offer-done{display:grid;gap:12px;justify-items:center}.offer-done p{color:var(--muted)}
-.offer-side{background:linear-gradient(160deg,var(--tint),#d3e2ee);padding:36px 30px;display:flex;flex-direction:column;justify-content:center}.offer-side img{height:62px;width:auto;align-self:flex-start;margin-bottom:16px}.offer-side h3{font:500 19px/1.35 var(--serif);letter-spacing:.06em;text-transform:uppercase;color:var(--navy);margin-bottom:22px}.offer-side h3 em{font-weight:700}
-.offer-side ul{list-style:none;margin:0;padding:0;display:grid;gap:11px}.offer-side li{display:flex;align-items:center;gap:11px;background:#fff;border-radius:30px;padding:9px 16px 9px 9px;font-size:13px;box-shadow:0 2px 6px #0f25370d}.offer-side li span{flex:none;display:grid;place-items:center;width:26px;height:26px;border-radius:50%;background:var(--primary);color:#fff}
-@media(max-width:720px){dialog.offer[open]{grid-template-columns:1fr;max-height:calc(100dvh - 40px);overflow:auto}.offer-close{top:8px;right:8px}.offer-main{padding:40px 22px 22px}.offer-main h2{font-size:28px}.countdown b{font-size:46px}.offer-side{padding:22px}.offer-side img,.offer-side li:nth-child(n+4){display:none}.offer-side h3{font-size:16px;margin-bottom:14px}}
 /* ---- Announcement bar + header (overlay on the home hero) ---- */
 :root{--hdr-h:96px}
 .announce{display:flex;align-items:center;justify-content:center;gap:clamp(16px,14vw,260px);background:var(--tint);color:var(--navy);height:42px;font-size:12.5px;letter-spacing:.12em;text-transform:uppercase;border-bottom:1px solid var(--line)}
@@ -205,8 +193,6 @@ footer{background:#0b1622;color:#c9c1b3}footer h4{color:var(--gold-l)}footer a:h
 .quote{border-left-color:var(--accent)}
 .numeral,.more{color:var(--accent-text)}
 .community{background:var(--tint)}.community-text a{color:var(--ink)}
-.offer-side{background:linear-gradient(160deg,var(--tint),#e9dcc6)}.offer-side li span{background:var(--accent)}
-.offer form .btn{border-radius:0}.countdown b{font-family:var(--serif);font-weight:500}
 .contact-list a{color:var(--accent-text)}
 .notice{background:var(--tint);border-left:2px solid var(--accent)}
 section{padding:84px 0}.head{margin-bottom:34px}.head h2{font-size:clamp(30px,3.4vw,46px)}.head a{letter-spacing:.14em;text-transform:uppercase;font-size:11.5px}
