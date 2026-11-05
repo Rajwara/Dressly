@@ -5,6 +5,7 @@ import { useEffect, useRef, useState } from "react";
 import pan from "@/lib/data/uae-globe-pan.json";
 import { PLACES, normalise } from "@/lib/places";
 import "./branch-globe.css";
+import "./globe-brand.css";
 
 export type GlobeBranch = { id: string; name: string; area: string; emirate: string; image: string; directions: string; lat: number; lng: number };
 

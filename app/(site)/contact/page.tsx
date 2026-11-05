@@ -3,7 +3,8 @@ import FieldwornShell from "@/components/FieldwornShell";
 import "../blog/blog-brand.css";
 import "./contact-brand.css";
 import Link from "next/link";
-import BranchesMap from "@/components/blog/BranchesMap";
+import BranchGlobe from "@/components/branches/BranchGlobe";
+import { globeBranches } from "@/lib/branch-cards";
 import ContactForm from "@/components/blog/ContactForm";
 import DIcon, { type IconName } from "@/components/blog/Icons";
 import { BRANCHES, COMPANY, EMAIL, HEAD_OFFICE, HOME_VISIT_URL, HOURS, PHONE_DISPLAY, PHONE_TEL, REPLY_TIME, SOCIALS, WHATSAPP_URL } from "@/lib/brand";
@@ -16,7 +17,6 @@ export const metadata: Metadata = {
 const SOCIAL_ICON: Record<string, IconName> = { instagram: "instagram", tiktok: "tiktok", whatsapp: "whatsapp" };
 
 export default function ContactPage() {
-  const pins = BRANCHES.flatMap((e) => e.branches.map((b) => ({ name: b.name, area: b.area, lat: b.lat, lng: b.lng })));
   const hours = HOURS.map((h) => `${h.days} ${h.time}`).join(" · ");
   const rows: { icon: IconName; label: string; value: string; note: string; href?: string; external?: boolean }[] = [
     { icon: "whatsapp", label: "WhatsApp · fastest", value: PHONE_DISPLAY, note: REPLY_TIME || "The quickest way to reach us.", href: WHATSAPP_URL, external: true },
@@ -117,27 +117,7 @@ export default function ContactPage() {
         </div>
       </section>
 
-      <section className="section section-tight-top">
-        <div className="container">
-          <div className="map-wrap">
-            <div className="map-slot">
-              <BranchesMap pins={pins} />
-            </div>
-            <div className="map-card">
-              <span className="eyebrow eyebrow-dot">Visit us</span>
-              <h3>13 branches across the UAE</h3>
-              <p>Abu Dhabi, Dubai, Sharjah, Ajman and Ras Al Khaimah. Find the one nearest you.</p>
-              <div className="map-hours">
-                <DIcon name="clock" />
-                {HOURS.map((h) => `${h.days} ${h.time}`).join(" · ")}
-              </div>
-              <Link className="btn" href="/branches">
-                Find a branch <DIcon name="upRight" small />
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
+      <BranchGlobe branches={globeBranches()} emirates={BRANCHES.length} />
       <section className="section section-tight-top">
         <div className="container business">
           <div>
