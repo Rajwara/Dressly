@@ -1,9 +1,9 @@
 import CommunityVideos from "@/components/CommunityVideos";
 import { COMMUNITY } from "@/lib/brand";
-import { cards } from "@/lib/catalog";
+import { cards, categories, getProduct } from "@/lib/catalog";
 import { imageSrc } from "@/lib/images";
 import "./community.css";
-import Fieldworn, { type FieldwornImages } from "./Fieldworn";
+import Fieldworn, { type FieldwornImages, type HomeCategory } from "./Fieldworn";
 
 /**
  * The original file drew a placeholder for each image slot (data-ph="key").
@@ -60,5 +60,10 @@ export default function HomePage() {
       <CommunityVideos eyebrow={COMMUNITY.eyebrow} text={COMMUNITY.text} instagram={COMMUNITY.instagram} clips={clips} hideHead />
     </div>
   );
-  return <Fieldworn img={img} community={community} />;
+  // "Find your fit": every category, with its photo, number of styles and lowest price.
+  const homeCats: HomeCategory[] = categories.map((c) => {
+    const prices = c.products.map((s) => getProduct(s)?.price).filter((p): p is number => typeof p === "number");
+    return { slug: c.slug, title: c.title, group: c.group, count: c.products.length, from: prices.length ? Math.min(...prices) : 0, image: imageSrc(`images/categories/${c.slug}`) };
+  });
+  return <Fieldworn img={img} community={community} categories={homeCats} />;
 }

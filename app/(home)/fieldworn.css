@@ -299,3 +299,16 @@ a:hover>.go{transform:rotate(0)}
 .products .product.mw:hover .mw-go span{transform:translateX(4px)}
 @media (max-width:991px){.products{grid-template-columns:repeat(2,1fr)}}
 @media (max-width:560px){.products{grid-template-columns:1fr 1fr;gap:12px}.products .product.mw .name{font-size:18px}.products .product.mw .info{padding:12px}.products .product.mw .mw-go{display:none}}
+
+/* "Find your fit": every category in a swipeable rail, four across on desktop */
+.cat-rail-wrap{position:relative}
+.cat-grid.cat-rail{display:grid;grid-auto-flow:column;grid-template-columns:none;grid-auto-columns:calc((100% - 3*20px)/4);gap:20px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding-bottom:4px}
+.cat-grid.cat-rail::-webkit-scrollbar{display:none}
+.cat-rail .cat-card{scroll-snap-align:start}
+.cat-rail .cat-card h3{font-size:22px;line-height:1.15;margin-bottom:4px}
+.cat-rail-nav{display:flex;gap:10px;justify-content:flex-end;margin-top:22px}
+.cat-rail-btn{width:46px;height:46px;border-radius:50%;border:1px solid #6e5a66;color:#fff;font-size:18px;display:grid;place-items:center;transition:.25s}
+.cat-rail-btn:hover{background:#fff;color:#3b1f33;border-color:#fff}
+@media (max-width:991px){.cat-grid.cat-rail{grid-auto-columns:calc((100% - 20px)/2.3)}}
+@media (max-width:600px){.cat-grid.cat-rail{grid-auto-columns:72%;gap:14px}.cat-rail-nav{display:none}}
+@media (max-width:600px){#categories .tabs{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;margin-inline:-16px;padding-inline:16px;gap:8px}#categories .tabs::-webkit-scrollbar{display:none}#categories .tab{flex:none}}

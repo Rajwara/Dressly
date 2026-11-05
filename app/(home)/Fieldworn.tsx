@@ -9,6 +9,11 @@ import { FooterColumns, SiteNav, TopBar } from "@/components/fieldworn/SiteNav";
 gsap.registerPlugin(ScrollTrigger);
 
 export type FieldwornImages = Record<string, string>;
+export type HomeCategory = { slug: string; title: string; group: string; count: number; from: number; image: string };
+
+/** Order of the tabs in "Find your fit"; groups not listed here follow at the end. */
+const GROUP_ORDER = ["Abayas", "Hijabs", "Outerwear", "Home & Lounge", "Essentials", "Girls", "Footwear", "Fragrance", "Accessories", "Gifts"];
+const groupKey = (g: string) => g.toLowerCase().replace(/[^a-z0-9]+/g, "-");
 
 /**
  * "Fieldworn" homepage, ported from index_13.html. Markup and CSS
@@ -16,7 +21,12 @@ export type FieldwornImages = Record<string, string>;
  * the store's own images (see page.tsx), and the original script runs in the
  * effect below, using GSAP from npm instead of the inlined copy.
  */
-export default function Fieldworn({ img, community }: { img: FieldwornImages; community?: React.ReactNode }) {
+export default function Fieldworn({ img, community, categories = [] }: { img: FieldwornImages; community?: React.ReactNode; categories?: HomeCategory[] }) {
+  const groups = [...new Set(categories.map((c) => c.group))].sort((a, b) => (GROUP_ORDER.indexOf(a) + 1 || 99) - (GROUP_ORDER.indexOf(b) + 1 || 99));
+  // Group order first; inside a group, the "All …" category leads.
+  const sortedCats = [...categories].sort(
+    (a, b) => (GROUP_ORDER.indexOf(a.group) + 1 || 99) - (GROUP_ORDER.indexOf(b.group) + 1 || 99) || Number(b.title.startsWith("All ")) - Number(a.title.startsWith("All ")),
+  );
   const root = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -79,10 +89,17 @@ export default function Fieldworn({ img, community }: { img: FieldwornImages; co
           c.hidden = !m;
           if (m) show.push(c);
         });
+        cats[0]?.parentElement?.scrollTo({ left: 0 });
         gsap.killTweensOf(cats);
         gsap.fromTo(show, { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.6, ease: "power3.out", stagger: 0.07 });
         ScrollTrigger.refresh();
       }),
+    );
+
+    /* "Find your fit" rail: arrows scroll by one screen of cards */
+    const rail = scope.querySelector<HTMLElement>(".cat-rail");
+    scope.querySelectorAll<HTMLElement>(".cat-rail-btn").forEach((btn) =>
+      on(btn, "click", () => rail?.scrollBy({ left: Number(btn.dataset.dir) * rail.clientWidth * 0.9, behavior: "smooth" })),
     );
 
     /* Slider: arrows move one card */
@@ -238,8 +255,8 @@ export default function Fieldworn({ img, community }: { img: FieldwornImages; co
 
       <section className="section dark" id="categories"><div className="container">
        <div className="cat-head"><div><span className="label rv">*Category</span><h2 className="rv">Find Your Fit</h2></div><p className="rv">Shop by what you need, from everyday abayas to shaylas, girls&apos; wear and accessories.</p></div>
-       <div className="tabs rv" role="tablist" aria-label="Filter categories"><button className="tab on" role="tab" aria-selected="true" data-f="all">All</button><button className="tab" role="tab" aria-selected="false" data-f="abaya">Abayas</button><button className="tab" role="tab" aria-selected="false" data-f="kids">Girls</button><button className="tab" role="tab" aria-selected="false" data-f="headwear">Hijabs</button><button className="tab" role="tab" aria-selected="false" data-f="accessories">Accessories</button></div>
-       <div className="cat-grid"><a className="cat-card" href="/category/adult-thobes" data-c="abaya"><div className="im zoom"><span className="pill">3 Styles</span><img src={img.p1} alt="" /></div><h3>Everyday Abayas</h3><div>Starts from <span className="price">AED 420</span></div></a><a className="cat-card" href="/category/traditional-kandura" data-c="abaya"><div className="im zoom"><span className="pill">3 Styles</span><img src={img.p2} alt="" /></div><h3>Occasion & Embellished Abayas</h3><div>Starts from <span className="price">AED 450</span></div></a><a className="cat-card" href="/category/kids-clothing" data-c="kids"><div className="im zoom"><span className="pill">3 Styles</span><img src={img.p3} alt="" /></div><h3>Girls' Abayas & Jalabiyas</h3><div>Starts from <span className="price">AED 190</span></div></a><a className="cat-card" href="/category/shimagh-ghutra" data-c="headwear"><div className="im zoom"><span className="pill">3 Styles</span><img src={img.p4} alt="" /></div><h3>All Hijabs & Shaylas</h3><div>Starts from <span className="price">AED 130</span></div></a><a className="cat-card" href="/category/perfumes" data-c="accessories"><div className="im zoom"><span className="pill">3 Styles</span><img src={img.p5} alt="" /></div><h3>Perfumes & Oud</h3><div>Starts from <span className="price">AED 260</span></div></a><a className="cat-card" href="/category/wallets" data-c="accessories"><div className="im zoom"><span className="pill">3 Styles</span><img src={img.p6} alt="" /></div><h3>Clutches & Bags</h3><div>Starts from <span className="price">AED 180</span></div></a></div>
+       <div className="tabs rv" role="tablist" aria-label="Filter categories"><button className="tab on" role="tab" aria-selected="true" data-f="all">All</button>{groups.map((g) => <button key={g} className="tab" role="tab" aria-selected="false" data-f={groupKey(g)}>{g}</button>)}</div>
+       <div className="cat-rail-wrap"><div className="cat-grid cat-rail">{sortedCats.map((c) => <a key={c.slug} className="cat-card" href={`/category/${c.slug}`} data-c={groupKey(c.group)}><div className="im zoom"><span className="pill">{c.count} {c.count === 1 ? "Style" : "Styles"}</span><img src={c.image} alt="" loading="lazy" /></div><h3>{c.title}</h3><div>Starts from <span className="price">AED {c.from.toLocaleString("en")}</span></div></a>)}</div><div className="cat-rail-nav"><button type="button" className="cat-rail-btn" data-dir="-1" aria-label="Previous categories">←</button><button type="button" className="cat-rail-btn" data-dir="1" aria-label="Next categories">→</button></div></div>
       </div></section>
 
       <section className="stack" aria-label="Featured looks"><div className="stack-sticky">
