@@ -12,6 +12,8 @@ export type Product = {
   description: string;
   metaDescription: string;
   related: string[];
+  /** ISO date the product was added; used by the "Recently added" sort. */
+  addedAt?: string;
   /** Optional filter facets; category filters for these appear once products carry them. */
   fabric?: string;
   occasion?: string;
@@ -40,6 +42,7 @@ export type CardProduct = {
   /** front, side and back views; the second is shown on hover */
   images: string[];
   badge?: string;
+  addedAt?: string;
   options: ProductOption[];
   fabric?: string;
   occasion?: string;

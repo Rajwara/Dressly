@@ -46,7 +46,7 @@ export const FOOTER_NAV: { heading: string; links: NavLink[] }[] = [
       { label: "New Arrivals", href: "/shop?filter=new" },
       { label: "Abayas", href: "/category/kandura-thobes" },
       { label: "Hijabs & Shaylas", href: "/category/shimagh-ghutra" },
-      { label: "Modest Wear", href: "/shop#modest-wear" },
+      { label: "Modest Wear", href: "/shop" },
       { label: "Shop All", href: "/shop" },
     ],
   },

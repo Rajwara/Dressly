@@ -349,8 +349,8 @@ export default function Logotype({ img }: { img: LogotypeImages }) {
                     <button className="slider-hit next" id="next" aria-label="Next slide"></button>
                   </div>
                   {/* Two stacked layers in difference mode give the dark-on-white, light-on-dark wordmark */}
-                  <div className="wordmark" aria-hidden="true"><span>M</span><span>U</span><span>S</span><span>H</span><span>E</span><span>E</span><span>R</span></div>
-                  <div className="wordmark" aria-hidden="true"><span>M</span><span>U</span><span>S</span><span>H</span><span>E</span><span>E</span><span>R</span></div>
+                  <div className="wordmark" aria-hidden="true"><span>D</span><span>R</span><span>E</span><span>S</span><span>S</span><span>L</span><span>Y</span></div>
+                  <div className="wordmark" aria-hidden="true"><span>D</span><span>R</span><span>E</span><span>S</span><span>S</span><span>L</span><span>Y</span></div>
                 </div>
                 <div className="scroll-cue" data-r="" style={{ "--d": "1.4s" } as React.CSSProperties}>
                   <svg viewBox="0 0 16 42" fill="none" stroke="currentColor" strokeWidth="1.2"><path d="M8 0v41M1 34l7 7 7-7"/></svg>

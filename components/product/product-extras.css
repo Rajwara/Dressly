@@ -68,3 +68,4 @@ dialog.lightbox img { max-width: min(92vw, 1100px); max-height: 88vh; object-fit
 /* ---- Quick view ---- */
 dialog.qv .opt-label { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; }
 .qv-size { font-size: 14px; color: #3b1f33; border-bottom: 1px solid; }
+.shop .count-note{color:#8c7783;font-size:12px}

@@ -10,7 +10,7 @@ import Link from "next/link";
 import ProductCard from "./ProductCard";
 import "./product/product-extras.css";
 
-type Sort = "featured" | "low" | "high" | "az";
+export type Sort = "featured" | "new" | "low" | "high" | "az";
 type Range = { label: string; min: number; max: number };
 
 const RANGES: Range[] = [
@@ -19,7 +19,15 @@ const RANGES: Range[] = [
   { label: `${money(500)} to ${money(999)}`, min: 500, max: 999 },
   { label: `${money(1000)} and above`, min: 1000, max: Infinity },
 ];
-const SIZE_LABELS = new Set(["Size", "EU size", "Volume", "Amount"]);
+/** Clothing sizes come from "Size" options; values like "8Y" are ages (girls' range); "EU size" is shoes. */
+const AGE = /^(\d+)Y$/;
+const clothingSizes = (p: CardProduct) => p.options.filter((o) => o.label === "Size").flatMap((o) => o.values).filter((v) => !AGE.test(v));
+const agesOf = (p: CardProduct) => p.options.filter((o) => o.label === "Size").flatMap((o) => o.values).filter((v) => AGE.test(v));
+const shoeSizes = (p: CardProduct) => p.options.filter((o) => o.label === "EU size").flatMap((o) => o.values);
+const ageLabel = (v: string) => `${v.replace("Y", "")} years`;
+const SIZE_ORDER = ["XS", "S", "M", "L", "XL", "XXL", "Free Size"];
+const bySize = (a: string, b: string) => (SIZE_ORDER.indexOf(a) + 1 || 99) - (SIZE_ORDER.indexOf(b) + 1 || 99) || a.localeCompare(b, undefined, { numeric: true });
+const byNum = (a: string, b: string) => parseFloat(a) - parseFloat(b);
 const PAGE = 24;
 /** Optional product facets: a filter appears once products in the category carry the field. */
 const FACETS = [
@@ -47,9 +55,16 @@ function SizeHelpCard() {
 
 const toggle = (list: string[], v: string) => (list.includes(v) ? list.filter((x) => x !== v) : [...list, v]);
 
-/** Filters (colour, size, price), sort, grid density and the product grid for a category page. */
-export default function CategoryShop({ products, sidebar }: { products: CardProduct[]; sidebar: React.ReactNode }) {
-  const [sort, setSort] = useState<Sort>("featured");
+/**
+ * Filters (category, colour, size, age, shoe size, price), sort (featured,
+ * recently added, price, name), grid density and the product grid. Used on
+ * category pages and on the Shop page. A filter only appears when it has a choice to make.
+ */
+export default function CategoryShop({ products, sidebar, initialSort = "featured" }: { products: CardProduct[]; sidebar?: React.ReactNode; initialSort?: Sort }) {
+  const [sort, setSort] = useState<Sort>(initialSort);
+  const [cats, setCats] = useState<string[]>([]);
+  const [ages, setAges] = useState<string[]>([]);
+  const [shoes, setShoes] = useState<string[]>([]);
   const [colours, setColours] = useState<string[]>([]);
   const [sizes, setSizes] = useState<string[]>([]);
   const [ranges, setRanges] = useState<string[]>([]);
@@ -58,9 +73,19 @@ export default function CategoryShop({ products, sidebar }: { products: CardProd
   const [facets, setFacets] = useState<Record<FacetKey, string[]>>({ fabric: [], occasion: [], collar: [] });
   const [limit, setLimit] = useState(PAGE);
 
-  const sizeOf = (p: CardProduct) => p.options.find((o) => SIZE_LABELS.has(o.label))?.values ?? [];
+  const allCats = useMemo(() => {
+    const m = new Map<string, { slug: string; title: string; n: number }>();
+    products.forEach((p) => {
+      const c = m.get(p.categorySlug) ?? { slug: p.categorySlug, title: p.category, n: 0 };
+      c.n++;
+      m.set(p.categorySlug, c);
+    });
+    return [...m.values()];
+  }, [products]);
   const allColours = useMemo(() => [...new Set(products.map((p) => p.colour))].sort(), [products]);
-  const allSizes = useMemo(() => [...new Set(products.flatMap(sizeOf))], [products]);
+  const allSizes = useMemo(() => [...new Set(products.flatMap(clothingSizes))].sort(bySize), [products]);
+  const allAges = useMemo(() => [...new Set(products.flatMap(agesOf))].sort(byNum), [products]);
+  const allShoes = useMemo(() => [...new Set(products.flatMap(shoeSizes))].sort(byNum), [products]);
   const facetValues = useMemo(
     () =>
       FACETS.map((f) => ({ ...f, values: [...new Set(products.map((p) => p[f.key]).filter((v): v is string => Boolean(v)))].sort() })).filter(
@@ -73,19 +98,23 @@ export default function CategoryShop({ products, sidebar }: { products: CardProd
   const shown = useMemo(() => {
     const list = products.filter(
       (p) =>
+        (!cats.length || cats.includes(p.categorySlug)) &&
         (!colours.length || colours.includes(p.colour)) &&
-        (!sizes.length || sizeOf(p).some((s) => sizes.includes(s))) &&
+        (!sizes.length || clothingSizes(p).some((s) => sizes.includes(s))) &&
+        (!ages.length || agesOf(p).some((s) => ages.includes(s))) &&
+        (!shoes.length || shoeSizes(p).some((s) => shoes.includes(s))) &&
         (!ranges.length || RANGES.some((r) => ranges.includes(r.label) && p.price >= r.min && p.price <= r.max)) &&
         FACETS.every((f) => !facets[f.key].length || facets[f.key].includes(p[f.key] ?? "")),
     );
+    if (sort === "new") return [...list].sort((a, b) => (b.addedAt ?? "").localeCompare(a.addedAt ?? ""));
     if (sort === "low") return [...list].sort((a, b) => a.price - b.price);
     if (sort === "high") return [...list].sort((a, b) => b.price - a.price);
     if (sort === "az") return [...list].sort((a, b) => a.name.localeCompare(b.name));
     return list;
-  }, [products, colours, sizes, ranges, facets, sort]);
+  }, [products, cats, colours, sizes, ages, shoes, ranges, facets, sort]);
 
   // Start from the first page whenever the filters or sort change.
-  useEffect(() => setLimit(PAGE), [colours, sizes, ranges, facets, sort]);
+  useEffect(() => setLimit(PAGE), [cats, colours, sizes, ages, shoes, ranges, facets, sort]);
 
   // Cards move when the list changes; let scroll animations re-measure, and show any that were waiting.
   useEffect(() => {
@@ -95,8 +124,11 @@ export default function CategoryShop({ products, sidebar }: { products: CardProd
     ScrollTrigger.refresh();
   }, [shown, cols, limit]);
 
-  const active = colours.length + sizes.length + ranges.length + FACETS.reduce((n, f) => n + facets[f.key].length, 0);
+  const active = cats.length + colours.length + sizes.length + ages.length + shoes.length + ranges.length + FACETS.reduce((n, f) => n + facets[f.key].length, 0);
   const clear = () => {
+    setCats([]);
+    setAges([]);
+    setShoes([]);
     setColours([]);
     setSizes([]);
     setRanges([]);
@@ -108,6 +140,19 @@ export default function CategoryShop({ products, sidebar }: { products: CardProd
     <div className="shop">
       <aside className={filtersOpen ? "side open" : "side"}>
         {sidebar}
+        {allCats.length > 1 && (
+          <div>
+            <h4>Category</h4>
+            <div className="check-list">
+              {allCats.map((c) => (
+                <label key={c.slug}>
+                  <input type="checkbox" checked={cats.includes(c.slug)} onChange={() => setCats((l) => toggle(l, c.slug))} />
+                  {c.title} <small className="count-note">({c.n})</small>
+                </label>
+              ))}
+            </div>
+          </div>
+        )}
         <div>
           <h4>Colour</h4>
           <div className="swatch-list">
@@ -125,6 +170,30 @@ export default function CategoryShop({ products, sidebar }: { products: CardProd
             <div className="chip-list">
               {allSizes.map((s) => (
                 <button key={s} type="button" className={sizes.includes(s) ? "on" : undefined} aria-pressed={sizes.includes(s)} onClick={() => setSizes((l) => toggle(l, s))}>
+                  {s}
+                </button>
+              ))}
+            </div>
+          </div>
+        )}
+        {allAges.length > 0 && (
+          <div>
+            <h4>Age</h4>
+            <div className="chip-list">
+              {allAges.map((s) => (
+                <button key={s} type="button" className={ages.includes(s) ? "on" : undefined} aria-pressed={ages.includes(s)} onClick={() => setAges((l) => toggle(l, s))}>
+                  {ageLabel(s)}
+                </button>
+              ))}
+            </div>
+          </div>
+        )}
+        {allShoes.length > 1 && (
+          <div>
+            <h4>Shoe size (EU)</h4>
+            <div className="chip-list">
+              {allShoes.map((s) => (
+                <button key={s} type="button" className={shoes.includes(s) ? "on" : undefined} aria-pressed={shoes.includes(s)} onClick={() => setShoes((l) => toggle(l, s))}>
                   {s}
                 </button>
               ))}
@@ -187,6 +256,7 @@ export default function CategoryShop({ products, sidebar }: { products: CardProd
               Sort{" "}
               <select value={sort} onChange={(e) => setSort(e.target.value as Sort)}>
                 <option value="featured">Featured</option>
+                <option value="new">Recently added</option>
                 <option value="low">Price: low to high</option>
                 <option value="high">Price: high to low</option>
                 <option value="az">Name: A to Z</option>

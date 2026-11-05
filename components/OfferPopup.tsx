@@ -44,10 +44,17 @@ export default function OfferPopup() {
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
   const [copied, setCopied] = useState(false);
+  // Floating "Get 10% off" button: shown until the visitor signs up, so a closed popup can be reopened later.
+  const [joined, setJoined] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
+  useEffect(() => setJoined(!!readSaved().joined), []);
 
   const open = useCallback(() => {
     const d = dialog.current;
-    if (d && !d.open && !blocked(window.location.pathname)) d.showModal();
+    if (d && !d.open && !blocked(window.location.pathname)) {
+      d.showModal();
+      setIsOpen(true);
+    }
   }, []);
 
   useEffect(() => {
@@ -74,6 +81,7 @@ export default function OfferPopup() {
   const close = () => dialog.current?.close();
 
   const onClosed = () => {
+    setIsOpen(false);
     const s = readSaved();
     if (!s.joined) writeSaved({ ...s, closedAt: Date.now() });
   };
@@ -96,6 +104,7 @@ export default function OfferPopup() {
         return;
       }
       setStatus("done");
+      setJoined(true);
       writeSaved({ joined: true });
     } catch {
       setError("Something went wrong. Please try again.");
@@ -113,7 +122,18 @@ export default function OfferPopup() {
     }
   };
 
+  const showTab = !joined && !isOpen && !blocked(pathname);
+
   return (
+    <>
+    {showTab && (
+      <button type="button" className="offer-tab" onClick={open} aria-haspopup="dialog">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+          <path d="M20 12v9H4v-9M2 7h20v5H2zM12 21V7M12 7H7.5a2.5 2.5 0 1 1 0-5C11 2 12 7 12 7zM12 7h4.5a2.5 2.5 0 1 0 0-5C13 2 12 7 12 7z" />
+        </svg>
+        <span>Get {PROMO.percent}% off</span>
+      </button>
+    )}
     <dialog
       ref={dialog}
       className="offer-pop"
@@ -221,5 +241,6 @@ export default function OfferPopup() {
         </ul>
       </div>
     </dialog>
+    </>
   );
 }

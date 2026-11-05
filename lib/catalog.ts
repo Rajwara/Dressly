@@ -34,6 +34,7 @@ export function toCard(p: Product): CardProduct {
     images: [productImage(p.slug, "front"), productImage(p.slug, "side"), productImage(p.slug, "back")],
     badge: newSet.has(p.slug) ? "New" : bestSellers.has(p.slug) ? "Best seller" : undefined,
     options: p.options,
+    ...(p.addedAt && { addedAt: p.addedAt }),
     ...(p.fabric && { fabric: p.fabric }),
     ...(p.occasion && { occasion: p.occasion }),
     ...(p.collar && { collar: p.collar }),

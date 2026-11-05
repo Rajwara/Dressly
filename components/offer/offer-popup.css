@@ -53,3 +53,11 @@ dialog.offer-pop::backdrop{background:#0b0b0bb3}
   .offer-side,.offer-tabs{display:none}
   .offer-switch{display:inline}
 }
+
+/* Floating button to reopen the offer after the popup was closed without signing up. */
+.offer-tab{position:fixed;left:20px;bottom:20px;z-index:40;display:inline-flex;align-items:center;gap:9px;height:48px;padding:0 20px 0 16px;border:0;border-radius:999px;background:#3b1f33;color:#fff;font:500 15px/1 var(--font-space-grotesk),system-ui,sans-serif;letter-spacing:.01em;cursor:pointer;box-shadow:0 10px 30px rgba(59,31,51,.28);transition:transform .25s ease,background .25s ease}
+.offer-tab svg{color:#c9a27e}
+.offer-tab:hover{background:#b76e79;transform:translateY(-2px)}
+.offer-tab:focus-visible{outline:2px solid #fff;outline-offset:3px;box-shadow:0 0 0 5px #3b1f33}
+@media (max-width:720px){.offer-tab{left:16px;bottom:16px;height:44px;padding:0 16px 0 13px;font-size:14px}}
+@media print{.offer-tab{display:none}}

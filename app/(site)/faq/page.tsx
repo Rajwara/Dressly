@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import FieldwornShell from "@/components/FieldwornShell";
 import { PHONE_DISPLAY, WHATSAPP_URL } from "@/lib/brand";
 import { DELIVERY, PAYMENT_METHODS, RETURNS_DAYS } from "@/lib/commerce";
+import FaqCursorImage from "@/components/FaqCursorImage";
+import { imageSrc } from "@/lib/images";
 import "../shop-brand.css";
 import "../info-pages.css";
 
@@ -52,7 +54,16 @@ const GROUPS: { id: string; title: string; items: { q: string; a: string }[] }[]
   },
 ];
 
+// Photo shown next to the cursor while each question is hovered, rotating through these.
+const PHOTOS = [
+  "images/categories/kandura-thobes", "images/pages/branches", "images/content/story", "images/categories/traditional-kandura",
+  "images/categories/shimagh-ghutra", "images/categories/arabic-sandals", "images/pages/about", "images/categories/perfumes",
+  "images/categories/summer-thobes", "images/hero/hero-new", "images/categories/bisht", "images/categories/jalabiya",
+  "images/categories/ghutra", "images/pages/contact",
+].map(imageSrc);
+
 export default function FaqPage() {
+  let n = 0;
   return (
     <FieldwornShell className="shop-fw">
       <div className="ip">
@@ -70,13 +81,14 @@ export default function FaqPage() {
               <section className="ip-faq-group" id={g.id} key={g.id}>
                 <h2>{g.title}</h2>
                 {g.items.map((f) => (
-                  <details key={f.q}><summary>{f.q}</summary><p>{f.a}</p></details>
+                  <details key={f.q} data-img={PHOTOS[n++ % PHOTOS.length]}><summary>{f.q}</summary><p>{f.a}</p></details>
                 ))}
               </section>
             ))}
           </div>
         </div>
       </div>
+      <FaqCursorImage />
     </FieldwornShell>
   );
 }

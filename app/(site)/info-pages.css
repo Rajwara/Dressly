@@ -61,3 +61,10 @@
   .ip-steps{grid-template-columns:1fr}
   .ip-cats{grid-template-columns:1fr 1fr;gap:12px}
 }
+
+/* FAQ: photo that follows the cursor while a question is hovered */
+.faq-cursor{position:fixed;left:0;top:0;z-index:60;width:180px;aspect-ratio:4/5;border-radius:14px;overflow:hidden;pointer-events:none;opacity:0;scale:.85;transition:opacity .25s ease,scale .35s cubic-bezier(.2,.7,.2,1);box-shadow:0 20px 50px rgba(59,31,51,.25);background:#f8f0ec}
+.faq-cursor.on{opacity:1;scale:1}
+.faq-cursor img{width:100%;height:100%;object-fit:cover}
+.ip-faq details[data-img] summary{cursor:pointer}
+@media (hover:none){.faq-cursor{display:none}}
