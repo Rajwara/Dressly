@@ -19,23 +19,40 @@ const RANGES: Range[] = [
   { label: `${money(500)} to ${money(999)}`, min: 500, max: 999 },
   { label: `${money(1000)} and above`, min: 1000, max: Infinity },
 ];
+const PAGE = 24;
+
 /** Clothing sizes come from "Size" options; values like "8Y" are ages (girls' range); "EU size" is shoes. */
 const AGE = /^(\d+)Y$/;
-const clothingSizes = (p: CardProduct) => p.options.filter((o) => o.label === "Size").flatMap((o) => o.values).filter((v) => !AGE.test(v));
-const agesOf = (p: CardProduct) => p.options.filter((o) => o.label === "Size").flatMap((o) => o.values).filter((v) => AGE.test(v));
+const sizeValues = (p: CardProduct) => p.options.filter((o) => o.label === "Size").flatMap((o) => o.values);
+const clothingSizes = (p: CardProduct) => sizeValues(p).filter((v) => !AGE.test(v));
+const agesOf = (p: CardProduct) => sizeValues(p).filter((v) => AGE.test(v));
 const shoeSizes = (p: CardProduct) => p.options.filter((o) => o.label === "EU size").flatMap((o) => o.values);
-const ageLabel = (v: string) => `${v.replace("Y", "")} years`;
+const ageLabel = (v: string) => `${v.replace("Y", "")} yrs`;
 const SIZE_ORDER = ["XS", "S", "M", "L", "XL", "XXL", "Free Size"];
 const bySize = (a: string, b: string) => (SIZE_ORDER.indexOf(a) + 1 || 99) - (SIZE_ORDER.indexOf(b) + 1 || 99) || a.localeCompare(b, undefined, { numeric: true });
 const byNum = (a: string, b: string) => parseFloat(a) - parseFloat(b);
-const PAGE = 24;
-/** Optional product facets: a filter appears once products in the category carry the field. */
-const FACETS = [
-  { key: "fabric", label: "Fabric" },
-  { key: "occasion", label: "Occasion" },
-  { key: "collar", label: "Collar style" },
-] as const;
-type FacetKey = (typeof FACETS)[number]["key"];
+const GROUP_ORDER = ["Abayas", "Hijabs", "Outerwear", "Home & Lounge", "Essentials", "Girls", "Footwear", "Fragrance", "Accessories", "Gifts"];
+const byGroup = (a: string, b: string) => (GROUP_ORDER.indexOf(a) + 1 || 99) - (GROUP_ORDER.indexOf(b) + 1 || 99);
+
+/** Every filter, in the order the sidebar shows them. Optional facets appear once products carry the field. */
+type Key = "cat" | "colour" | "size" | "age" | "shoe" | "price" | "fabric" | "occasion" | "collar";
+const KEYS: Key[] = ["cat", "colour", "size", "age", "shoe", "price", "fabric", "occasion", "collar"];
+const TITLES: Record<Key, string> = { cat: "Category", colour: "Colour", size: "Size", age: "Age", shoe: "Shoe size (EU)", price: "Price", fabric: "Fabric", occasion: "Occasion", collar: "Collar style" };
+type Selected = Record<Key, string[]>;
+const EMPTY: Selected = { cat: [], colour: [], size: [], age: [], shoe: [], price: [], fabric: [], occasion: [], collar: [] };
+
+/** The values a product has for one filter. */
+function valuesOf(p: CardProduct, k: Key): string[] {
+  switch (k) {
+    case "cat": return [p.categorySlug];
+    case "colour": return [p.colour];
+    case "size": return clothingSizes(p);
+    case "age": return agesOf(p);
+    case "shoe": return shoeSizes(p);
+    case "price": return RANGES.filter((r) => p.price >= r.min && p.price <= r.max).map((r) => r.label);
+    default: return p[k] ? [p[k] as string] : [];
+  }
+}
 
 /** Shown inside the grid after the sixth product. */
 function SizeHelpCard() {
@@ -55,66 +72,80 @@ function SizeHelpCard() {
 
 const toggle = (list: string[], v: string) => (list.includes(v) ? list.filter((x) => x !== v) : [...list, v]);
 
+/** One collapsible filter section with a count of what's selected in it. */
+function Section({ title, picked, open = true, children }: { title: string; picked: number; open?: boolean; children: React.ReactNode }) {
+  return (
+    <details className="fx-sec" open={open}>
+      <summary>
+        <span>{title}</span>
+        {picked > 0 && <b className="fx-badge">{picked}</b>}
+        <Icon name="chevron" size={16} />
+      </summary>
+      <div className="fx-body">{children}</div>
+    </details>
+  );
+}
+
 /**
- * Filters (category, colour, size, age, shoe size, price), sort (featured,
- * recently added, price, name), grid density and the product grid. Used on
- * category pages and on the Shop page. A filter only appears when it has a choice to make.
+ * Filters, sort, grid density and the product grid. Used on category pages and
+ * on the Shop page. Each option shows how many products it would give with the
+ * other filters applied; options that would give none are greyed out.
  */
 export default function CategoryShop({ products, sidebar, initialSort = "featured" }: { products: CardProduct[]; sidebar?: React.ReactNode; initialSort?: Sort }) {
   const [sort, setSort] = useState<Sort>(initialSort);
-  const [cats, setCats] = useState<string[]>([]);
-  const [ages, setAges] = useState<string[]>([]);
-  const [shoes, setShoes] = useState<string[]>([]);
-  const [colours, setColours] = useState<string[]>([]);
-  const [sizes, setSizes] = useState<string[]>([]);
-  const [ranges, setRanges] = useState<string[]>([]);
+  const [sel, setSel] = useState<Selected>(EMPTY);
   const [cols, setCols] = useState(3);
   const [filtersOpen, setFiltersOpen] = useState(false);
-  const [facets, setFacets] = useState<Record<FacetKey, string[]>>({ fabric: [], occasion: [], collar: [] });
   const [limit, setLimit] = useState(PAGE);
+  const [more, setMore] = useState<Partial<Record<Key, boolean>>>({});
+  /** Long lists show this many options (plus anything already ticked) until "Show all". */
+  const SHORT = 8;
+  const MoreToggle = ({ k, total, what }: { k: Key; total: number; what: string }) =>
+    total > SHORT ? (
+      <button type="button" className="fx-more" onClick={() => setMore((m) => ({ ...m, [k]: !m[k] }))} aria-expanded={!!more[k]}>
+        {more[k] ? "Show fewer" : `Show all ${total} ${what}`}
+      </button>
+    ) : null;
+  const trim = <T extends { value: string; count: number }>(k: Key, list: T[]) =>
+    more[k] || list.length <= SHORT ? list : list.filter((o, i) => i < SHORT || sel[k].includes(o.value));
 
-  const allCats = useMemo(() => {
-    const m = new Map<string, { slug: string; title: string; n: number }>();
-    products.forEach((p) => {
-      const c = m.get(p.categorySlug) ?? { slug: p.categorySlug, title: p.category, n: 0 };
-      c.n++;
-      m.set(p.categorySlug, c);
-    });
-    return [...m.values()];
-  }, [products]);
-  const allColours = useMemo(() => [...new Set(products.map((p) => p.colour))].sort(), [products]);
-  const allSizes = useMemo(() => [...new Set(products.flatMap(clothingSizes))].sort(bySize), [products]);
-  const allAges = useMemo(() => [...new Set(products.flatMap(agesOf))].sort(byNum), [products]);
-  const allShoes = useMemo(() => [...new Set(products.flatMap(shoeSizes))].sort(byNum), [products]);
-  const facetValues = useMemo(
-    () =>
-      FACETS.map((f) => ({ ...f, values: [...new Set(products.map((p) => p[f.key]).filter((v): v is string => Boolean(v)))].sort() })).filter(
-        (f) => f.values.length > 1,
-      ),
-    [products],
-  );
-  const usedRanges = useMemo(() => RANGES.filter((r) => products.some((p) => p.price >= r.min && p.price <= r.max)), [products]);
+  const pick = (k: Key, v: string) => setSel((s) => ({ ...s, [k]: toggle(s[k], v) }));
+  const matches = (p: CardProduct, except?: Key) =>
+    KEYS.every((k) => k === except || !sel[k].length || valuesOf(p, k).some((v) => sel[k].includes(v)));
+
+  /** Options per filter, with live counts. */
+  const options = useMemo(() => {
+    const out = {} as Record<Key, { value: string; label: string; count: number; group?: string }[]>;
+    for (const k of KEYS) {
+      const all = new Map<string, { label: string; group?: string }>();
+      products.forEach((p) =>
+        valuesOf(p, k).forEach((v) => all.set(v, { label: k === "cat" ? p.category : k === "age" ? ageLabel(v) : v, group: k === "cat" ? p.group : undefined })),
+      );
+      const base = products.filter((p) => matches(p, k));
+      let list = [...all].map(([value, o]) => ({ value, ...o, count: base.filter((p) => valuesOf(p, k).includes(value)).length }));
+      if (k === "size") list = list.sort((a, b) => bySize(a.value, b.value));
+      else if (k === "age" || k === "shoe") list = list.sort((a, b) => byNum(a.value, b.value));
+      else if (k === "price") list = list.sort((a, b) => RANGES.findIndex((r) => r.label === a.value) - RANGES.findIndex((r) => r.label === b.value));
+      else if (k === "cat") list = list.sort((a, b) => byGroup(a.group ?? "", b.group ?? "") || Number(b.label.startsWith("All ")) - Number(a.label.startsWith("All ")));
+      else list = list.sort((a, b) => a.label.localeCompare(b.label));
+      out[k] = list;
+    }
+    return out;
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [products, sel]);
 
   const shown = useMemo(() => {
-    const list = products.filter(
-      (p) =>
-        (!cats.length || cats.includes(p.categorySlug)) &&
-        (!colours.length || colours.includes(p.colour)) &&
-        (!sizes.length || clothingSizes(p).some((s) => sizes.includes(s))) &&
-        (!ages.length || agesOf(p).some((s) => ages.includes(s))) &&
-        (!shoes.length || shoeSizes(p).some((s) => shoes.includes(s))) &&
-        (!ranges.length || RANGES.some((r) => ranges.includes(r.label) && p.price >= r.min && p.price <= r.max)) &&
-        FACETS.every((f) => !facets[f.key].length || facets[f.key].includes(p[f.key] ?? "")),
-    );
+    const list = products.filter((p) => matches(p));
     if (sort === "new") return [...list].sort((a, b) => (b.addedAt ?? "").localeCompare(a.addedAt ?? ""));
     if (sort === "low") return [...list].sort((a, b) => a.price - b.price);
     if (sort === "high") return [...list].sort((a, b) => b.price - a.price);
     if (sort === "az") return [...list].sort((a, b) => a.name.localeCompare(b.name));
     return list;
-  }, [products, cats, colours, sizes, ages, shoes, ranges, facets, sort]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [products, sel, sort]);
 
   // Start from the first page whenever the filters or sort change.
-  useEffect(() => setLimit(PAGE), [cats, colours, sizes, ages, shoes, ranges, facets, sort]);
+  useEffect(() => setLimit(PAGE), [sel, sort]);
 
   // Cards move when the list changes; let scroll animations re-measure, and show any that were waiting.
   useEffect(() => {
@@ -124,115 +155,103 @@ export default function CategoryShop({ products, sidebar, initialSort = "feature
     ScrollTrigger.refresh();
   }, [shown, cols, limit]);
 
-  const active = cats.length + colours.length + sizes.length + ages.length + shoes.length + ranges.length + FACETS.reduce((n, f) => n + facets[f.key].length, 0);
-  const clear = () => {
-    setCats([]);
-    setAges([]);
-    setShoes([]);
-    setColours([]);
-    setSizes([]);
-    setRanges([]);
-    setFacets({ fabric: [], occasion: [], collar: [] });
-  };
+  const active = KEYS.reduce((n, k) => n + sel[k].length, 0);
+  const clear = () => setSel(EMPTY);
   const visible = shown.slice(0, limit);
+  const labelOf = (k: Key, v: string) => options[k].find((o) => o.value === v)?.label ?? v;
+  const has = (k: Key) => options[k].length > 1;
+
+  const chips = (k: Key) => (
+    <div className="fx-chips">
+      {options[k].map((o) => {
+        const on = sel[k].includes(o.value);
+        return (
+          <button key={o.value} type="button" className={on ? "on" : undefined} aria-pressed={on} disabled={!on && !o.count} onClick={() => pick(k, o.value)}>
+            {o.label}
+          </button>
+        );
+      })}
+    </div>
+  );
+  const checks = (k: Key, list = options[k]) => (
+    <div className="fx-checks">
+      {list.map((o) => {
+        const on = sel[k].includes(o.value);
+        return (
+          <label key={o.value} className={!on && !o.count ? "off" : undefined}>
+            <input type="checkbox" checked={on} disabled={!on && !o.count} onChange={() => pick(k, o.value)} />
+            <span>{o.label}</span>
+            <small>{o.count}</small>
+          </label>
+        );
+      })}
+    </div>
+  );
+
+  // Category options grouped under their group name (Abayas, Hijabs…).
+  const catGroups = [...new Set(options.cat.map((o) => o.group ?? ""))];
 
   return (
     <div className="shop">
-      <aside className={filtersOpen ? "side open" : "side"}>
-        {sidebar}
-        {allCats.length > 1 && (
-          <div>
-            <h4>Category</h4>
-            <div className="check-list">
-              {allCats.map((c) => (
-                <label key={c.slug}>
-                  <input type="checkbox" checked={cats.includes(c.slug)} onChange={() => setCats((l) => toggle(l, c.slug))} />
-                  {c.title} <small className="count-note">({c.n})</small>
-                </label>
-              ))}
-            </div>
-          </div>
-        )}
-        <div>
-          <h4>Colour</h4>
-          <div className="swatch-list">
-            {allColours.map((c) => (
-              <button key={c} type="button" className={colours.includes(c) ? "on" : undefined} aria-pressed={colours.includes(c)} onClick={() => setColours((l) => toggle(l, c))}>
-                <span className="dot" style={{ background: SWATCH[c] ?? "#d6bfb7" }} />
-                {c}
-              </button>
-            ))}
-          </div>
+      <aside className={filtersOpen ? "side fx open" : "side fx"} aria-label="Filters">
+        <div className="fx-head">
+          <h3>Filters</h3>
+          {active > 0 && (
+            <button type="button" className="fx-clear" onClick={clear}>
+              Clear all ({active})
+            </button>
+          )}
+          <button type="button" className="fx-close" onClick={() => setFiltersOpen(false)} aria-label="Close filters">
+            <Icon name="close" size={18} />
+          </button>
         </div>
-        {allSizes.length > 1 && (
-          <div>
-            <h4>Size</h4>
-            <div className="chip-list">
-              {allSizes.map((s) => (
-                <button key={s} type="button" className={sizes.includes(s) ? "on" : undefined} aria-pressed={sizes.includes(s)} onClick={() => setSizes((l) => toggle(l, s))}>
-                  {s}
-                </button>
-              ))}
-            </div>
-          </div>
+        {sidebar}
+        {has("cat") && (
+          <Section title={TITLES.cat} picked={sel.cat.length}>
+            {(more.cat || catGroups.length <= 2 ? catGroups : catGroups.filter((g, i) => i < 2 || options.cat.some((o) => (o.group ?? "") === g && sel.cat.includes(o.value)))).map((g) => (
+              <div key={g} className="fx-group">
+                {catGroups.length > 1 && <p className="fx-group-name">{g}</p>}
+                {checks("cat", options.cat.filter((o) => (o.group ?? "") === g))}
+              </div>
+            ))}
+            {catGroups.length > 2 && (
+              <button type="button" className="fx-more" onClick={() => setMore((m) => ({ ...m, cat: !m.cat }))} aria-expanded={!!more.cat}>
+                {more.cat ? "Show fewer" : `Show all ${options.cat.length} categories`}
+              </button>
+            )}
+          </Section>
         )}
-        {allAges.length > 0 && (
-          <div>
-            <h4>Age</h4>
-            <div className="chip-list">
-              {allAges.map((s) => (
-                <button key={s} type="button" className={ages.includes(s) ? "on" : undefined} aria-pressed={ages.includes(s)} onClick={() => setAges((l) => toggle(l, s))}>
-                  {ageLabel(s)}
-                </button>
-              ))}
-            </div>
-          </div>
-        )}
-        {allShoes.length > 1 && (
-          <div>
-            <h4>Shoe size (EU)</h4>
-            <div className="chip-list">
-              {allShoes.map((s) => (
-                <button key={s} type="button" className={shoes.includes(s) ? "on" : undefined} aria-pressed={shoes.includes(s)} onClick={() => setShoes((l) => toggle(l, s))}>
-                  {s}
-                </button>
-              ))}
-            </div>
-          </div>
-        )}
-        {usedRanges.length > 1 && (
-          <div>
-            <h4>Price</h4>
-            <div className="check-list">
-              {usedRanges.map((r) => (
-                <label key={r.label}>
-                  <input type="checkbox" checked={ranges.includes(r.label)} onChange={() => setRanges((l) => toggle(l, r.label))} />
-                  {r.label}
-                </label>
-              ))}
-            </div>
-          </div>
-        )}
-        {facetValues.map((f) => (
-          <div key={f.key}>
-            <h4>{f.label}</h4>
-            <div className="chip-list">
-              {f.values.map((v) => {
-                const on = facets[f.key].includes(v);
+        {options.colour.length > 0 && (
+          <Section title={TITLES.colour} picked={sel.colour.length}>
+            <div className="fx-swatches">
+              {trim("colour", [...options.colour].sort((a, b) => Number(b.count > 0) - Number(a.count > 0))).map((o) => {
+                const on = sel.colour.includes(o.value);
                 return (
-                  <button key={v} type="button" className={on ? "on" : undefined} aria-pressed={on} onClick={() => setFacets((x) => ({ ...x, [f.key]: toggle(x[f.key], v) }))}>
-                    {v}
+                  <button key={o.value} type="button" className={on ? "on" : undefined} aria-pressed={on} disabled={!on && !o.count} onClick={() => pick("colour", o.value)}>
+                    <span className="dot" style={{ background: SWATCH[o.value] ?? "#d6bfb7" }} />
+                    <span className="fx-sw-name">{o.label}</span>
+                    <small>{o.count}</small>
                   </button>
                 );
               })}
             </div>
-          </div>
-        ))}
-        {active > 0 && (
-          <button className="link" type="button" onClick={clear}>
-            Clear all filters ({active})
-          </button>
+            <MoreToggle k="colour" total={options.colour.length} what="colours" />
+          </Section>
         )}
+        {has("size") && <Section title={TITLES.size} picked={sel.size.length}>{chips("size")}</Section>}
+        {options.age.length > 0 && <Section title={TITLES.age} picked={sel.age.length}>{chips("age")}</Section>}
+        {has("shoe") && <Section title={TITLES.shoe} picked={sel.shoe.length} open={false}>{chips("shoe")}</Section>}
+        {has("price") && <Section title={TITLES.price} picked={sel.price.length}>{checks("price")}</Section>}
+        {(["fabric", "occasion", "collar"] as const).map((k) =>
+          has(k) ? (
+            <Section key={k} title={TITLES[k]} picked={sel[k].length} open={false}>
+              {chips(k)}
+            </Section>
+          ) : null,
+        )}
+        <button type="button" className="btn fx-apply" onClick={() => setFiltersOpen(false)}>
+          Show {shown.length} {shown.length === 1 ? "product" : "products"}
+        </button>
       </aside>
       <div>
         <div className="bar">
@@ -264,6 +283,20 @@ export default function CategoryShop({ products, sidebar, initialSort = "feature
             </label>
           </div>
         </div>
+        {active > 0 && (
+          <div className="fx-active" aria-label="Active filters">
+            {KEYS.flatMap((k) =>
+              sel[k].map((v) => (
+                <button key={`${k}:${v}`} type="button" onClick={() => pick(k, v)} aria-label={`Remove ${TITLES[k]}: ${labelOf(k, v)}`}>
+                  <span>{TITLES[k]}:</span> {labelOf(k, v)} <Icon name="close" size={13} />
+                </button>
+              )),
+            )}
+            <button type="button" className="fx-active-clear" onClick={clear}>
+              Clear all
+            </button>
+          </div>
+        )}
         {shown.length ? (
           <>
             <div className="grid" data-stagger style={{ "--cols": cols } as React.CSSProperties}>

@@ -43,6 +43,8 @@ export type CardProduct = {
   images: string[];
   badge?: string;
   addedAt?: string;
+  /** Category group, e.g. "Abayas"; used to group the Category filter. */
+  group?: string;
   options: ProductOption[];
   fabric?: string;
   occasion?: string;

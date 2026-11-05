@@ -35,6 +35,7 @@ export function toCard(p: Product): CardProduct {
     badge: newSet.has(p.slug) ? "New" : bestSellers.has(p.slug) ? "Best seller" : undefined,
     options: p.options,
     ...(p.addedAt && { addedAt: p.addedAt }),
+    ...(categoryMap.get(p.categorySlug)?.group && { group: categoryMap.get(p.categorySlug)!.group }),
     ...(p.fabric && { fabric: p.fabric }),
     ...(p.occasion && { occasion: p.occasion }),
     ...(p.collar && { collar: p.collar }),
