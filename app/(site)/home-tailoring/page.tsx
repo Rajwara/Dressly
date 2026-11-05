@@ -81,7 +81,7 @@ export default function HomeTailoringPage() {
 
           <section className="ip-section ip-panel">
             <h2>Prefer to visit us?</h2>
-            <p style={{ color: "#555", maxWidth: 560 }}>Choose fabrics and be measured at any of our 13 branches across 5 Emirates.</p>
+            <p style={{ color: "#6e5a66", maxWidth: 560 }}>Choose fabrics and be measured at any of our 13 branches across 5 Emirates.</p>
             <div className="ip-actions"><a className="btn" href="/branches">Find a branch</a></div>
           </section>
         </div>

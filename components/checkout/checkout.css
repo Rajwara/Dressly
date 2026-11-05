@@ -1,29 +1,29 @@
 /* Checkout page, in the homepage design. Scoped to .co. */
-.co { --co-line: #e4e4e4; --co-tint: #f6f6f6; --co-muted: #666; padding: 40px 0 100px; min-height: 60vh; }
+.co { --co-line: #ebdcd6; --co-tint: #f8f0ec; --co-muted: #6e5a66; padding: 40px 0 100px; min-height: 60vh; }
 .co-wrap { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
 .co-eyebrow { display: block; margin-bottom: 10px; font: 500 16px/24px var(--fw-display); text-transform: uppercase; }
-.co h1 { font: 500 clamp(48px, 6vw, 88px)/.95 var(--fw-display); text-transform: uppercase; letter-spacing: -.04em; margin: 0 0 12px; }
-.co h2 { font: 500 26px/1.1 var(--fw-display); text-transform: uppercase; letter-spacing: -.03em; margin: 0 0 18px; }
+.co h1 { font: 500 clamp(48px, 6vw, 88px)/.95 var(--fw-display); text-transform: uppercase; letter-spacing: 0; margin: 0 0 12px; }
+.co h2 { font: 500 26px/1.1 var(--fw-display); text-transform: uppercase; letter-spacing: 0; margin: 0 0 18px; }
 .co-head { margin-bottom: 32px; }
 .co-head p { color: var(--co-muted); margin: 0; }
-.co-link { border-bottom: 1px solid currentColor; color: #000; }
+.co-link { border-bottom: 1px solid currentColor; color: #3b1f33; }
 .co-grid { display: grid; grid-template-columns: minmax(0, 1fr) 400px; gap: 48px; align-items: start; }
 
 /* Steps */
 .co-step { padding: 28px; border-radius: 12px; border: 1px solid var(--co-line); margin-bottom: 16px; }
 .co-step h2 { display: flex; align-items: center; gap: 12px; }
-.co-step h2 span { display: grid; place-items: center; width: 30px; height: 30px; border-radius: 50%; background: #000; color: #fff; font: 500 15px/1 var(--fw-body); }
+.co-step h2 span { display: grid; place-items: center; width: 30px; height: 30px; border-radius: 50%; background: #3b1f33; color: #fff; font: 500 15px/1 var(--fw-body); }
 .co-row { display: grid; gap: 16px; margin-bottom: 16px; }
 .co-row.two { grid-template-columns: 1fr 1fr; }
 .co label { display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 500; }
-.co label em { font-style: normal; font-weight: 400; color: #888; }
+.co label em { font-style: normal; font-weight: 400; color: #8c7783; }
 .co label small, .co-hint, .co-small { font-weight: 400; color: var(--co-muted); font-size: 13px; line-height: 1.45; }
 .co-hint { margin: 0 0 14px; }
 .co input:not([type="radio"]), .co select {
   width: 100%; height: 48px; padding: 0 16px; border: 1px solid var(--co-line); border-radius: 10px; background: #fff;
-  font: 400 16px var(--fw-body); color: #000; outline: none; transition: border-color .2s;
+  font: 400 16px var(--fw-body); color: #3b1f33; outline: none; transition: border-color .2s;
 }
-.co input:not([type="radio"]):focus, .co select:focus { border-color: #000; }
+.co input:not([type="radio"]):focus, .co select:focus { border-color: #3b1f33; }
 .co [aria-invalid="true"] { border-color: #c0392b !important; }
 .co-error { color: #c0392b; font-size: 13px; font-weight: 500; margin: 2px 0 0; }
 .co-ok { color: #1e7d45; font-size: 13px; font-weight: 500; margin: 6px 0 0; }
@@ -32,18 +32,18 @@
 .co-tabs { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 18px; }
 .co-tabs label, .co-options label { position: relative; flex-direction: row; align-items: flex-start; gap: 12px; padding: 16px; border: 1px solid var(--co-line); border-radius: 12px; cursor: pointer; transition: border-color .2s, background .2s; }
 .co-tabs label { flex-direction: column; gap: 2px; }
-.co-tabs label.on, .co-options label.on { border-color: #000; background: var(--co-tint); }
+.co-tabs label.on, .co-options label.on { border-color: #3b1f33; background: var(--co-tint); }
 .co-tabs input { position: absolute; opacity: 0; pointer-events: none; }
 .co-tabs b, .co-options b { font-weight: 500; font-size: 15px; }
 .co-options { display: grid; gap: 10px; }
-.co-options input { margin-top: 3px; accent-color: #000; width: 18px; height: 18px; flex: none; }
+.co-options input { margin-top: 3px; accent-color: #3b1f33; width: 18px; height: 18px; flex: none; }
 .co-options span { display: flex; flex-direction: column; gap: 2px; }
 .co-measures { display: grid; grid-template-columns: repeat(5, 1fr); gap: 12px; margin-top: 16px; align-items: end; }
 .co-measures .co-link { grid-column: 1 / -1; justify-self: start; font-size: 14px; }
 
 .co-submit { width: 100%; padding: 18px 24px !important; font-size: 17px !important; margin-top: 8px; }
 .co-small { margin-top: 12px; text-align: center; }
-.co-small a { color: #000; border-bottom: 1px solid; }
+.co-small a { color: #3b1f33; border-bottom: 1px solid; }
 
 /* Summary */
 .co-summary { position: sticky; top: 24px; border-radius: 12px; background: var(--co-tint); padding: 28px; }
@@ -52,14 +52,14 @@
 .co-items li { display: grid; grid-template-columns: 64px 1fr auto; gap: 12px; align-items: center; font-size: 14px; }
 .co-thumb { position: relative; width: 64px; height: 80px; border-radius: 8px; overflow: hidden; background: #fff; }
 .co-thumb img { width: 100%; height: 100%; object-fit: cover; }
-.co-thumb i { position: absolute; top: 4px; right: 4px; min-width: 20px; height: 20px; border-radius: 10px; background: #000; color: #fff; font: 500 12px/20px var(--fw-body); text-align: center; font-style: normal; }
+.co-thumb i { position: absolute; top: 4px; right: 4px; min-width: 20px; height: 20px; border-radius: 10px; background: #3b1f33; color: #fff; font: 500 12px/20px var(--fw-body); text-align: center; font-style: normal; }
 .co-item-text { display: flex; flex-direction: column; }
 .co-item-text b { font-weight: 500; }
 .co-item-text small { color: var(--co-muted); }
 .co-promo { display: flex; gap: 8px; }
 .co-promo input { height: 44px !important; }
-.co-promo button { flex: none; padding: 0 18px; border-radius: 99px; border: 1px solid #000; background: #fff; font: 500 14px var(--fw-body); cursor: pointer; }
-.co-promo button:hover { background: #000; color: #fff; }
+.co-promo button { flex: none; padding: 0 18px; border-radius: 99px; border: 1px solid #3b1f33; background: #fff; font: 500 14px var(--fw-body); cursor: pointer; }
+.co-promo button:hover { background: #3b1f33; color: #fff; }
 .co-totals { margin: 18px 0 0; padding-top: 14px; border-top: 1px solid var(--co-line); }
 .co-totals div { display: flex; justify-content: space-between; padding: 5px 0; font-size: 15px; }
 .co-totals dt, .co-totals dd { margin: 0; }
@@ -67,12 +67,12 @@
 .co-total { margin-top: 8px; padding-top: 12px !important; border-top: 1px solid var(--co-line); font-weight: 700; font-size: 20px !important; }
 .co-estimate { margin: 14px 0 0; padding: 12px 14px; border-radius: 10px; background: #fff; font-size: 14px; }
 .co-trust { list-style: none; margin: 16px 0 0; padding: 0; display: grid; gap: 6px; font-size: 13px; color: var(--co-muted); }
-.co-trust li::before { content: "✓"; margin-right: 8px; color: #000; }
-.co-trust a { color: #000; border-bottom: 1px solid; }
+.co-trust li::before { content: "✓"; margin-right: 8px; color: #3b1f33; }
+.co-trust a { color: #3b1f33; border-bottom: 1px solid; }
 
 /* Confirmation and empty */
 .co-done, .co-empty { max-width: 720px; text-align: center; padding-top: 40px; }
-.co-done p, .co-empty p { color: #333; font-size: 17px; line-height: 1.6; }
+.co-done p, .co-empty p { color: #4a2c41; font-size: 17px; line-height: 1.6; }
 .co-ref { font-size: 20px !important; }
 .co-account { margin-top: 40px; padding: 32px; border-radius: 12px; background: var(--co-tint); display: flex; flex-direction: column; align-items: center; gap: 12px; }
 .co-account p { margin: 0 0 8px; }

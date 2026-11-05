@@ -226,13 +226,13 @@ export default function BranchGlobe({ branches, emirates }: { branches: GlobeBra
           <svg viewBox="0 0 1000 1000" aria-hidden="true">
             <defs>
               <radialGradient id="bg-ocean" cx="50%" cy="38%" r="62%">
-                <stop offset="0" stopColor="#dcdcdc" />
-                <stop offset=".72" stopColor="#d1d1d1" />
-                <stop offset="1" stopColor="#bdbdbd" />
+                <stop offset="0" stopColor="#e6d3cc" />
+                <stop offset=".72" stopColor="#dcc6be" />
+                <stop offset="1" stopColor="#cbb3bf" />
               </radialGradient>
               <radialGradient id="bg-shade" cx="50%" cy="45%" r="55%">
-                <stop offset=".7" stopColor="#3c3c3c" stopOpacity="0" />
-                <stop offset="1" stopColor="#3c3c3c" stopOpacity=".24" />
+                <stop offset=".7" stopColor="#5a3c50" stopOpacity="0" />
+                <stop offset="1" stopColor="#5a3c50" stopOpacity=".24" />
               </radialGradient>
               <filter id="bg-glow" x="-20%" y="-20%" width="140%" height="140%">
                 <feGaussianBlur stdDeviation="20" />
@@ -241,18 +241,18 @@ export default function BranchGlobe({ branches, emirates }: { branches: GlobeBra
                 <circle cx="500" cy="500" r="490" />
               </clipPath>
             </defs>
-            <circle cx="500" cy="500" r="493" fill="#5e5e5e" opacity=".42" filter="url(#bg-glow)" />
+            <circle cx="500" cy="500" r="493" fill="#6e5a66" opacity=".42" filter="url(#bg-glow)" />
             <circle cx="500" cy="500" r="490" fill="url(#bg-ocean)" />
             <g clipPath="url(#bg-clip)">
               <g ref={layer}>
-                <path d={pan.graticule} fill="none" stroke="#8f8f8f" strokeOpacity=".3" strokeWidth=".8" />
-                <path d={pan.land} fill="#e9e9e9" stroke="#f7f7f7" strokeWidth=".8" />
+                <path d={pan.graticule} fill="none" stroke="#8c7783" strokeOpacity=".3" strokeWidth=".8" />
+                <path d={pan.land} fill="#ebdcd6" stroke="#f8f0ec" strokeWidth=".8" />
                 <path d={pan.borders} fill="none" stroke="#ffffff" strokeWidth="1" />
-                <path d={pan.uae} fill="#fcfcfc" stroke="#ffffff" strokeWidth="1" />
+                <path d={pan.uae} fill="#fdf8f6" stroke="#ffffff" strokeWidth="1" />
               </g>
             </g>
             <circle cx="500" cy="500" r="490" fill="url(#bg-shade)" />
-            <circle cx="500" cy="500" r="490" fill="none" stroke="#6f6f6f" strokeWidth="1.6" />
+            <circle cx="500" cy="500" r="490" fill="none" stroke="#7d6873" strokeWidth="1.6" />
           </svg>
           <div className="bg-pins-clip">
             <div className="bg-pins" ref={pins}>

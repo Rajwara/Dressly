@@ -1,18 +1,16 @@
 import type { Metadata } from "next";
-import { Inter, Plus_Jakarta_Sans } from "next/font/google";
+import { brandFonts } from "@/lib/fieldworn-fonts";
 import Link from "next/link";
 import "./(site)/globals.css";
 
 // Unmatched URLs. The app has two root layouts (store, homepage and About),
 // so this page brings its own <html>, styles and fonts.
-const serif = Plus_Jakarta_Sans({ subsets: ["latin"], style: ["normal", "italic"], variable: "--font-serif", preload: false });
-const sans = Inter({ subsets: ["latin"], variable: "--font-sans", preload: false });
 
 export const metadata: Metadata = { title: "Page not found | Dressly" };
 
 export default function GlobalNotFound() {
   return (
-    <html lang="en" className={`${serif.variable} ${sans.variable}`}>
+    <html lang="en" className={brandFonts}>
       <body>
         <div className="wrap narrow" style={{ paddingTop: 80, paddingBottom: 120, textAlign: "center" }}>
           {/* eslint-disable-next-line @next/next/no-img-element */}

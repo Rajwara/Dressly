@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Plus_Jakarta_Sans } from "next/font/google";
+import { brandFonts } from "@/lib/fieldworn-fonts";
 import { StoreProvider } from "@/components/StoreProvider";
 import Motion from "@/components/Motion";
 import OfferPopup from "@/components/OfferPopup";
@@ -8,8 +8,6 @@ import WhatsAppButton from "@/components/WhatsAppButton";
 import "./globals.css";
 import "./blog-layout.css";
 
-const serif = Plus_Jakarta_Sans({ subsets: ["latin"], style: ["normal", "italic"], variable: "--font-serif" });
-const sans = Inter({ subsets: ["latin"], variable: "--font-sans" });
 
 export const metadata: Metadata = {
   title: { default: "Dressly | Abaya Tailoring Since 1998", template: "%s | Dressly" },
@@ -24,7 +22,7 @@ export const metadata: Metadata = {
  */
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`${serif.variable} ${sans.variable}`}>
+    <html lang="en" className={brandFonts}>
       <body id="top">
         <StoreProvider>
           <QuickViewProvider>

@@ -5,51 +5,51 @@
 .ip-head{margin-bottom:36px}
 .ip-eyebrow{display:inline-block;font:500 15px/1 var(--fw-display);text-transform:uppercase;letter-spacing:.02em;margin-bottom:14px}
 .ip-head h1{font-size:clamp(44px,7vw,88px);line-height:.95;margin:0 0 16px}
-.ip-head p{max-width:620px;color:#555;font-size:18px;line-height:1.55}
+.ip-head p{max-width:620px;color:#6e5a66;font-size:18px;line-height:1.55}
 .ip h2{font-size:clamp(30px,4vw,48px);line-height:1;margin:0 0 18px}
 .ip-section{margin-top:64px}
 .ip-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
 .ip-actions .btn{display:inline-flex;align-items:center;gap:8px}
-.ip-actions .btn.ghost{background:#fff;color:#000}
+.ip-actions .btn.ghost{background:#fff;color:#3b1f33}
 
 /* steps / cards */
 .ip-steps{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;counter-reset:s}
-.ip-step{background:#f6f6f6;border-radius:12px;padding:24px}
-.ip-step span{display:grid;place-items:center;width:44px;height:44px;border-radius:50%;background:#000;color:#fff;margin-bottom:18px}
+.ip-step{background:#f8f0ec;border-radius:12px;padding:24px}
+.ip-step span{display:grid;place-items:center;width:44px;height:44px;border-radius:50%;background:#3b1f33;color:#fff;margin-bottom:18px}
 .ip-step h3{font:500 24px/1.05 var(--fw-display);text-transform:uppercase;margin:0 0 8px}
-.ip-step p{color:#555;margin:0}
+.ip-step p{color:#6e5a66;margin:0}
 .ip-split{display:grid;grid-template-columns:1.1fr 1fr;gap:40px;align-items:center}
 .ip-split img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:12px}
 .ip-list{list-style:none;padding:0;margin:0;display:grid;gap:10px}
 .ip-list li{display:flex;gap:10px;align-items:flex-start}
-.ip-list li::before{content:"✓";flex:none;display:grid;place-items:center;width:22px;height:22px;border-radius:50%;background:#000;color:#fff;font-size:12px;margin-top:1px}
-.ip-panel{background:#f6f6f6;border-radius:12px;padding:28px}
+.ip-list li::before{content:"✓";flex:none;display:grid;place-items:center;width:22px;height:22px;border-radius:50%;background:#3b1f33;color:#fff;font-size:12px;margin-top:1px}
+.ip-panel{background:#f8f0ec;border-radius:12px;padding:28px}
 
 /* shop all */
 .ip-tabs{display:flex;gap:8px;margin-bottom:30px;flex-wrap:wrap}
-.ip-tabs a{padding:10px 18px;border-radius:999px;border:1px solid #ddd;font-weight:500}
-.ip-tabs a.on{background:#000;color:#fff;border-color:#000}
+.ip-tabs a{padding:10px 18px;border-radius:999px;border:1px solid #e6d3cc;font-weight:500}
+.ip-tabs a.on{background:#3b1f33;color:#fff;border-color:#3b1f33}
 .ip-group{margin-top:44px;scroll-margin-top:110px}
 .ip-group h2{font-size:clamp(26px,3vw,38px)}
 .ip-cats{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
 .ip-cat{display:block}
-.ip-cat .im{overflow:hidden;border-radius:12px;background:#f6f6f6;aspect-ratio:4/5}
+.ip-cat .im{overflow:hidden;border-radius:12px;background:#f8f0ec;aspect-ratio:4/5}
 .ip-cat img{width:100%;height:100%;object-fit:cover;transition:transform .6s cubic-bezier(.2,.7,.2,1)}
 .ip-cat:hover img{transform:scale(1.05)}
 .ip-cat b{display:block;font:500 20px/1.1 var(--fw-display);text-transform:uppercase;margin-top:10px}
-.ip-cat small{color:#777}
+.ip-cat small{color:#7d6873}
 
 /* faq */
 .ip-faq-nav{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:30px}
-.ip-faq-nav a{padding:8px 14px;border-radius:999px;background:#f6f6f6;font-weight:500;font-size:15px}
+.ip-faq-nav a{padding:8px 14px;border-radius:999px;background:#f8f0ec;font-weight:500;font-size:15px}
 .ip-faq-group{scroll-margin-top:110px;margin-top:40px}
 .ip-faq-group h2{font-size:32px}
-.ip-faq details{border-bottom:1px solid #e4e4e4;padding:16px 0}
+.ip-faq details{border-bottom:1px solid #ebdcd6;padding:16px 0}
 .ip-faq summary{cursor:pointer;font-weight:500;font-size:18px;list-style:none;display:flex;justify-content:space-between;gap:16px}
 .ip-faq summary::-webkit-details-marker{display:none}
 .ip-faq summary::after{content:"+";font-size:22px;line-height:1;transition:transform .2s}
 .ip-faq details[open] summary::after{transform:rotate(45deg)}
-.ip-faq details p{color:#555;margin:10px 0 0;max-width:720px}
+.ip-faq details p{color:#6e5a66;margin:10px 0 0;max-width:720px}
 
 @media (max-width:991px){
   .ip-steps{grid-template-columns:1fr 1fr}

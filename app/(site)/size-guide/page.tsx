@@ -43,7 +43,7 @@ export default function SizeGuidePage() {
           </section>
           <section className="ip-section ip-panel">
             <h2>Not sure of your size?</h2>
-            <p style={{ color: "#555", maxWidth: 600 }}>A tailor can measure you at home, or visit any branch. Your measurements are kept for next time.</p>
+            <p style={{ color: "#6e5a66", maxWidth: 600 }}>A tailor can measure you at home, or visit any branch. Your measurements are kept for next time.</p>
             <div className="ip-actions">
               <a className="btn" href="/home-tailoring">Book a home visit</a>
               <a className="btn ghost" href={HOME_VISIT_URL} target="_blank" rel="noopener noreferrer">Ask on WhatsApp</a>

@@ -1,7 +1,7 @@
 /* Shared header menu, top bar and footer columns (homepage and store pages). */
 
 /* ---- Top bar ---- */
-.sn-top{background:#000;color:#fff;font:500 13px/1 var(--font-space-grotesk),"Space Grotesk",sans-serif;letter-spacing:.01em}
+.sn-top{background:#3b1f33;color:#fff;font:500 13px/1 var(--font-space-grotesk),"Space Grotesk",sans-serif;letter-spacing:.01em}
 .sn-top-track{position:relative;height:36px;max-width:1200px;margin:0 auto;overflow:hidden}
 .sn-top a{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;padding:0 16px;text-align:center;opacity:0;transform:translateY(8px);transition:opacity .45s,transform .45s;pointer-events:none;color:#fff;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .sn-top a.on{opacity:1;transform:none;pointer-events:auto}
@@ -15,24 +15,24 @@
 .nav.sn .drop{min-width:220px;padding:14px 18px;box-shadow:0 18px 40px rgba(0,0,0,.14)}
 .nav.sn .drop ul{list-style:none;margin:0;padding:0}
 .nav.sn .drop li{padding:5px 0}
-.nav.sn .drop a{border:0;font-weight:500;color:#111}
+.nav.sn .drop a{border:0;font-weight:500;color:#3b1f33}
 .nav.sn .drop a:hover{text-decoration:underline;text-underline-offset:3px}
-.nav.sn .sn-col-head{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:#777;margin:0 0 6px;font-weight:600}
+.nav.sn .sn-col-head{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:#7d6873;margin:0 0 6px;font-weight:600}
 .nav.sn .drop.sn-mega{display:grid;grid-template-columns:repeat(5,max-content);gap:8px 32px;left:50%;transform:translate(-50%,8px);padding:20px 24px}
 .nav.sn .links>li:hover .drop.sn-mega,.nav.sn .links>li:focus-within .drop.sn-mega{transform:translate(-50%,0)}
-.nav.sn .sn-shop{display:inline-flex;align-items:center;height:40px;padding:0 18px;border-radius:999px;background:#000;color:#fff;border:1px solid rgba(255,255,255,.28)!important;font-weight:500;transition:background .2s,color .2s}
-.nav.sn .sn-shop:hover{background:#fff;color:#000}
+.nav.sn .sn-shop{display:inline-flex;align-items:center;height:40px;padding:0 18px;border-radius:999px;background:#3b1f33;color:#fff;border:1px solid rgba(255,255,255,.28)!important;font-weight:500;transition:background .2s,color .2s}
+.nav.sn .sn-shop:hover{background:#fff;color:#3b1f33}
 .nav.sn .sn-mobile-only{display:none}
 
 .nav.sn .nav-end{gap:10px}
 .sn-icons{display:flex;align-items:center;gap:14px}
 .sn-icons a{position:relative;display:grid;place-items:center;width:32px;height:32px;color:inherit}
 .sn-icons a:hover{opacity:.75}
-.sn-count{position:absolute;top:-4px;right:-6px;min-width:18px;height:18px;padding:0 4px;border-radius:9px;background:#fff;color:#000;font:600 11px/18px var(--font-space-grotesk),sans-serif;text-align:center}
+.sn-count{position:absolute;top:-4px;right:-6px;min-width:18px;height:18px;padding:0 4px;border-radius:9px;background:#fff;color:#3b1f33;font:600 11px/18px var(--font-space-grotesk),sans-serif;text-align:center}
 
 /* Collapse to the burger menu earlier than the original design: the menu is longer. */
 @media (max-width:1180px){
-  .nav.sn .links{display:none;position:absolute;top:100%;left:12px;right:12px;flex-direction:column;align-items:stretch;gap:4px;background:#fff;color:#000;padding:16px 20px 20px;border-radius:12px;box-shadow:0 18px 40px rgba(0,0,0,.18);max-height:calc(100svh - 120px);overflow:auto;white-space:normal;z-index:30}
+  .nav.sn .links{display:none;position:absolute;top:100%;left:12px;right:12px;flex-direction:column;align-items:stretch;gap:4px;background:#fff;color:#3b1f33;padding:16px 20px 20px;border-radius:12px;box-shadow:0 18px 40px rgba(0,0,0,.18);max-height:calc(100svh - 120px);overflow:auto;white-space:normal;z-index:30}
   .nav.sn.open .links{display:flex}
   .nav.sn .links>li>a{padding:10px 0;font-size:17px;border-bottom:1px solid #eee!important;width:100%;justify-content:space-between}
   .nav.sn .drop,.nav.sn .drop.sn-mega{position:static;display:block;opacity:1;visibility:visible;transform:none;box-shadow:none;padding:4px 0 10px 14px;margin:0;min-width:0;background:none}
@@ -47,18 +47,45 @@
 @media (max-width:420px){ .sn-icons{gap:6px} }
 
 /* ---- Footer columns + newsletter ---- */
-.sn-foot{display:grid;gap:28px;padding-bottom:40px;border-bottom:1px solid #333}
+.sn-foot{display:grid;gap:28px;padding-bottom:40px;border-bottom:1px solid #4a2c41}
 .sn-foot-cols{display:grid;grid-template-columns:repeat(4,1fr);gap:28px}
 .sn-foot h4{font-weight:500;font-size:16px;margin:0 0 14px;color:#fff}
 .sn-foot ul{list-style:none;margin:0;padding:0}
 .sn-foot li{margin-bottom:8px}
-.sn-foot a{color:#b9b9b9;transition:color .25s}
+.sn-foot a{color:#d9c3cf;transition:color .25s}
 .sn-foot a:hover{color:#fff}
-.sn-news p{color:#b9b9b9;margin:0 0 12px;font-size:14px}
+.sn-news p{color:#d9c3cf;margin:0 0 12px;font-size:14px}
 .sn-news-row{display:flex;gap:8px;max-width:440px}
-.sn-news input{flex:1;min-width:0;height:44px;border-radius:999px;border:1px solid #444;background:transparent;color:#fff;padding:0 18px;font:inherit}
-.sn-news input::placeholder{color:#888}
-.sn-news button{height:44px;padding:0 22px;border-radius:999px;background:#fff;color:#000;border:0;font:500 15px var(--font-space-grotesk),sans-serif;cursor:pointer}
+.sn-news input{flex:1;min-width:0;height:44px;border-radius:999px;border:1px solid #5a3c50;background:transparent;color:#fff;padding:0 18px;font:inherit}
+.sn-news input::placeholder{color:#8c7783}
+.sn-news button{height:44px;padding:0 22px;border-radius:999px;background:#fff;color:#3b1f33;border:0;font:500 15px var(--font-space-grotesk),sans-serif;cursor:pointer}
 .sn-news .sn-news-ok{color:#fff}
 .sn-news .sn-news-err{color:#ff9b8a;margin-top:8px}
 @media (max-width:767px){ .sn-foot-cols{grid-template-columns:1fr 1fr} }
+
+/* ---- Brand theme: plum ink, dusty-rose brand colour, champagne accents ---- */
+:root{--brand-plum:#3b1f33;--brand-rose:#b76e79;--brand-rose-d:#9e5a65;--brand-champagne:#c9a27e;--brand-blush:#f8f0ec}
+.sn-top{background:var(--brand-rose)}
+.nav.sn .logo{letter-spacing:.06em;font-weight:600}
+.nav.sn .sn-shop{background:var(--brand-rose);border-color:var(--brand-rose)!important;color:#fff}
+.nav.sn .sn-shop:hover{background:#fff;color:var(--brand-plum)}
+.nav.sn .drop a:hover{color:var(--brand-rose)}
+.nav.sn .sn-col-head{color:var(--brand-rose)}
+.sn-count{background:var(--brand-rose);color:#fff}
+.sn-news button{background:var(--brand-rose);color:#fff}
+.sn-news button:hover{background:#fff;color:var(--brand-plum)}
+.sn-foot a:hover{color:var(--brand-champagne)}
+.chat-float{background:var(--brand-rose)!important}
+.chat-float:hover{background:var(--brand-rose-d)!important}
+/* small eyebrow labels and badges pick up the brand colour */
+.fwb .eyebrow,.ip-eyebrow,.fwb .page-banner .eyebrow{color:var(--brand-rose)}
+.fwb .page-banner .eyebrow{color:#f3d9dd}
+.fwb .badge,.fwb .card .badge,.fwb .p-badge{color:var(--brand-rose)}
+/* buttons: plum, rose on hover */
+.fwb .btn:not(.ghost):not(.wa):hover,.shop-fw .btn:not(.ghost):not(.wa):hover{background:var(--brand-rose);border-color:var(--brand-rose);color:#fff}
+
+/* ---- Serif headings: open up the tight tracking of the old condensed font ---- */
+.fwb h1,.fwb h2,.fwb h3,.fwb .h2,.fwb .h3,.fw h1,.fw h2,.fw h3{letter-spacing:0}
+/* Banner headings: the serif is wider, so size them to fit small screens */
+.fwb .page-banner .page-banner-copy h1{font-size:clamp(40px,8vw,128px);overflow-wrap:anywhere}
+@media (max-width:600px){.fwb .page-banner .page-banner-copy h1{font-size:clamp(34px,10vw,56px)}}

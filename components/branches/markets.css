@@ -1,5 +1,5 @@
 .mk {
-    --mk-bg: #f2eeeb; --mk-ink: #40372f; --mk-muted: #736558; --mk-dark: #40372f;
+    --mk-bg: #f2eeeb; --mk-ink: #5a3c50; --mk-muted: #736558; --mk-dark: #5a3c50;
     --mk-d: clamp(560px, 68vw, 1080px);
     position: relative; overflow: hidden; background: var(--mk-bg); color: var(--mk-ink);
     padding-top: clamp(64px, 8vw, 112px);
@@ -11,11 +11,11 @@
   .mk__title {
     max-width: 12.5em; margin: 0 0 22px;
     font-family: var(--font-bricolage), "Bricolage Grotesque", Arial, sans-serif;
-    font-size: clamp(32px, 3.1vw, 47px); font-weight: 500; line-height: 1; letter-spacing: -.04em;
+    font-size: clamp(32px, 3.1vw, 47px); font-weight: 500; line-height: 1; letter-spacing: 0;
   }
   .mk__btn {
     display: inline-flex; align-items: center; gap: 9px; min-height: 32px; padding: 7px 14px 7px 13px;
-    border-radius: 5px; background: var(--mk-dark); color: #f7f4f1;
+    border-radius: 5px; background: var(--mk-dark); color: #f8f0ec;
     font-size: 14px; font-weight: 500; line-height: 1.2; text-decoration: none; transition: background .25s;
   }
   .mk__btn::before { content: ""; width: 6px; height: 6px; background: currentColor; border-radius: 1px; }
@@ -33,7 +33,7 @@
   .mk-marker__sweep { position: absolute; top: 50%; left: 50%; width: 21px; height: 1px; background: var(--mk-ink); transform-origin: 0 50%; animation: mk-sweep 9s linear infinite; animation-delay: var(--delay); }
   .mk-marker__label {
     position: absolute; right: calc(100% + 6px); top: 50%; padding: 4px 7px; border-radius: 3px;
-    background: var(--mk-dark); color: #f7f4f1; font-size: 10px; font-weight: 500; letter-spacing: .08em; line-height: 1.2; text-transform: uppercase; white-space: nowrap;
+    background: var(--mk-dark); color: #f8f0ec; font-size: 10px; font-weight: 500; letter-spacing: .08em; line-height: 1.2; text-transform: uppercase; white-space: nowrap;
     opacity: 0; transform: translate(6px, -50%); transition: opacity .25s, transform .25s; pointer-events: none;
   }
   .mk-marker.is-active { transform: scale(1.12); }
@@ -66,7 +66,7 @@
   .mk-card__top, .mk-card__bottom { position: relative; display: flex; justify-content: space-between; gap: 12px; }
   .mk-card__top { align-items: flex-start; transition: opacity .25s; }
   .mk-card__bottom { align-items: center; }
-  .mk-card__num { display: inline-flex; font-family: var(--font-bricolage), "Bricolage Grotesque", Arial, sans-serif; font-size: clamp(50px, 4.4vw, 67px); line-height: .85; letter-spacing: -.04em; }
+  .mk-card__num { display: inline-flex; font-family: var(--font-bricolage), "Bricolage Grotesque", Arial, sans-serif; font-size: clamp(50px, 4.4vw, 67px); line-height: .85; letter-spacing: 0; }
   .mk-card__num sup { align-self: flex-start; margin-top: .05em; font-size: .38em; font-weight: 400; line-height: 1; letter-spacing: 0; }
   .mk-card__label { padding-top: 4px; color: var(--mk-muted); font-size: 11px; font-weight: 500; letter-spacing: .08em; line-height: 1.4; text-align: right; text-transform: uppercase; }
   .mk-card__city { font-size: 15px; font-weight: 500; line-height: 1.25; transition: color .3s; }

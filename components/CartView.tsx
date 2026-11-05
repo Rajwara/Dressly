@@ -69,7 +69,7 @@ export default function CartView({ products }: { products: CardProduct[] }) {
           )}
           target="_blank"
           rel="noopener noreferrer"
-          style={{ background: "#fff", color: "#000", border: "1px solid #000" }}
+          style={{ background: "#fff", color: "#3b1f33", border: "1px solid #3b1f33" }}
         >
           Order on WhatsApp
         </a>

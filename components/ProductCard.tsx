@@ -32,7 +32,7 @@ export default function ProductCard({ product: p }: { product: CardProduct }) {
         </h3>
         <div className="pcard-row">
           <span className="pcard-colour">
-            <span className="dot" style={{ background: SWATCH[p.colour] ?? "#ccc" }} />
+            <span className="dot" style={{ background: SWATCH[p.colour] ?? "#d6bfb7" }} />
             {p.colour}
           </span>
           <span className="price">{money(p.price)}</span>

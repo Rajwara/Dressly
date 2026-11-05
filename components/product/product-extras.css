@@ -1,11 +1,11 @@
-/* Product page, category page and quick view additions, in the shop look (black pills, #f6f6f6 panels). */
+/* Product page, category page and quick view additions, in the shop look (black pills, #f8f0ec panels). */
 
 /* ---- Price with VAT note ---- */
-.vat { font-size: 13px; font-weight: 400; color: #777; letter-spacing: 0; }
+.vat { font-size: 13px; font-weight: 400; color: #7d6873; letter-spacing: 0; }
 
 /* ---- Gallery: the main photo is a button that opens the lightbox ---- */
 .shop-fw button.main-pic { display: block; width: 100%; padding: 0; border: 0; font: inherit; color: inherit; cursor: zoom-in; position: relative; }
-.shop-fw button.main-pic:focus-visible { outline: 2px solid #000; outline-offset: 3px; }
+.shop-fw button.main-pic:focus-visible { outline: 2px solid #3b1f33; outline-offset: 3px; }
 .shop-fw .zoom-hint { position: absolute; right: 12px; bottom: 12px; display: inline-flex; align-items: center; gap: 6px; padding: 6px 12px; border-radius: 99px; background: rgba(255,255,255,.92); font-size: 13px; pointer-events: none; transition: opacity .2s; }
 .shop-fw .main-pic.zoom .zoom-hint { opacity: 0; }
 
@@ -19,21 +19,21 @@ dialog.lightbox img { max-width: min(92vw, 1100px); max-height: 88vh; object-fit
 .lb-nav { top: 50%; transform: translateY(-50%); }
 .lb-nav.prev { left: 18px; }
 .lb-nav.next { right: 18px; }
-.lb-count { position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%); font-size: 14px; color: #ccc; }
+.lb-count { position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%); font-size: 14px; color: #d6bfb7; }
 
 /* ---- Ready-made / Tailored switch ---- */
-.fit-switch { display: inline-flex; padding: 4px; border-radius: 99px; background: #fff; border: 1px solid #cfcfcf; flex-wrap: wrap; }
-.fit-switch button { padding: 8px 16px; border-radius: 99px; border: 0; background: none; font-family: inherit; font-weight: 500; font-size: 14px; line-height: 1.2; color: #555; cursor: pointer; }
-.fit-switch button.on { background: #000; color: #fff; }
-.fit-note { margin: 10px 0 0; font-size: 14px; color: #555; }
-.fit-note a { color: #000; border-bottom: 1px solid; }
+.fit-switch { display: inline-flex; padding: 4px; border-radius: 99px; background: #fff; border: 1px solid #dcc6be; flex-wrap: wrap; }
+.fit-switch button { padding: 8px 16px; border-radius: 99px; border: 0; background: none; font-family: inherit; font-weight: 500; font-size: 14px; line-height: 1.2; color: #6e5a66; cursor: pointer; }
+.fit-switch button.on { background: #3b1f33; color: #fff; }
+.fit-note { margin: 10px 0 0; font-size: 14px; color: #6e5a66; }
+.fit-note a { color: #3b1f33; border-bottom: 1px solid; }
 
 /* ---- Delivery estimate ---- */
 .dlv { display: flex; align-items: flex-start; gap: 10px; margin: 20px 0 0; padding: 12px 16px; border-radius: 12px; background: #fff; font-size: 15px; line-height: 1.5; }
 .dlv svg { flex: none; margin-top: 3px; }
-.dlv select { border: 0; border-bottom: 1px solid #000; background: none; font-family: inherit; font-weight: 500; font-size: 15px; padding: 0 2px; cursor: pointer; }
-.dlv small { color: #777; }
-.dlv.compact { margin: 12px 0 0; padding: 10px 14px; background: #f6f6f6; font-size: 14px; }
+.dlv select { border: 0; border-bottom: 1px solid #3b1f33; background: none; font-family: inherit; font-weight: 500; font-size: 15px; padding: 0 2px; cursor: pointer; }
+.dlv small { color: #7d6873; }
+.dlv.compact { margin: 12px 0 0; padding: 10px 14px; background: #f8f0ec; font-size: 14px; }
 .dlv.compact select { font-size: 14px; }
 
 /* ---- WhatsApp + Try in branch ---- */
@@ -47,24 +47,24 @@ dialog.lightbox img { max-width: min(92vw, 1100px); max-height: 88vh; object-fit
 .shop-fw .pdp-more { padding: 20px 0 64px; }
 
 /* ---- Buttons ---- */
-.shop-fw .btn.ghost { background: #fff; color: #000; border: 1px solid #000; }
-.shop-fw .btn.ghost:hover { background: #000; color: #fff; }
+.shop-fw .btn.ghost { background: #fff; color: #3b1f33; border: 1px solid #3b1f33; }
+.shop-fw .btn.ghost:hover { background: #3b1f33; color: #fff; }
 
 /* ---- Category: size help card inside the grid ---- */
-.shop-fw .size-help { display: flex; flex-direction: column; justify-content: center; gap: 10px; padding: 28px 24px; border-radius: 12px; background: #000; color: #fff; min-height: 260px; }
+.shop-fw .size-help { display: flex; flex-direction: column; justify-content: center; gap: 10px; padding: 28px 24px; border-radius: 12px; background: #3b1f33; color: #fff; min-height: 260px; }
 .shop-fw .size-help .shop-label { color: #fff; font-size: 22px; line-height: 1.1; margin: 0; }
-.shop-fw .size-help p { color: #cfcfcf; font-size: 15px; margin: 0 0 6px; }
-.shop-fw .size-help .btn { background: #fff; color: #000; border-color: #fff; text-align: center; padding: 12px 18px; font-size: 15px; }
+.shop-fw .size-help p { color: #dcc6be; font-size: 15px; margin: 0 0 6px; }
+.shop-fw .size-help .btn { background: #fff; color: #3b1f33; border-color: #fff; text-align: center; padding: 12px 18px; font-size: 15px; }
 .shop-fw .size-help .btn.ghost { background: transparent; color: #fff; border-color: #fff; }
-.shop-fw .size-help .btn:hover { background: #e9e9e9; color: #000; }
+.shop-fw .size-help .btn:hover { background: #ebdcd6; color: #3b1f33; }
 
 /* ---- Category: load more + about text ---- */
 .shop-fw .load-more { display: flex; flex-direction: column; align-items: center; gap: 12px; margin-top: 36px; }
-.shop-fw .load-more p { color: #666; font-size: 14px; margin: 0; }
-.shop-fw .cat-about { max-width: 760px; margin: -40px 0 90px; padding: 28px; border-radius: 12px; background: #f6f6f6; }
+.shop-fw .load-more p { color: #6e5a66; font-size: 14px; margin: 0; }
+.shop-fw .cat-about { max-width: 760px; margin: -40px 0 90px; padding: 28px; border-radius: 12px; background: #f8f0ec; }
 .shop-fw .cat-about h2 { font-size: 28px; margin-bottom: 12px; }
-.shop-fw .cat-about p { color: #555; font-size: 15px; line-height: 1.65; margin: 0 0 10px; }
+.shop-fw .cat-about p { color: #6e5a66; font-size: 15px; line-height: 1.65; margin: 0 0 10px; }
 
 /* ---- Quick view ---- */
 dialog.qv .opt-label { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; }
-.qv-size { font-size: 14px; color: #000; border-bottom: 1px solid; }
+.qv-size { font-size: 14px; color: #3b1f33; border-bottom: 1px solid; }

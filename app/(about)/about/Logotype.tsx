@@ -34,7 +34,7 @@ export default function Logotype({ img }: { img: LogotypeImages }) {
     };
 
     /* ---------- Placeholder images. Set a real src on any <img> and this skips it. ---------- */
-    const tones: Record<string, [string, string]> = { 1: ["#d9d8d6", "#6d6c6a"], 2: ["#bdbcba", "#4a4a48"], 3: ["#e6e5e3", "#7b7a78"], 4: ["#55544f", "#efeeec"] };
+    const tones: Record<string, [string, string]> = { 1: ["#e2cec7", "#7d6873"], 2: ["#cbb3bf", "#5a3c50"], 3: ["#ebdcd6", "#7d6873"], 4: ["#6e5a66", "#f3e7e2"] };
     $$("img[data-ph]").forEach((el) => {
       const image = el as HTMLImageElement;
       if (image.getAttribute("src")) return;

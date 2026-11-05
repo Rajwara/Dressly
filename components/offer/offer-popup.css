@@ -1,10 +1,10 @@
 /* First-order offer popup. Self-contained: no page variables, so it works on every layout. */
 dialog.offer-pop{
-  --o-ink:#0b0b0b;--o-muted:#666;--o-line:#e2dcd3;--o-tint:#f4eee6;--o-gold:#b8925a;
+  --o-ink:#3b1f33;--o-muted:#6e5a66;--o-line:#e2dcd3;--o-tint:#f4eee6;--o-gold:#b8925a;
   --o-display:var(--font-big-shoulders),"Big Shoulders",Impact,sans-serif;
   --o-body:var(--font-space-grotesk),"Space Grotesk",system-ui,sans-serif;
   padding:0;border:0;max-width:780px;width:calc(100% - 32px);display:none;grid-template-columns:1fr 1fr;overflow:visible;
-  background:#fff;color:var(--o-ink);font:400 15px/1.5 var(--o-body);border-radius:16px;box-shadow:0 30px 80px #0005;
+  background:#fff;color:var(--o-ink);font:400 15px/1.5 var(--o-body);border-radius:16px;box-shadow:0 30px 80px #3b1f3355;
 }
 dialog.offer-pop[open]{display:grid;animation:offer-in .35s ease-out}
 dialog.offer-pop::backdrop{background:#0b0b0bb3}
@@ -15,11 +15,11 @@ dialog.offer-pop::backdrop{background:#0b0b0bb3}
 .offer-close:hover{background:var(--o-ink);color:#fff}
 .offer-main{padding:44px 34px 30px;text-align:center;display:flex;flex-direction:column;justify-content:center}
 .offer-eyebrow{font:500 12px/1 var(--o-body);letter-spacing:.16em;text-transform:uppercase;color:var(--o-gold)}
-.offer-main h2{font:600 44px/1 var(--o-display);text-transform:uppercase;letter-spacing:-.02em;margin:10px 0 8px}
+.offer-main h2{font:600 44px/1 var(--o-display);text-transform:uppercase;letter-spacing:0;margin:10px 0 8px}
 .offer-valid{color:var(--o-muted);font-size:13.5px;margin:0 0 18px}
 .offer-tabs{display:grid;grid-template-columns:1fr 1fr;background:var(--o-tint);border-radius:999px;padding:4px;margin-bottom:12px}
 .offer-tabs button{border:0;background:none;padding:9px;border-radius:999px;font:500 14px var(--o-body);color:var(--o-muted);cursor:pointer}
-.offer-tabs button[aria-selected="true"]{background:#fff;color:var(--o-ink);box-shadow:0 1px 4px #0001}
+.offer-tabs button[aria-selected="true"]{background:#fff;color:var(--o-ink);box-shadow:0 1px 4px #3b1f3311}
 .offer-pop form{display:grid;gap:10px;margin:0}
 .offer-pop input{width:100%;padding:13px 14px;border:1px solid var(--o-line);border-radius:10px;font:400 15px var(--o-body);color:var(--o-ink);background:#fff}
 .offer-pop input:focus{outline:2px solid var(--o-ink);outline-offset:-1px}

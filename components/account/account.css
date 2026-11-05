@@ -1,34 +1,34 @@
 /* Sign-in and account dashboard (design preview). Scoped to .acc. */
-.acc { --acc-line: #e4e4e4; --acc-tint: #f6f6f6; --acc-muted: #666; padding: 48px 24px 100px; }
+.acc { --acc-line: #ebdcd6; --acc-tint: #f8f0ec; --acc-muted: #6e5a66; padding: 48px 24px 100px; }
 .acc-card { max-width: 480px; margin: 0 auto; }
 .acc-eyebrow { display: block; margin-bottom: 10px; font: 500 16px/24px var(--fw-display); text-transform: uppercase; }
-.acc h1 { font: 500 clamp(48px, 6vw, 80px)/.95 var(--fw-display); text-transform: uppercase; letter-spacing: -.04em; margin: 0 0 12px; }
-.acc h2 { font: 500 24px/1.1 var(--fw-display); text-transform: uppercase; letter-spacing: -.03em; margin: 0 0 10px; }
+.acc h1 { font: 500 clamp(48px, 6vw, 80px)/.95 var(--fw-display); text-transform: uppercase; letter-spacing: 0; margin: 0 0 12px; }
+.acc h2 { font: 500 24px/1.1 var(--fw-display); text-transform: uppercase; letter-spacing: 0; margin: 0 0 10px; }
 .acc-lead { color: var(--acc-muted); margin: 0 0 16px; }
 .acc-notice { margin: 0 0 24px; padding: 10px 14px; border-radius: 10px; background: #fff7e6; border: 1px solid #f1dfb5; color: #6b5414; font-size: 13px; }
 .acc-switch { display: grid; grid-template-columns: 1fr 1fr; padding: 4px; border-radius: 99px; background: var(--acc-tint); margin-bottom: 24px; }
 .acc-switch button { height: 40px; border: 0; border-radius: 99px; background: none; font: 500 14px var(--fw-body); color: var(--acc-muted); cursor: pointer; }
-.acc-switch button.on { background: #fff; color: #000; box-shadow: 0 1px 4px #0000001a; }
+.acc-switch button.on { background: #fff; color: #3b1f33; box-shadow: 0 1px 4px #0000001a; }
 .acc form { display: flex; flex-direction: column; gap: 16px; }
 .acc label { display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 500; }
 .acc input:not([type="radio"]) { height: 50px; padding: 0 16px; border: 1px solid var(--acc-line); border-radius: 10px; font: 400 16px var(--fw-body); outline: none; background: #fff; }
-.acc input:not([type="radio"]):focus { border-color: #000; }
+.acc input:not([type="radio"]):focus { border-color: #3b1f33; }
 .acc-code { letter-spacing: .5em; font-size: 22px !important; text-align: center; }
 .acc-channel { border: 0; padding: 0; margin: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
 .acc-channel legend { font-size: 14px; font-weight: 500; margin-bottom: 6px; }
 .acc-channel label { flex-direction: row; align-items: center; gap: 10px; padding: 12px 14px; border: 1px solid var(--acc-line); border-radius: 10px; cursor: pointer; }
-.acc-channel label.on { border-color: #000; background: var(--acc-tint); }
-.acc-channel input { accent-color: #000; }
+.acc-channel label.on { border-color: #3b1f33; background: var(--acc-tint); }
+.acc-channel input { accent-color: #3b1f33; }
 .acc-btn { width: 100%; padding: 16px 24px !important; font-size: 16px !important; }
 .acc-error { color: #c0392b; font-size: 13px; font-weight: 500; margin: -6px 0 0; }
-.acc-link { padding: 0; border: 0; border-bottom: 1px solid currentColor; background: none; font: inherit; color: #000; cursor: pointer; }
+.acc-link { padding: 0; border: 0; border-bottom: 1px solid currentColor; background: none; font: inherit; color: #3b1f33; cursor: pointer; }
 .acc-forgot, .acc-resend { align-self: flex-start; font-size: 14px; }
 .acc-resend { align-self: center; }
 .acc-sent { margin: 0; color: var(--acc-muted); font-size: 14px; }
-.acc-sent b { color: #000; }
+.acc-sent b { color: #3b1f33; }
 .acc-toggle { margin: 28px 0 8px; text-align: center; }
 .acc-guest { margin: 0; text-align: center; font-size: 14px; color: var(--acc-muted); }
-.acc-guest a { color: #000; border-bottom: 1px solid; }
+.acc-guest a { color: #3b1f33; border-bottom: 1px solid; }
 
 /* Dashboard */
 .acc-dash { max-width: 1200px; margin: 0 auto; }
@@ -37,7 +37,7 @@
 .acc-panel { padding: 24px; border-radius: 12px; border: 1px solid var(--acc-line); display: flex; flex-direction: column; align-items: flex-start; gap: 8px; }
 .acc-panel p { margin: 0; color: var(--acc-muted); font-size: 15px; }
 .acc-measure { grid-column: span 2; grid-row: span 2; background: var(--acc-tint); border-color: var(--acc-tint); }
-.acc-empty { display: flex; flex-direction: column; gap: 4px; width: 100%; margin: 12px 0; padding: 20px; border-radius: 10px; background: #fff; border: 1px dashed #ccc; }
+.acc-empty { display: flex; flex-direction: column; gap: 4px; width: 100%; margin: 12px 0; padding: 20px; border-radius: 10px; background: #fff; border: 1px dashed #d6bfb7; }
 .acc-empty span { color: var(--acc-muted); font-size: 14px; }
 .acc-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 18px; }
 .acc-profile { margin: 0; width: 100%; }

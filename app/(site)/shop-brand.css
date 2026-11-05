@@ -1,45 +1,45 @@
 /* =====================================================================
    Category and product pages in the homepage design: black, white and
-   #f6f6f6, Big Shoulders uppercase headings, Space Grotesk text, 12px
+   #f8f0ec, Big Shoulders uppercase headings, Space Grotesk text, 12px
    rounded panels and cards, black pill buttons. Scoped to .shop-fw.
    ===================================================================== */
 .shop-fw {
-  --ink: #000; --muted: #666; --paper: #fff; --tint: #f6f6f6; --line: #e4e4e4;
-  --primary: #000; --primary-d: #000; --accent: #000; --accent-text: #000;
+  --ink: #3b1f33; --muted: #6e5a66; --paper: #fff; --tint: #f8f0ec; --line: #ebdcd6;
+  --primary: #3b1f33; --primary-d: #3b1f33; --accent: #3b1f33; --accent-text: #3b1f33;
   --serif: var(--fw-display); --sans: var(--fw-body);
   --shop-ease: cubic-bezier(.215,.61,.355,1);
 }
 .shop-fw .wrap { max-width: 1200px; padding: 0 24px; }
-.shop-label, .shop-fw .eyebrow { display: block; margin-bottom: 12px; font: 500 16px/24px var(--fw-display); text-transform: uppercase; letter-spacing: .01em; color: #000; }
-.shop-fw h1, .shop-fw h2 { font-family: var(--fw-display); font-weight: 500; text-transform: uppercase; letter-spacing: -.04em; line-height: 1.05; }
-.shop-fw h3 { font-family: var(--fw-body); font-weight: 500; letter-spacing: -.03em; }
-.shop-fw .crumb { padding: 22px 0; font-size: 14px; color: #888; }
-.shop-fw .crumb a { color: #000; }
+.shop-label, .shop-fw .eyebrow { display: block; margin-bottom: 12px; font: 500 16px/24px var(--fw-display); text-transform: uppercase; letter-spacing: .01em; color: #3b1f33; }
+.shop-fw h1, .shop-fw h2 { font-family: var(--fw-display); font-weight: 500; text-transform: uppercase; letter-spacing: 0; line-height: 1.05; }
+.shop-fw h3 { font-family: var(--fw-body); font-weight: 500; letter-spacing: 0; }
+.shop-fw .crumb { padding: 22px 0; font-size: 14px; color: #8c7783; }
+.shop-fw .crumb a { color: #3b1f33; }
 .shop-fw .crumb a:hover { text-decoration: underline; }
 
 /* Buttons: /test-mock-2 black pill */
-.shop-fw .btn { border-radius: 99px; background: #000; border-color: #000; color: #fff; text-transform: none; letter-spacing: -.02em; font-size: 16px; font-weight: 500; padding: 14px 24px; }
+.shop-fw .btn { border-radius: 99px; background: #3b1f33; border-color: #3b1f33; color: #fff; text-transform: none; letter-spacing: 0; font-size: 16px; font-weight: 500; padding: 14px 24px; }
 .shop-fw .btn::before { display: none; }
-.shop-fw .btn:hover { background: #2b2b2b; border-color: #2b2b2b; color: #fff; }
+.shop-fw .btn:hover { background: #4a2c41; border-color: #4a2c41; color: #fff; }
 
 /* Section heads ("You may also like") */
 .shop-fw .head { align-items: flex-end; margin-bottom: 32px; }
 .shop-fw .head h2 { font-size: clamp(38px, 4.2vw, 56px); }
-.shop-fw .head a { display: inline-flex; align-items: center; padding: 8px 18px; border: 1px solid #000; border-radius: 99px; font-size: 14px; letter-spacing: -.01em; text-transform: none; transition: background .3s, color .3s; }
-.shop-fw .head a:hover { background: #000; color: #fff; }
+.shop-fw .head a { display: inline-flex; align-items: center; padding: 8px 18px; border: 1px solid #3b1f33; border-radius: 99px; font-size: 14px; letter-spacing: -.01em; text-transform: none; transition: background .3s, color .3s; }
+.shop-fw .head a:hover { background: #3b1f33; color: #fff; }
 
 /* ---- Product cards (grids on both pages) ---- */
 .shop-fw .grid { gap: 16px; row-gap: 28px; }
 .shop-fw .pcard-media { border-radius: 12px; background: var(--tint); }
-.shop-fw .pcard-badge { top: 12px; left: 12px; padding: 4px 12px; border-radius: 99px; background: #fff; color: #111; font: 400 14px/22px var(--fw-body); letter-spacing: 0; text-transform: none; }
+.shop-fw .pcard-badge { top: 12px; left: 12px; padding: 4px 12px; border-radius: 99px; background: #fff; color: #3b1f33; font: 400 14px/22px var(--fw-body); letter-spacing: 0; text-transform: none; }
 .shop-fw .heart { box-shadow: none; background: #fff; }
-.shop-fw .heart.on { color: #000; }
-.shop-fw .pcard-quick { left: 12px; right: 12px; bottom: 12px; padding: 12px; border-radius: 99px; background: #000; color: #fff; font: 500 15px/1 var(--fw-body); letter-spacing: -.02em; text-transform: none; backdrop-filter: none; }
-.shop-fw .pcard-quick:hover { background: #2b2b2b; }
+.shop-fw .heart.on { color: #3b1f33; }
+.shop-fw .pcard-quick { left: 12px; right: 12px; bottom: 12px; padding: 12px; border-radius: 99px; background: #3b1f33; color: #fff; font: 500 15px/1 var(--fw-body); letter-spacing: 0; text-transform: none; backdrop-filter: none; }
+.shop-fw .pcard-quick:hover { background: #4a2c41; }
 .shop-fw .pcard-body { padding: 14px 4px 0; }
-.shop-fw .pcard-cat { font: 500 14px/1.2 var(--fw-display); letter-spacing: .02em; color: #888; }
-.shop-fw .pcard h3 { font: 500 20px/28px var(--fw-body); letter-spacing: -.03em; margin: 4px 0 6px; }
-.shop-fw .pcard .price { font-weight: 700; letter-spacing: -.03em; font-size: 16px; }
+.shop-fw .pcard-cat { font: 500 14px/1.2 var(--fw-display); letter-spacing: .02em; color: #8c7783; }
+.shop-fw .pcard h3 { font: 500 20px/28px var(--fw-body); letter-spacing: 0; margin: 4px 0 6px; }
+.shop-fw .pcard .price { font-weight: 700; letter-spacing: 0; font-size: 16px; }
 .shop-fw .pcard-row { color: var(--muted); }
 @media (max-width: 720px) { .shop-fw .pcard h3 { font-size: 16px; line-height: 22px; } }
 
@@ -53,25 +53,25 @@
 .shop-fw .shop { padding: 48px 0 100px; gap: 48px; }
 .shop-fw .side > div { border-bottom: 0; padding: 20px; border-radius: 12px; background: var(--tint); margin-bottom: 12px; }
 .shop-fw .side h4 { font: 500 16px/24px var(--fw-display); letter-spacing: .01em; text-transform: uppercase; margin-bottom: 10px; }
-.shop-fw .side a { color: #777; font-size: 15px; padding: 4px 0; }
-.shop-fw .side a.on, .shop-fw .side a:hover { color: #000; }
+.shop-fw .side a { color: #7d6873; font-size: 15px; padding: 4px 0; }
+.shop-fw .side a.on, .shop-fw .side a:hover { color: #3b1f33; }
 .shop-fw .side a.on { font-weight: 500; }
-.shop-fw .swatch-list button { color: #555; font-size: 15px; }
-.shop-fw .swatch-list button.on { color: #000; }
-.shop-fw .swatch-list button.on .dot { box-shadow: 0 0 0 2px var(--tint), 0 0 0 3px #000; }
-.shop-fw .chip-list button { border-radius: 99px; border-color: #cfcfcf; background: #fff; padding: 5px 12px; font-size: 14px; }
-.shop-fw .chip-list button.on { background: #000; border-color: #000; color: #fff; }
-.shop-fw .check-list { color: #555; font-size: 15px; }
-.shop-fw .check-list input { accent-color: #000; }
-.shop-fw .side .link { padding: 8px 16px; border: 1px solid #000; border-radius: 99px; color: #000; font-size: 14px; }
-.shop-fw .shop .bar { border-bottom: 0; padding: 10px 10px 10px 20px; border-radius: 99px; background: var(--tint); color: #555; margin-bottom: 24px; }
+.shop-fw .swatch-list button { color: #6e5a66; font-size: 15px; }
+.shop-fw .swatch-list button.on { color: #3b1f33; }
+.shop-fw .swatch-list button.on .dot { box-shadow: 0 0 0 2px var(--tint), 0 0 0 3px #3b1f33; }
+.shop-fw .chip-list button { border-radius: 99px; border-color: #dcc6be; background: #fff; padding: 5px 12px; font-size: 14px; }
+.shop-fw .chip-list button.on { background: #3b1f33; border-color: #3b1f33; color: #fff; }
+.shop-fw .check-list { color: #6e5a66; font-size: 15px; }
+.shop-fw .check-list input { accent-color: #3b1f33; }
+.shop-fw .side .link { padding: 8px 16px; border: 1px solid #3b1f33; border-radius: 99px; color: #3b1f33; font-size: 14px; }
+.shop-fw .shop .bar { border-bottom: 0; padding: 10px 10px 10px 20px; border-radius: 99px; background: var(--tint); color: #6e5a66; margin-bottom: 24px; }
 .shop-fw .shop .bar select { border: 1px solid var(--line); border-radius: 99px; background: #fff; padding: 8px 14px; font-family: var(--fw-body); }
 .shop-fw .density button { border-radius: 8px; }
-.shop-fw .density button.on { border-color: #000; background: #fff; }
+.shop-fw .density button.on { border-color: #3b1f33; background: #fff; }
 .shop-fw .density i { background: #bbb; }
-.shop-fw .density button.on i { background: #000; }
+.shop-fw .density button.on i { background: #3b1f33; }
 .shop-fw .filter-toggle { border-radius: 99px; background: #fff; }
-.shop-fw .empty .link { color: #000; }
+.shop-fw .empty .link { color: #3b1f33; }
 @media (max-width: 720px) {
   .shop-fw .cat-hero { margin: 8px 8px 0; min-height: 0; }
   .shop-fw .cat-hero-copy { padding: 28px 20px 32px; }
@@ -83,34 +83,34 @@
 .shop-fw .pdp { gap: 48px; padding-bottom: 80px; }
 .shop-fw .gallery { gap: 12px; }
 .shop-fw .thumbs button { border-radius: 12px; overflow: hidden; border: 2px solid transparent; background: var(--tint); }
-.shop-fw .thumbs button.on { border-color: #000; }
+.shop-fw .thumbs button.on { border-color: #3b1f33; }
 .shop-fw .main-pic { border-radius: 12px; background: var(--tint); }
 .shop-fw .info { top: 24px; padding: 28px; border-radius: 12px; background: var(--tint); }
 .shop-fw .info h1 { font-size: clamp(40px, 4vw, 60px); line-height: 1; margin-bottom: 12px; }
-.shop-fw .info .price { font-size: 24px; font-weight: 700; letter-spacing: -.03em; margin-bottom: 24px; }
-.shop-fw .opt-label { font-size: 15px; color: #555; }
-.shop-fw .opt-label .current { color: #000; font-weight: 500; }
-.shop-fw .opt-label button { border-bottom-color: #000; color: #000; font-size: 14px; }
+.shop-fw .info .price { font-size: 24px; font-weight: 700; letter-spacing: 0; margin-bottom: 24px; }
+.shop-fw .opt-label { font-size: 15px; color: #6e5a66; }
+.shop-fw .opt-label .current { color: #3b1f33; font-weight: 500; }
+.shop-fw .opt-label button { border-bottom-color: #3b1f33; color: #3b1f33; font-size: 14px; }
 .shop-fw .choices { gap: 8px; }
-.shop-fw .choices button { min-width: 48px; padding: 8px 14px; border-radius: 99px; border-color: #cfcfcf; background: #fff; font-size: 14px; }
-.shop-fw .choices button:hover { border-color: #000; }
-.shop-fw .choices button.on { background: #000; border-color: #000; color: #fff; }
+.shop-fw .choices button { min-width: 48px; padding: 8px 14px; border-radius: 99px; border-color: #dcc6be; background: #fff; font-size: 14px; }
+.shop-fw .choices button:hover { border-color: #3b1f33; }
+.shop-fw .choices button.on { background: #3b1f33; border-color: #3b1f33; color: #fff; }
 .shop-fw .buy { gap: 10px; margin: 24px 0 12px; }
-.shop-fw .qty { border-radius: 99px; overflow: hidden; border-color: #cfcfcf; background: #fff; }
+.shop-fw .qty { border-radius: 99px; overflow: hidden; border-color: #dcc6be; background: #fff; }
 .shop-fw .qty button { width: 40px; }
-.shop-fw .btn.wa-line { margin: 0 0 14px; background: #fff; border: 1px solid #000; color: #000; }
-.shop-fw .btn.wa-line:hover { background: #000; color: #fff; }
+.shop-fw .btn.wa-line { margin: 0 0 14px; background: #fff; border: 1px solid #3b1f33; color: #3b1f33; }
+.shop-fw .btn.wa-line:hover { background: #3b1f33; color: #fff; }
 .shop-fw .notice { border-radius: 12px; border-left: 0; background: #fff; }
 .shop-fw .trust { margin: 8px 0 16px; padding: 16px; border-top: 0; border-radius: 12px; background: #fff; }
-.shop-fw .trust svg { color: #000; }
-.shop-fw .notes { border-top-color: var(--line); color: #777; }
+.shop-fw .trust svg { color: #3b1f33; }
+.shop-fw .notes { border-top-color: var(--line); color: #7d6873; }
 .shop-fw details { border-bottom: 0; margin-top: 8px; padding: 14px 18px; border-radius: 12px; background: #fff; }
-.shop-fw summary { font-weight: 500; letter-spacing: -.02em; }
-.shop-fw details p { color: #555; }
-.shop-fw details a { color: #000; }
-.shop-fw .sticky { left: 12px; right: 12px; bottom: 12px; border: 0; border-radius: 99px; padding: 8px 8px 8px 24px; background: #000; color: #fff; box-shadow: 0 16px 40px rgba(0,0,0,.25); }
-.shop-fw .sticky .btn { background: #fff; color: #000; padding: 10px 22px; }
-.shop-fw .sticky .btn:hover { background: #e9e9e9; color: #000; }
+.shop-fw summary { font-weight: 500; letter-spacing: 0; }
+.shop-fw details p { color: #6e5a66; }
+.shop-fw details a { color: #3b1f33; }
+.shop-fw .sticky { left: 12px; right: 12px; bottom: 12px; border: 0; border-radius: 99px; padding: 8px 8px 8px 24px; background: #3b1f33; color: #fff; box-shadow: 0 16px 40px rgba(0,0,0,.25); }
+.shop-fw .sticky .btn { background: #fff; color: #3b1f33; padding: 10px 22px; }
+.shop-fw .sticky .btn:hover { background: #ebdcd6; color: #3b1f33; }
 body:has(.shop-fw .sticky.on) .chat-float { bottom: 88px; }
 @media (max-width: 720px) {
   .shop-fw .info { padding: 20px; }
@@ -119,15 +119,15 @@ body:has(.shop-fw .sticky.on) .chat-float { bottom: 88px; }
 
 /* ---- Quick view (rendered outside the page, so keyed off the body) ---- */
 body:has(.shop-fw) dialog.qv { border-radius: 12px; background: #fff; font-family: var(--font-space-grotesk), "Space Grotesk", sans-serif; }
-body:has(.shop-fw) .qv-gallery { background: #f6f6f6; }
-body:has(.shop-fw) .qv-info h2 { font: 500 40px/1 var(--font-big-shoulders), "Big Shoulders", sans-serif; text-transform: uppercase; letter-spacing: -.04em; }
-body:has(.shop-fw) .qv-info .eyebrow { font: 500 16px/24px var(--font-big-shoulders), "Big Shoulders", sans-serif; color: #000; letter-spacing: .01em; }
+body:has(.shop-fw) .qv-gallery { background: #f8f0ec; }
+body:has(.shop-fw) .qv-info h2 { font: 500 40px/1 var(--font-big-shoulders), "Big Shoulders", sans-serif; text-transform: uppercase; letter-spacing: 0; }
+body:has(.shop-fw) .qv-info .eyebrow { font: 500 16px/24px var(--font-big-shoulders), "Big Shoulders", sans-serif; color: #3b1f33; letter-spacing: .01em; }
 body:has(.shop-fw) .qv-price { font-weight: 700; }
 body:has(.shop-fw) .qv .choices button { border-radius: 99px; }
-body:has(.shop-fw) .qv .choices button.on { background: #000; border-color: #000; color: #fff; }
+body:has(.shop-fw) .qv .choices button.on { background: #3b1f33; border-color: #3b1f33; color: #fff; }
 body:has(.shop-fw) .qv .qty { border-radius: 99px; overflow: hidden; }
-body:has(.shop-fw) .qv .btn { border-radius: 99px; background: #000; border-color: #000; color: #fff; text-transform: none; letter-spacing: -.02em; font-size: 15px; }
+body:has(.shop-fw) .qv .btn { border-radius: 99px; background: #3b1f33; border-color: #3b1f33; color: #fff; text-transform: none; letter-spacing: 0; font-size: 15px; }
 body:has(.shop-fw) .qv .btn::before { display: none; }
-body:has(.shop-fw) .qv .btn.wa-line { background: #fff; color: #000; border-color: #000; }
+body:has(.shop-fw) .qv .btn.wa-line { background: #fff; color: #3b1f33; border-color: #3b1f33; }
 body:has(.shop-fw) .qv-thumbs button { border-radius: 8px; overflow: hidden; }
-body:has(.shop-fw) .qv-thumbs button.on { border-color: #000; }
+body:has(.shop-fw) .qv-thumbs button.on { border-color: #3b1f33; }

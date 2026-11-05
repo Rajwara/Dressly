@@ -23,9 +23,9 @@ body.menu-open{overflow:hidden}
   transform:translate(var(--x,0),var(--y,0)) scale(var(--s,.95));
   transition:opacity var(--d,1.2s) ease var(--w,.2s),transform var(--d,1.2s) ease var(--w,.2s);}
 .js .page .in [data-r]{opacity:1;transform:none}
-.page .btn{white-space:nowrap;display:inline-flex;flex-direction:column;gap:10px;font-weight:500;font-size:16px;line-height:16px;color:#000}
+.page .btn{white-space:nowrap;display:inline-flex;flex-direction:column;gap:10px;font-weight:500;font-size:16px;line-height:16px;color:#3b1f33}
 .page .btn-lines{display:flex;justify-content:space-between;height:1px}
-.page .btn-lines i{display:block;width:25%;height:1px;background:#000;transition:width .5s ease}
+.page .btn-lines i{display:block;width:25%;height:1px;background:#3b1f33;transition:width .5s ease}
 .page .btn:hover .btn-lines i, .page .btn:focus-visible .btn-lines i{width:100%}
 .page .nav{height:78px;background:var(--white);position:relative;z-index:5}
 .page .nav-row{display:flex;align-items:center;justify-content:space-between;height:78px;position:relative}
@@ -196,13 +196,13 @@ body.menu-open{overflow:hidden}
 @media (max-width:991px){.page .process-card.open{min-height:0;padding-top:24px;padding-bottom:24px}}
 
 /* ---- /test-mock-2 typography and buttons ---- */
-.page .h1, .page .h2 { font-family: var(--display); font-weight: 500; text-transform: uppercase; letter-spacing: -.04em; line-height: 1.14; }
-.page .wordmark { font-family: var(--display); font-weight: 600; letter-spacing: -.03em; }
-.page .h3, .page .h4, .page .h6 { letter-spacing: -.03em; font-weight: 500; }
-.page .about-line { letter-spacing: -.03em; }
+.page .h1, .page .h2 { font-family: var(--display); font-weight: 500; text-transform: uppercase; letter-spacing: 0; line-height: 1.14; }
+.page .wordmark { font-family: var(--display); font-weight: 600; letter-spacing: 0; }
+.page .h3, .page .h4, .page .h6 { letter-spacing: 0; font-weight: 500; }
+.page .about-line { letter-spacing: 0; }
 .page .pill { font-weight: 500; }
-.page .btn { display: inline-flex; flex-direction: row; align-items: center; gap: 12px; padding: 8px 8px 8px 22px; border-radius: 99px; background: #000; color: #fff; font-size: 16px; line-height: 24px; font-weight: 500; letter-spacing: -.02em; transition: background .3s, color .3s; }
-.page .btn .ico { width: 28px; height: 28px; border-radius: 50%; background: #fff; color: #000; display: grid; place-items: center; transition: transform .45s cubic-bezier(.215,.61,.355,1); }
+.page .btn { display: inline-flex; flex-direction: row; align-items: center; gap: 12px; padding: 8px 8px 8px 22px; border-radius: 99px; background: #3b1f33; color: #fff; font-size: 16px; line-height: 24px; font-weight: 500; letter-spacing: 0; transition: background .3s, color .3s; }
+.page .btn .ico { width: 28px; height: 28px; border-radius: 50%; background: #fff; color: #3b1f33; display: grid; place-items: center; transition: transform .45s cubic-bezier(.215,.61,.355,1); }
 .page .btn .ico svg { width: 15px; height: 15px; }
 .page .btn:hover .ico { transform: rotate(-45deg); }
 .page .roll { display: inline-block; overflow: hidden; height: 1.25em; line-height: 1.25; vertical-align: middle; }

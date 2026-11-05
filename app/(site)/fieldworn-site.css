@@ -4,18 +4,18 @@
    share class names with the borrowed header and footer. Scoped to .fwb.
    ===================================================================== */
 .fwb {
-  --fw-black: #000; --fw-white: #fff; --fw-grey: #f6f6f6; --fw-line: #e4e4e4; --fw-muted: #666; --fw-radius: 12px;
+  --fw-black: #3b1f33; --fw-white: #fff; --fw-grey: #f8f0ec; --fw-line: #ebdcd6; --fw-muted: #6e5a66; --fw-radius: 12px;
   --fw-display: var(--font-big-shoulders), "Big Shoulders", sans-serif;
   --fw-body: var(--font-space-grotesk), "Space Grotesk", sans-serif;
   background: var(--fw-white); color: var(--fw-black); font: 400 16px/24px var(--fw-body);
 }
-.fwb h1, .fwb h2 { font-family: var(--fw-display); font-weight: 500; text-transform: uppercase; letter-spacing: -.04em; line-height: 1.14; }
-.fwb h3 { font-family: var(--fw-body); font-weight: 500; letter-spacing: -.04em; }
+.fwb h1, .fwb h2 { font-family: var(--fw-display); font-weight: 500; text-transform: uppercase; letter-spacing: 0; line-height: 1.14; }
+.fwb h3 { font-family: var(--fw-body); font-weight: 500; letter-spacing: 0; }
 .fwb .eyebrow { font: 500 16px/24px var(--fw-display); text-transform: uppercase; letter-spacing: .01em; color: inherit; }
 /* Buttons: black pill, as on the homepage */
-.fwb .btn { border-radius: 99px; background: var(--fw-black); border-color: var(--fw-black); color: var(--fw-white); text-transform: none; letter-spacing: -.02em; font-size: 15px; font-weight: 500; padding: 12px 22px; transition: background .3s, color .3s; }
+.fwb .btn { border-radius: 99px; background: var(--fw-black); border-color: var(--fw-black); color: var(--fw-white); text-transform: none; letter-spacing: 0; font-size: 15px; font-weight: 500; padding: 12px 22px; transition: background .3s, color .3s; }
 .fwb .btn::before { display: none; }
-.fwb .btn:hover { background: #2b2b2b; color: var(--fw-white); border-color: #2b2b2b; }
+.fwb .btn:hover { background: #4a2c41; color: var(--fw-white); border-color: #4a2c41; }
 /* /test-mock-2 header and footer on this page (the store header and footer are hidden here) */
 .fwb .fw-head { position: relative; z-index: 30; }
 .fwb .fw-foot { margin-top: 12px; }

@@ -113,7 +113,7 @@ export default function CategoryShop({ products, sidebar }: { products: CardProd
           <div className="swatch-list">
             {allColours.map((c) => (
               <button key={c} type="button" className={colours.includes(c) ? "on" : undefined} aria-pressed={colours.includes(c)} onClick={() => setColours((l) => toggle(l, c))}>
-                <span className="dot" style={{ background: SWATCH[c] ?? "#ccc" }} />
+                <span className="dot" style={{ background: SWATCH[c] ?? "#d6bfb7" }} />
                 {c}
               </button>
             ))}
