@@ -138,3 +138,6 @@
 .fwb .branch-others { display: flex; flex-wrap: wrap; gap: 8px; }
 .fwb .branch-others a { border: 1px solid var(--fw-line); border-radius: 99px; padding: 6px 14px; font-size: 14px; }
 @media (max-width: 900px) { .fwb .branch-page { grid-template-columns: 1fr; gap: 24px; padding-top: 28px; } }
+
+/* Branch page: left-align the address under the name (globals .lead is centred). */
+.fwb .branch-page .lead { text-align: left; margin: 8px 0 24px; max-width: none; color: #666; font-size: 18px; }
