@@ -16,7 +16,7 @@ const ABOUT_IMAGES: Record<string, string> = {
   "hero-3a": "images/categories/kids-clothing", "hero-3b": "images/categories/summer-thobes", "hero-3c": "images/categories/jalabiya",
   // about: either side of "Learn more"
   "about-1": "images/pages/about", "about-2": "images/content/story",
-  // services: Bespoke Kanduras, Uniforms, Home Tailoring Visits, Sandals & Accessories
+  // services: Bespoke Abayas, Uniforms, Home Tailoring Visits, Sandals & Accessories
   "service-1": "images/categories/kandura-thobes", "service-2": "images/categories/kandura-jackets",
   "service-3": "images/content/story", "service-4": "images/categories/arabic-sandals",
   // process: the four home-tailoring steps

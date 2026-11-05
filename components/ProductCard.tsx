@@ -5,7 +5,7 @@ import type { CardProduct } from "@/lib/types";
 import HeartButton from "./HeartButton";
 import { QuickViewButton } from "./QuickView";
 
-/** "Classic Round-Collar Kandura, Ivory" -> "Classic Round-Collar Kandura" (the colour is shown separately). */
+/** "Classic Round-Collar Abaya, Ivory" -> "Classic Round-Collar Abaya" (the colour is shown separately). */
 const baseName = (p: CardProduct) => p.name.replace(new RegExp(`,\\s*${p.colour}$`, "i"), "");
 
 export default function ProductCard({ product: p }: { product: CardProduct }) {

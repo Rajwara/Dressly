@@ -52,7 +52,7 @@ export const POLICIES: Policy[] = [
         id: "made-to-measure",
         title: "Made-to-measure and altered pieces",
         body: [
-          "Bespoke kanduras and anything cut or altered to your measurements are made only for you, so they cannot be returned or refunded for a change of mind.",
+          "Bespoke abayas and anything cut or altered to your measurements are made only for you, so they cannot be returned or refunded for a change of mind.",
           "If a tailored piece doesn't fit as agreed, tell us within 14 days of delivery and we will adjust it free of charge, in branch or during a home visit. If it can't be put right, we will remake it.",
         ],
       },
@@ -138,7 +138,7 @@ export const POLICIES: Policy[] = [
           {
             list: [
               "Ready-made items in stock: 1 to 3 working days in Dubai, Sharjah and Ajman, and 2 to 4 working days elsewhere in the UAE.",
-              "Made-to-measure kanduras: usually 7 to 10 working days from the day we take your measurements.",
+              "Made-to-measure abayas: usually 7 to 10 working days from the day we take your measurements.",
               "Home tailoring orders: we confirm the delivery date with you at the end of your visit.",
             ],
           },
@@ -198,7 +198,7 @@ export const POLICIES: Policy[] = [
         id: "who-we-are",
         title: "Who we are",
         body: [
-          "Dressly is a kandura tailoring business in the United Arab Emirates with branches in Abu Dhabi, Dubai, Sharjah, Ajman and Ras Al Khaimah. In this policy, \"we\" and \"us\" mean Dressly.",
+          "Dressly is a abaya tailoring business in the United Arab Emirates with branches in Abu Dhabi, Dubai, Sharjah, Ajman and Ras Al Khaimah. In this policy, \"we\" and \"us\" mean Dressly.",
         ],
       },
       {
@@ -209,7 +209,7 @@ export const POLICIES: Policy[] = [
             list: [
               "Contact details: your name, phone number and email address.",
               "Delivery details: your address and any delivery notes.",
-              "Measurements and fit preferences, so we can tailor your kanduras.",
+              "Measurements and fit preferences, so we can tailor your abayas.",
               "Order history, returns and the messages you send us, including on WhatsApp.",
               "Basic website information, such as the pages you visit and the device you use.",
             ],
@@ -293,7 +293,7 @@ export const POLICIES: Policy[] = [
         id: "about",
         title: "About these terms",
         body: [
-          "These terms are an agreement between you and Dressly, a kandura tailoring business in the United Arab Emirates. By placing an order or using our website you agree to them.",
+          "These terms are an agreement between you and Dressly, a abaya tailoring business in the United Arab Emirates. By placing an order or using our website you agree to them.",
           "They should be read together with our Returns & Refunds, Shipping & Delivery and Privacy policies. Nothing in these terms limits any rights you have under UAE law.",
         ],
       },

@@ -44,7 +44,7 @@ function Table({ head, rows }: { head: string[]; rows: Row[] }) {
   );
 }
 
-/** The size chart: kids kandura, adult footwear, and adult kandoora in normal and slim fit. */
+/** The size chart: kids abaya, adult footwear, and adult abaya in normal and slim fit. */
 export function SizeChart() {
   return (
     <div className="kandura-size-chart">
@@ -56,12 +56,12 @@ export function SizeChart() {
       <div className="kandura-sections">
         <div className="kandura-card">
           <div className="kandura-card-title">
-            Kids Kandura <span>Height based</span>
+            Girls' Abaya <span>Height based</span>
           </div>
           <Table head={["Length", "Hand", "Body Loose", "Neck"]} rows={KIDS} />
-          <div className="kandura-helper-text">Length is measured from shoulder to hem of the Kandura.</div>
+          <div className="kandura-helper-text">Length is measured from shoulder to hem of the Abaya.</div>
           <div className="kandura-image-wrap">
-            <img alt="Kids Kandura Size Reference" src={KIDS_IMAGE} loading="lazy" />
+            <img alt="Girls' Abaya Size Reference" src={KIDS_IMAGE} loading="lazy" />
           </div>
         </div>
         <div className="kandura-card">
@@ -77,7 +77,7 @@ export function SizeChart() {
       <div className="kandura-section-full">
         <div className="kandura-card">
           <div className="kandura-card-title">
-            Arabic Kandoora – Normal Fit <span>Regular comfort</span>
+            Abaya – Normal Fit <span>Regular comfort</span>
           </div>
           <Table head={["Length", "Hand Loose", "Body Loose", "Neck"]} rows={NORMAL} />
         </div>
@@ -85,7 +85,7 @@ export function SizeChart() {
       <div className="kandura-section-full">
         <div className="kandura-card">
           <div className="kandura-card-title">
-            Arabic Kandoora – Slim Fit <span>Closer to body</span>
+            Abaya – Slim Fit <span>Closer to body</span>
           </div>
           <Table head={["Length", "Hand Loose", "Body Loose", "Neck"]} rows={SLIM} />
         </div>

@@ -324,9 +324,9 @@ export default function Logotype({ img }: { img: LogotypeImages }) {
           {/* HERO */}
           <section className="hero gutter"><div className="wrap" data-group="">
             <div className="hero-top">
-              <h1 className="h1 hero-title" data-r="" style={{ "--x": "-80px", "--d": "1.4s" } as React.CSSProperties}>The Art of the Kandura, Perfected.</h1>
+              <h1 className="h1 hero-title" data-r="" style={{ "--x": "-80px", "--d": "1.4s" } as React.CSSProperties}>The Art of the Abaya, Perfected.</h1>
               <div className="hero-intro" data-r="" style={{ "--x": "80px", "--d": "1.4s", "--w": ".3s" } as React.CSSProperties}>
-                <p>Since 1998, Dressly has dressed the men of the UAE in kanduras cut with precision and finished to a standard we have spent a generation refining.</p>
+                <p>Since 1998, Dressly has dressed the women of the UAE in abayas cut with precision and finished to a standard we have spent a generation refining.</p>
                 <a className="btn" href="/category/kandura-thobes"><span className="roll"><span data-t="View collection">View collection</span></span><span className="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M4 12h16M14 6l6 6-6 6"/></svg></span></a>
               </div>
             </div>
@@ -365,7 +365,7 @@ export default function Logotype({ img }: { img: LogotypeImages }) {
             <h2 className="h6 center about-label" data-r="">About us</h2>
             <p className="about-lines" data-r="" id="aboutLines">
               <span className="about-line">Since 1998, Dressly has dressed<span className="about-ink" aria-hidden="true">Since 1998, Dressly has dressed</span></span>
-              <span className="about-line">the men of the UAE in kanduras<span className="about-ink" aria-hidden="true">the men of the UAE in kanduras</span></span>
+              <span className="about-line">the women of the UAE in abayas<span className="about-ink" aria-hidden="true">the women of the UAE in abayas</span></span>
               <span className="about-line">cut with precision and finished to<span className="about-ink" aria-hidden="true">cut with precision and finished to</span></span>
               <span className="about-line">a standard refined over a generation,<span className="about-ink" aria-hidden="true">a standard refined over a generation,</span></span>
               <span className="about-line">piece by piece<span className="about-ink" aria-hidden="true">piece by piece</span></span>
@@ -382,14 +382,14 @@ export default function Logotype({ img }: { img: LogotypeImages }) {
             <div className="services">
               <div className="svc-left">
                 <h2 className="h2" id="svcHead">What we can do for you</h2>
-                <a className="svc-card" id="svc2" href="/category/kandura-thobes"><div className="svc-img"><img src={img["service-1"]} data-ph="Service 1|449x482|2" alt="" /></div><div className="h6">Bespoke Kanduras</div></a>
-                <a className="svc-card" id="svc4" href="/contact"><div className="svc-img"><img src={img["service-2"]} data-ph="Service 2|449x482|4" alt="" /></div><div className="h6">Army &amp; Police Uniforms</div></a>
+                <a className="svc-card" id="svc2" href="/category/kandura-thobes"><div className="svc-img"><img src={img["service-1"]} data-ph="Service 1|449x482|2" alt="" /></div><div className="h6">Bespoke Abayas</div></a>
+                <a className="svc-card" id="svc4" href="/category/shimagh-ghutra"><div className="svc-img"><img src={img["service-2"]} data-ph="Service 2|449x482|4" alt="" /></div><div className="h6">Hijabs &amp; Shaylas</div></a>
               </div>
               <div className="svc-right">
                 <a className="svc-card" id="svc1" href="https://api.whatsapp.com/send/?phone=971568586987&text=Hello%20Dressly%2C%20I%20would%20like%20to%20book%20a%20home%20tailoring%20visit." target="_blank" rel="noopener noreferrer"><div className="svc-img"><img src={img["service-3"]} data-ph="Service 3|439x482|3" alt="" /></div><div className="h6">Home Tailoring Visits</div></a>
-                <a className="svc-card" id="svc3" href="/category/arabic-sandals"><div className="svc-img"><img src={img["service-4"]} data-ph="Service 4|439x482|1" alt="" /></div><div className="h6">Sandals &amp; Accessories</div></a>
+                <a className="svc-card" id="svc3" href="/category/arabic-sandals"><div className="svc-img"><img src={img["service-4"]} data-ph="Service 4|439x482|1" alt="" /></div><div className="h6">Sandals, Shaylas &amp; Accessories</div></a>
                 <div className="svc-text" id="svcText">
-                  <p>From made-to-measure kanduras to uniforms and the finishing accessories, every piece is held to the same exacting standard, in store or at your door.</p>
+                  <p>From made-to-measure abayas to shaylas and the finishing accessories, every piece is held to the same exacting standard, in store or at your door.</p>
                   <a className="btn" href="https://api.whatsapp.com/send/?phone=971568586987&text=Hello%20Dressly%2C%20I%20would%20like%20to%20book%20a%20home%20tailoring%20visit." target="_blank" rel="noopener noreferrer"><span className="roll"><span data-t="Book a home visit">Book a home visit</span></span><span className="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M4 12h16M14 6l6 6-6 6"/></svg></span></a>
                 </div>
               </div>
@@ -403,7 +403,7 @@ export default function Logotype({ img }: { img: LogotypeImages }) {
               <div className="process-card" data-i="0" role="button" tabIndex={0} aria-expanded="false" aria-controls="process-desc-0"><span className="h6 num">01</span><span className="process-dot"></span><h3 className="h3">Request on WhatsApp</h3><p className="process-desc" id="process-desc-0">Send us your preferred date, time and area on <a href="https://api.whatsapp.com/send/?phone=971568586987&amp;text=Hello%20Dressly%2C%20I%20would%20like%20to%20book%20a%20home%20tailoring%20visit." target="_blank" rel="noopener noreferrer">WhatsApp</a> and we will confirm a slot and the tailor who will visit.</p></div>
               <div className="process-card" data-i="1" role="button" tabIndex={0} aria-expanded="false" aria-controls="process-desc-1"><span className="h6 num">02</span><span className="process-dot"></span><h3 className="h3">Home or majlis visit</h3><p className="process-desc" id="process-desc-1">A tailor arrives at your chosen time, at home or in your majlis, anywhere across the Emirates we serve.</p></div>
               <div className="process-card" data-i="2" role="button" tabIndex={0} aria-expanded="false" aria-controls="process-desc-2"><span className="h6 num">03</span><span className="process-dot"></span><h3 className="h3">Fabrics &amp; measurements</h3><p className="process-desc" id="process-desc-2">Browse our fabric swatches in person, choose your collar and cuff style, and get measured precisely on the spot.</p></div>
-              <div className="process-card" data-i="3" role="button" tabIndex={0} aria-expanded="false" aria-controls="process-desc-3"><span className="h6 num">04</span><span className="process-dot"></span><h3 className="h3">Delivered to your door</h3><p className="process-desc" id="process-desc-3">Once tailored to perfection, your kanduras are delivered straight to your door, and your measurements are kept for next time.</p></div>
+              <div className="process-card" data-i="3" role="button" tabIndex={0} aria-expanded="false" aria-controls="process-desc-3"><span className="h6 num">04</span><span className="process-dot"></span><h3 className="h3">Delivered to your door</h3><p className="process-desc" id="process-desc-3">Once tailored to perfection, your abayas are delivered straight to your door, and your measurements are kept for next time.</p></div>
               <div className="process-images" aria-hidden="true">
                 <div><img src={img["process-1"]} data-ph="Process 1|400x450|4" alt="" /></div>
                 <div><img src={img["process-2"]} data-ph="Process 2|400x450|2" alt="" /></div>
@@ -435,19 +435,19 @@ export default function Logotype({ img }: { img: LogotypeImages }) {
               <button className="t-tab" role="tab" aria-selected="false" aria-label="Our approach"><img src={img["avatar-2"]} data-ph="|50x50|4" alt="" /></button>
               <button className="t-tab" role="tab" aria-selected="false" aria-label="Our growth"><img src={img["avatar-3"]} data-ph="|50x50|1" alt="" /></button>
               <button className="t-tab" role="tab" aria-selected="false" aria-label="Home tailoring"><img src={img["avatar-4"]} data-ph="|50x50|3" alt="" /></button>
-              <button className="t-tab" role="tab" aria-selected="false" aria-label="Bespoke kanduras"><img src={img["avatar-5"]} data-ph="|50x50|2" alt="" /></button>
-              <button className="t-tab" role="tab" aria-selected="false" aria-label="Uniforms"><img src={img["avatar-6"]} data-ph="|50x50|4" alt="" /></button>
+              <button className="t-tab" role="tab" aria-selected="false" aria-label="Bespoke abayas"><img src={img["avatar-5"]} data-ph="|50x50|2" alt="" /></button>
+              <button className="t-tab" role="tab" aria-selected="false" aria-label="Hijabs and shaylas"><img src={img["avatar-6"]} data-ph="|50x50|4" alt="" /></button>
               <div className="t-panes" data-r="">
                 <div className="t-pane show fade" role="tabpanel">
                   <svg className="t-quote" viewBox="0 0 50 42" fill="none" stroke="currentColor" strokeWidth="1.2"><path d="M1 41V19C1 9 6 3 18 1v5c-5 2-7 5-7 9h10v26H1zM29 41V19c0-10 5-16 17-18v5c-5 2-7 5-7 9h10v26H29z"/></svg>
-                  <p className="h4">Precision in fit, honesty in fabric: every kandura is finished to the standard our name was built on.</p>
+                  <p className="h4">Precision in fit, honesty in fabric: every abaya is finished to the standard our name was built on.</p>
                   <p className="h6 t-name">Our promise</p>
                 </div>
                 <div className="t-pane" role="tabpanel"><svg className="t-quote" viewBox="0 0 50 42" fill="none" stroke="currentColor" strokeWidth="1.2"><path d="M1 41V19C1 9 6 3 18 1v5c-5 2-7 5-7 9h10v26H1zM29 41V19c0-10 5-16 17-18v5c-5 2-7 5-7 9h10v26H29z"/></svg><p className="h4">Personal attention to every client&apos;s needs has earned us a trusted name across the UAE.</p><p className="h6 t-name">Our approach</p></div>
                 <div className="t-pane" role="tabpanel"><svg className="t-quote" viewBox="0 0 50 42" fill="none" stroke="currentColor" strokeWidth="1.2"><path d="M1 41V19C1 9 6 3 18 1v5c-5 2-7 5-7 9h10v26H1zM29 41V19c0-10 5-16 17-18v5c-5 2-7 5-7 9h10v26H29z"/></svg><p className="h4">What began as a single store is now a name found in almost every emirate.</p><p className="h6 t-name">Our growth</p></div>
                 <div className="t-pane" role="tabpanel"><svg className="t-quote" viewBox="0 0 50 42" fill="none" stroke="currentColor" strokeWidth="1.2"><path d="M1 41V19C1 9 6 3 18 1v5c-5 2-7 5-7 9h10v26H1zM29 41V19c0-10 5-16 17-18v5c-5 2-7 5-7 9h10v26H29z"/></svg><p className="h4">Prefer to be fitted at home? Our tailors bring the fabrics and the tape to your door.</p><p className="h6 t-name">Home tailoring</p></div>
-                <div className="t-pane" role="tabpanel"><svg className="t-quote" viewBox="0 0 50 42" fill="none" stroke="currentColor" strokeWidth="1.2"><path d="M1 41V19C1 9 6 3 18 1v5c-5 2-7 5-7 9h10v26H1zM29 41V19c0-10 5-16 17-18v5c-5 2-7 5-7 9h10v26H29z"/></svg><p className="h4">Kanduras cut from the finest fabrics, blending traditional design with modern craft.</p><p className="h6 t-name">Bespoke kanduras</p></div>
-                <div className="t-pane" role="tabpanel"><svg className="t-quote" viewBox="0 0 50 42" fill="none" stroke="currentColor" strokeWidth="1.2"><path d="M1 41V19C1 9 6 3 18 1v5c-5 2-7 5-7 9h10v26H1zM29 41V19c0-10 5-16 17-18v5c-5 2-7 5-7 9h10v26H29z"/></svg><p className="h4">Uniforms held to the same exacting standard of precision as our kanduras.</p><p className="h6 t-name">Uniforms</p></div>
+                <div className="t-pane" role="tabpanel"><svg className="t-quote" viewBox="0 0 50 42" fill="none" stroke="currentColor" strokeWidth="1.2"><path d="M1 41V19C1 9 6 3 18 1v5c-5 2-7 5-7 9h10v26H1zM29 41V19c0-10 5-16 17-18v5c-5 2-7 5-7 9h10v26H29z"/></svg><p className="h4">Abayas cut from the finest fabrics, blending traditional design with modern craft.</p><p className="h6 t-name">Bespoke abayas</p></div>
+                <div className="t-pane" role="tabpanel"><svg className="t-quote" viewBox="0 0 50 42" fill="none" stroke="currentColor" strokeWidth="1.2"><path d="M1 41V19C1 9 6 3 18 1v5c-5 2-7 5-7 9h10v26H1zM29 41V19c0-10 5-16 17-18v5c-5 2-7 5-7 9h10v26H29z"/></svg><p className="h4">Shaylas and hijabs chosen to match every abaya, in chiffon, silk and soft cotton.</p><p className="h6 t-name">Shaylas</p></div>
               </div>
             </div>
           </div></section>

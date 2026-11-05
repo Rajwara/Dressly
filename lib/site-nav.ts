@@ -21,17 +21,17 @@ export type NavItem = { label: string; href: string; columns?: NavColumn[] };
 export const MAIN_NAV: NavItem[] = [
   { label: "Branches", href: "/branches" },
   { label: "Home Tailoring", href: "/home-tailoring" },
-  { label: "Kandura & Thobe", href: "/category/kandura-thobes", columns: [{ links: inGroup("Kandura and Thobe", "kandura-thobes").map(link) }] },
-  { label: "Kids", href: "/category/kids-clothing", columns: [{ links: inGroup("Kids", "kids-clothing").map(link) }] },
+  { label: "Abayas", href: "/category/kandura-thobes", columns: [{ links: inGroup("Abayas", "kandura-thobes").map(link) }] },
+  { label: "Hijabs & Shaylas", href: "/category/shimagh-ghutra", columns: [{ links: inGroup("Hijabs", "shimagh-ghutra").map(link) }] },
   {
-    label: "Traditional Wear",
+    label: "Modest Wear",
     href: "/shop",
     columns: [
       { heading: "Outerwear", links: inGroup("Outerwear").map(link) },
-      { heading: "Casual & Underwear", links: inGroup("Casual and underwear").map(link) },
-      { heading: "Headwear", links: inGroup("Headwear").map(link) },
-      { heading: "Footwear", links: inGroup("Footwear").map(link) },
-      { heading: "Accessories", links: [...inGroup("Accessories"), ...inGroup("Gifts")].map(link) },
+      { heading: "Home & Lounge", links: inGroup("Home & Lounge").map(link) },
+      { heading: "Essentials", links: inGroup("Essentials").map(link) },
+      { heading: "Girls", links: inGroup("Girls", "kids-clothing").map(link) },
+      { heading: "Shoes, Fragrance & Gifts", links: [...inGroup("Footwear"), ...inGroup("Fragrance"), ...inGroup("Accessories"), ...inGroup("Gifts")].map(link) },
     ],
   },
   { label: "New Arrivals", href: "/shop?filter=new" },
@@ -44,9 +44,9 @@ export const FOOTER_NAV: { heading: string; links: NavLink[] }[] = [
     heading: "Shop",
     links: [
       { label: "New Arrivals", href: "/shop?filter=new" },
-      { label: "Kandura & Thobe", href: "/category/kandura-thobes" },
-      { label: "Kids", href: "/category/kids-clothing" },
-      { label: "Traditional Wear", href: "/shop#traditional-wear" },
+      { label: "Abayas", href: "/category/kandura-thobes" },
+      { label: "Hijabs & Shaylas", href: "/category/shimagh-ghutra" },
+      { label: "Modest Wear", href: "/shop#modest-wear" },
       { label: "Shop All", href: "/shop" },
     ],
   },
@@ -80,7 +80,7 @@ export const FOOTER_NAV: { heading: string; links: NavLink[] }[] = [
 
 /** Rotating messages in the bar above the header. */
 export const TOP_BAR: NavLink[] = [
-  { label: "Kandura tailoring since 1998", href: "/about" },
+  { label: "Abaya tailoring since 1998", href: "/about" },
   { label: "Home tailoring: we come to you", href: "/home-tailoring" },
   { label: "13 branches across 5 Emirates", href: "/branches" },
   { label: `Order on WhatsApp ${PHONE_DISPLAY}`, href: WHATSAPP_URL },

@@ -9,18 +9,20 @@ import "../info-pages.css";
 
 export const metadata: Metadata = {
   title: "Shop All Categories",
-  description: "Browse every Dressly category: kandura and thobe, kids, outerwear, headwear, footwear and accessories.",
+  description: "Browse every Dressly category: abayas, hijabs and shaylas, jalabiyas and kaftans, essentials, sandals, perfumes, accessories and girls.",
 };
 
-// Order of the groups on the page; "Traditional Wear" in the menu covers the groups after Kids.
+// Order of the groups on the page; "Modest Wear" in the menu links to the Outerwear section.
 const GROUPS: { group: string; id?: string }[] = [
-  { group: "Kandura and Thobe" },
-  { group: "Kids" },
-  { group: "Outerwear", id: "traditional-wear" },
-  { group: "Casual and underwear" },
-  { group: "Headwear" },
+  { group: "Abayas" },
+  { group: "Hijabs" },
+  { group: "Outerwear", id: "modest-wear" },
+  { group: "Home & Lounge" },
+  { group: "Essentials" },
   { group: "Footwear" },
+  { group: "Fragrance" },
   { group: "Accessories" },
+  { group: "Girls" },
   { group: "Gifts" },
 ];
 const slugify = (s: string) => s.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");

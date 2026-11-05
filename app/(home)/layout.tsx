@@ -15,8 +15,8 @@ const jakarta = Plus_Jakarta_Sans({ subsets: ["latin"], variable: "--font-serif"
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
 
 export const metadata: Metadata = {
-  title: "Dressly | Kandura Tailoring Since 1998",
-  description: "Dressly: kandura tailoring since 1998, with 13 branches across the UAE and home tailoring visits.",
+  title: "Dressly | Abaya Tailoring Since 1998",
+  description: "Dressly: abaya tailoring since 1998, with 13 branches across the UAE and home tailoring visits.",
 };
 
 /**

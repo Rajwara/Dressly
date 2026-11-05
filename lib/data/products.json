@@ -1,9 +1,9 @@
 [
   {
     "slug": "classic-round-collar-kandura-ivory",
-    "name": "Classic Round-Collar Kandura, Ivory",
+    "name": "Signature Crepe Abaya, Ivory",
     "colour": "Ivory",
-    "category": "All Kandura and Thobes",
+    "category": "All Abayas",
     "price": 480,
     "categorySlug": "kandura-thobes",
     "options": [
@@ -20,6 +20,8 @@
       {
         "label": "Length (in)",
         "values": [
+          "52",
+          "53",
           "54",
           "55",
           "56",
@@ -28,15 +30,13 @@
           "59",
           "60",
           "61",
-          "62",
-          "63",
-          "64"
+          "62"
         ]
       }
     ],
     "sizeGuide": true,
-    "description": "Sample description for classic round-collar kandura, ivory. Replace with the real fabric, fit and care details.",
-    "metaDescription": "Classic Round-Collar Kandura, Ivory at Dressly.",
+    "description": "An ivory soft crepe open abaya with a clean round neckline, long straight sleeves with a thin satin cuff band, worn over a matching ivory inner dress. Gentle machine wash cold or dry clean, inside out. Hang to dry and steam on low heat.",
+    "metaDescription": "Signature Crepe Abaya, Ivory at Dressly. All Abayas for women, delivered across the UAE.",
     "related": [
       "tailored-tasselled-kandura-sand",
       "soft-weave-kandura-slate",
@@ -45,9 +45,9 @@
   },
   {
     "slug": "tailored-tasselled-kandura-sand",
-    "name": "Tailored Tasselled Kandura, Sand",
+    "name": "Tassel-Trim Abaya, Sand",
     "colour": "Sand",
-    "category": "All Kandura and Thobes",
+    "category": "All Abayas",
     "price": 510,
     "categorySlug": "kandura-thobes",
     "options": [
@@ -64,6 +64,8 @@
       {
         "label": "Length (in)",
         "values": [
+          "52",
+          "53",
           "54",
           "55",
           "56",
@@ -72,15 +74,13 @@
           "59",
           "60",
           "61",
-          "62",
-          "63",
-          "64"
+          "62"
         ]
       }
     ],
     "sizeGuide": true,
-    "description": "Sample description for tailored tasselled kandura, sand. Replace with the real fabric, fit and care details.",
-    "metaDescription": "Tailored Tasselled Kandura, Sand at Dressly.",
+    "description": "A sand-beige closed abaya with a single long silk tassel at the neckline and fine piping down the front. Gentle machine wash cold or dry clean, inside out. Hang to dry and steam on low heat.",
+    "metaDescription": "Tassel-Trim Abaya, Sand at Dressly. All Abayas for women, delivered across the UAE.",
     "related": [
       "classic-round-collar-kandura-ivory",
       "soft-weave-kandura-slate",
@@ -89,9 +89,9 @@
   },
   {
     "slug": "soft-weave-kandura-slate",
-    "name": "Soft-Weave Kandura, Slate",
+    "name": "Soft Nidha Abaya, Slate",
     "colour": "Slate",
-    "category": "All Kandura and Thobes",
+    "category": "All Abayas",
     "price": 540,
     "categorySlug": "kandura-thobes",
     "options": [
@@ -108,6 +108,8 @@
       {
         "label": "Length (in)",
         "values": [
+          "52",
+          "53",
           "54",
           "55",
           "56",
@@ -116,15 +118,13 @@
           "59",
           "60",
           "61",
-          "62",
-          "63",
-          "64"
+          "62"
         ]
       }
     ],
     "sizeGuide": true,
-    "description": "Sample description for soft-weave kandura, slate. Replace with the real fabric, fit and care details.",
-    "metaDescription": "Soft-Weave Kandura, Slate at Dressly.",
+    "description": "A slate-grey nidha crepe abaya with a relaxed A-line cut and wide bell sleeves. Gentle machine wash cold or dry clean, inside out. Hang to dry and steam on low heat.",
+    "metaDescription": "Soft Nidha Abaya, Slate at Dressly. All Abayas for women, delivered across the UAE.",
     "related": [
       "classic-round-collar-kandura-ivory",
       "tailored-tasselled-kandura-sand",
@@ -133,9 +133,9 @@
   },
   {
     "slug": "stand-collar-thobe-white",
-    "name": "Stand-Collar Thobe, White",
+    "name": "Cotton Day Abaya, White",
     "colour": "White",
-    "category": "Adult Thobes",
+    "category": "Everyday Abayas",
     "price": 420,
     "categorySlug": "adult-thobes",
     "options": [
@@ -152,6 +152,8 @@
       {
         "label": "Length (in)",
         "values": [
+          "52",
+          "53",
           "54",
           "55",
           "56",
@@ -160,15 +162,13 @@
           "59",
           "60",
           "61",
-          "62",
-          "63",
-          "64"
+          "62"
         ]
       }
     ],
     "sizeGuide": true,
-    "description": "Sample description for stand-collar thobe, white. Replace with the real fabric, fit and care details.",
-    "metaDescription": "Stand-Collar Thobe, White at Dressly.",
+    "description": "A white cotton-blend closed abaya with a small stand collar and a hidden button placket. Gentle machine wash cold or dry clean, inside out. Hang to dry and steam on low heat.",
+    "metaDescription": "Cotton Day Abaya, White at Dressly. Everyday Abayas for women, delivered across the UAE.",
     "related": [
       "button-placket-thobe-stone",
       "formal-cuffed-thobe-olive",
@@ -177,9 +177,9 @@
   },
   {
     "slug": "button-placket-thobe-stone",
-    "name": "Button-Placket Thobe, Stone",
+    "name": "Button-Front Abaya, Stone",
     "colour": "Stone",
-    "category": "Adult Thobes",
+    "category": "Everyday Abayas",
     "price": 450,
     "categorySlug": "adult-thobes",
     "options": [
@@ -196,6 +196,8 @@
       {
         "label": "Length (in)",
         "values": [
+          "52",
+          "53",
           "54",
           "55",
           "56",
@@ -204,15 +206,13 @@
           "59",
           "60",
           "61",
-          "62",
-          "63",
-          "64"
+          "62"
         ]
       }
     ],
     "sizeGuide": true,
-    "description": "Sample description for button-placket thobe, stone. Replace with the real fabric, fit and care details.",
-    "metaDescription": "Button-Placket Thobe, Stone at Dressly.",
+    "description": "A stone-beige abaya with a row of covered buttons from neck to hem and two side pockets. Gentle machine wash cold or dry clean, inside out. Hang to dry and steam on low heat.",
+    "metaDescription": "Button-Front Abaya, Stone at Dressly. Everyday Abayas for women, delivered across the UAE.",
     "related": [
       "stand-collar-thobe-white",
       "formal-cuffed-thobe-olive",
@@ -221,9 +221,9 @@
   },
   {
     "slug": "formal-cuffed-thobe-olive",
-    "name": "Formal Cuffed Thobe, Olive",
+    "name": "Pleated Cuff Abaya, Olive",
     "colour": "Olive",
-    "category": "Adult Thobes",
+    "category": "Everyday Abayas",
     "price": 480,
     "categorySlug": "adult-thobes",
     "options": [
@@ -240,6 +240,8 @@
       {
         "label": "Length (in)",
         "values": [
+          "52",
+          "53",
           "54",
           "55",
           "56",
@@ -248,15 +250,13 @@
           "59",
           "60",
           "61",
-          "62",
-          "63",
-          "64"
+          "62"
         ]
       }
     ],
     "sizeGuide": true,
-    "description": "Sample description for formal cuffed thobe, olive. Replace with the real fabric, fit and care details.",
-    "metaDescription": "Formal Cuffed Thobe, Olive at Dressly.",
+    "description": "An olive crepe abaya with deep pleated cuffs and a softly gathered back yoke. Gentle machine wash cold or dry clean, inside out. Hang to dry and steam on low heat.",
+    "metaDescription": "Pleated Cuff Abaya, Olive at Dressly. Everyday Abayas for women, delivered across the UAE.",
     "related": [
       "stand-collar-thobe-white",
       "button-placket-thobe-stone",
@@ -265,9 +265,9 @@
   },
   {
     "slug": "heritage-tassel-kandura-white",
-    "name": "Heritage Tassel Kandura, White",
+    "name": "Pearl-Embellished Abaya, White",
     "colour": "White",
-    "category": "Traditional Kandura",
+    "category": "Occasion & Embellished Abayas",
     "price": 450,
     "categorySlug": "traditional-kandura",
     "options": [
@@ -284,6 +284,8 @@
       {
         "label": "Length (in)",
         "values": [
+          "52",
+          "53",
           "54",
           "55",
           "56",
@@ -292,15 +294,13 @@
           "59",
           "60",
           "61",
-          "62",
-          "63",
-          "64"
+          "62"
         ]
       }
     ],
     "sizeGuide": true,
-    "description": "Sample description for heritage tassel kandura, white. Replace with the real fabric, fit and care details.",
-    "metaDescription": "Heritage Tassel Kandura, White at Dressly.",
+    "description": "A white occasion abaya with small hand-sewn pearls scattered along the front edges and cuffs. Gentle machine wash cold or dry clean, inside out. Hang to dry and steam on low heat.",
+    "metaDescription": "Pearl-Embellished Abaya, White at Dressly. Occasion & Embellished Abayas for women, delivered across the UAE.",
     "related": [
       "hand-finished-neck-kandura-cream",
       "heritage-cuff-kandura-taupe",
@@ -309,9 +309,9 @@
   },
   {
     "slug": "hand-finished-neck-kandura-cream",
-    "name": "Hand-Finished Neck Kandura, Cream",
+    "name": "Hand-Embroidered Neckline Abaya, Cream",
     "colour": "Cream",
-    "category": "Traditional Kandura",
+    "category": "Occasion & Embellished Abayas",
     "price": 480,
     "categorySlug": "traditional-kandura",
     "options": [
@@ -328,6 +328,8 @@
       {
         "label": "Length (in)",
         "values": [
+          "52",
+          "53",
           "54",
           "55",
           "56",
@@ -336,15 +338,13 @@
           "59",
           "60",
           "61",
-          "62",
-          "63",
-          "64"
+          "62"
         ]
       }
     ],
     "sizeGuide": true,
-    "description": "Sample description for hand-finished neck kandura, cream. Replace with the real fabric, fit and care details.",
-    "metaDescription": "Hand-Finished Neck Kandura, Cream at Dressly.",
+    "description": "A cream abaya with tone-on-tone hand embroidery around the neckline and down the centre front. Gentle machine wash cold or dry clean, inside out. Hang to dry and steam on low heat.",
+    "metaDescription": "Hand-Embroidered Neckline Abaya, Cream at Dressly. Occasion & Embellished Abayas for women, delivered across the UAE.",
     "related": [
       "heritage-tassel-kandura-white",
       "heritage-cuff-kandura-taupe",
@@ -353,9 +353,9 @@
   },
   {
     "slug": "heritage-cuff-kandura-taupe",
-    "name": "Heritage Cuff Kandura, Taupe",
+    "name": "Beaded Cuff Abaya, Taupe",
     "colour": "Taupe",
-    "category": "Traditional Kandura",
+    "category": "Occasion & Embellished Abayas",
     "price": 510,
     "categorySlug": "traditional-kandura",
     "options": [
@@ -372,6 +372,8 @@
       {
         "label": "Length (in)",
         "values": [
+          "52",
+          "53",
           "54",
           "55",
           "56",
@@ -380,15 +382,13 @@
           "59",
           "60",
           "61",
-          "62",
-          "63",
-          "64"
+          "62"
         ]
       }
     ],
     "sizeGuide": true,
-    "description": "Sample description for heritage cuff kandura, taupe. Replace with the real fabric, fit and care details.",
-    "metaDescription": "Heritage Cuff Kandura, Taupe at Dressly.",
+    "description": "A taupe abaya with wide cuffs covered in fine gold and champagne beading. Gentle machine wash cold or dry clean, inside out. Hang to dry and steam on low heat.",
+    "metaDescription": "Beaded Cuff Abaya, Taupe at Dressly. Occasion & Embellished Abayas for women, delivered across the UAE.",
     "related": [
       "heritage-tassel-kandura-white",
       "hand-finished-neck-kandura-cream",
@@ -397,9 +397,9 @@
   },
   {
     "slug": "breathable-cotton-thobe-white",
-    "name": "Breathable Cotton Thobe, White",
+    "name": "Breathable Linen Abaya, White",
     "colour": "White",
-    "category": "Summer Thobes",
+    "category": "Summer Abayas",
     "price": 360,
     "categorySlug": "summer-thobes",
     "options": [
@@ -416,6 +416,8 @@
       {
         "label": "Length (in)",
         "values": [
+          "52",
+          "53",
           "54",
           "55",
           "56",
@@ -424,15 +426,13 @@
           "59",
           "60",
           "61",
-          "62",
-          "63",
-          "64"
+          "62"
         ]
       }
     ],
     "sizeGuide": true,
-    "description": "Sample description for breathable cotton thobe, white. Replace with the real fabric, fit and care details.",
-    "metaDescription": "Breathable Cotton Thobe, White at Dressly.",
+    "description": "A white linen-cotton summer abaya, unlined, with relaxed kimono sleeves. Gentle machine wash cold or dry clean, inside out. Hang to dry and steam on low heat.",
+    "metaDescription": "Breathable Linen Abaya, White at Dressly. Summer Abayas for women, delivered across the UAE.",
     "related": [
       "lightweight-linen-blend-thobe-pale-blue",
       "airy-short-collar-thobe-sand",
@@ -441,9 +441,9 @@
   },
   {
     "slug": "lightweight-linen-blend-thobe-pale-blue",
-    "name": "Lightweight Linen-Blend Thobe, Pale Blue",
+    "name": "Chiffon-Layer Summer Abaya, Pale Blue",
     "colour": "Pale Blue",
-    "category": "Summer Thobes",
+    "category": "Summer Abayas",
     "price": 390,
     "categorySlug": "summer-thobes",
     "options": [
@@ -460,6 +460,8 @@
       {
         "label": "Length (in)",
         "values": [
+          "52",
+          "53",
           "54",
           "55",
           "56",
@@ -468,15 +470,13 @@
           "59",
           "60",
           "61",
-          "62",
-          "63",
-          "64"
+          "62"
         ]
       }
     ],
     "sizeGuide": true,
-    "description": "Sample description for lightweight linen-blend thobe, pale blue. Replace with the real fabric, fit and care details.",
-    "metaDescription": "Lightweight Linen-Blend Thobe, Pale Blue at Dressly.",
+    "description": "A pale powder-blue abaya with a light chiffon overlayer on the sleeves, over a matching opaque inner dress. Gentle machine wash cold or dry clean, inside out. Hang to dry and steam on low heat.",
+    "metaDescription": "Chiffon-Layer Summer Abaya, Pale Blue at Dressly. Summer Abayas for women, delivered across the UAE.",
     "related": [
       "breathable-cotton-thobe-white",
       "airy-short-collar-thobe-sand",
@@ -485,9 +485,9 @@
   },
   {
     "slug": "airy-short-collar-thobe-sand",
-    "name": "Airy Short-Collar Thobe, Sand",
+    "name": "Airy Kimono Abaya, Sand",
     "colour": "Sand",
-    "category": "Summer Thobes",
+    "category": "Summer Abayas",
     "price": 420,
     "categorySlug": "summer-thobes",
     "options": [
@@ -504,6 +504,8 @@
       {
         "label": "Length (in)",
         "values": [
+          "52",
+          "53",
           "54",
           "55",
           "56",
@@ -512,15 +514,13 @@
           "59",
           "60",
           "61",
-          "62",
-          "63",
-          "64"
+          "62"
         ]
       }
     ],
     "sizeGuide": true,
-    "description": "Sample description for airy short-collar thobe, sand. Replace with the real fabric, fit and care details.",
-    "metaDescription": "Airy Short-Collar Thobe, Sand at Dressly.",
+    "description": "A sand-coloured airy open kimono abaya with a thin self-tie belt. Gentle machine wash cold or dry clean, inside out. Hang to dry and steam on low heat.",
+    "metaDescription": "Airy Kimono Abaya, Sand at Dressly. Summer Abayas for women, delivered across the UAE.",
     "related": [
       "breathable-cotton-thobe-white",
       "lightweight-linen-blend-thobe-pale-blue",
@@ -529,9 +529,9 @@
   },
   {
     "slug": "boys-round-collar-kandura-white",
-    "name": "Boys Round-Collar Kandura, White",
+    "name": "Girls' Mini Abaya, White",
     "colour": "White",
-    "category": "Kids Clothing",
+    "category": "Girls' Abayas & Jalabiyas",
     "price": 190,
     "categorySlug": "kids-clothing",
     "options": [
@@ -548,8 +548,8 @@
       }
     ],
     "sizeGuide": true,
-    "description": "Sample description for boys round-collar kandura, white. Replace with the real fabric, fit and care details.",
-    "metaDescription": "Boys Round-Collar Kandura, White at Dressly.",
+    "description": "A white mini abaya with soft pink floral embroidery at the cuffs. Machine wash cold with similar colours. Hang to dry and iron on low heat.",
+    "metaDescription": "Girls' Mini Abaya, White at Dressly. Girls' Abayas & Jalabiyas for women, delivered across the UAE.",
     "related": [
       "boys-stand-collar-thobe-cream",
       "boys-occasion-kandura-sand",
@@ -558,9 +558,9 @@
   },
   {
     "slug": "boys-stand-collar-thobe-cream",
-    "name": "Boys Stand-Collar Thobe, Cream",
+    "name": "Girls' Embroidered Jalabiya, Cream",
     "colour": "Cream",
-    "category": "Kids Clothing",
+    "category": "Girls' Abayas & Jalabiyas",
     "price": 220,
     "categorySlug": "kids-clothing",
     "options": [
@@ -577,8 +577,8 @@
       }
     ],
     "sizeGuide": true,
-    "description": "Sample description for boys stand-collar thobe, cream. Replace with the real fabric, fit and care details.",
-    "metaDescription": "Boys Stand-Collar Thobe, Cream at Dressly.",
+    "description": "A cream cotton jalabiya with colourful hand embroidery on the chest panel. Machine wash cold with similar colours. Hang to dry and iron on low heat.",
+    "metaDescription": "Girls' Embroidered Jalabiya, Cream at Dressly. Girls' Abayas & Jalabiyas for women, delivered across the UAE.",
     "related": [
       "boys-round-collar-kandura-white",
       "boys-occasion-kandura-sand",
@@ -587,9 +587,9 @@
   },
   {
     "slug": "boys-occasion-kandura-sand",
-    "name": "Boys Occasion Kandura, Sand",
+    "name": "Girls' Eid Abaya, Sand",
     "colour": "Sand",
-    "category": "Kids Clothing",
+    "category": "Girls' Abayas & Jalabiyas",
     "price": 250,
     "categorySlug": "kids-clothing",
     "options": [
@@ -606,8 +606,8 @@
       }
     ],
     "sizeGuide": true,
-    "description": "Sample description for boys occasion kandura, sand. Replace with the real fabric, fit and care details.",
-    "metaDescription": "Boys Occasion Kandura, Sand at Dressly.",
+    "description": "A sand-coloured Eid abaya with a little gold trim along the front edges. Machine wash cold with similar colours. Hang to dry and iron on low heat.",
+    "metaDescription": "Girls' Eid Abaya, Sand at Dressly. Girls' Abayas & Jalabiyas for women, delivered across the UAE.",
     "related": [
       "boys-round-collar-kandura-white",
       "boys-stand-collar-thobe-cream",
@@ -616,9 +616,9 @@
   },
   {
     "slug": "kids-check-shimagh-red-and-white",
-    "name": "Kids Check Shimagh, Red and White",
+    "name": "Girls' Floral Hijab, Red and White",
     "colour": "Red and White",
-    "category": "Kids Shimagh and Ghutra",
+    "category": "Girls' Hijabs",
     "price": 60,
     "categorySlug": "kids-headwear",
     "options": [
@@ -631,8 +631,8 @@
       }
     ],
     "sizeGuide": false,
-    "description": "Sample description for kids check shimagh, red and white. Replace with the real fabric, fit and care details.",
-    "metaDescription": "Kids Check Shimagh, Red and White at Dressly.",
+    "description": "A white pull-on jersey hijab with a tiny red floral border. Machine wash cold. Dry flat.",
+    "metaDescription": "Girls' Floral Hijab, Red and White at Dressly. Girls' Hijabs for women, delivered across the UAE.",
     "related": [
       "kids-plain-ghutra-white",
       "kids-soft-cotton-ghutra-ivory",
@@ -641,9 +641,9 @@
   },
   {
     "slug": "kids-plain-ghutra-white",
-    "name": "Kids Plain Ghutra, White",
+    "name": "Girls' Jersey Hijab, White",
     "colour": "White",
-    "category": "Kids Shimagh and Ghutra",
+    "category": "Girls' Hijabs",
     "price": 90,
     "categorySlug": "kids-headwear",
     "options": [
@@ -656,8 +656,8 @@
       }
     ],
     "sizeGuide": false,
-    "description": "Sample description for kids plain ghutra, white. Replace with the real fabric, fit and care details.",
-    "metaDescription": "Kids Plain Ghutra, White at Dressly.",
+    "description": "A plain white soft jersey pull-on hijab. Machine wash cold. Dry flat.",
+    "metaDescription": "Girls' Jersey Hijab, White at Dressly. Girls' Hijabs for women, delivered across the UAE.",
     "related": [
       "kids-check-shimagh-red-and-white",
       "kids-soft-cotton-ghutra-ivory",
@@ -666,9 +666,9 @@
   },
   {
     "slug": "kids-soft-cotton-ghutra-ivory",
-    "name": "Kids Soft Cotton Ghutra, Ivory",
+    "name": "Girls' Soft Cotton Hijab, Ivory",
     "colour": "Ivory",
-    "category": "Kids Shimagh and Ghutra",
+    "category": "Girls' Hijabs",
     "price": 120,
     "categorySlug": "kids-headwear",
     "options": [
@@ -681,8 +681,8 @@
       }
     ],
     "sizeGuide": false,
-    "description": "Sample description for kids soft cotton ghutra, ivory. Replace with the real fabric, fit and care details.",
-    "metaDescription": "Kids Soft Cotton Ghutra, Ivory at Dressly.",
+    "description": "An ivory soft cotton hijab with a neat pinned side drape. Machine wash cold. Dry flat.",
+    "metaDescription": "Girls' Soft Cotton Hijab, Ivory at Dressly. Girls' Hijabs for women, delivered across the UAE.",
     "related": [
       "kids-check-shimagh-red-and-white",
       "kids-plain-ghutra-white",
@@ -691,9 +691,9 @@
   },
   {
     "slug": "kids-leather-sandal-tan",
-    "name": "Kids Leather Sandal, Tan",
+    "name": "Girls' Bow Sandal, Tan",
     "colour": "Tan",
-    "category": "Kids Footwear",
+    "category": "Girls' Sandals",
     "price": 110,
     "categorySlug": "kids-footwear",
     "options": [
@@ -712,8 +712,8 @@
       }
     ],
     "sizeGuide": false,
-    "description": "Sample description for kids leather sandal, tan. Replace with the real fabric, fit and care details.",
-    "metaDescription": "Kids Leather Sandal, Tan at Dressly.",
+    "description": "A pair of girls' tan leather flat sandals with a small leather bow on the toe strap. Wipe with a soft dry cloth. Keep away from water and direct heat.",
+    "metaDescription": "Girls' Bow Sandal, Tan at Dressly. Girls' Sandals for women, delivered across the UAE.",
     "related": [
       "kids-strap-sandal-brown",
       "kids-occasion-sandal-black",
@@ -722,9 +722,9 @@
   },
   {
     "slug": "kids-strap-sandal-brown",
-    "name": "Kids Strap Sandal, Brown",
+    "name": "Girls' Double Strap Sandal, Brown",
     "colour": "Brown",
-    "category": "Kids Footwear",
+    "category": "Girls' Sandals",
     "price": 140,
     "categorySlug": "kids-footwear",
     "options": [
@@ -743,8 +743,8 @@
       }
     ],
     "sizeGuide": false,
-    "description": "Sample description for kids strap sandal, brown. Replace with the real fabric, fit and care details.",
-    "metaDescription": "Kids Strap Sandal, Brown at Dressly.",
+    "description": "A pair of girls' brown leather double-strap sandals with a soft cushioned sole. Wipe with a soft dry cloth. Keep away from water and direct heat.",
+    "metaDescription": "Girls' Double Strap Sandal, Brown at Dressly. Girls' Sandals for women, delivered across the UAE.",
     "related": [
       "kids-leather-sandal-tan",
       "kids-occasion-sandal-black",
@@ -753,9 +753,9 @@
   },
   {
     "slug": "kids-occasion-sandal-black",
-    "name": "Kids Occasion Sandal, Black",
+    "name": "Girls' Occasion Sandal, Black",
     "colour": "Black",
-    "category": "Kids Footwear",
+    "category": "Girls' Sandals",
     "price": 170,
     "categorySlug": "kids-footwear",
     "options": [
@@ -774,8 +774,8 @@
       }
     ],
     "sizeGuide": false,
-    "description": "Sample description for kids occasion sandal, black. Replace with the real fabric, fit and care details.",
-    "metaDescription": "Kids Occasion Sandal, Black at Dressly.",
+    "description": "A pair of girls' black patent sandals with a single pearl on the strap. Wipe with a soft dry cloth. Keep away from water and direct heat.",
+    "metaDescription": "Girls' Occasion Sandal, Black at Dressly. Girls' Sandals for women, delivered across the UAE.",
     "related": [
       "kids-leather-sandal-tan",
       "kids-strap-sandal-brown",
@@ -784,9 +784,9 @@
   },
   {
     "slug": "tailored-layering-jacket-charcoal",
-    "name": "Tailored Layering Jacket, Charcoal",
+    "name": "Tailored Coat Abaya, Charcoal",
     "colour": "Charcoal",
-    "category": "Kandura Jackets",
+    "category": "Coat & Kimono Abayas",
     "price": 390,
     "categorySlug": "kandura-jackets",
     "options": [
@@ -802,8 +802,8 @@
       }
     ],
     "sizeGuide": true,
-    "description": "Sample description for tailored layering jacket, charcoal. Replace with the real fabric, fit and care details.",
-    "metaDescription": "Tailored Layering Jacket, Charcoal at Dressly.",
+    "description": "A charcoal wool-blend coat abaya with a wide shawl lapel and self-tie belt, worn over a black inner dress. Gentle machine wash cold or dry clean, inside out. Hang to dry and steam on low heat.",
+    "metaDescription": "Tailored Coat Abaya, Charcoal at Dressly. Coat & Kimono Abayas for women, delivered across the UAE.",
     "related": [
       "soft-wool-blend-jacket-navy",
       "open-front-jacket-olive",
@@ -812,9 +812,9 @@
   },
   {
     "slug": "soft-wool-blend-jacket-navy",
-    "name": "Soft Wool-Blend Jacket, Navy",
+    "name": "Soft Wool-Blend Coat Abaya, Navy",
     "colour": "Navy",
-    "category": "Kandura Jackets",
+    "category": "Coat & Kimono Abayas",
     "price": 420,
     "categorySlug": "kandura-jackets",
     "options": [
@@ -830,8 +830,8 @@
       }
     ],
     "sizeGuide": true,
-    "description": "Sample description for soft wool-blend jacket, navy. Replace with the real fabric, fit and care details.",
-    "metaDescription": "Soft Wool-Blend Jacket, Navy at Dressly.",
+    "description": "A deep navy soft wool-blend long coat abaya with patch pockets, worn open over a navy inner dress. Gentle machine wash cold or dry clean, inside out. Hang to dry and steam on low heat.",
+    "metaDescription": "Soft Wool-Blend Coat Abaya, Navy at Dressly. Coat & Kimono Abayas for women, delivered across the UAE.",
     "related": [
       "tailored-layering-jacket-charcoal",
       "open-front-jacket-olive",
@@ -840,9 +840,9 @@
   },
   {
     "slug": "open-front-jacket-olive",
-    "name": "Open-Front Jacket, Olive",
+    "name": "Open-Front Kimono, Olive",
     "colour": "Olive",
-    "category": "Kandura Jackets",
+    "category": "Coat & Kimono Abayas",
     "price": 450,
     "categorySlug": "kandura-jackets",
     "options": [
@@ -858,8 +858,8 @@
       }
     ],
     "sizeGuide": true,
-    "description": "Sample description for open-front jacket, olive. Replace with the real fabric, fit and care details.",
-    "metaDescription": "Open-Front Jacket, Olive at Dressly.",
+    "description": "An olive open-front long kimono with wide sleeves, over an ivory maxi dress. Gentle machine wash cold or dry clean, inside out. Hang to dry and steam on low heat.",
+    "metaDescription": "Open-Front Kimono, Olive at Dressly. Coat & Kimono Abayas for women, delivered across the UAE.",
     "related": [
       "tailored-layering-jacket-charcoal",
       "soft-wool-blend-jacket-navy",
@@ -868,9 +868,9 @@
   },
   {
     "slug": "stitched-saderi-olive",
-    "name": "Stitched Saderi, Olive",
+    "name": "Quilted Long Gilet, Olive",
     "colour": "Olive",
-    "category": "Saderi (Sleeveless Jackets)",
+    "category": "Long Gilets & Overlays",
     "price": 280,
     "categorySlug": "saderi",
     "options": [
@@ -886,8 +886,8 @@
       }
     ],
     "sizeGuide": true,
-    "description": "Sample description for stitched saderi, olive. Replace with the real fabric, fit and care details.",
-    "metaDescription": "Stitched Saderi, Olive at Dressly.",
+    "description": "A long sleeveless quilted gilet in olive over an ivory long-sleeve maxi dress. Gentle machine wash cold or dry clean, inside out. Hang to dry and steam on low heat.",
+    "metaDescription": "Quilted Long Gilet, Olive at Dressly. Long Gilets & Overlays for women, delivered across the UAE.",
     "related": [
       "fine-weave-saderi-black",
       "plain-saderi-grey",
@@ -896,9 +896,9 @@
   },
   {
     "slug": "fine-weave-saderi-black",
-    "name": "Fine-Weave Saderi, Black",
+    "name": "Fine-Weave Long Gilet, Black",
     "colour": "Black",
-    "category": "Saderi (Sleeveless Jackets)",
+    "category": "Long Gilets & Overlays",
     "price": 310,
     "categorySlug": "saderi",
     "options": [
@@ -914,8 +914,8 @@
       }
     ],
     "sizeGuide": true,
-    "description": "Sample description for fine-weave saderi, black. Replace with the real fabric, fit and care details.",
-    "metaDescription": "Fine-Weave Saderi, Black at Dressly.",
+    "description": "A long black fine-weave sleeveless gilet with satin-piped edges over a black long-sleeve maxi dress. Gentle machine wash cold or dry clean, inside out. Hang to dry and steam on low heat.",
+    "metaDescription": "Fine-Weave Long Gilet, Black at Dressly. Long Gilets & Overlays for women, delivered across the UAE.",
     "related": [
       "stitched-saderi-olive",
       "plain-saderi-grey",
@@ -924,9 +924,9 @@
   },
   {
     "slug": "plain-saderi-grey",
-    "name": "Plain Saderi, Grey",
+    "name": "Sleeveless Overlay, Grey",
     "colour": "Grey",
-    "category": "Saderi (Sleeveless Jackets)",
+    "category": "Long Gilets & Overlays",
     "price": 340,
     "categorySlug": "saderi",
     "options": [
@@ -942,8 +942,8 @@
       }
     ],
     "sizeGuide": true,
-    "description": "Sample description for plain saderi, grey. Replace with the real fabric, fit and care details.",
-    "metaDescription": "Plain Saderi, Grey at Dressly.",
+    "description": "A soft grey sleeveless open overlay, ankle length, over a white long-sleeve maxi dress. Gentle machine wash cold or dry clean, inside out. Hang to dry and steam on low heat.",
+    "metaDescription": "Sleeveless Overlay, Grey at Dressly. Long Gilets & Overlays for women, delivered across the UAE.",
     "related": [
       "stitched-saderi-olive",
       "fine-weave-saderi-black",
@@ -952,9 +952,9 @@
   },
   {
     "slug": "occasion-bisht-black",
-    "name": "Occasion Bisht, Black",
+    "name": "Occasion Bisht Abaya, Black",
     "colour": "Black",
-    "category": "Bisht",
+    "category": "Bisht Abayas",
     "price": 950,
     "categorySlug": "bisht",
     "options": [
@@ -966,8 +966,8 @@
       }
     ],
     "sizeGuide": false,
-    "description": "Sample description for occasion bisht, black. Replace with the real fabric, fit and care details.",
-    "metaDescription": "Occasion Bisht, Black at Dressly.",
+    "description": "A sheer black bisht-style abaya with a wide hand-woven gold zari border along the front edges and sleeves, over a black inner dress. Gentle machine wash cold or dry clean, inside out. Hang to dry and steam on low heat.",
+    "metaDescription": "Occasion Bisht Abaya, Black at Dressly. Bisht Abayas for women, delivered across the UAE.",
     "related": [
       "lightweight-bisht-camel",
       "formal-trim-bisht-dark-brown",
@@ -976,9 +976,9 @@
   },
   {
     "slug": "lightweight-bisht-camel",
-    "name": "Lightweight Bisht, Camel",
+    "name": "Lightweight Bisht Abaya, Camel",
     "colour": "Camel",
-    "category": "Bisht",
+    "category": "Bisht Abayas",
     "price": 980,
     "categorySlug": "bisht",
     "options": [
@@ -990,8 +990,8 @@
       }
     ],
     "sizeGuide": false,
-    "description": "Sample description for lightweight bisht, camel. Replace with the real fabric, fit and care details.",
-    "metaDescription": "Lightweight Bisht, Camel at Dressly.",
+    "description": "A lightweight camel bisht-style abaya with a narrow gold border, over a cream inner dress. Gentle machine wash cold or dry clean, inside out. Hang to dry and steam on low heat.",
+    "metaDescription": "Lightweight Bisht Abaya, Camel at Dressly. Bisht Abayas for women, delivered across the UAE.",
     "related": [
       "occasion-bisht-black",
       "formal-trim-bisht-dark-brown",
@@ -1000,9 +1000,9 @@
   },
   {
     "slug": "formal-trim-bisht-dark-brown",
-    "name": "Formal Trim Bisht, Dark Brown",
+    "name": "Formal Trim Bisht Abaya, Dark Brown",
     "colour": "Dark Brown",
-    "category": "Bisht",
+    "category": "Bisht Abayas",
     "price": 1010,
     "categorySlug": "bisht",
     "options": [
@@ -1014,8 +1014,8 @@
       }
     ],
     "sizeGuide": false,
-    "description": "Sample description for formal trim bisht, dark brown. Replace with the real fabric, fit and care details.",
-    "metaDescription": "Formal Trim Bisht, Dark Brown at Dressly.",
+    "description": "A dark brown bisht-style abaya with an antique-gold embroidered border, over a dark brown inner dress. Gentle machine wash cold or dry clean, inside out. Hang to dry and steam on low heat.",
+    "metaDescription": "Formal Trim Bisht Abaya, Dark Brown at Dressly. Bisht Abayas for women, delivered across the UAE.",
     "related": [
       "occasion-bisht-black",
       "lightweight-bisht-camel",
@@ -1024,9 +1024,9 @@
   },
   {
     "slug": "wool-blend-shawl-camel",
-    "name": "Wool-Blend Shawl, Camel",
+    "name": "Pashmina Wrap, Camel",
     "colour": "Camel",
-    "category": "Shawls",
+    "category": "Pashminas & Shawls",
     "price": 220,
     "categorySlug": "shawls",
     "options": [
@@ -1038,8 +1038,8 @@
       }
     ],
     "sizeGuide": false,
-    "description": "Sample description for wool-blend shawl, camel. Replace with the real fabric, fit and care details.",
-    "metaDescription": "Wool-Blend Shawl, Camel at Dressly.",
+    "description": "A camel pashmina wrap with a fine fringe. Wipe clean or spot clean as needed. Store in the dust bag provided.",
+    "metaDescription": "Pashmina Wrap, Camel at Dressly. Pashminas & Shawls for women, delivered across the UAE.",
     "related": [
       "soft-check-shawl-olive",
       "plain-winter-shawl-charcoal",
@@ -1050,7 +1050,7 @@
     "slug": "soft-check-shawl-olive",
     "name": "Soft Check Shawl, Olive",
     "colour": "Olive",
-    "category": "Shawls",
+    "category": "Pashminas & Shawls",
     "price": 250,
     "categorySlug": "shawls",
     "options": [
@@ -1062,8 +1062,8 @@
       }
     ],
     "sizeGuide": false,
-    "description": "Sample description for soft check shawl, olive. Replace with the real fabric, fit and care details.",
-    "metaDescription": "Soft Check Shawl, Olive at Dressly.",
+    "description": "An olive and cream soft check shawl. Wipe clean or spot clean as needed. Store in the dust bag provided.",
+    "metaDescription": "Soft Check Shawl, Olive at Dressly. Pashminas & Shawls for women, delivered across the UAE.",
     "related": [
       "wool-blend-shawl-camel",
       "plain-winter-shawl-charcoal",
@@ -1072,9 +1072,9 @@
   },
   {
     "slug": "plain-winter-shawl-charcoal",
-    "name": "Plain Winter Shawl, Charcoal",
+    "name": "Cashmere-Blend Shawl, Charcoal",
     "colour": "Charcoal",
-    "category": "Shawls",
+    "category": "Pashminas & Shawls",
     "price": 280,
     "categorySlug": "shawls",
     "options": [
@@ -1086,8 +1086,8 @@
       }
     ],
     "sizeGuide": false,
-    "description": "Sample description for plain winter shawl, charcoal. Replace with the real fabric, fit and care details.",
-    "metaDescription": "Plain Winter Shawl, Charcoal at Dressly.",
+    "description": "A charcoal cashmere-blend shawl with a raw-edge finish. Wipe clean or spot clean as needed. Store in the dust bag provided.",
+    "metaDescription": "Cashmere-Blend Shawl, Charcoal at Dressly. Pashminas & Shawls for women, delivered across the UAE.",
     "related": [
       "wool-blend-shawl-camel",
       "soft-check-shawl-olive",
@@ -1098,7 +1098,7 @@
     "slug": "everyday-cotton-jalabiya-pale-blue",
     "name": "Everyday Cotton Jalabiya, Pale Blue",
     "colour": "Pale Blue",
-    "category": "Jalabiya",
+    "category": "Jalabiyas",
     "price": 210,
     "categorySlug": "jalabiya",
     "options": [
@@ -1114,8 +1114,8 @@
       }
     ],
     "sizeGuide": true,
-    "description": "Sample description for everyday cotton jalabiya, pale blue. Replace with the real fabric, fit and care details.",
-    "metaDescription": "Everyday Cotton Jalabiya, Pale Blue at Dressly.",
+    "description": "A pale blue cotton jalabiya with white embroidery around the neckline. Gentle machine wash cold or dry clean, inside out. Hang to dry and steam on low heat.",
+    "metaDescription": "Everyday Cotton Jalabiya, Pale Blue at Dressly. Jalabiyas for women, delivered across the UAE.",
     "related": [
       "relaxed-hooded-jalabiya-sand",
       "light-home-jalabiya-white",
@@ -1124,9 +1124,9 @@
   },
   {
     "slug": "relaxed-hooded-jalabiya-sand",
-    "name": "Relaxed Hooded Jalabiya, Sand",
+    "name": "Embroidered Ramadan Jalabiya, Sand",
     "colour": "Sand",
-    "category": "Jalabiya",
+    "category": "Jalabiyas",
     "price": 240,
     "categorySlug": "jalabiya",
     "options": [
@@ -1142,8 +1142,8 @@
       }
     ],
     "sizeGuide": true,
-    "description": "Sample description for relaxed hooded jalabiya, sand. Replace with the real fabric, fit and care details.",
-    "metaDescription": "Relaxed Hooded Jalabiya, Sand at Dressly.",
+    "description": "A sand-coloured flowing jalabiya with gold and ivory hand embroidery down the front. Gentle machine wash cold or dry clean, inside out. Hang to dry and steam on low heat.",
+    "metaDescription": "Embroidered Ramadan Jalabiya, Sand at Dressly. Jalabiyas for women, delivered across the UAE.",
     "related": [
       "everyday-cotton-jalabiya-pale-blue",
       "light-home-jalabiya-white",
@@ -1154,7 +1154,7 @@
     "slug": "light-home-jalabiya-white",
     "name": "Light Home Jalabiya, White",
     "colour": "White",
-    "category": "Jalabiya",
+    "category": "Jalabiyas",
     "price": 270,
     "categorySlug": "jalabiya",
     "options": [
@@ -1170,8 +1170,8 @@
       }
     ],
     "sizeGuide": true,
-    "description": "Sample description for light home jalabiya, white. Replace with the real fabric, fit and care details.",
-    "metaDescription": "Light Home Jalabiya, White at Dressly.",
+    "description": "A light white cotton jalabiya with delicate white-on-white embroidery. Gentle machine wash cold or dry clean, inside out. Hang to dry and steam on low heat.",
+    "metaDescription": "Light Home Jalabiya, White at Dressly. Jalabiyas for women, delivered across the UAE.",
     "related": [
       "everyday-cotton-jalabiya-pale-blue",
       "relaxed-hooded-jalabiya-sand",
@@ -1180,9 +1180,9 @@
   },
   {
     "slug": "relaxed-short-sleeve-tunic-stone",
-    "name": "Relaxed Short-Sleeve Tunic, Stone",
+    "name": "Relaxed Linen Kaftan, Stone",
     "colour": "Stone",
-    "category": "Arabian Casuals",
+    "category": "Kaftans",
     "price": 190,
     "categorySlug": "arabian-casuals",
     "options": [
@@ -1198,8 +1198,8 @@
       }
     ],
     "sizeGuide": true,
-    "description": "Sample description for relaxed short-sleeve tunic, stone. Replace with the real fabric, fit and care details.",
-    "metaDescription": "Relaxed Short-Sleeve Tunic, Stone at Dressly.",
+    "description": "A stone-coloured linen kaftan with wide sleeves to the wrist. Gentle machine wash cold or dry clean, inside out. Hang to dry and steam on low heat.",
+    "metaDescription": "Relaxed Linen Kaftan, Stone at Dressly. Kaftans for women, delivered across the UAE.",
     "related": [
       "weekend-band-collar-tunic-olive",
       "cotton-lounge-tunic-white",
@@ -1208,9 +1208,9 @@
   },
   {
     "slug": "weekend-band-collar-tunic-olive",
-    "name": "Weekend Band-Collar Tunic, Olive",
+    "name": "Belted Weekend Kaftan, Olive",
     "colour": "Olive",
-    "category": "Arabian Casuals",
+    "category": "Kaftans",
     "price": 220,
     "categorySlug": "arabian-casuals",
     "options": [
@@ -1226,8 +1226,8 @@
       }
     ],
     "sizeGuide": true,
-    "description": "Sample description for weekend band-collar tunic, olive. Replace with the real fabric, fit and care details.",
-    "metaDescription": "Weekend Band-Collar Tunic, Olive at Dressly.",
+    "description": "An olive kaftan with a band collar and a soft fabric belt at the waist. Gentle machine wash cold or dry clean, inside out. Hang to dry and steam on low heat.",
+    "metaDescription": "Belted Weekend Kaftan, Olive at Dressly. Kaftans for women, delivered across the UAE.",
     "related": [
       "relaxed-short-sleeve-tunic-stone",
       "cotton-lounge-tunic-white",
@@ -1236,9 +1236,9 @@
   },
   {
     "slug": "cotton-lounge-tunic-white",
-    "name": "Cotton Lounge Tunic, White",
+    "name": "Cotton Lounge Kaftan, White",
     "colour": "White",
-    "category": "Arabian Casuals",
+    "category": "Kaftans",
     "price": 250,
     "categorySlug": "arabian-casuals",
     "options": [
@@ -1254,8 +1254,8 @@
       }
     ],
     "sizeGuide": true,
-    "description": "Sample description for cotton lounge tunic, white. Replace with the real fabric, fit and care details.",
-    "metaDescription": "Cotton Lounge Tunic, White at Dressly.",
+    "description": "A white cotton lounge kaftan with a small V-shaped notch neckline (modest) and side slits at the hem only. Gentle machine wash cold or dry clean, inside out. Hang to dry and steam on low heat.",
+    "metaDescription": "Cotton Lounge Kaftan, White at Dressly. Kaftans for women, delivered across the UAE.",
     "related": [
       "relaxed-short-sleeve-tunic-stone",
       "weekend-band-collar-tunic-olive",
@@ -1264,9 +1264,9 @@
   },
   {
     "slug": "cotton-faneela-white",
-    "name": "Cotton Faneela, White",
+    "name": "Long-Sleeve Inner Dress, White",
     "colour": "White",
-    "category": "Faneela (Undershirts)",
+    "category": "Inner Dresses & Basics",
     "price": 55,
     "categorySlug": "faneela",
     "options": [
@@ -1282,8 +1282,8 @@
       }
     ],
     "sizeGuide": true,
-    "description": "Sample description for cotton faneela, white. Replace with the real fabric, fit and care details.",
-    "metaDescription": "Cotton Faneela, White at Dressly.",
+    "description": "A white long-sleeve ankle-length jersey inner dress with a high round neck. Machine wash cold. Tumble dry low or hang to dry.",
+    "metaDescription": "Long-Sleeve Inner Dress, White at Dressly. Inner Dresses & Basics for women, delivered across the UAE.",
     "related": [
       "fitted-faneela-off-white",
       "sleeveless-faneela-white",
@@ -1292,9 +1292,9 @@
   },
   {
     "slug": "fitted-faneela-off-white",
-    "name": "Fitted Faneela, Off-White",
+    "name": "Long-Sleeve Underlayer Top, Off-White",
     "colour": "Off-White",
-    "category": "Faneela (Undershirts)",
+    "category": "Inner Dresses & Basics",
     "price": 85,
     "categorySlug": "faneela",
     "options": [
@@ -1310,8 +1310,8 @@
       }
     ],
     "sizeGuide": true,
-    "description": "Sample description for fitted faneela, off-white. Replace with the real fabric, fit and care details.",
-    "metaDescription": "Fitted Faneela, Off-White at Dressly.",
+    "description": "An off-white fitted long-sleeve underlayer top with thumb-hole cuffs and a high neck. Machine wash cold. Tumble dry low or hang to dry.",
+    "metaDescription": "Long-Sleeve Underlayer Top, Off-White at Dressly. Inner Dresses & Basics for women, delivered across the UAE.",
     "related": [
       "cotton-faneela-white",
       "sleeveless-faneela-white",
@@ -1320,9 +1320,9 @@
   },
   {
     "slug": "sleeveless-faneela-white",
-    "name": "Sleeveless Faneela, White",
+    "name": "Inner Slip Dress, White",
     "colour": "White",
-    "category": "Faneela (Undershirts)",
+    "category": "Inner Dresses & Basics",
     "price": 115,
     "categorySlug": "faneela",
     "options": [
@@ -1338,8 +1338,8 @@
       }
     ],
     "sizeGuide": true,
-    "description": "Sample description for sleeveless faneela, white. Replace with the real fabric, fit and care details.",
-    "metaDescription": "Sleeveless Faneela, White at Dressly.",
+    "description": "A white ankle-length inner slip dress with wide shoulder straps, shown alone. Machine wash cold. Tumble dry low or hang to dry.",
+    "metaDescription": "Inner Slip Dress, White at Dressly. Inner Dresses & Basics for women, delivered across the UAE.",
     "related": [
       "cotton-faneela-white",
       "fitted-faneela-off-white",
@@ -1348,9 +1348,9 @@
   },
   {
     "slug": "woven-wuzar-white",
-    "name": "Woven Wuzar, White",
+    "name": "Woven Cotton Nightgown, White",
     "colour": "White",
-    "category": "Wuzar",
+    "category": "Modest Sleepwear",
     "price": 75,
     "categorySlug": "wuzar",
     "options": [
@@ -1362,8 +1362,8 @@
       }
     ],
     "sizeGuide": false,
-    "description": "Sample description for woven wuzar, white. Replace with the real fabric, fit and care details.",
-    "metaDescription": "Woven Wuzar, White at Dressly.",
+    "description": "A white woven cotton long-sleeve ankle-length nightgown. Machine wash cold. Tumble dry low or hang to dry.",
+    "metaDescription": "Woven Cotton Nightgown, White at Dressly. Modest Sleepwear for women, delivered across the UAE.",
     "related": [
       "fine-border-wuzar-ivory",
       "soft-cotton-wuzar-white",
@@ -1372,9 +1372,9 @@
   },
   {
     "slug": "fine-border-wuzar-ivory",
-    "name": "Fine Border Wuzar, Ivory",
+    "name": "Lace-Trim Nightgown, Ivory",
     "colour": "Ivory",
-    "category": "Wuzar",
+    "category": "Modest Sleepwear",
     "price": 105,
     "categorySlug": "wuzar",
     "options": [
@@ -1386,8 +1386,8 @@
       }
     ],
     "sizeGuide": false,
-    "description": "Sample description for fine border wuzar, ivory. Replace with the real fabric, fit and care details.",
-    "metaDescription": "Fine Border Wuzar, Ivory at Dressly.",
+    "description": "An ivory long-sleeve nightgown with fine lace trim at the cuffs and hem. Machine wash cold. Tumble dry low or hang to dry.",
+    "metaDescription": "Lace-Trim Nightgown, Ivory at Dressly. Modest Sleepwear for women, delivered across the UAE.",
     "related": [
       "woven-wuzar-white",
       "soft-cotton-wuzar-white",
@@ -1396,9 +1396,9 @@
   },
   {
     "slug": "soft-cotton-wuzar-white",
-    "name": "Soft Cotton Wuzar, White",
+    "name": "Soft Cotton Pyjama Set, White",
     "colour": "White",
-    "category": "Wuzar",
+    "category": "Modest Sleepwear",
     "price": 135,
     "categorySlug": "wuzar",
     "options": [
@@ -1410,8 +1410,8 @@
       }
     ],
     "sizeGuide": false,
-    "description": "Sample description for soft cotton wuzar, white. Replace with the real fabric, fit and care details.",
-    "metaDescription": "Soft Cotton Wuzar, White at Dressly.",
+    "description": "A white soft cotton long-sleeve pyjama set with piped edges. Machine wash cold. Tumble dry low or hang to dry.",
+    "metaDescription": "Soft Cotton Pyjama Set, White at Dressly. Modest Sleepwear for women, delivered across the UAE.",
     "related": [
       "woven-wuzar-white",
       "fine-border-wuzar-ivory",
@@ -1420,9 +1420,9 @@
   },
   {
     "slug": "cotton-lounge-salwar-white",
-    "name": "Cotton Lounge Salwar, White",
+    "name": "Wide-Leg Lounge Trousers, White",
     "colour": "White",
-    "category": "Trunks and Salwar",
+    "category": "Trousers & Lounge",
     "price": 65,
     "categorySlug": "trunks-salwar",
     "options": [
@@ -1438,8 +1438,8 @@
       }
     ],
     "sizeGuide": true,
-    "description": "Sample description for cotton lounge salwar, white. Replace with the real fabric, fit and care details.",
-    "metaDescription": "Cotton Lounge Salwar, White at Dressly.",
+    "description": "White wide-leg cotton lounge trousers with an elastic waist. Machine wash cold. Tumble dry low or hang to dry.",
+    "metaDescription": "Wide-Leg Lounge Trousers, White at Dressly. Trousers & Lounge for women, delivered across the UAE.",
     "related": [
       "drawstring-salwar-off-white",
       "comfort-trunk-white",
@@ -1448,9 +1448,9 @@
   },
   {
     "slug": "drawstring-salwar-off-white",
-    "name": "Drawstring Salwar, Off-White",
+    "name": "Drawstring Palazzo Trousers, Off-White",
     "colour": "Off-White",
-    "category": "Trunks and Salwar",
+    "category": "Trousers & Lounge",
     "price": 95,
     "categorySlug": "trunks-salwar",
     "options": [
@@ -1466,8 +1466,8 @@
       }
     ],
     "sizeGuide": true,
-    "description": "Sample description for drawstring salwar, off-white. Replace with the real fabric, fit and care details.",
-    "metaDescription": "Drawstring Salwar, Off-White at Dressly.",
+    "description": "Off-white palazzo trousers with a drawstring waist. Machine wash cold. Tumble dry low or hang to dry.",
+    "metaDescription": "Drawstring Palazzo Trousers, Off-White at Dressly. Trousers & Lounge for women, delivered across the UAE.",
     "related": [
       "cotton-lounge-salwar-white",
       "comfort-trunk-white",
@@ -1476,9 +1476,9 @@
   },
   {
     "slug": "comfort-trunk-white",
-    "name": "Comfort Trunk, White",
+    "name": "Comfort Leggings, White",
     "colour": "White",
-    "category": "Trunks and Salwar",
+    "category": "Trousers & Lounge",
     "price": 125,
     "categorySlug": "trunks-salwar",
     "options": [
@@ -1494,8 +1494,8 @@
       }
     ],
     "sizeGuide": true,
-    "description": "Sample description for comfort trunk, white. Replace with the real fabric, fit and care details.",
-    "metaDescription": "Comfort Trunk, White at Dressly.",
+    "description": "White opaque ankle-length comfort leggings for wearing under abayas. Machine wash cold. Tumble dry low or hang to dry.",
+    "metaDescription": "Comfort Leggings, White at Dressly. Trousers & Lounge for women, delivered across the UAE.",
     "related": [
       "cotton-lounge-salwar-white",
       "drawstring-salwar-off-white",
@@ -1504,9 +1504,9 @@
   },
   {
     "slug": "classic-check-shimagh-red-and-white",
-    "name": "Classic Check Shimagh, Red and White",
+    "name": "Printed Silk Shayla, Red and White",
     "colour": "Red and White",
-    "category": "Shimagh and Ghutra",
+    "category": "All Hijabs & Shaylas",
     "price": 130,
     "categorySlug": "shimagh-ghutra",
     "options": [
@@ -1519,8 +1519,8 @@
       }
     ],
     "sizeGuide": false,
-    "description": "Sample description for classic check shimagh, red and white. Replace with the real fabric, fit and care details.",
-    "metaDescription": "Classic Check Shimagh, Red and White at Dressly.",
+    "description": "A printed silk shayla in red and ivory with a delicate geometric border. Hand wash cold or gentle cycle in a mesh bag. Dry flat and steam lightly.",
+    "metaDescription": "Printed Silk Shayla, Red and White at Dressly. All Hijabs & Shaylas for women, delivered across the UAE.",
     "related": [
       "fine-weave-shimagh-red-and-white",
       "plain-everyday-ghutra-white",
@@ -1529,9 +1529,9 @@
   },
   {
     "slug": "fine-weave-shimagh-red-and-white",
-    "name": "Fine Weave Shimagh, Red and White",
+    "name": "Border-Print Shayla, Red and White",
     "colour": "Red and White",
-    "category": "Shimagh and Ghutra",
+    "category": "All Hijabs & Shaylas",
     "price": 160,
     "categorySlug": "shimagh-ghutra",
     "options": [
@@ -1544,8 +1544,8 @@
       }
     ],
     "sizeGuide": false,
-    "description": "Sample description for fine weave shimagh, red and white. Replace with the real fabric, fit and care details.",
-    "metaDescription": "Fine Weave Shimagh, Red and White at Dressly.",
+    "description": "An ivory modal shayla with a wide red printed border. Hand wash cold or gentle cycle in a mesh bag. Dry flat and steam lightly.",
+    "metaDescription": "Border-Print Shayla, Red and White at Dressly. All Hijabs & Shaylas for women, delivered across the UAE.",
     "related": [
       "classic-check-shimagh-red-and-white",
       "plain-everyday-ghutra-white",
@@ -1554,9 +1554,9 @@
   },
   {
     "slug": "plain-everyday-ghutra-white",
-    "name": "Plain Everyday Ghutra, White",
+    "name": "Plain Everyday Shayla, White",
     "colour": "White",
-    "category": "Shimagh and Ghutra",
+    "category": "All Hijabs & Shaylas",
     "price": 190,
     "categorySlug": "shimagh-ghutra",
     "options": [
@@ -1569,8 +1569,8 @@
       }
     ],
     "sizeGuide": false,
-    "description": "Sample description for plain everyday ghutra, white. Replace with the real fabric, fit and care details.",
-    "metaDescription": "Plain Everyday Ghutra, White at Dressly.",
+    "description": "A plain white everyday crinkle-chiffon shayla. Hand wash cold or gentle cycle in a mesh bag. Dry flat and steam lightly.",
+    "metaDescription": "Plain Everyday Shayla, White at Dressly. All Hijabs & Shaylas for women, delivered across the UAE.",
     "related": [
       "classic-check-shimagh-red-and-white",
       "fine-weave-shimagh-red-and-white",
@@ -1579,9 +1579,9 @@
   },
   {
     "slug": "crisp-cotton-ghutra-white",
-    "name": "Crisp Cotton Ghutra, White",
+    "name": "Crisp Cotton Shayla, White",
     "colour": "White",
-    "category": "Ghutra",
+    "category": "Chiffon Shaylas",
     "price": 110,
     "categorySlug": "ghutra",
     "options": [
@@ -1594,8 +1594,8 @@
       }
     ],
     "sizeGuide": false,
-    "description": "Sample description for crisp cotton ghutra, white. Replace with the real fabric, fit and care details.",
-    "metaDescription": "Crisp Cotton Ghutra, White at Dressly.",
+    "description": "A crisp white cotton voile shayla. Hand wash cold or gentle cycle in a mesh bag. Dry flat and steam lightly.",
+    "metaDescription": "Crisp Cotton Shayla, White at Dressly. Chiffon Shaylas for women, delivered across the UAE.",
     "related": [
       "soft-finish-ghutra-ivory",
       "fine-embroidered-edge-ghutra-white",
@@ -1604,9 +1604,9 @@
   },
   {
     "slug": "soft-finish-ghutra-ivory",
-    "name": "Soft Finish Ghutra, Ivory",
+    "name": "Soft Chiffon Shayla, Ivory",
     "colour": "Ivory",
-    "category": "Ghutra",
+    "category": "Chiffon Shaylas",
     "price": 140,
     "categorySlug": "ghutra",
     "options": [
@@ -1619,8 +1619,8 @@
       }
     ],
     "sizeGuide": false,
-    "description": "Sample description for soft finish ghutra, ivory. Replace with the real fabric, fit and care details.",
-    "metaDescription": "Soft Finish Ghutra, Ivory at Dressly.",
+    "description": "A soft ivory georgette chiffon shayla. Hand wash cold or gentle cycle in a mesh bag. Dry flat and steam lightly.",
+    "metaDescription": "Soft Chiffon Shayla, Ivory at Dressly. Chiffon Shaylas for women, delivered across the UAE.",
     "related": [
       "crisp-cotton-ghutra-white",
       "fine-embroidered-edge-ghutra-white",
@@ -1629,9 +1629,9 @@
   },
   {
     "slug": "fine-embroidered-edge-ghutra-white",
-    "name": "Fine Embroidered-Edge Ghutra, White",
+    "name": "Embroidered-Edge Shayla, White",
     "colour": "White",
-    "category": "Ghutra",
+    "category": "Chiffon Shaylas",
     "price": 170,
     "categorySlug": "ghutra",
     "options": [
@@ -1644,8 +1644,8 @@
       }
     ],
     "sizeGuide": false,
-    "description": "Sample description for fine embroidered-edge ghutra, white. Replace with the real fabric, fit and care details.",
-    "metaDescription": "Fine Embroidered-Edge Ghutra, White at Dressly.",
+    "description": "A white chiffon shayla with a fine tone-on-tone embroidered edge. Hand wash cold or gentle cycle in a mesh bag. Dry flat and steam lightly.",
+    "metaDescription": "Embroidered-Edge Shayla, White at Dressly. Chiffon Shaylas for women, delivered across the UAE.",
     "related": [
       "crisp-cotton-ghutra-white",
       "soft-finish-ghutra-ivory",
@@ -1654,9 +1654,9 @@
   },
   {
     "slug": "patterned-yashmagh-black-and-white",
-    "name": "Patterned Yashmagh, Black and White",
+    "name": "Geometric Silk Scarf, Black and White",
     "colour": "Black and White",
-    "category": "Yashmagh",
+    "category": "Silk & Printed Scarves",
     "price": 120,
     "categorySlug": "yashmagh",
     "options": [
@@ -1669,8 +1669,8 @@
       }
     ],
     "sizeGuide": false,
-    "description": "Sample description for patterned yashmagh, black and white. Replace with the real fabric, fit and care details.",
-    "metaDescription": "Patterned Yashmagh, Black and White at Dressly.",
+    "description": "A black and white silk scarf with a geometric Arabic-arch print, worn as a hijab. Hand wash cold or gentle cycle in a mesh bag. Dry flat and steam lightly.",
+    "metaDescription": "Geometric Silk Scarf, Black and White at Dressly. Silk & Printed Scarves for women, delivered across the UAE.",
     "related": [
       "fine-check-yashmagh-red-and-white",
       "soft-woven-yashmagh-black-and-white",
@@ -1679,9 +1679,9 @@
   },
   {
     "slug": "fine-check-yashmagh-red-and-white",
-    "name": "Fine Check Yashmagh, Red and White",
+    "name": "Fine Check Square Scarf, Red and White",
     "colour": "Red and White",
-    "category": "Yashmagh",
+    "category": "Silk & Printed Scarves",
     "price": 150,
     "categorySlug": "yashmagh",
     "options": [
@@ -1694,8 +1694,8 @@
       }
     ],
     "sizeGuide": false,
-    "description": "Sample description for fine check yashmagh, red and white. Replace with the real fabric, fit and care details.",
-    "metaDescription": "Fine Check Yashmagh, Red and White at Dressly.",
+    "description": "A fine red and white check square scarf, worn as a hijab. Hand wash cold or gentle cycle in a mesh bag. Dry flat and steam lightly.",
+    "metaDescription": "Fine Check Square Scarf, Red and White at Dressly. Silk & Printed Scarves for women, delivered across the UAE.",
     "related": [
       "patterned-yashmagh-black-and-white",
       "soft-woven-yashmagh-black-and-white",
@@ -1704,9 +1704,9 @@
   },
   {
     "slug": "soft-woven-yashmagh-black-and-white",
-    "name": "Soft Woven Yashmagh, Black and White",
+    "name": "Soft Woven Stripe Scarf, Black and White",
     "colour": "Black and White",
-    "category": "Yashmagh",
+    "category": "Silk & Printed Scarves",
     "price": 180,
     "categorySlug": "yashmagh",
     "options": [
@@ -1719,8 +1719,8 @@
       }
     ],
     "sizeGuide": false,
-    "description": "Sample description for soft woven yashmagh, black and white. Replace with the real fabric, fit and care details.",
-    "metaDescription": "Soft Woven Yashmagh, Black and White at Dressly.",
+    "description": "A soft woven black and white striped scarf, worn as a hijab. Hand wash cold or gentle cycle in a mesh bag. Dry flat and steam lightly.",
+    "metaDescription": "Soft Woven Stripe Scarf, Black and White at Dressly. Silk & Printed Scarves for women, delivered across the UAE.",
     "related": [
       "patterned-yashmagh-black-and-white",
       "fine-check-yashmagh-red-and-white",
@@ -1729,9 +1729,9 @@
   },
   {
     "slug": "classic-braided-egal-black",
-    "name": "Classic Braided Egal, Black",
+    "name": "Magnetic Hijab Pin Set, Black",
     "colour": "Black",
-    "category": "Egal",
+    "category": "Hijab Pins & Brooches",
     "price": 70,
     "categorySlug": "egal",
     "options": [
@@ -1743,8 +1743,8 @@
       }
     ],
     "sizeGuide": false,
-    "description": "Sample description for classic braided egal, black. Replace with the real fabric, fit and care details.",
-    "metaDescription": "Classic Braided Egal, Black at Dressly.",
+    "description": "A set of six black-enamel magnetic hijab pins on a small ivory card. Wipe clean or spot clean as needed. Store in the dust bag provided.",
+    "metaDescription": "Magnetic Hijab Pin Set, Black at Dressly. Hijab Pins & Brooches for women, delivered across the UAE.",
     "related": [
       "slim-braided-egal-black",
       "tasselled-egal-dark-brown",
@@ -1753,9 +1753,9 @@
   },
   {
     "slug": "slim-braided-egal-black",
-    "name": "Slim Braided Egal, Black",
+    "name": "Slim Pearl Hijab Pins, Black",
     "colour": "Black",
-    "category": "Egal",
+    "category": "Hijab Pins & Brooches",
     "price": 100,
     "categorySlug": "egal",
     "options": [
@@ -1767,8 +1767,8 @@
       }
     ],
     "sizeGuide": false,
-    "description": "Sample description for slim braided egal, black. Replace with the real fabric, fit and care details.",
-    "metaDescription": "Slim Braided Egal, Black at Dressly.",
+    "description": "A set of slim black hijab pins with small pearl heads. Wipe clean or spot clean as needed. Store in the dust bag provided.",
+    "metaDescription": "Slim Pearl Hijab Pins, Black at Dressly. Hijab Pins & Brooches for women, delivered across the UAE.",
     "related": [
       "classic-braided-egal-black",
       "tasselled-egal-dark-brown",
@@ -1777,9 +1777,9 @@
   },
   {
     "slug": "tasselled-egal-dark-brown",
-    "name": "Tasselled Egal, Dark Brown",
+    "name": "Tassel Hijab Brooch, Dark Brown",
     "colour": "Dark Brown",
-    "category": "Egal",
+    "category": "Hijab Pins & Brooches",
     "price": 130,
     "categorySlug": "egal",
     "options": [
@@ -1791,8 +1791,8 @@
       }
     ],
     "sizeGuide": false,
-    "description": "Sample description for tasselled egal, dark brown. Replace with the real fabric, fit and care details.",
-    "metaDescription": "Tasselled Egal, Dark Brown at Dressly.",
+    "description": "A dark brown silk tassel brooch with a small gold cap. Wipe clean or spot clean as needed. Store in the dust bag provided.",
+    "metaDescription": "Tassel Hijab Brooch, Dark Brown at Dressly. Hijab Pins & Brooches for women, delivered across the UAE.",
     "related": [
       "classic-braided-egal-black",
       "slim-braided-egal-black",
@@ -1801,9 +1801,9 @@
   },
   {
     "slug": "scented-cord-tarboosh-white",
-    "name": "Scented Cord Tarboosh, White",
+    "name": "Braided Cord Abaya Belt, White",
     "colour": "White",
-    "category": "Tarboosh",
+    "category": "Abaya Belts & Tassels",
     "price": 85,
     "categorySlug": "tarboosh",
     "options": [
@@ -1815,8 +1815,8 @@
       }
     ],
     "sizeGuide": false,
-    "description": "Sample description for scented cord tarboosh, white. Replace with the real fabric, fit and care details.",
-    "metaDescription": "Scented Cord Tarboosh, White at Dressly.",
+    "description": "A braided ivory-white cord abaya belt with knotted ends. Wipe clean or spot clean as needed. Store in the dust bag provided.",
+    "metaDescription": "Braided Cord Abaya Belt, White at Dressly. Abaya Belts & Tassels for women, delivered across the UAE.",
     "related": [
       "long-tassel-tarboosh-cream",
       "fine-twist-tarboosh-white",
@@ -1825,9 +1825,9 @@
   },
   {
     "slug": "long-tassel-tarboosh-cream",
-    "name": "Long Tassel Tarboosh, Cream",
+    "name": "Long Tassel Abaya Belt, Cream",
     "colour": "Cream",
-    "category": "Tarboosh",
+    "category": "Abaya Belts & Tassels",
     "price": 115,
     "categorySlug": "tarboosh",
     "options": [
@@ -1839,8 +1839,8 @@
       }
     ],
     "sizeGuide": false,
-    "description": "Sample description for long tassel tarboosh, cream. Replace with the real fabric, fit and care details.",
-    "metaDescription": "Long Tassel Tarboosh, Cream at Dressly.",
+    "description": "A cream fabric abaya belt finished with two long silk tassels. Wipe clean or spot clean as needed. Store in the dust bag provided.",
+    "metaDescription": "Long Tassel Abaya Belt, Cream at Dressly. Abaya Belts & Tassels for women, delivered across the UAE.",
     "related": [
       "scented-cord-tarboosh-white",
       "fine-twist-tarboosh-white",
@@ -1849,9 +1849,9 @@
   },
   {
     "slug": "fine-twist-tarboosh-white",
-    "name": "Fine Twist Tarboosh, White",
+    "name": "Fine Twist Rope Belt, White",
     "colour": "White",
-    "category": "Tarboosh",
+    "category": "Abaya Belts & Tassels",
     "price": 145,
     "categorySlug": "tarboosh",
     "options": [
@@ -1863,8 +1863,8 @@
       }
     ],
     "sizeGuide": false,
-    "description": "Sample description for fine twist tarboosh, white. Replace with the real fabric, fit and care details.",
-    "metaDescription": "Fine Twist Tarboosh, White at Dressly.",
+    "description": "A fine twisted white rope belt with small gold tips. Wipe clean or spot clean as needed. Store in the dust bag provided.",
+    "metaDescription": "Fine Twist Rope Belt, White at Dressly. Abaya Belts & Tassels for women, delivered across the UAE.",
     "related": [
       "scented-cord-tarboosh-white",
       "long-tassel-tarboosh-cream",
@@ -1873,9 +1873,9 @@
   },
   {
     "slug": "knit-kufi-white",
-    "name": "Knit Kufi, White",
+    "name": "Knit Hijab Undercap, White",
     "colour": "White",
-    "category": "Kufi and Prayer Caps",
+    "category": "Undercaps & Prayer Wear",
     "price": 45,
     "categorySlug": "kufi-caps",
     "options": [
@@ -1887,8 +1887,8 @@
       }
     ],
     "sizeGuide": false,
-    "description": "Sample description for knit kufi, white. Replace with the real fabric, fit and care details.",
-    "metaDescription": "Knit Kufi, White at Dressly.",
+    "description": "A white knit tube hijab undercap. Wipe clean or spot clean as needed. Store in the dust bag provided.",
+    "metaDescription": "Knit Hijab Undercap, White at Dressly. Undercaps & Prayer Wear for women, delivered across the UAE.",
     "related": [
       "fine-mesh-prayer-cap-white",
       "soft-stitched-cap-ivory",
@@ -1897,9 +1897,9 @@
   },
   {
     "slug": "fine-mesh-prayer-cap-white",
-    "name": "Fine Mesh Prayer Cap, White",
+    "name": "Prayer Isdal, White",
     "colour": "White",
-    "category": "Kufi and Prayer Caps",
+    "category": "Undercaps & Prayer Wear",
     "price": 75,
     "categorySlug": "kufi-caps",
     "options": [
@@ -1911,8 +1911,8 @@
       }
     ],
     "sizeGuide": false,
-    "description": "Sample description for fine mesh prayer cap, white. Replace with the real fabric, fit and care details.",
-    "metaDescription": "Fine Mesh Prayer Cap, White at Dressly.",
+    "description": "A white one-piece prayer isdal with a fine mesh border, neatly folded. Wipe clean or spot clean as needed. Store in the dust bag provided.",
+    "metaDescription": "Prayer Isdal, White at Dressly. Undercaps & Prayer Wear for women, delivered across the UAE.",
     "related": [
       "knit-kufi-white",
       "soft-stitched-cap-ivory",
@@ -1921,9 +1921,9 @@
   },
   {
     "slug": "soft-stitched-cap-ivory",
-    "name": "Soft Stitched Cap, Ivory",
+    "name": "Soft Bonnet Undercap, Ivory",
     "colour": "Ivory",
-    "category": "Kufi and Prayer Caps",
+    "category": "Undercaps & Prayer Wear",
     "price": 105,
     "categorySlug": "kufi-caps",
     "options": [
@@ -1935,8 +1935,8 @@
       }
     ],
     "sizeGuide": false,
-    "description": "Sample description for soft stitched cap, ivory. Replace with the real fabric, fit and care details.",
-    "metaDescription": "Soft Stitched Cap, Ivory at Dressly.",
+    "description": "An ivory soft jersey bonnet undercap with a tie back. Wipe clean or spot clean as needed. Store in the dust bag provided.",
+    "metaDescription": "Soft Bonnet Undercap, Ivory at Dressly. Undercaps & Prayer Wear for women, delivered across the UAE.",
     "related": [
       "knit-kufi-white",
       "fine-mesh-prayer-cap-white",
@@ -1945,27 +1945,27 @@
   },
   {
     "slug": "classic-leather-sandal-brown",
-    "name": "Classic Leather Sandal, Brown",
+    "name": "Classic Leather Slide, Brown",
     "colour": "Brown",
-    "category": "Arabic Sandals",
+    "category": "Women's Sandals",
     "price": 240,
     "categorySlug": "arabic-sandals",
     "options": [
       {
         "label": "EU size",
         "values": [
-          "41",
-          "42",
-          "43",
-          "44",
-          "45",
-          "46"
+          "36",
+          "37",
+          "38",
+          "39",
+          "40",
+          "41"
         ]
       }
     ],
     "sizeGuide": true,
-    "description": "Sample description for classic leather sandal, brown. Replace with the real fabric, fit and care details.",
-    "metaDescription": "Classic Leather Sandal, Brown at Dressly.",
+    "description": "A pair of women's brown leather slides with a single wide padded strap. Wipe with a soft dry cloth. Keep away from water and direct heat.",
+    "metaDescription": "Classic Leather Slide, Brown at Dressly. Women's Sandals for women, delivered across the UAE.",
     "related": [
       "double-strap-sandal-black",
       "hand-stitched-sandal-tan"
@@ -1973,27 +1973,27 @@
   },
   {
     "slug": "double-strap-sandal-black",
-    "name": "Double Strap Sandal, Black",
+    "name": "Double Strap Heeled Sandal, Black",
     "colour": "Black",
-    "category": "Arabic Sandals",
+    "category": "Women's Sandals",
     "price": 270,
     "categorySlug": "arabic-sandals",
     "options": [
       {
         "label": "EU size",
         "values": [
-          "41",
-          "42",
-          "43",
-          "44",
-          "45",
-          "46"
+          "36",
+          "37",
+          "38",
+          "39",
+          "40",
+          "41"
         ]
       }
     ],
     "sizeGuide": true,
-    "description": "Sample description for double strap sandal, black. Replace with the real fabric, fit and care details.",
-    "metaDescription": "Double Strap Sandal, Black at Dressly.",
+    "description": "A pair of women's black leather double-strap sandals on a slim 5 cm block heel. Wipe with a soft dry cloth. Keep away from water and direct heat.",
+    "metaDescription": "Double Strap Heeled Sandal, Black at Dressly. Women's Sandals for women, delivered across the UAE.",
     "related": [
       "classic-leather-sandal-brown",
       "hand-stitched-sandal-tan"
@@ -2001,27 +2001,27 @@
   },
   {
     "slug": "hand-stitched-sandal-tan",
-    "name": "Hand-Stitched Sandal, Tan",
+    "name": "Hand-Stitched Flat Sandal, Tan",
     "colour": "Tan",
-    "category": "Arabic Sandals",
+    "category": "Women's Sandals",
     "price": 300,
     "categorySlug": "arabic-sandals",
     "options": [
       {
         "label": "EU size",
         "values": [
-          "41",
-          "42",
-          "43",
-          "44",
-          "45",
-          "46"
+          "36",
+          "37",
+          "38",
+          "39",
+          "40",
+          "41"
         ]
       }
     ],
     "sizeGuide": true,
-    "description": "Sample description for hand-stitched sandal, tan. Replace with the real fabric, fit and care details.",
-    "metaDescription": "Hand-Stitched Sandal, Tan at Dressly.",
+    "description": "A pair of women's tan hand-stitched flat leather sandals with a thin gold buckle. Wipe with a soft dry cloth. Keep away from water and direct heat.",
+    "metaDescription": "Hand-Stitched Flat Sandal, Tan at Dressly. Women's Sandals for women, delivered across the UAE.",
     "related": [
       "classic-leather-sandal-brown",
       "double-strap-sandal-black"
@@ -2031,7 +2031,7 @@
     "slug": "oud-reserve-eau-de-parfum-amber",
     "name": "Oud Reserve Eau de Parfum, Amber",
     "colour": "Amber",
-    "category": "Perfumes",
+    "category": "Perfumes & Oud",
     "price": 260,
     "categorySlug": "perfumes",
     "options": [
@@ -2044,8 +2044,8 @@
       }
     ],
     "sizeGuide": false,
-    "description": "Sample description for oud reserve eau de parfum, amber. Replace with the real fabric, fit and care details.",
-    "metaDescription": "Oud Reserve Eau de Parfum, Amber at Dressly.",
+    "description": "A heavy faceted glass perfume flacon with amber liquid and a sculpted gold cap, no label. Store away from direct sunlight and heat, with the cap closed.",
+    "metaDescription": "Oud Reserve Eau de Parfum, Amber at Dressly. Perfumes & Oud for women, delivered across the UAE.",
     "related": [
       "citrus-musk-eau-de-parfum-gold",
       "rose-amber-eau-de-parfum-rose",
@@ -2054,9 +2054,9 @@
   },
   {
     "slug": "citrus-musk-eau-de-parfum-gold",
-    "name": "Citrus Musk Eau de Parfum, Gold",
+    "name": "White Musk Eau de Parfum, Gold",
     "colour": "Gold",
-    "category": "Perfumes",
+    "category": "Perfumes & Oud",
     "price": 290,
     "categorySlug": "perfumes",
     "options": [
@@ -2069,8 +2069,8 @@
       }
     ],
     "sizeGuide": false,
-    "description": "Sample description for citrus musk eau de parfum, gold. Replace with the real fabric, fit and care details.",
-    "metaDescription": "Citrus Musk Eau de Parfum, Gold at Dressly.",
+    "description": "A tall rectangular glass flacon with pale gold liquid and a polished gold cap, no label. Store away from direct sunlight and heat, with the cap closed.",
+    "metaDescription": "White Musk Eau de Parfum, Gold at Dressly. Perfumes & Oud for women, delivered across the UAE.",
     "related": [
       "oud-reserve-eau-de-parfum-amber",
       "rose-amber-eau-de-parfum-rose",
@@ -2079,9 +2079,9 @@
   },
   {
     "slug": "rose-amber-eau-de-parfum-rose",
-    "name": "Rose Amber Eau de Parfum, Rose",
+    "name": "Taifi Rose Eau de Parfum, Rose",
     "colour": "Rose",
-    "category": "Perfumes",
+    "category": "Perfumes & Oud",
     "price": 320,
     "categorySlug": "perfumes",
     "options": [
@@ -2094,8 +2094,8 @@
       }
     ],
     "sizeGuide": false,
-    "description": "Sample description for rose amber eau de parfum, rose. Replace with the real fabric, fit and care details.",
-    "metaDescription": "Rose Amber Eau de Parfum, Rose at Dressly.",
+    "description": "A rounded glass flacon with soft rose-pink liquid and a rose-gold cap, no label. Store away from direct sunlight and heat, with the cap closed.",
+    "metaDescription": "Taifi Rose Eau de Parfum, Rose at Dressly. Perfumes & Oud for women, delivered across the UAE.",
     "related": [
       "oud-reserve-eau-de-parfum-amber",
       "citrus-musk-eau-de-parfum-gold",
@@ -2104,9 +2104,9 @@
   },
   {
     "slug": "leather-bifold-wallet-brown",
-    "name": "Leather Bifold Wallet, Brown",
+    "name": "Mini Leather Wallet, Brown",
     "colour": "Brown",
-    "category": "Wallets",
+    "category": "Clutches & Bags",
     "price": 180,
     "categorySlug": "wallets",
     "options": [
@@ -2119,8 +2119,8 @@
       }
     ],
     "sizeGuide": false,
-    "description": "Sample description for leather bifold wallet, brown. Replace with the real fabric, fit and care details.",
-    "metaDescription": "Leather Bifold Wallet, Brown at Dressly.",
+    "description": "A small brown pebbled-leather women's wallet with a gold snap. Wipe clean or spot clean as needed. Store in the dust bag provided.",
+    "metaDescription": "Mini Leather Wallet, Brown at Dressly. Clutches & Bags for women, delivered across the UAE.",
     "related": [
       "slim-card-wallet-black",
       "travel-zip-wallet-dark-brown",
@@ -2129,9 +2129,9 @@
   },
   {
     "slug": "slim-card-wallet-black",
-    "name": "Slim Card Wallet, Black",
+    "name": "Evening Clutch, Black",
     "colour": "Black",
-    "category": "Wallets",
+    "category": "Clutches & Bags",
     "price": 210,
     "categorySlug": "wallets",
     "options": [
@@ -2144,8 +2144,8 @@
       }
     ],
     "sizeGuide": false,
-    "description": "Sample description for slim card wallet, black. Replace with the real fabric, fit and care details.",
-    "metaDescription": "Slim Card Wallet, Black at Dressly.",
+    "description": "A slim black satin evening clutch with a gold bar clasp. Wipe clean or spot clean as needed. Store in the dust bag provided.",
+    "metaDescription": "Evening Clutch, Black at Dressly. Clutches & Bags for women, delivered across the UAE.",
     "related": [
       "leather-bifold-wallet-brown",
       "travel-zip-wallet-dark-brown",
@@ -2154,9 +2154,9 @@
   },
   {
     "slug": "travel-zip-wallet-dark-brown",
-    "name": "Travel Zip Wallet, Dark Brown",
+    "name": "Structured Top-Handle Bag, Dark Brown",
     "colour": "Dark Brown",
-    "category": "Wallets",
+    "category": "Clutches & Bags",
     "price": 240,
     "categorySlug": "wallets",
     "options": [
@@ -2169,8 +2169,8 @@
       }
     ],
     "sizeGuide": false,
-    "description": "Sample description for travel zip wallet, dark brown. Replace with the real fabric, fit and care details.",
-    "metaDescription": "Travel Zip Wallet, Dark Brown at Dressly.",
+    "description": "A structured dark brown leather top-handle bag with gold hardware and no logo. Wipe clean or spot clean as needed. Store in the dust bag provided.",
+    "metaDescription": "Structured Top-Handle Bag, Dark Brown at Dressly. Clutches & Bags for women, delivered across the UAE.",
     "related": [
       "leather-bifold-wallet-brown",
       "slim-card-wallet-black",
@@ -2196,8 +2196,8 @@
       }
     ],
     "sizeGuide": false,
-    "description": "Sample description for digital gift card. Replace with the real fabric, fit and care details.",
-    "metaDescription": "Digital Gift Card at Dressly.",
+    "description": "Let her choose: a Dressly digital gift card, delivered by WhatsApp or email and redeemable online or in any branch.",
+    "metaDescription": "Digital Gift Card at Dressly. Gift Card for women, delivered across the UAE.",
     "related": []
   }
 ]

@@ -10,7 +10,7 @@ import "./branches-brand.css";
 
 export const metadata: Metadata = {
   title: "Branches",
-  description: "Find your nearest Dressly branch: 13 kandura tailoring stores across Abu Dhabi, Dubai, Sharjah, Ajman and Ras Al Khaimah.",
+  description: "Find your nearest Dressly branch: 13 abaya tailoring stores across Abu Dhabi, Dubai, Sharjah, Ajman and Ras Al Khaimah.",
 };
 
 // Shown on hover until a photo of the branch itself is added at public/images/branches/<id>.webp.

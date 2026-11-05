@@ -4,7 +4,7 @@
  */
 
 export const BRAND = "Dressly";
-export const TAGLINE = "Kandura tailoring since 1998 · United Arab Emirates";
+export const TAGLINE = "Abaya tailoring since 1998 · United Arab Emirates";
 
 export const PHONE_DISPLAY = "+971 56 858 6987";
 export const PHONE_TEL = "+971568586987";
@@ -27,8 +27,8 @@ export const STATS = [
 
 export const HERO = {
   eyebrow: "Est. 1998 · United Arab Emirates",
-  title: "The Art of the Kandura, Perfected.",
-  text: "Since 1998, Dressly has dressed the men of the UAE in kanduras cut with precision and finished to a standard we have spent a generation refining. Today we are proud to be one of the UAE's leading names in kandura textile and tailoring.",
+  title: "The Art of the Abaya, Perfected.",
+  text: "Since 1998, Dressly has dressed the women of the UAE in abayas cut with precision and finished to a standard we have spent a generation refining. Today we are proud to be one of the UAE's leading names in abaya textile and tailoring.",
 };
 
 export const WHO_WE_ARE = {
@@ -48,7 +48,7 @@ export const STORY = {
     {
       when: "1998",
       title: "A Tailor's Beginning",
-      text: "A master tailor from a family of tailors opened Dressly's first store, bringing decades of craft to the men of the UAE.",
+      text: "A master tailor from a family of tailors opened Dressly's first store, bringing decades of craft to the women of the UAE.",
     },
     {
       when: "Growth",
@@ -68,20 +68,20 @@ export const SERVICES = {
   title: "Every detail, tailored on purpose.",
   items: [
     {
-      title: "Bespoke Kanduras",
-      text: "Precision-tailored kanduras made from the finest fabrics, blending traditional design with modern craftsmanship for a perfect fit.",
+      title: "Bespoke Abayas",
+      text: "Precision-tailored abayas made from the finest fabrics, blending traditional design with modern craftsmanship for a perfect fit.",
       href: "/category/kandura-thobes",
       image: "images/categories/kandura-thobes",
     },
     {
-      title: "Army & Police Uniforms",
-      text: "Trusted to outfit uniformed services, with uniforms held to the same exacting standard of precision as our kanduras.",
-      href: "/contact",
+      title: "Hijabs & Shaylas",
+      text: "Shaylas and hijabs chosen to match every abaya, in chiffon, silk and soft cotton.",
+      href: "/category/shimagh-ghutra",
       image: "images/categories/kandura-jackets",
     },
     {
       title: "Sandals & Accessories",
-      text: "A curated selection of Arabic sandals and kandura accessories, completing a full traditional look.",
+      text: "A curated selection of women's sandals, shaylas and abaya accessories, completing a full traditional look.",
       href: "/category/arabic-sandals",
       image: "images/categories/arabic-sandals",
     },
@@ -96,7 +96,7 @@ export const HOME_VISIT = {
     { icon: "whatsapp", title: "Request on WhatsApp", text: "Message us your preferred date, time and area." },
     { icon: "home", title: "We Visit Your Home or Majlis", text: "A tailor arrives at your chosen time, anywhere across the Emirates we serve." },
     { icon: "fabric", title: "Fabrics & Measurements", text: "Browse fabric swatches in person and get measured precisely on the spot." },
-    { icon: "check", title: "Delivered to Your Door", text: "Once tailored to perfection, your kanduras are delivered straight to you." },
+    { icon: "check", title: "Delivered to Your Door", text: "Once tailored to perfection, your abayas are delivered straight to you." },
   ],
 };
 
@@ -196,7 +196,7 @@ export const OFFER = {
   delaySeconds: 15, // opens after this long, or when the visitor has scrolled half the page
   hideForDays: 3, // after "close", stay hidden this long
   points: [
-    "Kandura tailoring since 1998",
+    "Abaya tailoring since 1998",
     "13 branches across 5 Emirates",
     "Home tailoring visits at your door",
     "Finest fabrics, precision fit",
@@ -206,7 +206,7 @@ export const OFFER = {
 
 /** Rotating messages in the bar above the header. */
 export const ANNOUNCEMENTS: { icon: string; text: string; href?: string }[] = [
-  { icon: "check", text: "Kandura tailoring since 1998" },
+  { icon: "check", text: "Abaya tailoring since 1998" },
   { icon: "home", text: "Home tailoring: we come to you", href: "/#home-tailoring" },
   { icon: "pin", text: "13 branches across 5 Emirates", href: "/branches" },
   { icon: "whatsapp", text: `Order on WhatsApp ${PHONE_DISPLAY}`, href: WHATSAPP_URL },

@@ -23,7 +23,7 @@ type Props = {
   options: ProductOption[];
   sizeGuide: boolean;
   images: { view: string; src: string }[];
-  /** Show the Ready-made / Tailored switch (kanduras and thobes). */
+  /** Show the Ready-made / Tailored switch (abayas and thobes). */
   tailorable?: boolean;
   fabric?: string;
   children?: React.ReactNode;

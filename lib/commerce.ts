@@ -59,7 +59,7 @@ export function applyPromo(code: string, subtotal: number) {
 }
 
 /** Category groups whose pieces can be ready-made or tailored to measurements. */
-export const TAILORED_GROUPS = ["Kandura and Thobe"];
+export const TAILORED_GROUPS = ["Abayas"];
 export const isTailorable = (group: string | undefined) => !!group && TAILORED_GROUPS.includes(group);
 
 /** Groups suggested under "Complete the look", in order. */

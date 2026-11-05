@@ -12,9 +12,9 @@ const serif = Plus_Jakarta_Sans({ subsets: ["latin"], style: ["normal", "italic"
 const sans = Inter({ subsets: ["latin"], variable: "--font-sans" });
 
 export const metadata: Metadata = {
-  title: { default: "Dressly | Kandura Tailoring Since 1998", template: "%s | Dressly" },
+  title: { default: "Dressly | Abaya Tailoring Since 1998", template: "%s | Dressly" },
   description:
-    "Dressly: the UAE's trusted name in kandura textile and tailoring since 1998. Bespoke kanduras, home tailoring visits, headwear, sandals and accessories across 13 branches in 5 Emirates.",
+    "Dressly: the UAE's trusted name in abaya textile and tailoring since 1998. Bespoke abayas, home tailoring visits, headwear, sandals and accessories across 13 branches in 5 Emirates.",
 };
 
 /**

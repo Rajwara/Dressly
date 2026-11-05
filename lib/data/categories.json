@@ -1,8 +1,8 @@
 [
   {
     "slug": "adult-thobes",
-    "title": "Adult Thobes",
-    "group": "Kandura and Thobe",
+    "title": "Everyday Abayas",
+    "group": "Abayas",
     "siblings": [
       "kandura-thobes",
       "adult-thobes",
@@ -17,8 +17,8 @@
   },
   {
     "slug": "arabian-casuals",
-    "title": "Arabian Casuals",
-    "group": "Casual and underwear",
+    "title": "Kaftans",
+    "group": "Home & Lounge",
     "siblings": [
       "jalabiya",
       "arabian-casuals",
@@ -34,7 +34,7 @@
   },
   {
     "slug": "arabic-sandals",
-    "title": "Arabic Sandals",
+    "title": "Women's Sandals",
     "group": "Footwear",
     "siblings": [
       "arabic-sandals"
@@ -47,7 +47,7 @@
   },
   {
     "slug": "bisht",
-    "title": "Bisht",
+    "title": "Bisht Abayas",
     "group": "Outerwear",
     "siblings": [
       "kandura-jackets",
@@ -63,8 +63,8 @@
   },
   {
     "slug": "egal",
-    "title": "Egal",
-    "group": "Headwear",
+    "title": "Hijab Pins & Brooches",
+    "group": "Accessories",
     "siblings": [
       "shimagh-ghutra",
       "ghutra",
@@ -81,8 +81,8 @@
   },
   {
     "slug": "faneela",
-    "title": "Faneela (Undershirts)",
-    "group": "Casual and underwear",
+    "title": "Inner Dresses & Basics",
+    "group": "Essentials",
     "siblings": [
       "jalabiya",
       "arabian-casuals",
@@ -98,8 +98,8 @@
   },
   {
     "slug": "ghutra",
-    "title": "Ghutra",
-    "group": "Headwear",
+    "title": "Chiffon Shaylas",
+    "group": "Hijabs",
     "siblings": [
       "shimagh-ghutra",
       "ghutra",
@@ -127,8 +127,8 @@
   },
   {
     "slug": "jalabiya",
-    "title": "Jalabiya",
-    "group": "Casual and underwear",
+    "title": "Jalabiyas",
+    "group": "Home & Lounge",
     "siblings": [
       "jalabiya",
       "arabian-casuals",
@@ -144,7 +144,7 @@
   },
   {
     "slug": "kandura-jackets",
-    "title": "Kandura Jackets",
+    "title": "Coat & Kimono Abayas",
     "group": "Outerwear",
     "siblings": [
       "kandura-jackets",
@@ -160,8 +160,8 @@
   },
   {
     "slug": "kandura-thobes",
-    "title": "All Kandura and Thobes",
-    "group": "Kandura and Thobe",
+    "title": "All Abayas",
+    "group": "Abayas",
     "siblings": [
       "kandura-thobes",
       "adult-thobes",
@@ -176,8 +176,8 @@
   },
   {
     "slug": "kids-clothing",
-    "title": "Kids Clothing",
-    "group": "Kids",
+    "title": "Girls' Abayas & Jalabiyas",
+    "group": "Girls",
     "siblings": [
       "kids-clothing",
       "kids-headwear",
@@ -191,8 +191,8 @@
   },
   {
     "slug": "kids-footwear",
-    "title": "Kids Footwear",
-    "group": "Kids",
+    "title": "Girls' Sandals",
+    "group": "Girls",
     "siblings": [
       "kids-clothing",
       "kids-headwear",
@@ -206,8 +206,8 @@
   },
   {
     "slug": "kids-headwear",
-    "title": "Kids Shimagh and Ghutra",
-    "group": "Kids",
+    "title": "Girls' Hijabs",
+    "group": "Girls",
     "siblings": [
       "kids-clothing",
       "kids-headwear",
@@ -221,8 +221,8 @@
   },
   {
     "slug": "kufi-caps",
-    "title": "Kufi and Prayer Caps",
-    "group": "Headwear",
+    "title": "Undercaps & Prayer Wear",
+    "group": "Accessories",
     "siblings": [
       "shimagh-ghutra",
       "ghutra",
@@ -239,8 +239,8 @@
   },
   {
     "slug": "perfumes",
-    "title": "Perfumes",
-    "group": "Accessories",
+    "title": "Perfumes & Oud",
+    "group": "Fragrance",
     "siblings": [
       "perfumes",
       "wallets"
@@ -253,7 +253,7 @@
   },
   {
     "slug": "saderi",
-    "title": "Saderi (Sleeveless Jackets)",
+    "title": "Long Gilets & Overlays",
     "group": "Outerwear",
     "siblings": [
       "kandura-jackets",
@@ -269,7 +269,7 @@
   },
   {
     "slug": "shawls",
-    "title": "Shawls",
+    "title": "Pashminas & Shawls",
     "group": "Outerwear",
     "siblings": [
       "kandura-jackets",
@@ -285,8 +285,8 @@
   },
   {
     "slug": "shimagh-ghutra",
-    "title": "Shimagh and Ghutra",
-    "group": "Headwear",
+    "title": "All Hijabs & Shaylas",
+    "group": "Hijabs",
     "siblings": [
       "shimagh-ghutra",
       "ghutra",
@@ -303,8 +303,8 @@
   },
   {
     "slug": "summer-thobes",
-    "title": "Summer Thobes",
-    "group": "Kandura and Thobe",
+    "title": "Summer Abayas",
+    "group": "Abayas",
     "siblings": [
       "kandura-thobes",
       "adult-thobes",
@@ -319,8 +319,8 @@
   },
   {
     "slug": "tarboosh",
-    "title": "Tarboosh",
-    "group": "Headwear",
+    "title": "Abaya Belts & Tassels",
+    "group": "Accessories",
     "siblings": [
       "shimagh-ghutra",
       "ghutra",
@@ -337,8 +337,8 @@
   },
   {
     "slug": "traditional-kandura",
-    "title": "Traditional Kandura",
-    "group": "Kandura and Thobe",
+    "title": "Occasion & Embellished Abayas",
+    "group": "Abayas",
     "siblings": [
       "kandura-thobes",
       "adult-thobes",
@@ -353,8 +353,8 @@
   },
   {
     "slug": "trunks-salwar",
-    "title": "Trunks and Salwar",
-    "group": "Casual and underwear",
+    "title": "Trousers & Lounge",
+    "group": "Essentials",
     "siblings": [
       "jalabiya",
       "arabian-casuals",
@@ -370,7 +370,7 @@
   },
   {
     "slug": "wallets",
-    "title": "Wallets",
+    "title": "Clutches & Bags",
     "group": "Accessories",
     "siblings": [
       "perfumes",
@@ -384,8 +384,8 @@
   },
   {
     "slug": "wuzar",
-    "title": "Wuzar",
-    "group": "Casual and underwear",
+    "title": "Modest Sleepwear",
+    "group": "Essentials",
     "siblings": [
       "jalabiya",
       "arabian-casuals",
@@ -401,8 +401,8 @@
   },
   {
     "slug": "yashmagh",
-    "title": "Yashmagh",
-    "group": "Headwear",
+    "title": "Silk & Printed Scarves",
+    "group": "Hijabs",
     "siblings": [
       "shimagh-ghutra",
       "ghutra",
