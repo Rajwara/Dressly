@@ -1,4 +1,5 @@
 import { WHATSAPP_URL } from "@/lib/brand";
+import "./whatsapp-button.css";
 
 /** Floating chat button: opens a WhatsApp chat with Dressly. */
 export default function WhatsAppButton() {

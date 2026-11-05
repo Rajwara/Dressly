@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Inter, Plus_Jakarta_Sans } from "next/font/google";
 import localFont from "next/font/local";
+import { StoreProvider } from "@/components/StoreProvider";
+import WhatsAppButton from "@/components/WhatsAppButton";
 import "./fieldworn.css";
 
 // The two fonts embedded in the original file, now served as files.
@@ -23,7 +25,12 @@ export const metadata: Metadata = {
 export default function FieldwornLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${bigShoulders.variable} ${spaceGrotesk.variable} ${jakarta.variable} ${inter.variable}`}>
-      <body>{children}</body>
+      <body>
+        <StoreProvider>
+          {children}
+          <WhatsAppButton />
+        </StoreProvider>
+      </body>
     </html>
   );
 }

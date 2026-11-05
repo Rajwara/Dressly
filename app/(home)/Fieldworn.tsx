@@ -4,6 +4,7 @@
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useEffect, useRef } from "react";
+import { FooterColumns, SiteNav, TopBar } from "@/components/fieldworn/SiteNav";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -53,7 +54,8 @@ export default function Fieldworn({ img, community }: { img: FieldwornImages; co
       burger.setAttribute("aria-expanded", String(o));
     });
     const cart = (o: boolean) => document.body.classList.toggle("cart-open", o);
-    on($(".cart"), "click", () => cart(true));
+    const cartBtn = scope.querySelector(".cart");
+    if (cartBtn) on(cartBtn, "click", () => cart(true));
     on($(".drawer-close"), "click", () => cart(false));
     on($(".drawer-bg"), "click", () => cart(false));
     on(document, "keydown", ((e: KeyboardEvent) => {
@@ -211,22 +213,11 @@ export default function Fieldworn({ img, community }: { img: FieldwornImages; co
 
   return (
     <div ref={root} style={{ display: "contents" }}>
+      <TopBar />
       <header className="banner">
        <div className="banner-in">
         <img className="banner-bg" src={img.hero} alt="" />
-        <nav className="nav" aria-label="Main">
-         <div className="container nav-row">
-          <a className="logo" href="/">DRESSLY</a>
-          <ul className="links">
-           <li><a href="/">Home</a></li><li><a href="#collections">Collections</a></li><li><a href="/about">About Us</a></li>
-           <li><button type="button">Pages ⌄</button><ul className="drop"><li><a href="/branches">Branches</a></li><li><a href="/blog">Blog</a></li><li><a href="/contact">Contact</a></li></ul></li>
-          </ul>
-          <div className="nav-end">
-           <button className="cart" type="button" aria-label="Open cart"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true"><path d="M5 8h14l1.500 13h-17zM8.500 8V6a3.500 3.500 0 0 1 7 0v2"/></svg><b>0</b></button>
-           <button className="burger" type="button" aria-label="Menu" aria-expanded="false"><i></i><i></i><i></i></button>
-          </div>
-         </div>
-        </nav>
+        <SiteNav wordmark="DRESSLY" />
         <div className="banner-copy"><div className="container">
          <div className="banner-text"><p>Kanduras cut with precision and finished to a standard we have spent a generation refining, since 1998.</p><a className="banner-link" href="/category/kandura-thobes"><span className="roll"><span data-t="Shop Now">Shop Now</span></span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M4 4v13h17M17 13l4 4-4 4"/></svg></a></div>
          <div className="banner-year">TAILORING<br />SINCE<br />@1998</div>
@@ -299,11 +290,7 @@ export default function Fieldworn({ img, community }: { img: FieldwornImages; co
        <div className="foot-grid">
         <div className="foot-img zoom"><img src={img.foot} alt="" /></div>
         <div>
-         <div className="foot-cols">
-          <div><h4>Shop</h4><ul><li><a href="/">Home</a></li><li><a href="/category/kandura-thobes">Kandura and Thobe</a></li><li><a href="/category/kids-clothing">Kids</a></li><li><a href="/blog">Blog</a></li><li><a href="/about">About Us</a></li></ul></div>
-          <div><h4>Help</h4><ul><li><a href="/branches">Branches</a></li><li><a href="/policies/shipping">Shipping</a></li><li><a href="/policies/refund">Returns</a></li><li><a href="/policies/privacy">Privacy Policy</a></li><li><a href="/contact">Contact</a></li></ul></div>
-          <div><h4>Contact</h4><ul><li><a href="tel:+971568586987">+971 56 858 6987</a></li><li><a href="https://api.whatsapp.com/send/?phone=971568586987" target="_blank" rel="noopener noreferrer">WhatsApp us</a></li><li><address>13 branches across<br />5 Emirates, UAE</address></li></ul></div>
-         </div>
+         <FooterColumns />
          <div className="foot-end"><span>© 2026 Dressly. All rights reserved.</span><div className="socials"><a href="https://www.tiktok.com/@dressly" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M14 4v10a3 3 0 1 1-3-3M14 4c.5 2.5 2 4 5 4"/></svg></a><a href="https://www.instagram.com/dressly" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17" cy="7" r=".5"/></svg></a><a href="https://api.whatsapp.com/send/?phone=971568586987" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M4 20l1.3-4A8 8 0 1 1 8 18.7z"/><path d="M9 9.5c.3 2 2.5 4.2 4.5 4.5l1-1.2 1.8.8-.3 1.4c-3.5.5-7.7-3.7-7.2-7.2l1.4-.3.8 1.8z"/></svg></a></div></div>
         </div>
        </div>

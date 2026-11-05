@@ -7,7 +7,12 @@ import type { CardProduct, Category, Product } from "./types";
 
 export const products = productsData as Product[];
 export const categories = categoriesData as Category[];
-export const home = homeData as { bestSellers: string[]; featured: string[] };
+export const home = homeData as { bestSellers: string[]; featured: string[]; newArrivals?: string[] };
+
+/** Slugs shown under New Arrivals (/shop?filter=new) and badged "New" on cards. */
+export const newArrivals: string[] = home.newArrivals ?? [];
+const newSet = new Set(newArrivals);
+export const isNew = (slug: string) => newSet.has(slug);
 
 const productMap = new Map(products.map((p) => [p.slug, p]));
 const categoryMap = new Map(categories.map((c) => [c.slug, c]));
@@ -27,8 +32,11 @@ export function toCard(p: Product): CardProduct {
     price: p.price,
     image: productImage(p.slug),
     images: [productImage(p.slug, "front"), productImage(p.slug, "side"), productImage(p.slug, "back")],
-    badge: bestSellers.has(p.slug) ? "Best seller" : undefined,
+    badge: newSet.has(p.slug) ? "New" : bestSellers.has(p.slug) ? "Best seller" : undefined,
     options: p.options,
+    ...(p.fabric && { fabric: p.fabric }),
+    ...(p.occasion && { occasion: p.occasion }),
+    ...(p.collar && { collar: p.collar }),
   };
 }
 

@@ -1,14 +1,13 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
+import { whatsapp } from "@/lib/brand";
 import { money } from "@/lib/format";
 import type { CardProduct } from "@/lib/types";
 import { useStore } from "./StoreProvider";
 
 export default function CartView({ products }: { products: CardProduct[] }) {
   const { cart, changeQty, removeLine } = useStore();
-  const [checkout, setCheckout] = useState(false);
   const bySlug = new Map(products.map((p) => [p.slug, p]));
   const lines = cart.map((line, index) => ({ line, index, p: bySlug.get(line.slug) })).filter((l) => l.p);
 
@@ -59,12 +58,22 @@ export default function CartView({ products }: { products: CardProduct[] }) {
         <span>Subtotal</span>
         <span>{money(total)}</span>
       </div>
-      <button className="btn" type="button" onClick={() => setCheckout(true)}>
-        Checkout
-      </button>
-      <p className="notice" hidden={!checkout}>
-        Checkout is not active yet. Connect a payment provider before launch.
-      </p>
+      <div className="cart-actions" style={{ display: "flex", flexWrap: "wrap", gap: 12, marginTop: 16 }}>
+        <Link className="btn" href="/checkout">
+          Checkout
+        </Link>
+        <a
+          className="btn btn-outline"
+          href={whatsapp(
+            `Hello Dressly, I would like to order:\n${lines.map(({ line, p }) => `• ${line.qty} × ${p!.name}${line.options ? ` (${line.options})` : ""}`).join("\n")}\nSubtotal: ${money(total)}`,
+          )}
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{ background: "#fff", color: "#000", border: "1px solid #000" }}
+        >
+          Order on WhatsApp
+        </a>
+      </div>
     </div>
   );
 }

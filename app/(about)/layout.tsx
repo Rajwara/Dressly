@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+import { StoreProvider } from "@/components/StoreProvider";
+import WhatsAppButton from "@/components/WhatsAppButton";
 import "./logotype.css";
 
 // Home page fonts, used for the whole page (headings, text, header and footer).
@@ -22,7 +24,12 @@ export default function LogotypeLayout({ children }: { children: React.ReactNode
       <head>
         <script dangerouslySetInnerHTML={{ __html: "document.documentElement.classList.add('js')" }} />
       </head>
-      <body>{children}</body>
+      <body>
+        <StoreProvider>
+          {children}
+          <WhatsAppButton />
+        </StoreProvider>
+      </body>
     </html>
   );
 }

@@ -2,7 +2,6 @@ import { FieldwornChromeBehavior, FieldwornFooter, FieldwornHeader } from "@/com
 import "@/app/(site)/fieldworn-site.css";
 import { fieldwornFonts } from "@/lib/fieldworn-fonts";
 import { imageSrc } from "@/lib/images";
-import StoreCartLink from "./StoreCartLink";
 
 /**
  * Wraps a store page in the homepage branding: its fonts and colours, and
@@ -11,7 +10,7 @@ import StoreCartLink from "./StoreCartLink";
 export default function FieldwornShell({ children, className = "" }: { children: React.ReactNode; className?: string }) {
   return (
     <div className={`fwb ${fieldwornFonts} ${className}`}>
-      <FieldwornHeader cart={<StoreCartLink />} />
+      <FieldwornHeader />
       {children}
       <FieldwornFooter image={imageSrc("images/content/story")} />
       <FieldwornChromeBehavior />

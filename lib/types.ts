@@ -12,6 +12,10 @@ export type Product = {
   description: string;
   metaDescription: string;
   related: string[];
+  /** Optional filter facets; category filters for these appear once products carry them. */
+  fabric?: string;
+  occasion?: string;
+  collar?: string;
 };
 
 export type Category = {
@@ -20,6 +24,8 @@ export type Category = {
   group: string;
   siblings: string[];
   products: string[];
+  /** Optional short paragraphs shown under the category grid (for shoppers and search engines). */
+  intro?: string[];
 };
 
 /** The slice of a product that cards, the cart and the wishlist need on the client. */
@@ -35,6 +41,9 @@ export type CardProduct = {
   images: string[];
   badge?: string;
   options: ProductOption[];
+  fabric?: string;
+  occasion?: string;
+  collar?: string;
 };
 
 export type CartLine = { slug: string; options: string; qty: number };

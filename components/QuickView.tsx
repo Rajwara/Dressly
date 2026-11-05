@@ -6,6 +6,8 @@ import { whatsapp } from "@/lib/brand";
 import { money } from "@/lib/format";
 import type { CardProduct } from "@/lib/types";
 import Icon from "./Icon";
+import DeliveryEstimate from "./product/DeliveryEstimate";
+import "./product/product-extras.css";
 import { useStore } from "./StoreProvider";
 
 const Ctx = createContext<(p: CardProduct) => void>(() => {});
@@ -65,13 +67,20 @@ function QuickViewBody({ p, close }: { p: CardProduct; close: () => void }) {
       <div className="qv-info">
         <span className="eyebrow">{p.category}</span>
         <h2>{p.name}</h2>
-        <span className="qv-price">{money(p.price)}</span>
+        <span className="qv-price">
+          {money(p.price)} <small className="vat">incl. VAT</small>
+        </span>
         {p.options.map((o, oi) => (
           <div className="opt" key={o.label}>
             <div className="opt-label">
               <span>
                 {o.label}: <span className="current">{choices[oi]}</span>
               </span>
+              {oi === 0 && /size|length/i.test(o.label) && (
+                <Link className="qv-size" href="/size-guide" onClick={close}>
+                  Size guide
+                </Link>
+              )}
             </div>
             <div className="choices">
               {o.values.map((v) => (
@@ -87,6 +96,7 @@ function QuickViewBody({ p, close }: { p: CardProduct; close: () => void }) {
             </div>
           </div>
         ))}
+        <DeliveryEstimate compact />
         <div className="buy">
           <div className="qty">
             <button type="button" aria-label="Decrease quantity" onClick={() => setQty((q) => Math.max(1, q - 1))}>
