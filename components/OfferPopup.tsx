@@ -148,6 +148,15 @@ export default function OfferPopup() {
           <path d="M6 6l12 12M18 6 6 18" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
         </svg>
       </button>
+      <div className="offer-photo">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img src={OFFER.image} alt="" />
+        <div className="offer-photo-copy" aria-hidden="true">
+          <span>{OFFER.title}</span>
+          <strong>{PROMO.percent}% off</strong>
+          <em>your first order</em>
+        </div>
+      </div>
       <div className="offer-main">
         {status === "done" ? (
           <div className="offer-done">
@@ -170,7 +179,7 @@ export default function OfferPopup() {
           </div>
         ) : (
           <>
-            <span className="offer-eyebrow">{OFFER.title}</span>
+            <span className="offer-eyebrow">Join the Dressly list</span>
             <h2 id="offer-title">{PROMO.label}</h2>
             <p className="offer-valid">Valid for {PROMO.validDays} days after sign-up. One use per customer.</p>
             <div className="offer-tabs" role="tablist" aria-label="Send my code by">
@@ -215,30 +224,16 @@ export default function OfferPopup() {
             <button className="offer-switch" type="button" onClick={() => setChannel(channel === "email" ? "whatsapp" : "email")}>
               {channel === "email" ? "Use WhatsApp instead" : "Use email instead"}
             </button>
+            <ul className="offer-points">
+              {OFFER.points.slice(0, 3).map((p) => (
+                <li key={p}>{p}</li>
+              ))}
+            </ul>
             <button className="offer-skip" type="button" onClick={close}>
               No thanks
             </button>
           </>
         )}
-      </div>
-      <div className="offer-side">
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src="/logo.png" alt="" width={640} height={180} />
-        <h3>
-          Trusted <em>since 1998</em> across the UAE
-        </h3>
-        <ul>
-          {OFFER.points.map((p) => (
-            <li key={p}>
-              <span aria-hidden="true">
-                <svg width="14" height="14" viewBox="0 0 24 24">
-                  <path d="m5 12.5 4.5 4.5L19 7.5" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
-                </svg>
-              </span>
-              {p}
-            </li>
-          ))}
-        </ul>
       </div>
     </dialog>
     </>

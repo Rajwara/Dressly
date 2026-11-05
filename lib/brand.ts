@@ -195,6 +195,8 @@ export const OFFER = {
   title: "Welcome to Dressly",
   delaySeconds: 15, // opens after this long, or when the visitor has scrolled half the page
   hideForDays: 3, // after "close", stay hidden this long
+  /** Photo on the popup (portrait works best). Any image in /public can go here. */
+  image: "/images/categories/traditional-kandura.webp",
   points: [
     "Abaya tailoring since 1998",
     "13 branches across 5 Emirates",
