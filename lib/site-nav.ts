@@ -8,13 +8,14 @@ import { PHONE_DISPLAY, WHATSAPP_URL } from "./brand";
 type Cat = { slug: string; title: string; group: string };
 const CATS = categoriesData as Cat[];
 const title = (slug: string) => CATS.find((c) => c.slug === slug)?.title ?? slug;
-const link = (slug: string) => ({ label: title(slug), href: `/category/${slug}` });
+/** Category photo shown beside the mega menu; every category has a .webp in public/images/categories. */
+const link = (slug: string) => ({ label: title(slug), href: `/category/${slug}`, image: `/images/categories/${slug}.webp` });
 const inGroup = (group: string, first?: string) => {
   const list = CATS.filter((c) => c.group === group).map((c) => c.slug);
   return first ? [first, ...list.filter((s) => s !== first)] : list;
 };
 
-export type NavLink = { label: string; href: string };
+export type NavLink = { label: string; href: string; image?: string };
 export type NavColumn = { heading?: string; links: NavLink[] };
 export type NavItem = { label: string; href: string; columns?: NavColumn[] };
 

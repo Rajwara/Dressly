@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import Icon from "@/components/Icon";
 import { useStore } from "@/components/StoreProvider";
-import { FOOTER_NAV, MAIN_NAV, SHOP_ALL, TOP_BAR } from "@/lib/site-nav";
+import { FOOTER_NAV, MAIN_NAV, SHOP_ALL, TOP_BAR, type NavItem } from "@/lib/site-nav";
 import "./site-nav.css";
 
 /**
@@ -56,6 +56,46 @@ function NavIcons() {
   );
 }
 
+/**
+ * Dropdown panel: link columns plus a category photo on the side that changes
+ * to match whichever category is hovered or focused.
+ */
+function MegaPanel({ item }: { item: NavItem }) {
+  const links = item.columns!.flatMap((c) => c.links);
+  const first = links.find((l) => l.image) ?? links[0];
+  const [active, setActive] = useState(first);
+  const cols = item.columns!.length;
+  return (
+    <div className={`drop sn-mega${cols > 1 ? " sn-mega-multi" : ""}`} style={{ "--sn-cols": Math.min(cols, 3) } as React.CSSProperties}
+      onMouseLeave={() => setActive(first)}>
+      <div className="sn-mega-cols">
+        {item.columns!.map((col, c) => (
+          <div key={c} className="sn-col">
+            {col.heading && <p className="sn-col-head">{col.heading}</p>}
+            <ul>
+              {col.links.map((l) => (
+                <li key={l.href}>
+                  <a href={l.href} className={active.href === l.href ? "on" : undefined} onMouseEnter={() => setActive(l)} onFocus={() => setActive(l)}>{l.label}</a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))}
+      </div>
+      {active.image && (
+        <a className="sn-mega-pic" href={active.href} tabIndex={-1} aria-hidden="true">
+          {/* Every image is rendered so switching is instant; only the active one is shown. */}
+          {links.filter((l) => l.image).map((l) => (
+            // eslint-disable-next-line @next/next/no-img-element
+            <img key={l.href} src={l.image} alt="" loading="lazy" className={l.href === active.href ? "on" : undefined} />
+          ))}
+          <span>{active.label} <b>→</b></span>
+        </a>
+      )}
+    </div>
+  );
+}
+
 export function SiteNav({ wordmark }: { wordmark: string }) {
   return (
     <nav className="nav sn" aria-label="Main">
@@ -68,20 +108,7 @@ export function SiteNav({ wordmark }: { wordmark: string }) {
                 {item.label}
                 {item.columns && <span className="sn-caret" aria-hidden="true">⌄</span>}
               </a>
-              {item.columns && (
-                <div className={`drop ${item.columns.length > 1 ? "sn-mega" : ""}`}>
-                  {item.columns.map((col, c) => (
-                    <div key={c} className="sn-col">
-                      {col.heading && <p className="sn-col-head">{col.heading}</p>}
-                      <ul>
-                        {col.links.map((l) => (
-                          <li key={l.href}><a href={l.href}>{l.label}</a></li>
-                        ))}
-                      </ul>
-                    </div>
-                  ))}
-                </div>
-              )}
+              {item.columns && <MegaPanel item={item} />}
             </li>
           ))}
           <li className="sn-mobile-only"><a href="/account">Account</a></li>
