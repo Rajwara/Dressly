@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import Icon from "@/components/Icon";
 import { useStore } from "@/components/StoreProvider";
-import { FOOTER_NAV, MAIN_NAV, SHOP_ALL, TOP_BAR, type NavItem } from "@/lib/site-nav";
+import { FOOTER_NAV, MAIN_NAV, SHOP_ALL, TOP_BAR, type NavColumn, type NavItem } from "@/lib/site-nav";
 import "./site-nav.css";
 
 /**
@@ -64,23 +64,38 @@ function MegaPanel({ item }: { item: NavItem }) {
   const links = item.columns!.flatMap((c) => c.links);
   const first = links.find((l) => l.image) ?? links[0];
   const [active, setActive] = useState(first);
-  const cols = item.columns!.length;
+  // Sections with the same `col` stack in one column; without `col`, each section is its own column.
+  const stacks: NavColumn[][] = [];
+  item.columns!.forEach((c, i) => {
+    const k = c.col ?? i;
+    (stacks[k] ??= []).push(c);
+  });
+  const cols = stacks.length;
   return (
-    <div className={`drop sn-mega${cols > 1 ? " sn-mega-multi" : ""}`} style={{ "--sn-cols": Math.min(cols, 3) } as React.CSSProperties}
+    <div className={`drop sn-mega${cols > 1 ? " sn-mega-multi" : ""}`} style={{ "--sn-cols": cols } as React.CSSProperties}
       onMouseLeave={() => setActive(first)}>
-      <div className="sn-mega-cols">
-        {item.columns!.map((col, c) => (
-          <div key={c} className="sn-col">
-            {col.heading && <p className="sn-col-head">{col.heading}</p>}
-            <ul>
-              {col.links.map((l) => (
-                <li key={l.href}>
-                  <a href={l.href} className={active.href === l.href ? "on" : undefined} onMouseEnter={() => setActive(l)} onFocus={() => setActive(l)}>{l.label}</a>
-                </li>
+      <div className="sn-mega-body">
+        <div className="sn-mega-cols">
+          {stacks.map((stack, i) => (
+            <div key={i} className="sn-stack">
+              {stack.map((col, c) => (
+                <div key={c} className="sn-col">
+                  {col.heading && <p className="sn-col-head">{col.heading}</p>}
+                  <ul>
+                    {col.links.map((l) => (
+                      <li key={l.href}>
+                        <a href={l.href} className={active.href === l.href ? "on" : undefined} onMouseEnter={() => setActive(l)} onFocus={() => setActive(l)}>{l.label}</a>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
               ))}
-            </ul>
-          </div>
-        ))}
+            </div>
+          ))}
+        </div>
+        {cols > 1 && (
+          <a className="sn-mega-all" href={item.href}>Shop all {item.label} <span aria-hidden="true">→</span></a>
+        )}
       </div>
       {active.image && (
         <a className="sn-mega-pic" href={active.href} tabIndex={-1} aria-hidden="true">

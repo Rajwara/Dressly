@@ -16,7 +16,8 @@ const inGroup = (group: string, first?: string) => {
 };
 
 export type NavLink = { label: string; href: string; image?: string };
-export type NavColumn = { heading?: string; links: NavLink[] };
+/** `col` stacks several sections in the same menu column (0, 1, 2…). */
+export type NavColumn = { heading?: string; links: NavLink[]; col?: number };
 export type NavItem = { label: string; href: string; columns?: NavColumn[] };
 
 export const MAIN_NAV: NavItem[] = [
@@ -28,11 +29,12 @@ export const MAIN_NAV: NavItem[] = [
     label: "Modest Wear",
     href: "/shop",
     columns: [
-      { heading: "Outerwear", links: inGroup("Outerwear").map(link) },
-      { heading: "Home & Lounge", links: inGroup("Home & Lounge").map(link) },
-      { heading: "Essentials", links: inGroup("Essentials").map(link) },
-      { heading: "Girls", links: inGroup("Girls", "kids-clothing").map(link) },
-      { heading: "Shoes, Fragrance & Gifts", links: [...inGroup("Footwear"), ...inGroup("Fragrance"), ...inGroup("Accessories"), ...inGroup("Gifts")].map(link) },
+      { heading: "Outerwear", col: 0, links: inGroup("Outerwear").map(link) },
+      { heading: "Home & Lounge", col: 0, links: inGroup("Home & Lounge").map(link) },
+      { heading: "Essentials", col: 1, links: inGroup("Essentials").map(link) },
+      { heading: "Girls", col: 1, links: inGroup("Girls", "kids-clothing").map(link) },
+      { heading: "Shoes & Fragrance", col: 2, links: [...inGroup("Footwear"), ...inGroup("Fragrance")].map(link) },
+      { heading: "Accessories & Gifts", col: 2, links: [...inGroup("Accessories"), ...inGroup("Gifts")].map(link) },
     ],
   },
   { label: "New Arrivals", href: "/shop?filter=new" },
