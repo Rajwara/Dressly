@@ -80,11 +80,14 @@ function MegaPanel({ item }: { item: NavItem }) {
             <div key={i} className="sn-stack">
               {stack.map((col, c) => (
                 <div key={c} className="sn-col">
-                  {col.heading && <p className="sn-col-head">{col.heading}</p>}
+                  {(col.heading ?? (cols === 1 ? item.label : undefined)) && <p className="sn-col-head">{col.heading ?? item.label}</p>}
                   <ul>
                     {col.links.map((l) => (
                       <li key={l.href}>
-                        <a href={l.href} className={active.href === l.href ? "on" : undefined} onMouseEnter={() => setActive(l)} onFocus={() => setActive(l)}>{l.label}</a>
+                        <a href={l.href} className={active.href === l.href ? "on" : undefined} onMouseEnter={() => setActive(l)} onFocus={() => setActive(l)}>
+                          {l.label}
+                          {cols === 1 && <span className="sn-row-arrow" aria-hidden="true">→</span>}
+                        </a>
                       </li>
                     ))}
                   </ul>
@@ -93,18 +96,18 @@ function MegaPanel({ item }: { item: NavItem }) {
             </div>
           ))}
         </div>
-        {cols > 1 && (
-          <a className="sn-mega-all" href={item.href}>Shop all {item.label} <span aria-hidden="true">→</span></a>
-        )}
+        <a className="sn-mega-all" href={item.href}>Shop all {item.label} <span aria-hidden="true">→</span></a>
       </div>
       {active.image && (
         <a className="sn-mega-pic" href={active.href} tabIndex={-1} aria-hidden="true">
           {/* Every image is rendered so switching is instant; only the active one is shown. */}
-          {links.filter((l) => l.image).map((l) => (
-            // eslint-disable-next-line @next/next/no-img-element
-            <img key={l.href} src={l.image} alt="" loading="lazy" className={l.href === active.href ? "on" : undefined} />
-          ))}
-          <span>{active.label} <b>→</b></span>
+          <span className="sn-mega-img">
+            {links.filter((l) => l.image).map((l) => (
+              // eslint-disable-next-line @next/next/no-img-element
+              <img key={l.href} src={l.image} alt="" loading="lazy" className={l.href === active.href ? "on" : undefined} />
+            ))}
+          </span>
+          <span className="sn-mega-cap">{active.label}</span>
         </a>
       )}
     </div>

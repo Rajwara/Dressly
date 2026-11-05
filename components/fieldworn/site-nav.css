@@ -28,13 +28,21 @@
 .nav.sn.sn .drop .sn-mega-all{display:inline-flex;align-items:center;gap:8px;align-self:flex-start;padding-top:14px;border-top:1px solid #f0e2dc;width:100%;font-weight:500;color:var(--brand-rose,#b76e79)}
 .nav.sn.sn .drop .sn-mega-all:hover span{transform:translateX(3px)}
 .nav.sn.sn .drop .sn-mega-all span{transition:transform .25s}
-.nav.sn.sn .drop.sn-mega:not(.sn-mega-multi) .sn-mega-cols{min-width:190px}
 .nav.sn.sn .drop.sn-mega a.on{color:var(--brand-rose,#b76e79)}
-.nav.sn.sn .drop .sn-mega-pic{position:relative;flex:none;display:block;width:220px;aspect-ratio:4/5;border-radius:12px;overflow:hidden;background:#f8f0ec}
-.nav.sn.sn .drop .sn-mega-pic img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transform:scale(1.04);transition:opacity .35s ease,transform .6s cubic-bezier(.2,.7,.2,1)}
-.nav.sn.sn .drop .sn-mega-pic img.on{opacity:1;transform:none}
-.nav.sn.sn .drop .sn-mega-pic span{position:absolute;left:10px;right:10px;bottom:10px;padding:8px 12px;border-radius:999px;background:rgba(255,255,255,.92);color:#3b1f33;font-size:13px;font-weight:500;display:flex;justify-content:space-between;gap:8px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.nav.sn.sn .drop .sn-mega-pic span b{color:var(--brand-rose,#b76e79)}
+.nav.sn.sn .drop .sn-mega-pic{flex:none;display:flex;flex-direction:column;gap:10px;width:200px;border:0}
+.nav.sn.sn .drop .sn-mega-img{position:relative;display:block;width:100%;aspect-ratio:4/5;border-radius:12px;overflow:hidden;background:#f8f0ec}
+.nav.sn.sn .drop .sn-mega-img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transform:scale(1.04);transition:opacity .35s ease,transform .6s cubic-bezier(.2,.7,.2,1)}
+.nav.sn.sn .drop .sn-mega-img img.on{opacity:1;transform:none}
+.nav.sn.sn .drop .sn-mega-cap{display:block;font:500 13px/1.35 var(--font-space-grotesk),sans-serif;color:var(--brand-rose,#b76e79);text-align:center;padding:0 4px}
+/* Single-section panels (Abayas, Hijabs & Shaylas): even rows that fill the height beside the photo */
+.nav.sn.sn .drop.sn-mega:not(.sn-mega-multi) .sn-mega-cols{min-width:250px}
+.nav.sn.sn .drop.sn-mega:not(.sn-mega-multi) .sn-col ul{display:grid}
+.nav.sn.sn .drop.sn-mega:not(.sn-mega-multi) li{padding:0;border-bottom:1px solid #f3e7e2}
+.nav.sn.sn .drop.sn-mega:not(.sn-mega-multi) li:last-child{border-bottom:0}
+.nav.sn.sn .drop.sn-mega:not(.sn-mega-multi) li a{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px 4px;white-space:nowrap}
+.nav.sn.sn .drop .sn-row-arrow{color:var(--brand-rose,#b76e79);opacity:0;transform:translateX(-6px);transition:opacity .2s,transform .25s}
+.nav.sn.sn .drop a:hover .sn-row-arrow,.nav.sn.sn .drop a.on .sn-row-arrow{opacity:1;transform:none}
+.nav.sn.sn .drop.sn-mega:not(.sn-mega-multi) a.on{text-decoration:none}
 .nav.sn .links>li:hover .drop.sn-mega,.nav.sn .links>li:focus-within .drop.sn-mega{transform:translate(-50%,0)}
 .nav.sn .sn-shop{display:inline-flex;align-items:center;height:40px;padding:0 18px;border-radius:999px;background:#3b1f33;color:#fff;border:1px solid rgba(255,255,255,.28)!important;font-weight:500;transition:background .2s,color .2s}
 .nav.sn .sn-shop:hover{background:#fff;color:#3b1f33}
@@ -113,3 +121,10 @@
 /* Banner headings: the serif is wider, so size them to fit small screens */
 .fwb .page-banner .page-banner-copy h1{font-size:clamp(40px,8vw,128px);overflow-wrap:anywhere}
 @media (max-width:600px){.fwb .page-banner .page-banner-copy h1{font-size:clamp(34px,10vw,56px)}}
+.nav.sn.sn .drop.sn-mega:not(.sn-mega-multi) a:hover{text-decoration:none}
+@media (max-width:1180px){.nav.sn.sn .drop.sn-mega:not(.sn-mega-multi) .sn-col-head{display:none}.nav.sn.sn .drop.sn-mega:not(.sn-mega-multi) li{border:0}.nav.sn.sn .drop.sn-mega:not(.sn-mega-multi) li a{padding:6px 0}.nav.sn.sn .drop .sn-row-arrow{display:none}}
+.nav.sn.sn .drop.sn-mega:not(.sn-mega-multi) .sn-mega-body{width:270px}
+.nav.sn.sn .drop.sn-mega:not(.sn-mega-multi) .sn-mega-cols{grid-template-columns:1fr;min-width:0}
+.nav.sn.sn .drop.sn-mega:not(.sn-mega-multi) .sn-mega-pic{width:184px}
+@media (max-width:1180px){.nav.sn.sn .drop.sn-mega:not(.sn-mega-multi) .sn-mega-body{width:auto}}
+@media (max-width:1180px){.nav.sn.sn .drop.sn-mega a.on{color:inherit}}
